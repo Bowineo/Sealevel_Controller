@@ -1,0 +1,15 @@
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVER.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.Painel.resources
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVER.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVER.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVER.csproj.CopyComplete
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.pdb

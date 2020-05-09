@@ -1,0 +1,127 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CHOV.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="IP_Primary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.1.1.1</Value>
+    </Setting>
+    <Setting Name="IP_Secondary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.1.1.1</Value>
+    </Setting>
+    <Setting Name="IP_Output" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.1.1.1</Value>
+    </Setting>
+    <Setting Name="NamesInputPrimary" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;IN 01  &lt;/string&gt;
+  &lt;string&gt;IN 02  &lt;/string&gt;
+  &lt;string&gt;IN 03  &lt;/string&gt;
+  &lt;string&gt;IN 04  &lt;/string&gt;
+  &lt;string&gt;IN 05  &lt;/string&gt;
+  &lt;string&gt;IN 06  &lt;/string&gt;
+  &lt;string&gt;IN 07  &lt;/string&gt;
+  &lt;string&gt;IN 08  &lt;/string&gt;
+  &lt;string&gt;IN 09  &lt;/string&gt;
+  &lt;string&gt;IN 10  &lt;/string&gt;
+  &lt;string&gt;IN 11  &lt;/string&gt;
+  &lt;string&gt;IN 12  &lt;/string&gt;
+  &lt;string&gt;IN 13  &lt;/string&gt;
+  &lt;string&gt;IN 14  &lt;/string&gt;
+  &lt;string&gt;IN 15  &lt;/string&gt;
+  &lt;string&gt;IN 16  &lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="NamesInputSecondary" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;IN 01  &lt;/string&gt;
+  &lt;string&gt;IN 02  &lt;/string&gt;
+  &lt;string&gt;IN 03  &lt;/string&gt;
+  &lt;string&gt;IN 04  &lt;/string&gt;
+  &lt;string&gt;IN 05  &lt;/string&gt;
+  &lt;string&gt;IN 06  &lt;/string&gt;
+  &lt;string&gt;IN 07  &lt;/string&gt;
+  &lt;string&gt;IN 08  &lt;/string&gt;
+  &lt;string&gt;IN 09  &lt;/string&gt;
+  &lt;string&gt;IN 10  &lt;/string&gt;
+  &lt;string&gt;IN 11  &lt;/string&gt;
+  &lt;string&gt;IN 12  &lt;/string&gt;
+  &lt;string&gt;IN 13  &lt;/string&gt;
+  &lt;string&gt;IN 14  &lt;/string&gt;
+  &lt;string&gt;IN 15  &lt;/string&gt;
+  &lt;string&gt;IN 16  &lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="NamesOutput" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;OUT 01 &lt;/string&gt;
+  &lt;string&gt;OUT 02 &lt;/string&gt;
+  &lt;string&gt;OUT 03 &lt;/string&gt;
+  &lt;string&gt;OUT 04 &lt;/string&gt;
+  &lt;string&gt;OUT 05 &lt;/string&gt;
+  &lt;string&gt;OUT 06 &lt;/string&gt;
+  &lt;string&gt;OUT 07 &lt;/string&gt;
+  &lt;string&gt;OUT 08 &lt;/string&gt;
+  &lt;string&gt;OUT 09 &lt;/string&gt;
+  &lt;string&gt;OUT 10 &lt;/string&gt;
+  &lt;string&gt;OUT 11 &lt;/string&gt;
+  &lt;string&gt;OUT 12 &lt;/string&gt;
+  &lt;string&gt;OUT 13 &lt;/string&gt;
+  &lt;string&gt;OUT 14 &lt;/string&gt;
+  &lt;string&gt;OUT 15 &lt;/string&gt;
+  &lt;string&gt;OUT 16 &lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="System" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Change Over</Value>
+    </Setting>
+    <Setting Name="DeviceChg0" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Primary</Value>
+    </Setting>
+    <Setting Name="InputDeviceChg0" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IN 16  </Value>
+    </Setting>
+    <Setting Name="CurrentSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Primary</Value>
+    </Setting>
+    <Setting Name="Path_LogOperation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:/SystemLog</Value>
+    </Setting>
+    <Setting Name="EnableLog" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SystemLog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:/SystemLog</Value>
+    </Setting>
+    <Setting Name="MaxSizeLog" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="DatawrittenLog" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+  &lt;string&gt;TRUE&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Combinations" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 03 ] 'OUT 03 '&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="SizeDgv" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">22</Value>
+    </Setting>
+    <Setting Name="EnableCombinationsLog" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

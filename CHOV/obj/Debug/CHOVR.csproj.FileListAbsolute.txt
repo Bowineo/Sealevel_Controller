@@ -1,0 +1,32 @@
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVR.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.Painel.resources
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVR.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVR.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOVR.csproj.CopyComplete
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOVR.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOV.Painel.resources
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOVR.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOVR.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOVR.csproj.CopyComplete
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV_21_3_19\CHOV\CHOV\obj\Debug\CHOV.pdb

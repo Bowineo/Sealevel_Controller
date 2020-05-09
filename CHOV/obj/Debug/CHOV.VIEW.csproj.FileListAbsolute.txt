@@ -1,0 +1,604 @@
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\CHOV_61\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_65\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV_70\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmLogs.resources
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.MsgBox.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.MsgBox.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmConfiguracoes.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.frmSobre.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.dll
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.xml
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+D:\Projetos\CHOV_X\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.Cache
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Tecnicos\Desktop\ch0v_24\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v_24_1\ch0v_24_1\ch0v\CHOV_\CHOV\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_25\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.config
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\CHOV_X\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.Designer.cs
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.config
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Tecnicos\Desktop\ch0v_27\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Tecnicos\Desktop\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projetos\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projetos\ch0v_41\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Downloads\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.dll
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\pedro\Desktop\ch0v_00_16\ch0v_00\ch0v\CHOV\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\bin\Debug\SeaMAX Dot Net.xml
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\CHOV\CHOV\obj\Debug\CHOV.pdb
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\ftd2xx.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\SeaMAX.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\LedBulb.cs
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.exe.config
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.exe
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.pdb
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\IPAddressControlLib.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\log4net.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\SeaMAX Dot Net.dll
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.pdb
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\log4net.xml
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\bin\Debug\SeaMAX Dot Net.xml
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmLogs.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmSobre.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmPainel.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.MmsgBox.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.exe
+D:\Projetos\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Sealevel_Controller\Ch0v\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\ftd2xx.dll
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\SeaMAX.dll
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\LedBulb.cs
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\CHOV.exe.config
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\log4net.dll
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\bin\Debug\log4net.xml
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Sealevel__Controller\Ch0v\CHOV\obj\Debug\CHOV.pdb
