@@ -173,7 +173,6 @@ namespace CHOV
         /// <param name="e"></param>
         private void BtnSave_system_Click(object sender, EventArgs e)
         {
-
             log.Debug("Botão Save acionado");
             using (Form MsgBox = new MmsgBox("Do you want to save the settings?", "SAVE&CANCEL", 4, 0))
             {   //Mensagem de confirmação para o usuário.
@@ -2364,8 +2363,7 @@ namespace CHOV
 
         private void Btn_ExportConfig_Click(object sender, EventArgs e)
         {
-            string[] lines = { "1", "2", "3", "4" };
-
+            string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0};
 
 
             log.Debug("Botão Export Configuration acionado");
@@ -2378,14 +2376,14 @@ namespace CHOV
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
 
-                    System.IO.File.WriteAllLines(pathselect + @"\Confg.chg0", lines);
+                    System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
+                    using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
+                    {
+                        DialogResult resultado = MsgBox.ShowDialog();
+                    }
                 }
             }
-
-
-
-
         }
 
         private void Btn_ImportConfig_Click(object sender, EventArgs e)
