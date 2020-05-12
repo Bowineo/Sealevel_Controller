@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfiguracoes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle91 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle92 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle93 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle94 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle95 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle96 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle97 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle98 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle99 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbpg1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnDefault = new System.Windows.Forms.Button();
@@ -162,9 +162,13 @@
             this.picSealevel = new System.Windows.Forms.PictureBox();
             this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
             this.Tbpg3 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabConfig = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PnlSystemChg0 = new System.Windows.Forms.Panel();
+            this.btn_ImportConfig = new System.Windows.Forms.Button();
+            this.btn_ExportConfig = new System.Windows.Forms.Button();
+            this.pictureAdvanced = new System.Windows.Forms.PictureBox();
             this.pnlsysmtx = new System.Windows.Forms.Panel();
             this.IpPrimaryControl = new IPAddressControlLib.IPAddressControl();
             this.IpSecondaryControl = new IPAddressControlLib.IPAddressControl();
@@ -260,10 +264,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.pictureAdvanced = new System.Windows.Forms.PictureBox();
-            this.btn_ExportConfig = new System.Windows.Forms.Button();
-            this.btn_ImportConfig = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Tbpg1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PnlSecondary.SuspendLayout();
@@ -280,6 +280,7 @@
             this.tabConfig.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.PnlSystemChg0.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAdvanced)).BeginInit();
             this.pnlsysmtx.SuspendLayout();
             this.pnlsyschgo.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -296,7 +297,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dGv)).BeginInit();
             this.PnlMtxoff.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAdvanced)).BeginInit();
             this.SuspendLayout();
             // 
             // Tbpg1
@@ -1990,6 +1990,14 @@
             this.Tbpg3.TabIndex = 2;
             this.Tbpg3.Text = "System";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(763, 70);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(86, 347);
+            this.textBox1.TabIndex = 120;
+            // 
             // tabConfig
             // 
             this.tabConfig.Controls.Add(this.tabPage1);
@@ -2028,6 +2036,70 @@
             this.PnlSystemChg0.Name = "PnlSystemChg0";
             this.PnlSystemChg0.Size = new System.Drawing.Size(637, 337);
             this.PnlSystemChg0.TabIndex = 109;
+            this.PnlSystemChg0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PnlSystemChg0_MouseUp);
+            // 
+            // btn_ImportConfig
+            // 
+            this.btn_ImportConfig.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ImportConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.btn_ImportConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ImportConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ImportConfig.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_ImportConfig.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ImportConfig.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ImportConfig.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ImportConfig.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_ImportConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ImportConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ImportConfig.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ImportConfig.Location = new System.Drawing.Point(325, 331);
+            this.btn_ImportConfig.Name = "btn_ImportConfig";
+            this.btn_ImportConfig.Size = new System.Drawing.Size(62, 27);
+            this.btn_ImportConfig.TabIndex = 119;
+            this.btn_ImportConfig.Text = "Import";
+            this.btn_ImportConfig.UseVisualStyleBackColor = false;
+            this.btn_ImportConfig.Visible = false;
+            this.btn_ImportConfig.Click += new System.EventHandler(this.Btn_ImportConfig_Click);
+            this.btn_ImportConfig.MouseEnter += new System.EventHandler(this.Btn_ImportConfig_MouseEnter);
+            this.btn_ImportConfig.MouseLeave += new System.EventHandler(this.Btn_ImportConfig_MouseLeave);
+            // 
+            // btn_ExportConfig
+            // 
+            this.btn_ExportConfig.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_ExportConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.btn_ExportConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn_ExportConfig.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ExportConfig.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btn_ExportConfig.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ExportConfig.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ExportConfig.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btn_ExportConfig.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_ExportConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ExportConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ExportConfig.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_ExportConfig.Location = new System.Drawing.Point(261, 331);
+            this.btn_ExportConfig.Name = "btn_ExportConfig";
+            this.btn_ExportConfig.Size = new System.Drawing.Size(62, 27);
+            this.btn_ExportConfig.TabIndex = 30;
+            this.btn_ExportConfig.Text = "Export";
+            this.btn_ExportConfig.UseVisualStyleBackColor = false;
+            this.btn_ExportConfig.Visible = false;
+            this.btn_ExportConfig.Click += new System.EventHandler(this.Btn_ExportConfig_Click);
+            this.btn_ExportConfig.MouseEnter += new System.EventHandler(this.Btn_ExportConfig_MouseEnter);
+            this.btn_ExportConfig.MouseLeave += new System.EventHandler(this.Btn_ExportConfig_MouseLeave);
+            // 
+            // pictureAdvanced
+            // 
+            this.pictureAdvanced.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureAdvanced.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureAdvanced.Image = global::CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
+            this.pictureAdvanced.Location = new System.Drawing.Point(9, 315);
+            this.pictureAdvanced.Name = "pictureAdvanced";
+            this.pictureAdvanced.Size = new System.Drawing.Size(16, 15);
+            this.pictureAdvanced.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureAdvanced.TabIndex = 118;
+            this.pictureAdvanced.TabStop = false;
+            this.pictureAdvanced.Click += new System.EventHandler(this.PictureAdvanced_Click);
             // 
             // pnlsysmtx
             // 
@@ -4287,11 +4359,11 @@
             // 
             // Device1
             // 
-            dataGridViewCellStyle91.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle91.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle91.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle91.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device1.DefaultCellStyle = dataGridViewCellStyle91;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device1.DefaultCellStyle = dataGridViewCellStyle10;
             this.Device1.FillWeight = 50F;
             this.Device1.HeaderText = "DEVICE";
             this.Device1.MaxInputLength = 10;
@@ -4302,11 +4374,11 @@
             // 
             // Input1
             // 
-            dataGridViewCellStyle92.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle92.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle92.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle92.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input1.DefaultCellStyle = dataGridViewCellStyle92;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input1.DefaultCellStyle = dataGridViewCellStyle11;
             this.Input1.HeaderText = "INPUT  ";
             this.Input1.MaxInputLength = 10;
             this.Input1.Name = "Input1";
@@ -4316,11 +4388,11 @@
             // 
             // Name1
             // 
-            dataGridViewCellStyle93.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle93.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle93.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle93.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name1.DefaultCellStyle = dataGridViewCellStyle93;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name1.DefaultCellStyle = dataGridViewCellStyle12;
             this.Name1.HeaderText = "NAME";
             this.Name1.MaxInputLength = 7;
             this.Name1.Name = "Name1";
@@ -4331,11 +4403,11 @@
             // Logic
             // 
             this.Logic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle94.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle94.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle94.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle94.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Logic.DefaultCellStyle = dataGridViewCellStyle94;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Logic.DefaultCellStyle = dataGridViewCellStyle13;
             this.Logic.HeaderText = "LOGIC";
             this.Logic.MaxInputLength = 10;
             this.Logic.Name = "Logic";
@@ -4345,11 +4417,11 @@
             // 
             // Device2
             // 
-            dataGridViewCellStyle95.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle95.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle95.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle95.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device2.DefaultCellStyle = dataGridViewCellStyle95;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device2.DefaultCellStyle = dataGridViewCellStyle14;
             this.Device2.HeaderText = "DEVICE";
             this.Device2.MaxInputLength = 50;
             this.Device2.Name = "Device2";
@@ -4359,11 +4431,11 @@
             // 
             // Input2
             // 
-            dataGridViewCellStyle96.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle96.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle96.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle96.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input2.DefaultCellStyle = dataGridViewCellStyle96;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input2.DefaultCellStyle = dataGridViewCellStyle15;
             this.Input2.HeaderText = "INPUT  ";
             this.Input2.MaxInputLength = 10;
             this.Input2.Name = "Input2";
@@ -4373,11 +4445,11 @@
             // 
             // Name2
             // 
-            dataGridViewCellStyle97.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle97.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle97.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle97.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name2.DefaultCellStyle = dataGridViewCellStyle97;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name2.DefaultCellStyle = dataGridViewCellStyle16;
             this.Name2.HeaderText = "NAME";
             this.Name2.MaxInputLength = 7;
             this.Name2.Name = "Name2";
@@ -4388,11 +4460,11 @@
             // Name_Output
             // 
             this.Name_Output.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle98.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle98.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle98.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle98.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle98;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle17;
             this.Name_Output.HeaderText = "OUTPUT      ";
             this.Name_Output.MaxInputLength = 50;
             this.Name_Output.Name = "Name_Output";
@@ -4402,11 +4474,11 @@
             // 
             // NameOut
             // 
-            dataGridViewCellStyle99.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle99.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle99.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle99.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NameOut.DefaultCellStyle = dataGridViewCellStyle99;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NameOut.DefaultCellStyle = dataGridViewCellStyle18;
             this.NameOut.HeaderText = "NAME";
             this.NameOut.MaxInputLength = 7;
             this.NameOut.Name = "NameOut";
@@ -4447,77 +4519,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Option available only with the system configured as \"Matrix of Signals\"!";
             // 
-            // pictureAdvanced
-            // 
-            this.pictureAdvanced.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.pictureAdvanced.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureAdvanced.Image = global::CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
-            this.pictureAdvanced.Location = new System.Drawing.Point(9, 315);
-            this.pictureAdvanced.Name = "pictureAdvanced";
-            this.pictureAdvanced.Size = new System.Drawing.Size(16, 15);
-            this.pictureAdvanced.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureAdvanced.TabIndex = 118;
-            this.pictureAdvanced.TabStop = false;
-            this.pictureAdvanced.Click += new System.EventHandler(this.PictureAdvanced_Click);
-            // 
-            // btn_ExportConfig
-            // 
-            this.btn_ExportConfig.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_ExportConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.btn_ExportConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ExportConfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ExportConfig.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_ExportConfig.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ExportConfig.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ExportConfig.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ExportConfig.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btn_ExportConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ExportConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ExportConfig.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ExportConfig.Location = new System.Drawing.Point(261, 331);
-            this.btn_ExportConfig.Name = "btn_ExportConfig";
-            this.btn_ExportConfig.Size = new System.Drawing.Size(62, 27);
-            this.btn_ExportConfig.TabIndex = 30;
-            this.btn_ExportConfig.Text = "Export";
-            this.btn_ExportConfig.UseVisualStyleBackColor = false;
-            this.btn_ExportConfig.Visible = false;
-            this.btn_ExportConfig.Click += new System.EventHandler(this.Btn_ExportConfig_Click);
-            this.btn_ExportConfig.MouseEnter += new System.EventHandler(this.Btn_ExportConfig_MouseEnter);
-            this.btn_ExportConfig.MouseLeave += new System.EventHandler(this.Btn_ExportConfig_MouseLeave);
-            // 
-            // btn_ImportConfig
-            // 
-            this.btn_ImportConfig.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btn_ImportConfig.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.btn_ImportConfig.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btn_ImportConfig.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_ImportConfig.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn_ImportConfig.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ImportConfig.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ImportConfig.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btn_ImportConfig.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btn_ImportConfig.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_ImportConfig.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ImportConfig.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btn_ImportConfig.Location = new System.Drawing.Point(325, 331);
-            this.btn_ImportConfig.Name = "btn_ImportConfig";
-            this.btn_ImportConfig.Size = new System.Drawing.Size(62, 27);
-            this.btn_ImportConfig.TabIndex = 119;
-            this.btn_ImportConfig.Text = "Import";
-            this.btn_ImportConfig.UseVisualStyleBackColor = false;
-            this.btn_ImportConfig.Visible = false;
-            this.btn_ImportConfig.Click += new System.EventHandler(this.Btn_ImportConfig_Click);
-            this.btn_ImportConfig.MouseEnter += new System.EventHandler(this.Btn_ImportConfig_MouseEnter);
-            this.btn_ImportConfig.MouseLeave += new System.EventHandler(this.Btn_ImportConfig_MouseLeave);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(763, 70);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(86, 347);
-            this.textBox1.TabIndex = 120;
-            // 
             // FrmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4557,6 +4558,7 @@
             this.tabPage1.ResumeLayout(false);
             this.PnlSystemChg0.ResumeLayout(false);
             this.PnlSystemChg0.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureAdvanced)).EndInit();
             this.pnlsysmtx.ResumeLayout(false);
             this.pnlsysmtx.PerformLayout();
             this.pnlsyschgo.ResumeLayout(false);
@@ -4582,7 +4584,6 @@
             this.PnlMtxoff.ResumeLayout(false);
             this.PnlMtxoff.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureAdvanced)).EndInit();
             this.ResumeLayout(false);
 
         }

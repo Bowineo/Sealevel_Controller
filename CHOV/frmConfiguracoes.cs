@@ -17,6 +17,7 @@ namespace CHOV
         private OpenFileDialog openFileDialog1;
         public OpenFileDialog OpenFileDialog1 { get => openFileDialog1; set => openFileDialog1 = value; }
 
+        ContextMenu pMenu;
 
         #region Call Forms
         public FrmConfiguracoes(FrmPainel frm2)
@@ -43,6 +44,14 @@ namespace CHOV
             //Recebe nome Slots
             AssignNames();
             log.Debug("Form Configurações carregado");
+
+
+            // Cria menu popup
+            pMenu = new ContextMenu();
+            // Cria eventos do menu
+            pMenu.MenuItems.Add("Import", new System.EventHandler(this.item1_clicked));
+            pMenu.MenuItems.Add("Export", new System.EventHandler(this.item2_clicked));
+
         }
 
         /// <summary>
@@ -2363,31 +2372,28 @@ namespace CHOV
 
         private void Btn_ExportConfig_Click(object sender, EventArgs e)
         {
-            string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0};
-
-
-            log.Debug("Botão Export Configuration acionado");
-            string pathselect;
-            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
-            {
-                DialogResult result = folderDlg.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
-                    _ = folderDlg.RootFolder;
-
-                    System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
-                    log.Debug("Escolhido novo path para salvar as configurações");
-                    using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
-                    {
-                        DialogResult resultado = MsgBox.ShowDialog();
-                    }
-                }
-            }
+            
         }
 
         private void Btn_ImportConfig_Click(object sender, EventArgs e)
         {
+            
+        }
+
+
+        private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                //CtxMOpcoes.Show(this, new Point(e.X, e.Y));
+                pMenu.Show(this, new Point(e.X, e.Y));
+            }
+        }
+        // Eventos dos itens do menu
+        private void item1_clicked(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Import");
+
             log.Debug("Botão Import Congigurações acionado");
 
             using (OpenFileDialog1 = new OpenFileDialog())
@@ -2411,5 +2417,27 @@ namespace CHOV
                 }
             }
         }
-    }
+            private void item2_clicked(object sender, EventArgs e)
+            {
+                string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
+                log.Debug("Botão Export Configuration acionado");
+                string pathselect;
+                using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
+                {
+                    DialogResult result = folderDlg.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
+                        _ = folderDlg.RootFolder;
+
+                        System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
+                        log.Debug("Escolhido novo path para salvar as configurações");
+                        using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
+                        {
+                            DialogResult resultado = MsgBox.ShowDialog();
+                        }
+                    }
+                }
+
+            } }
 }
