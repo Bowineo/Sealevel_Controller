@@ -2407,6 +2407,7 @@ namespace CHOV
             string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
             log.Debug("Botão Export Configuration acionado");
             string pathselect;
+            string ID;
             using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
             {
                 DialogResult result = folderDlg.ShowDialog();
@@ -2414,7 +2415,9 @@ namespace CHOV
                 {
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
-                    System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
+                    ID = @"\" + Funcoes.GetDateSystem().Replace(@", ",@" ").Replace(@"\", @"/").Replace(@" ", @"_") + "_" + DateTime.Now.ToShortTimeString().Replace(@":", @"_");
+                    textBox1.Text = ID;
+                 //   File.WriteAllLines((pathselect + @"\" + ID + "_Confg.chg0"), lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
                     using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
                     { DialogResult resultado = MsgBox.ShowDialog(); }
