@@ -2370,22 +2370,10 @@ namespace CHOV
             }
         }
 
-        private void Btn_ExportConfig_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Btn_ImportConfig_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-
         private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
             {
-                //CtxMOpcoes.Show(this, new Point(e.X, e.Y));
                 pMenu.Show(this, new Point(e.X, e.Y));
             }
         }
@@ -2401,43 +2389,38 @@ namespace CHOV
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
                 if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-
                     try
                     {
                         using (var sr = new StreamReader(OpenFileDialog1.FileName))
                         { textBox1.Text = (sr.ReadToEnd()); }
-
                     }
                     catch (SecurityException ex)
                     {
                         MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
                         $"Details:\n\n{ex.StackTrace}");
                     }
-
                 }
             }
         }
-            private void item2_clicked(object sender, EventArgs e)
+        private void item2_clicked(object sender, EventArgs e)
+        {
+            string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
+            log.Debug("Botão Export Configuration acionado");
+            string pathselect;
+            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
             {
-                string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
-                log.Debug("Botão Export Configuration acionado");
-                string pathselect;
-                using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
+                DialogResult result = folderDlg.ShowDialog();
+                if (result == DialogResult.OK)
                 {
-                    DialogResult result = folderDlg.ShowDialog();
-                    if (result == DialogResult.OK)
-                    {
-                        pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
-                        _ = folderDlg.RootFolder;
-
-                        System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
-                        log.Debug("Escolhido novo path para salvar as configurações");
-                        using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
-                        {
-                            DialogResult resultado = MsgBox.ShowDialog();
-                        }
-                    }
+                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
+                    _ = folderDlg.RootFolder;
+                    System.IO.File.WriteAllLines(pathselect + @"\" + (Funcoes.GetDateSystem() + "_" + DateTime.Now.ToLongTimeString() + "_Confg.chg0"), lines);
+                    log.Debug("Escolhido novo path para salvar as configurações");
+                    using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
+                    { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
+            }
 
-            } }
+        }
+    }
 }

@@ -2059,7 +2059,6 @@
             this.btn_ImportConfig.Text = "Import";
             this.btn_ImportConfig.UseVisualStyleBackColor = false;
             this.btn_ImportConfig.Visible = false;
-            this.btn_ImportConfig.Click += new System.EventHandler(this.Btn_ImportConfig_Click);
             this.btn_ImportConfig.MouseEnter += new System.EventHandler(this.Btn_ImportConfig_MouseEnter);
             this.btn_ImportConfig.MouseLeave += new System.EventHandler(this.Btn_ImportConfig_MouseLeave);
             // 
@@ -2084,7 +2083,6 @@
             this.btn_ExportConfig.Text = "Export";
             this.btn_ExportConfig.UseVisualStyleBackColor = false;
             this.btn_ExportConfig.Visible = false;
-            this.btn_ExportConfig.Click += new System.EventHandler(this.Btn_ExportConfig_Click);
             this.btn_ExportConfig.MouseEnter += new System.EventHandler(this.Btn_ExportConfig_MouseEnter);
             this.btn_ExportConfig.MouseLeave += new System.EventHandler(this.Btn_ExportConfig_MouseLeave);
             // 
