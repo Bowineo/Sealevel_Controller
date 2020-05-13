@@ -17,6 +17,7 @@ namespace CHOV
         private OpenFileDialog openFileDialog1;
         public OpenFileDialog OpenFileDialog1 { get => openFileDialog1; set => openFileDialog1 = value; }
 
+        //variavel para Menu Import/Export
         ContextMenu pMenu;
 
         #region Call Forms
@@ -45,12 +46,12 @@ namespace CHOV
             AssignNames();
             log.Debug("Form Configurações carregado");
 
-
             // Cria menu popup
             pMenu = new ContextMenu();
             // Cria eventos do menu
-            pMenu.MenuItems.Add("Import", new System.EventHandler(this.item1_clicked));
-            pMenu.MenuItems.Add("Export", new System.EventHandler(this.item2_clicked));
+            pMenu.MenuItems.Add("Configuration").Enabled=false;
+            pMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
+            pMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
 
         }
 
@@ -75,7 +76,7 @@ namespace CHOV
                     pnlsyschgo.Visible = true; pnlsysmtx.Location = new Point(48, 109);
                     break;
                 case "Matrix of Signals":
-                    pnlsyschgo.Visible = false; pnlsysmtx.Location = new Point(229, 109);
+                    pnlsyschgo.Visible = false; pnlsysmtx.Location = new Point(237, 109);
                     break;
             }
         }
@@ -2257,10 +2258,6 @@ namespace CHOV
         private void BtnSave_MouseLeave_1(object sender, EventArgs e) { BtnSave_system.ForeColor = SystemColors.ButtonFace; }
         private void Browser_MouseLeave(object sender, EventArgs e) { Browser.ForeColor = SystemColors.ButtonFace; }
         private void Browser_MouseEnter(object sender, EventArgs e) { Browser.ForeColor = SystemColors.WindowText; }
-        private void Btn_ExportConfig_MouseEnter(object sender, EventArgs e) { btn_ExportConfig.ForeColor = SystemColors.WindowText; }
-        private void Btn_ExportConfig_MouseLeave(object sender, EventArgs e) { btn_ExportConfig.ForeColor = SystemColors.ButtonFace; }
-        private void Btn_ImportConfig_MouseEnter(object sender, EventArgs e) { btn_ImportConfig.ForeColor = SystemColors.WindowText; }
-        private void Btn_ImportConfig_MouseLeave(object sender, EventArgs e) { btn_ImportConfig.ForeColor = SystemColors.ButtonFace; }
         #endregion
 
         #region Inputs&Otputs
@@ -2347,28 +2344,6 @@ namespace CHOV
             //Save
             Properties.Settings.Default.Save(); this.Close();
         }
-        #endregion
-
-        //Expande Opções Avançadas
-        private void PictureAdvanced_Click(object sender, EventArgs e)
-        {
-            if (tabConfig.Height == 369)
-            {
-                pictureAdvanced.Image = CHOV.Properties.Resources.icons8_para_cima_com_quadrado_100;
-                tabConfig.Height = 420;
-                PnlSaveIp.Location = new Point(371, 490);
-                btn_ExportConfig.Visible = true;
-                btn_ImportConfig.Visible = true;
-            }
-            else
-            {
-                pictureAdvanced.Image = CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
-                tabConfig.Height = 369;
-                PnlSaveIp.Location = new Point(371, 458);
-                btn_ExportConfig.Visible = false;
-                btn_ImportConfig.Visible = false;
-            }
-        }
 
         private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
         {
@@ -2377,8 +2352,9 @@ namespace CHOV
                 pMenu.Show(this, new Point(e.X, e.Y));
             }
         }
+
         // Eventos dos itens do menu
-        private void item1_clicked(object sender, EventArgs e)
+        private void Item1_clicked(object sender, EventArgs e)
         {
             //MessageBox.Show("Import");
 
@@ -2402,7 +2378,8 @@ namespace CHOV
                 }
             }
         }
-        private void item2_clicked(object sender, EventArgs e)
+
+        private void Item2_clicked(object sender, EventArgs e)
         {
             string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
             log.Debug("Botão Export Configuration acionado");
@@ -2415,15 +2392,17 @@ namespace CHOV
                 {
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
-                    ID = @"\" + Funcoes.GetDateSystem().Replace(@", ",@" ").Replace(@"\", @"/").Replace(@" ", @"_") + "_" + DateTime.Now.ToShortTimeString().Replace(@":", @"_");
+                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
                     textBox1.Text = ID;
-                 //   File.WriteAllLines((pathselect + @"\" + ID + "_Confg.chg0"), lines);
+                    File.WriteAllLines(ID, lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
-                    using (Form MsgBox = new MmsgBox("Configuration were exported!", "OK", 1, 0))
+                    using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
                     { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
             }
 
         }
+
+        #endregion
     }
 }
