@@ -18,7 +18,7 @@ namespace CHOV
         public OpenFileDialog OpenFileDialog1 { get => openFileDialog1; set => openFileDialog1 = value; }
 
         //variavel para Menu Import/Export
-        ContextMenu pMenu;
+        private ContextMenu pMenu;
 
         #region Call Forms
         public FrmConfiguracoes(FrmPainel frm2)
@@ -49,7 +49,7 @@ namespace CHOV
             // Cria menu popup
             pMenu = new ContextMenu();
             // Cria eventos do menu
-            pMenu.MenuItems.Add("Configuration").Enabled=false;
+            pMenu.MenuItems.Add("Configuration").Enabled = false;
             pMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
             pMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
 
@@ -1679,6 +1679,40 @@ namespace CHOV
             cmbSaida.Items.Clear();
             LblOutput.Text = "";
         }
+        //Função para obter as configuração e retornar em um vertor string
+        public string[] GetConfig()
+        {
+            string[] Config = new string[12];
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+
+            Config[0] = "System: " + Properties.Settings.Default.System;
+            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
+            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
+            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
+            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
+            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
+            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
+            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
+            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
+            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
+            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+
+            //string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count];
+            string[] allFiles = new string[64];
+            allFiles[0] = "->Configuration";
+            Config.CopyTo(allFiles, 01);
+            allFiles[13] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 14);
+            allFiles[30] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 31);
+            allFiles[47] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 48);
+
+            return allFiles;
+        }
 
         #endregion
 
@@ -2381,7 +2415,8 @@ namespace CHOV
 
         private void Item2_clicked(object sender, EventArgs e)
         {
-            string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
+            //string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
+            string[] lines = GetConfig();
             log.Debug("Botão Export Configuration acionado");
             string pathselect;
             string ID;
