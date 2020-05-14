@@ -1686,6 +1686,8 @@ namespace CHOV
             System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
             System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
             System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
+
 
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
@@ -1700,8 +1702,8 @@ namespace CHOV
             Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
             Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
 
-            //string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count];
-            string[] allFiles = new string[64];
+            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
+            //string[] allFiles = new string[81];
             allFiles[0] = "->Configuration";
             Config.CopyTo(allFiles, 01);
             allFiles[13] = "->Names Primary";
@@ -1710,7 +1712,8 @@ namespace CHOV
             NamesSecundario.CopyTo(allFiles, 31);
             allFiles[47] = "->Names Output";
             NamesOutput.CopyTo(allFiles, 48);
-
+            allFiles[64] = "->Combinations";
+            Combinations.CopyTo(allFiles, 65);
             return allFiles;
         }
 
@@ -2428,7 +2431,8 @@ namespace CHOV
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
                     ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
-                    textBox1.Text = ID;
+                    textBox1.Text = lines.Length.ToString();
+                    //textBox1.Text = ID;
                     File.WriteAllLines(ID, lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
                     using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
