@@ -21,6 +21,8 @@ namespace CHOV
         //variavel para Menu Import/Export
         private ContextMenu pMenu;
 
+
+
         #region Call Forms
         public FrmConfiguracoes(FrmPainel frm2)
         {
@@ -54,6 +56,23 @@ namespace CHOV
             pMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
             pMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
 
+        }
+        public static byte[] GeraKey()
+        {
+            var salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            string password = "my-password";
+            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt);
+            var key = pdb.GetBytes(32);
+            return key;
+        }
+
+        public static byte[] GeraIv()
+        {
+            var salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            string password = "my-password";
+            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt);
+            var iv = pdb.GetBytes(16);
+            return iv;
         }
 
         /// <summary>
@@ -110,29 +129,23 @@ namespace CHOV
         /// <param name="e"></param>
         private void BtnClear_Click(object sender, EventArgs e)
         {
+            var key = GeraKey();
+            var IV = GeraIv();
 
             string original = Txt_original.Text;
 
             // Create a new instance of the Rijndael
             // class.  This generates a new key and initialization
             // vector (IV).
+            // use something more random in real life
             using (Rijndael myRijndael = Rijndael.Create())
             {
                 Informações.Items.Add("Original: " + original);
                 // Encrypt the string to an array of bytes.
-                byte[] encrypted = EncryptStringToBytes(original, myRijndael.Key, myRijndael.IV);
-                Informações.Items.Add(Convert.ToBase64String(encrypted));
-
-                // Decrypt the bytes to a string.
-                string roundtrip = DecryptStringFromBytes(encrypted, myRijndael.Key, myRijndael.IV);
-
-                //Display the original data and the decrypted data.
-                //Console.WriteLine("Original:   {0}", original);
-                // Console.WriteLine("Round Trip: {0}", roundtrip);
-
-                Informações.Items.Add("Reseultado: " + roundtrip);
+                byte[] encrypted = EncryptStringToBytes(original, key, IV);
+                // Informações.Items.Add(Convert.ToBase64String(encrypted));
+                Txt_Alt.Text = Convert.ToBase64String(encrypted);
             }
-
 
             /*
             log.Debug("Botão Clear acionado");
@@ -150,6 +163,34 @@ namespace CHOV
             */
         }
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            var key = GeraKey();
+            var IV = GeraIv();
+
+            try
+            {
+
+                byte[] enc = Convert.FromBase64String(Txt_Alt.Text);
+
+                // Decrypt the bytes to a string.
+                string roundtrip = DecryptStringFromBytes(enc, key, IV);
+
+                //Display the original data and the decrypted data.
+                //Console.WriteLine("Original:   {0}", original);
+                // Console.WriteLine("Round Trip: {0}", roundtrip);
+                Informações.Items.Add("Reseultado: " + roundtrip);
+
+
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("ERROr");
+            }
+
+
+        }
 
         //TESTE<<
         public static byte[] EncryptStringToBytes(string plainText, byte[] Key, byte[] IV)
@@ -206,30 +247,39 @@ namespace CHOV
             // the decrypted text.
             string plaintext = null;
 
-            // Create an Rijndael object
-            // with the specified key and IV.
             using (Rijndael rijAlg = Rijndael.Create())
             {
-                rijAlg.Key = Key;
-                rijAlg.IV = IV;
+
+                rijAlg.Key = GeraKey();
+                rijAlg.IV = GeraIv();
 
                 // Create a decryptor to perform the stream transform.
                 ICryptoTransform decryptor = rijAlg.CreateDecryptor(rijAlg.Key, rijAlg.IV);
 
-                // Create the streams used for decryption.
-                using (MemoryStream msDecrypt = new MemoryStream(cipherText))
+                try
                 {
-                    using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
+                    // Create the streams used for decryption.
+                    using (MemoryStream msDecrypt = new MemoryStream(cipherText))
                     {
-                        using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                        using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
                         {
+                            using (StreamReader srDecrypt = new StreamReader(csDecrypt))
+                            {
+                                // Read the decrypted bytes from the decrypting stream
+                                // and place them in a string.
 
-                            // Read the decrypted bytes from the decrypting stream
-                            // and place them in a string.
-                            plaintext = srDecrypt.ReadToEnd();
+                                plaintext = srDecrypt.ReadLine();
+                            }
                         }
                     }
                 }
+                catch (Exception)
+                {
+                    plaintext = "ERROR";
+                    MessageBox.Show("ERROr");
+                }
+
+
             }
 
             return plaintext;
@@ -2555,5 +2605,7 @@ namespace CHOV
         }
 
         #endregion
+
+
     }
 }
