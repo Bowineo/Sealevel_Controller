@@ -21,8 +21,6 @@ namespace CHOV
         //variavel para Menu Import/Export
         private ContextMenu pMenu;
 
-
-
         #region Call Forms
         public FrmConfiguracoes(FrmPainel frm2)
         {
@@ -59,20 +57,24 @@ namespace CHOV
         }
         public static byte[] GeraKey()
         {
-            var salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            var salt = new byte[] { 99, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
             string password = "my-password";
-            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt);
-            var key = pdb.GetBytes(32);
-            return key;
+            using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
+            {
+                var key = pdb.GetBytes(32);
+                return key;
+            }
         }
 
         public static byte[] GeraIv()
         {
-            var salt = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            var salt = new byte[] { 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
             string password = "my-password";
-            Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt);
-            var iv = pdb.GetBytes(16);
-            return iv;
+            using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
+            {
+                var iv = pdb.GetBytes(16);
+                return iv;
+            }
         }
 
         /// <summary>
@@ -129,24 +131,9 @@ namespace CHOV
         /// <param name="e"></param>
         private void BtnClear_Click(object sender, EventArgs e)
         {
-            var key = GeraKey();
-            var IV = GeraIv();
 
-            string original = Txt_original.Text;
-
-            // Create a new instance of the Rijndael
-            // class.  This generates a new key and initialization
-            // vector (IV).
-            // use something more random in real life
-            using (Rijndael myRijndael = Rijndael.Create())
-            {
-                Informações.Items.Add("Original: " + original);
-                // Encrypt the string to an array of bytes.
-                byte[] encrypted = EncryptStringToBytes(original, key, IV);
-                // Informações.Items.Add(Convert.ToBase64String(encrypted));
-                Txt_Alt.Text = Convert.ToBase64String(encrypted);
-            }
-
+            Txt_Alt.Text = Encrypto(Txt_original.Text);
+            Informações.Items.Add("Original: " + Txt_original.Text);
             /*
             log.Debug("Botão Clear acionado");
             using (Form MsgBox3 = new MmsgBox("Do you want to clear the information?", "OK&CANCEL", 4, 0))
@@ -165,31 +152,7 @@ namespace CHOV
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            var key = GeraKey();
-            var IV = GeraIv();
-
-            try
-            {
-
-                byte[] enc = Convert.FromBase64String(Txt_Alt.Text);
-
-                // Decrypt the bytes to a string.
-                string roundtrip = DecryptStringFromBytes(enc, key, IV);
-
-                //Display the original data and the decrypted data.
-                //Console.WriteLine("Original:   {0}", original);
-                // Console.WriteLine("Round Trip: {0}", roundtrip);
-                Informações.Items.Add("Reseultado: " + roundtrip);
-
-
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("ERROr");
-            }
-
-
+            Informações.Items.Add( Decrypto(Txt_Alt.Text));
         }
 
         //TESTE<<
@@ -252,7 +215,6 @@ namespace CHOV
 
                 rijAlg.Key = GeraKey();
                 rijAlg.IV = GeraIv();
-
                 // Create a decryptor to perform the stream transform.
                 ICryptoTransform decryptor = rijAlg.CreateDecryptor(rijAlg.Key, rijAlg.IV);
 
@@ -264,22 +226,15 @@ namespace CHOV
                         using (CryptoStream csDecrypt = new CryptoStream(msDecrypt, decryptor, CryptoStreamMode.Read))
                         {
                             using (StreamReader srDecrypt = new StreamReader(csDecrypt))
-                            {
-                                // Read the decrypted bytes from the decrypting stream
-                                // and place them in a string.
-
-                                plaintext = srDecrypt.ReadLine();
-                            }
+                            { plaintext = srDecrypt.ReadLine(); }
                         }
                     }
                 }
                 catch (Exception)
                 {
-                    plaintext = "ERROR";
-                    MessageBox.Show("ERROr");
+                    plaintext = "Erro na decriptografia";
+                    MessageBox.Show("Erro na decriptografia");
                 }
-
-
             }
 
             return plaintext;
@@ -1810,9 +1765,7 @@ namespace CHOV
         /// Obtém numero de combinações
         /// </summary>
         public void CountCombinacoes()
-        {
-            CountComb.Text = Properties.Settings.Default.Combinations.Count.ToString();
-        }
+        { CountComb.Text = Properties.Settings.Default.Combinations.Count.ToString(); }
 
         /// <summary>
         /// Preenche os comboBox das combinações
@@ -1877,6 +1830,122 @@ namespace CHOV
             allFiles[64] = "->Combinations";
             Combinations.CopyTo(allFiles, 65);
             return allFiles;
+        }
+
+        /// <summary>
+        /// Funçõa para exportar as configurações para um arquivo .chg0
+        /// </summary>
+        /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
+        public void ExportConfig(string[] entrada)
+        {
+            string[] lines = entrada;
+            log.Debug("Botão Export Configuration acionado");
+            string pathselect;
+            string ID;
+            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
+            {
+                DialogResult result = folderDlg.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
+                    _ = folderDlg.RootFolder;
+                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
+                    textBox1.Text = lines.Length.ToString();
+                    //textBox1.Text = ID;
+                    File.WriteAllLines(ID, lines);
+                    log.Debug("Escolhido novo path para salvar as configurações");
+                    using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
+                    { DialogResult resultado = MsgBox.ShowDialog(); }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Funçõa para exportar as configurações para um arquivo .chg0
+        /// </summary>
+        /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
+        ///  <param name="cripto">bool para criptografar vetor de configuração ou não</param>
+        public void ExportConfig(string[] entrada, bool cripto)
+        {
+            string[] lines;
+            if (cripto) { lines = entrada; }
+            else { lines = entrada; }
+
+            log.Debug("Botão Export Configuration acionado");
+            string pathselect;
+            string ID;
+            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
+            {
+                DialogResult result = folderDlg.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
+                    _ = folderDlg.RootFolder;
+                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
+                    textBox1.Text = lines.Length.ToString();
+                    //textBox1.Text = ID;
+                    File.WriteAllLines(ID, lines);
+                    log.Debug("Escolhido novo path para salvar as configurações");
+                    using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
+                    { DialogResult resultado = MsgBox.ShowDialog(); }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Funçõa para import as configurações para um arquivo .chg0
+        /// </summary>
+        public void ImportConfig()
+        {
+            using (OpenFileDialog1 = new OpenFileDialog())
+            {
+                OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
+                if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                        { textBox1.Text = (sr.ReadToEnd()); }
+                    }
+                    catch (SecurityException ex)
+                    {
+                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                        $"Details:\n\n{ex.StackTrace}");
+                    }
+                }
+            }
+        }
+
+        public string Encrypto(string entrada)
+        {
+            var key = GeraKey();
+            var IV = GeraIv();
+            string original = entrada;
+            using (Rijndael myRijndael = Rijndael.Create())
+            {
+                // Encrypt the string to an array of bytes.
+                byte[] encrypted = EncryptStringToBytes(original, key, IV);
+                // Informações.Items.Add(Convert.ToBase64String(encrypted));
+                return Convert.ToBase64String(encrypted);
+            }
+        }
+
+        public string Decrypto(string entrada)
+        {
+            var key = GeraKey();
+            var IV = GeraIv();
+            try
+            {
+                byte[] enc = Convert.FromBase64String(entrada);
+                // Decrypt the bytes to a string.
+                string roundtrip = DecryptStringFromBytes(enc, key, IV);
+                return ("Resultado: " + roundtrip);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Erro na codificação");
+                return ("Resultado: " + "Erro decriptografia");
+            }
         }
 
         #endregion
@@ -2555,53 +2624,14 @@ namespace CHOV
         // Eventos dos itens do menu
         private void Item1_clicked(object sender, EventArgs e)
         {
-            //MessageBox.Show("Import");
-
             log.Debug("Botão Import Congigurações acionado");
-
-            using (OpenFileDialog1 = new OpenFileDialog())
-            {
-                OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
-                if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
-                {
-                    try
-                    {
-                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
-                        { textBox1.Text = (sr.ReadToEnd()); }
-                    }
-                    catch (SecurityException ex)
-                    {
-                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
-                        $"Details:\n\n{ex.StackTrace}");
-                    }
-                }
-            }
+            ImportConfig();
         }
 
         private void Item2_clicked(object sender, EventArgs e)
         {
-            //string[] lines = { Properties.Settings.Default.System, Properties.Settings.Default.IP_Primary, Properties.Settings.Default.IP_Secondary, Properties.Settings.Default.IP_Output, Properties.Settings.Default.InputDeviceChg0, Properties.Settings.Default.DeviceChg0 };
-            string[] lines = GetConfig();
-            log.Debug("Botão Export Configuration acionado");
-            string pathselect;
-            string ID;
-            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
-            {
-                DialogResult result = folderDlg.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
-                    _ = folderDlg.RootFolder;
-                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
-                    textBox1.Text = lines.Length.ToString();
-                    //textBox1.Text = ID;
-                    File.WriteAllLines(ID, lines);
-                    log.Debug("Escolhido novo path para salvar as configurações");
-                    using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
-                    { DialogResult resultado = MsgBox.ShowDialog(); }
-                }
-            }
-
+            log.Debug("Botão Export Congigurações acionado");
+            ExportConfig(GetConfig());
         }
 
         #endregion
