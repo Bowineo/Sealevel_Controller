@@ -46,36 +46,28 @@ namespace CHOV
             //Recebe nome Slots
             AssignNames();
             log.Debug("Form Configurações carregado");
-
             // Cria menu popup
             pMenu = new ContextMenu();
             // Cria eventos do menu
             pMenu.MenuItems.Add("Configuration").Enabled = false;
             pMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
             pMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
-
         }
 
         public static byte[] GeraKey()
         {
-            var salt = new byte[] { 99, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            var salt = new byte[] { 99, 21, 3, 4, 5, 6, 7, 8, 9, 10, 111, 12, 13, 14, 255, 16 };
             string password = "my-password";
             using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
-            {
-                var key = pdb.GetBytes(32);
-                return key;
-            }
+            { var key = pdb.GetBytes(32); return key; }
         }
 
         public static byte[] GeraIv()
         {
-            var salt = new byte[] { 13, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            var salt = new byte[] { 13, 2, 3, 4, 5, 6, 255, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
             string password = "my-password";
             using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
-            {
-                var iv = pdb.GetBytes(16);
-                return iv;
-            }
+            { var iv = pdb.GetBytes(16); return iv; }
         }
 
         /// <summary>
@@ -153,7 +145,9 @@ namespace CHOV
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Informações.Items.Add( Decrypto(Txt_Alt.Text));
+
+            Informações.Items.Add(Decrypto(Txt_Alt.Text));
+
         }
 
         //TESTE<<
@@ -1800,12 +1794,6 @@ namespace CHOV
         public string[] GetConfigCripto()
         {
             string[] Config = new string[12];
-            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
-            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
-            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
-            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
-
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
             Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
@@ -1818,9 +1806,12 @@ namespace CHOV
             Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
             Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
             Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
 
             string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
-            //string[] allFiles = new string[81];
             allFiles[0] = "->Configuration";
             Config.CopyTo(allFiles, 01);
             allFiles[13] = "->Names Primary";
@@ -1831,6 +1822,19 @@ namespace CHOV
             NamesOutput.CopyTo(allFiles, 48);
             allFiles[64] = "->Combinations";
             Combinations.CopyTo(allFiles, 65);
+
+            var key = GeraKey();
+            var IV = GeraIv();
+            using (Rijndael myRijndael = Rijndael.Create())
+            {
+                for (int i = 0; i < allFiles.Length; i++)
+                {
+                    // Encrypt the string to an array of bytes.
+                    byte[] encrypted = EncryptStringToBytes(allFiles[i], key, IV);
+                    // Informações.Items.Add(Convert.ToBase64String(encrypted));
+                    allFiles[i] = Convert.ToBase64String(encrypted);
+                }
+            }
             return allFiles;
         }
 
@@ -2671,11 +2675,17 @@ namespace CHOV
         private void Item2_clicked(object sender, EventArgs e)
         {
             log.Debug("Botão Export Congigurações acionado");
-            ExportConfig(GetConfig());
+            ExportConfig(GetConfigCripto());
         }
+
 
         #endregion
 
-
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Informações.Items.AddRange(GetConfigCripto());
+            Txt_Alt.Text = GetConfigCripto()[1];
+            listBox1.Items.AddRange(GetConfig());
+        }
     }
 }
