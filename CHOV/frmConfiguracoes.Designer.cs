@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfiguracoes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbpg1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnDefault = new System.Windows.Forms.Button();
@@ -151,6 +151,7 @@
             this.Txt_Alt = new System.Windows.Forms.TextBox();
             this.Txt_original = new System.Windows.Forms.TextBox();
             this.PnlInformationHardware = new System.Windows.Forms.Panel();
+            this.btnImpCripto = new System.Windows.Forms.Button();
             this.btnExpCripto = new System.Windows.Forms.Button();
             this.btnDecripta = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -266,7 +267,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.btnImpCripto = new System.Windows.Forms.Button();
             this.Tbpg1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PnlSecondary.SuspendLayout();
@@ -1781,6 +1781,16 @@
             this.PnlInformationHardware.Name = "PnlInformationHardware";
             this.PnlInformationHardware.Size = new System.Drawing.Size(645, 201);
             this.PnlInformationHardware.TabIndex = 30;
+            // 
+            // btnImpCripto
+            // 
+            this.btnImpCripto.Location = new System.Drawing.Point(546, 163);
+            this.btnImpCripto.Name = "btnImpCripto";
+            this.btnImpCripto.Size = new System.Drawing.Size(75, 23);
+            this.btnImpCripto.TabIndex = 32;
+            this.btnImpCripto.Text = "Import Cripto";
+            this.btnImpCripto.UseVisualStyleBackColor = true;
+            this.btnImpCripto.Click += new System.EventHandler(this.BtnImpCripto_Click);
             // 
             // btnExpCripto
             // 
@@ -4349,11 +4359,11 @@
             // 
             // Device1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device1.DefaultCellStyle = dataGridViewCellStyle28;
             this.Device1.FillWeight = 50F;
             this.Device1.HeaderText = "DEVICE";
             this.Device1.MaxInputLength = 10;
@@ -4364,11 +4374,11 @@
             // 
             // Input1
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input1.DefaultCellStyle = dataGridViewCellStyle29;
             this.Input1.HeaderText = "INPUT  ";
             this.Input1.MaxInputLength = 10;
             this.Input1.Name = "Input1";
@@ -4378,11 +4388,11 @@
             // 
             // Name1
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name1.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name1.DefaultCellStyle = dataGridViewCellStyle30;
             this.Name1.HeaderText = "NAME";
             this.Name1.MaxInputLength = 7;
             this.Name1.Name = "Name1";
@@ -4393,11 +4403,11 @@
             // Logic
             // 
             this.Logic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Logic.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Logic.DefaultCellStyle = dataGridViewCellStyle31;
             this.Logic.HeaderText = "LOGIC";
             this.Logic.MaxInputLength = 10;
             this.Logic.Name = "Logic";
@@ -4407,11 +4417,11 @@
             // 
             // Device2
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device2.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device2.DefaultCellStyle = dataGridViewCellStyle32;
             this.Device2.HeaderText = "DEVICE";
             this.Device2.MaxInputLength = 50;
             this.Device2.Name = "Device2";
@@ -4421,11 +4431,11 @@
             // 
             // Input2
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input2.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input2.DefaultCellStyle = dataGridViewCellStyle33;
             this.Input2.HeaderText = "INPUT  ";
             this.Input2.MaxInputLength = 10;
             this.Input2.Name = "Input2";
@@ -4435,11 +4445,11 @@
             // 
             // Name2
             // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name2.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name2.DefaultCellStyle = dataGridViewCellStyle34;
             this.Name2.HeaderText = "NAME";
             this.Name2.MaxInputLength = 7;
             this.Name2.Name = "Name2";
@@ -4450,11 +4460,11 @@
             // Name_Output
             // 
             this.Name_Output.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle35;
             this.Name_Output.HeaderText = "OUTPUT      ";
             this.Name_Output.MaxInputLength = 50;
             this.Name_Output.Name = "Name_Output";
@@ -4464,11 +4474,11 @@
             // 
             // NameOut
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NameOut.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NameOut.DefaultCellStyle = dataGridViewCellStyle36;
             this.NameOut.HeaderText = "NAME";
             this.NameOut.MaxInputLength = 7;
             this.NameOut.Name = "NameOut";
@@ -4508,16 +4518,6 @@
             this.label5.Size = new System.Drawing.Size(450, 17);
             this.label5.TabIndex = 0;
             this.label5.Text = "Option available only with the system configured as \"Matrix of Signals\"!";
-            // 
-            // btnImpCripto
-            // 
-            this.btnImpCripto.Location = new System.Drawing.Point(546, 163);
-            this.btnImpCripto.Name = "btnImpCripto";
-            this.btnImpCripto.Size = new System.Drawing.Size(75, 23);
-            this.btnImpCripto.TabIndex = 32;
-            this.btnImpCripto.Text = "Import Cripto";
-            this.btnImpCripto.UseVisualStyleBackColor = true;
-            this.btnImpCripto.Click += new System.EventHandler(this.BtnImpCripto_Click);
             // 
             // FrmConfiguracoes
             // 

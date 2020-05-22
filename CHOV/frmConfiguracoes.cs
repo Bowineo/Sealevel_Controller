@@ -1969,7 +1969,6 @@ namespace CHOV
                     configura = configurar;
                 }
                 return configura;
-
             }
         }
 
@@ -2704,5 +2703,6 @@ namespace CHOV
         {
             listBox1.Items.AddRange(ImportCripto());
         }
+
     }
 }
