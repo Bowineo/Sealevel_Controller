@@ -151,7 +151,9 @@
             this.Txt_Alt = new System.Windows.Forms.TextBox();
             this.Txt_original = new System.Windows.Forms.TextBox();
             this.PnlInformationHardware = new System.Windows.Forms.Panel();
+            this.btnExpCripto = new System.Windows.Forms.Button();
             this.btnDecripta = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.Informações = new System.Windows.Forms.ListBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.BtnClear = new System.Windows.Forms.Button();
@@ -264,8 +266,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.btnExpCripto = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.btnImpCripto = new System.Windows.Forms.Button();
             this.Tbpg1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PnlSecondary.SuspendLayout();
@@ -1769,6 +1770,7 @@
             // PnlInformationHardware
             // 
             this.PnlInformationHardware.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.PnlInformationHardware.Controls.Add(this.btnImpCripto);
             this.PnlInformationHardware.Controls.Add(this.btnExpCripto);
             this.PnlInformationHardware.Controls.Add(this.btnDecripta);
             this.PnlInformationHardware.Controls.Add(this.listBox1);
@@ -1780,6 +1782,16 @@
             this.PnlInformationHardware.Size = new System.Drawing.Size(645, 201);
             this.PnlInformationHardware.TabIndex = 30;
             // 
+            // btnExpCripto
+            // 
+            this.btnExpCripto.Location = new System.Drawing.Point(465, 163);
+            this.btnExpCripto.Name = "btnExpCripto";
+            this.btnExpCripto.Size = new System.Drawing.Size(75, 23);
+            this.btnExpCripto.TabIndex = 31;
+            this.btnExpCripto.Text = "Export Cripto";
+            this.btnExpCripto.UseVisualStyleBackColor = true;
+            this.btnExpCripto.Click += new System.EventHandler(this.Button2_Click);
+            // 
             // btnDecripta
             // 
             this.btnDecripta.Location = new System.Drawing.Point(384, 163);
@@ -1789,6 +1801,19 @@
             this.btnDecripta.Text = "Decripta";
             this.btnDecripta.UseVisualStyleBackColor = true;
             this.btnDecripta.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(333, 21);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(276, 132);
+            this.listBox1.TabIndex = 8;
+            this.listBox1.TabStop = false;
+            this.listBox1.DoubleClick += new System.EventHandler(this.Informações_DoubleClick);
             // 
             // Informações
             // 
@@ -4484,28 +4509,15 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Option available only with the system configured as \"Matrix of Signals\"!";
             // 
-            // btnExpCripto
+            // btnImpCripto
             // 
-            this.btnExpCripto.Location = new System.Drawing.Point(483, 163);
-            this.btnExpCripto.Name = "btnExpCripto";
-            this.btnExpCripto.Size = new System.Drawing.Size(75, 23);
-            this.btnExpCripto.TabIndex = 31;
-            this.btnExpCripto.Text = "Export Cripto";
-            this.btnExpCripto.UseVisualStyleBackColor = true;
-            this.btnExpCripto.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(333, 21);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 132);
-            this.listBox1.TabIndex = 8;
-            this.listBox1.TabStop = false;
-            this.listBox1.DoubleClick += new System.EventHandler(this.Informações_DoubleClick);
+            this.btnImpCripto.Location = new System.Drawing.Point(546, 163);
+            this.btnImpCripto.Name = "btnImpCripto";
+            this.btnImpCripto.Size = new System.Drawing.Size(75, 23);
+            this.btnImpCripto.TabIndex = 32;
+            this.btnImpCripto.Text = "Import Cripto";
+            this.btnImpCripto.UseVisualStyleBackColor = true;
+            this.btnImpCripto.Click += new System.EventHandler(this.BtnImpCripto_Click);
             // 
             // FrmConfiguracoes
             // 
@@ -4806,5 +4818,6 @@
         private System.Windows.Forms.TextBox Txt_Alt;
         private System.Windows.Forms.Button btnExpCripto;
         public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button btnImpCripto;
     }
 }

@@ -145,9 +145,7 @@ namespace CHOV
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
             Informações.Items.Add(Decrypto(Txt_Alt.Text));
-
         }
 
         //TESTE<<
@@ -167,10 +165,8 @@ namespace CHOV
             {
                 rijAlg.Key = Key;
                 rijAlg.IV = IV;
-
                 // Create an encryptor to perform the stream transform.
                 ICryptoTransform encryptor = rijAlg.CreateEncryptor(rijAlg.Key, rijAlg.IV);
-
                 // Create the streams used for encryption.
                 using (MemoryStream msEncrypt = new MemoryStream())
                 {
@@ -178,7 +174,6 @@ namespace CHOV
                     {
                         using (StreamWriter swEncrypt = new StreamWriter(csEncrypt))
                         {
-
                             //Write all data to the stream.
                             swEncrypt.Write(plainText);
                         }
@@ -186,7 +181,6 @@ namespace CHOV
                     }
                 }
             }
-
             // Return the encrypted bytes from the memory stream.
             return encrypted;
         }
@@ -200,7 +194,6 @@ namespace CHOV
                 throw new ArgumentNullException("Key");
             if (IV == null || IV.Length <= 0)
                 throw new ArgumentNullException("IV");
-
             // Declare the string used to hold
             // the decrypted text.
             string plaintext = null;
@@ -212,7 +205,6 @@ namespace CHOV
                 rijAlg.IV = GeraIv();
                 // Create a decryptor to perform the stream transform.
                 ICryptoTransform decryptor = rijAlg.CreateDecryptor(rijAlg.Key, rijAlg.IV);
-
                 try
                 {
                     // Create the streams used for decryption.
@@ -231,7 +223,6 @@ namespace CHOV
                     MessageBox.Show("Erro na decriptografia");
                 }
             }
-
             return plaintext;
         }
 
@@ -1790,7 +1781,7 @@ namespace CHOV
             LblOutput.Text = "";
         }
 
-        //Função para obter as configuração e retornar em um vertor string
+        //Função para obter as configuração e retornar em um vertor string criptografado
         public string[] GetConfigCripto()
         {
             string[] Config = new string[12];
@@ -1846,7 +1837,6 @@ namespace CHOV
             System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
             System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
             System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
 
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
@@ -1905,38 +1895,6 @@ namespace CHOV
         }
 
         /// <summary>
-        /// Funçõa para exportar as configurações para um arquivo .chg0
-        /// </summary>
-        /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
-        ///  <param name="cripto">bool para criptografar vetor de configuração ou não</param>
-        public void ExportConfig(string[] entrada, bool cripto)
-        {
-            string[] lines;
-            if (cripto) { lines = entrada; }
-            else { lines = entrada; }
-
-            log.Debug("Botão Export Configuration acionado");
-            string pathselect;
-            string ID;
-            using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
-            {
-                DialogResult result = folderDlg.ShowDialog();
-                if (result == DialogResult.OK)
-                {
-                    pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
-                    _ = folderDlg.RootFolder;
-                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
-                    textBox1.Text = lines.Length.ToString();
-                    //textBox1.Text = ID;
-                    File.WriteAllLines(ID, lines);
-                    log.Debug("Escolhido novo path para salvar as configurações");
-                    using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
-                    { DialogResult resultado = MsgBox.ShowDialog(); }
-                }
-            }
-        }
-
-        /// <summary>
         /// Funçõa para import as configurações para um arquivo .chg0
         /// </summary>
         public void ImportConfig()
@@ -1949,7 +1907,10 @@ namespace CHOV
                     try
                     {
                         using (var sr = new StreamReader(OpenFileDialog1.FileName))
-                        { textBox1.Text = (sr.ReadToEnd()); }
+                        {
+                           Informações.Items.Add(sr.ReadToEnd());
+                            //textBox1.Text = (sr.ReadToEnd());
+                        }
                     }
                     catch (SecurityException ex)
                     {
@@ -1957,6 +1918,58 @@ namespace CHOV
                         $"Details:\n\n{ex.StackTrace}");
                     }
                 }
+            }
+        }
+
+        public string[] ImportCripto()
+        {
+            string[] configurar = {"ERRO_CRIPTOGRAFIA" };
+            string[] configura = new string[70];
+            bool chk = true;
+            using (OpenFileDialog1 = new OpenFileDialog())
+            {
+                OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
+                if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                        {
+                            configura = File.ReadAllLines(OpenFileDialog1.FileName);
+                            var key = GeraKey();
+                            var IV = GeraIv();
+                            using (Rijndael myRijndael = Rijndael.Create())
+                            {
+                                for (int i = 0; i < configura.Length && chk; i++)
+                                {
+                                    byte[] enc = Convert.FromBase64String(configura[i]);
+                                    // Decrypt the bytes to a string.
+                                    string roundtrip = DecryptStringFromBytes(enc, key, IV);
+                                    if (roundtrip == "Erro na decriptografia")
+                                    {
+                                        chk = false;
+                                    }
+                                    else
+                                    {
+                                        configura[i] = roundtrip;
+                                    }
+                                
+                                }
+                            }
+                        }
+                    }
+                    catch (SecurityException ex)
+                    {
+                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                        $"Details:\n\n{ex.StackTrace}");
+                    }
+                }
+                if (chk == false)
+                {
+                    configura = configurar;
+                }
+                return configura;
+
             }
         }
 
@@ -2678,7 +2691,6 @@ namespace CHOV
             ExportConfig(GetConfigCripto());
         }
 
-
         #endregion
 
         private void Button2_Click(object sender, EventArgs e)
@@ -2686,6 +2698,11 @@ namespace CHOV
             Informações.Items.AddRange(GetConfigCripto());
             Txt_Alt.Text = GetConfigCripto()[1];
             listBox1.Items.AddRange(GetConfig());
+        }
+
+        private void BtnImpCripto_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.AddRange(ImportCripto());
         }
     }
 }
