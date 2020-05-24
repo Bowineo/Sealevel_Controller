@@ -1908,7 +1908,7 @@ namespace CHOV
                     {
                         using (var sr = new StreamReader(OpenFileDialog1.FileName))
                         {
-                           Informações.Items.Add(sr.ReadToEnd());
+                            Informações.Items.Add(sr.ReadToEnd());
                             //textBox1.Text = (sr.ReadToEnd());
                         }
                     }
@@ -1923,7 +1923,7 @@ namespace CHOV
 
         public string[] ImportCripto()
         {
-            string[] configurar = {"ERRO_CRIPTOGRAFIA" };
+            string[] configurar = { "ERRO_CRIPTOGRAFIA" };
             string[] configura = new string[70];
             bool chk = true;
             using (OpenFileDialog1 = new OpenFileDialog())
@@ -1946,14 +1946,9 @@ namespace CHOV
                                     // Decrypt the bytes to a string.
                                     string roundtrip = DecryptStringFromBytes(enc, key, IV);
                                     if (roundtrip == "Erro na decriptografia")
-                                    {
-                                        chk = false;
-                                    }
+                                    { chk = false; }
                                     else
-                                    {
-                                        configura[i] = roundtrip;
-                                    }
-                                
+                                    { configura[i] = roundtrip; }
                                 }
                             }
                         }
@@ -1965,9 +1960,7 @@ namespace CHOV
                     }
                 }
                 if (chk == false)
-                {
-                    configura = configurar;
-                }
+                { configura = configurar; }
                 return configura;
             }
         }
@@ -2672,9 +2665,7 @@ namespace CHOV
         private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
-            {
-                pMenu.Show(this, new Point(e.X, e.Y));
-            }
+            { pMenu.Show(this, new Point(e.X, e.Y)); }
         }
 
         // Eventos dos itens do menu
@@ -2701,7 +2692,64 @@ namespace CHOV
 
         private void BtnImpCripto_Click(object sender, EventArgs e)
         {
-            listBox1.Items.AddRange(ImportCripto());
+            listBox1.Items.AddRange(Ncombinacoes(SetConfig(ImportCripto())));
+        }
+
+        public string[] SetConfig(string[] entrada)
+        {
+            string[] saida = entrada;
+
+            //system
+            saida[1] = entrada[1].Substring(8);
+            //Ip's
+            saida[2] = entrada[2].Substring(12);
+            saida[3] = entrada[3].Substring(14);
+            saida[4] = entrada[4].Substring(11);
+            //Config Chg0
+            saida[5] = entrada[5].Substring(19);
+            saida[6] = entrada[6].Substring(13);
+            saida[7] = entrada[7].Substring(19);
+            //Current Selection
+            saida[8] = entrada[8].Substring(15);
+            //Log's
+            saida[9] = entrada[9].Substring(12);
+            saida[10] = entrada[10].Substring(12);
+            saida[11] = entrada[11].Substring(13, 3);
+            saida[12] = entrada[12].Substring(25);
+
+            return saida;
+        }
+
+        public string[] Nprimary(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[14 + i]; }
+            return saida;
+        }
+
+        public string[] Nsecondary(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[31 + i]; }
+            return saida;
+        }
+
+        public string[] Noutput(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[48 + i]; }
+            return saida;
+        }
+
+        public string[] Ncombinacoes(string[] entrada)
+        {
+            string[] saida = new string[entrada.Length - 65];
+            for (int i = 0; i < saida.Length; i++)
+            { saida[i] = entrada[65 + i]; }
+            return saida;
         }
 
     }
