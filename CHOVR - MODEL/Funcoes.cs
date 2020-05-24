@@ -932,6 +932,14 @@ namespace CHOV
             return soma;
         }
 
+        public static bool TrueFalse(string entrada)
+        {
+            if (entrada == "True")
+            { return true; }
+            else
+            { return false; }
+        }
+
         #endregion
 
         #region Records

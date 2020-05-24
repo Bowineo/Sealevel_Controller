@@ -761,6 +761,25 @@ namespace CHOV
         /// <summary>
         /// Escreve nas variavies de sistema
         /// </summary>
+        public void WritevarSetting(string[] entrada)
+        {
+            CbTypeSystem.Text = entrada[1];
+            IpPrimaryControl.Text = entrada[2];
+            IpSecondaryControl.Text = entrada[3];
+            IpOutputControl.Text = entrada[4];
+            CbSelecaoInputCh0.Text = entrada[5];
+            CbSelecaoCh0.Text = entrada[6];
+
+            Ch_EnableLog.Checked = Funcoes.TrueFalse( entrada[9]);
+            Tbpathselect.Text = entrada[10];
+            Cb_MaxSizeLog.Text = entrada[11];
+            ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
+
+        }
+
+        /// <summary>
+        /// Escreve nas variavies de sistema
+        /// </summary>
         public void ReadSettingsFull()
         {
             //Função que recebe info atualizadas do settings
@@ -2692,7 +2711,10 @@ namespace CHOV
 
         private void BtnImpCripto_Click(object sender, EventArgs e)
         {
-            listBox1.Items.AddRange(Ncombinacoes(SetConfig(ImportCripto())));
+            listBox1.Items.AddRange(SetConfig(ImportCripto()));
+            WritevarSetting((SetConfig(ImportCripto())));
+            WritevarSetting();
+            SaveSettings();
         }
 
         public string[] SetConfig(string[] entrada)
