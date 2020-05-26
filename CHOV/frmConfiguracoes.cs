@@ -2,10 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Windows.Forms;
 using System.IO;
 using System.Security;
 using System.Security.Cryptography;
+using System.Windows.Forms;
 
 namespace CHOV
 {
@@ -976,15 +976,15 @@ namespace CHOV
         /// </summary>
         public void RecebeNomesPainel(string[] Nprimary, string[] Nsecondary, string[] Noutput)
         {
-            CmpTIN01.Text  = Nprimary[0];
-            CmpTIN02.Text  = Nprimary[1];
-            CmpTIN03.Text  = Nprimary[2];
-            CmpTIN04.Text  = Nprimary[3];
-            CmpTIN05.Text  = Nprimary[4];
-            CmpTIN06.Text  = Nprimary[5];
-            CmpTIN07.Text  = Nprimary[6];
-            CmpTIN08.Text  = Nprimary[7];
-            CmpTIN09.Text  = Nprimary[8];
+            CmpTIN01.Text = Nprimary[0];
+            CmpTIN02.Text = Nprimary[1];
+            CmpTIN03.Text = Nprimary[2];
+            CmpTIN04.Text = Nprimary[3];
+            CmpTIN05.Text = Nprimary[4];
+            CmpTIN06.Text = Nprimary[5];
+            CmpTIN07.Text = Nprimary[6];
+            CmpTIN08.Text = Nprimary[7];
+            CmpTIN09.Text = Nprimary[8];
             CmpTIN010.Text = Nprimary[9];
             CmpTIN011.Text = Nprimary[10];
             CmpTIN012.Text = Nprimary[11];
@@ -993,15 +993,15 @@ namespace CHOV
             CmpTIN015.Text = Nprimary[14];
             CmpTIN016.Text = Nprimary[15];
 
-            CmpRIN1.Text  = Nsecondary[0];
-            CmpRIN2.Text  = Nsecondary[1];
-            CmpRIN3.Text  = Nsecondary[2];
-            CmpRIN4.Text  = Nsecondary[3];
-            CmpRIN5.Text  = Nsecondary[4];
-            CmpRIN6.Text  = Nsecondary[5];
-            CmpRIN7.Text  = Nsecondary[6];
-            CmpRIN8.Text  = Nsecondary[7];
-            CmpRIN9.Text  = Nsecondary[8];
+            CmpRIN1.Text = Nsecondary[0];
+            CmpRIN2.Text = Nsecondary[1];
+            CmpRIN3.Text = Nsecondary[2];
+            CmpRIN4.Text = Nsecondary[3];
+            CmpRIN5.Text = Nsecondary[4];
+            CmpRIN6.Text = Nsecondary[5];
+            CmpRIN7.Text = Nsecondary[6];
+            CmpRIN8.Text = Nsecondary[7];
+            CmpRIN9.Text = Nsecondary[8];
             CmpRIN10.Text = Nsecondary[9];
             CmpRIN11.Text = Nsecondary[10];
             CmpRIN12.Text = Nsecondary[11];
@@ -1010,15 +1010,15 @@ namespace CHOV
             CmpRIN15.Text = Nsecondary[14];
             CmpRIN16.Text = Nsecondary[15];
 
-            CmpOut1.Text  = Noutput[0];
-            CmpOut2.Text  = Noutput[1];
-            CmpOut3.Text  = Noutput[2];
-            CmpOut4.Text  = Noutput[3];
-            CmpOut5.Text  = Noutput[4];
-            CmpOut6.Text  = Noutput[5];
-            CmpOut7.Text  = Noutput[6];
-            CmpOut8.Text  = Noutput[7];
-            CmpOut9.Text  = Noutput[8];
+            CmpOut1.Text = Noutput[0];
+            CmpOut2.Text = Noutput[1];
+            CmpOut3.Text = Noutput[2];
+            CmpOut4.Text = Noutput[3];
+            CmpOut5.Text = Noutput[4];
+            CmpOut6.Text = Noutput[5];
+            CmpOut7.Text = Noutput[6];
+            CmpOut8.Text = Noutput[7];
+            CmpOut9.Text = Noutput[8];
             CmpOut10.Text = Noutput[9];
             CmpOut11.Text = Noutput[10];
             CmpOut12.Text = Noutput[11];
