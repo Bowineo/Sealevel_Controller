@@ -124,10 +124,6 @@ namespace CHOV
         /// <param name="e"></param>
         private void BtnClear_Click(object sender, EventArgs e)
         {
-
-            Txt_Alt.Text = Encrypto(Txt_original.Text);
-            Informações.Items.Add("Original: " + Txt_original.Text);
-            /*
             log.Debug("Botão Clear acionado");
             using (Form MsgBox3 = new MmsgBox("Do you want to clear the information?", "OK&CANCEL", 4, 0))
             {   //Mensagem de confirmação para o usuário
@@ -140,15 +136,8 @@ namespace CHOV
                 }
                 if (resultado3 == DialogResult.Cancel) { log.Debug("Cancelamento 'Clear' das informações"); }
             }
-            */
         }
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Informações.Items.Add(Decrypto(Txt_Alt.Text));
-        }
-
-        //TESTE<<
         public static byte[] EncryptStringToBytes(string plainText, byte[] Key, byte[] IV)
         {
             // Check arguments.
@@ -1973,7 +1962,6 @@ namespace CHOV
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
                     ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
-                    textBox1.Text = lines.Length.ToString();
                     //textBox1.Text = ID;
                     File.WriteAllLines(ID, lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
@@ -2084,6 +2072,63 @@ namespace CHOV
                 MessageBox.Show("Erro na codificação");
                 return ("Resultado: " + "Erro decriptografia");
             }
+        }
+
+        public string[] SetConfig(string[] entrada)
+        {
+            string[] saida = entrada;
+
+            //system
+            saida[1] = entrada[1].Substring(8);
+            //Ip's
+            saida[2] = entrada[2].Substring(12);
+            saida[3] = entrada[3].Substring(14);
+            saida[4] = entrada[4].Substring(11);
+            //Config Chg0
+            saida[5] = entrada[5].Substring(19);
+            saida[6] = entrada[6].Substring(13);
+            saida[7] = entrada[7].Substring(19);
+            //Current Selection
+            saida[8] = entrada[8].Substring(15);
+            //Log's
+            saida[9] = entrada[9].Substring(12);
+            saida[10] = entrada[10].Substring(12);
+            saida[11] = entrada[11].Substring(13, 3);
+            saida[12] = entrada[12].Substring(25);
+
+            return saida;
+        }
+
+        public string[] Nprimary(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[14 + i]; }
+            return saida;
+        }
+
+        public string[] Nsecondary(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[31 + i]; }
+            return saida;
+        }
+
+        public string[] Noutput(string[] entrada)
+        {
+            string[] saida = new string[16];
+            for (int i = 0; i < 16; i++)
+            { saida[i] = entrada[48 + i]; }
+            return saida;
+        }
+
+        public string[] Ncombinacoes(string[] entrada)
+        {
+            string[] saida = new string[entrada.Length - 65];
+            for (int i = 0; i < saida.Length; i++)
+            { saida[i] = entrada[65 + i]; }
+            return saida;
         }
 
         #endregion
@@ -2761,7 +2806,21 @@ namespace CHOV
         private void Item1_clicked(object sender, EventArgs e)
         {
             log.Debug("Botão Import Congigurações acionado");
-            ImportConfig();
+            //ImportConfig();
+            //Preenche os campos com os dados importado e decriptografado
+            WritevarSetting((SetConfig(ImportCripto())));
+            //Passa dados dos campos p settings
+            WritevarSetting();
+            SaveSettings();
+            TabPageIndex();
+
+            //verificando tipo de sistema e habilitando o q necessario.
+            EnableDisable(Properties.Settings.Default.System);
+            AtualizaSettingsnoSistem();
+            frmC.GetInfoSettings();
+            frmC.AtivaPnl(Properties.Settings.Default.System);
+            using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
+            { _ = mmsgBox.ShowDialog(); }
         }
 
         private void Item2_clicked(object sender, EventArgs e)
@@ -2774,80 +2833,6 @@ namespace CHOV
         }
 
         #endregion
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Informações.Items.AddRange(GetConfigCripto());
-            Txt_Alt.Text = GetConfigCripto()[1];
-            listBox1.Items.AddRange(GetConfig());
-        }
-
-        private void BtnImpCripto_Click(object sender, EventArgs e)
-        {
-            listBox1.Items.AddRange(SetConfig(ImportCripto()));
-            //Preenche os campos com os dados importado e decriptografado
-            WritevarSetting((SetConfig(ImportCripto())));
-            //Passa dados dos campos p settings
-            WritevarSetting();
-            SaveSettings();
-        }
-
-        public string[] SetConfig(string[] entrada)
-        {
-            string[] saida = entrada;
-
-            //system
-            saida[1] = entrada[1].Substring(8);
-            //Ip's
-            saida[2] = entrada[2].Substring(12);
-            saida[3] = entrada[3].Substring(14);
-            saida[4] = entrada[4].Substring(11);
-            //Config Chg0
-            saida[5] = entrada[5].Substring(19);
-            saida[6] = entrada[6].Substring(13);
-            saida[7] = entrada[7].Substring(19);
-            //Current Selection
-            saida[8] = entrada[8].Substring(15);
-            //Log's
-            saida[9] = entrada[9].Substring(12);
-            saida[10] = entrada[10].Substring(12);
-            saida[11] = entrada[11].Substring(13, 3);
-            saida[12] = entrada[12].Substring(25);
-
-            return saida;
-        }
-
-        public string[] Nprimary(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[14 + i]; }
-            return saida;
-        }
-
-        public string[] Nsecondary(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[31 + i]; }
-            return saida;
-        }
-
-        public string[] Noutput(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[48 + i]; }
-            return saida;
-        }
-
-        public string[] Ncombinacoes(string[] entrada)
-        {
-            string[] saida = new string[entrada.Length - 65];
-            for (int i = 0; i < saida.Length; i++)
-            { saida[i] = entrada[65 + i]; }
-            return saida;
-        }
 
     }
 }

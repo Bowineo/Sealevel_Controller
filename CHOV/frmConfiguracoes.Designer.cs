@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfiguracoes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbpg1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnDefault = new System.Windows.Forms.Button();
@@ -148,13 +148,7 @@
             this.label64 = new System.Windows.Forms.Label();
             this.TbcConfiguration = new System.Windows.Forms.TabControl();
             this.Tbpg2 = new System.Windows.Forms.TabPage();
-            this.Txt_Alt = new System.Windows.Forms.TextBox();
-            this.Txt_original = new System.Windows.Forms.TextBox();
             this.PnlInformationHardware = new System.Windows.Forms.Panel();
-            this.btnImpCripto = new System.Windows.Forms.Button();
-            this.btnExpCripto = new System.Windows.Forms.Button();
-            this.btnDecripta = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.Informações = new System.Windows.Forms.ListBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.BtnClear = new System.Windows.Forms.Button();
@@ -168,7 +162,6 @@
             this.picSealevel = new System.Windows.Forms.PictureBox();
             this.ipAddressControl1 = new IPAddressControlLib.IPAddressControl();
             this.Tbpg3 = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabConfig = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.PnlSystemChg0 = new System.Windows.Forms.Panel();
@@ -311,9 +304,9 @@
             this.Tbpg1.Controls.Add(this.PnlPrimary);
             this.Tbpg1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Tbpg1.Location = new System.Drawing.Point(4, 22);
-            this.Tbpg1.Margin = new System.Windows.Forms.Padding(2);
+            this.Tbpg1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tbpg1.Name = "Tbpg1";
-            this.Tbpg1.Padding = new System.Windows.Forms.Padding(2);
+            this.Tbpg1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tbpg1.Size = new System.Drawing.Size(855, 543);
             this.Tbpg1.TabIndex = 0;
             this.Tbpg1.Text = "Inputs & Outputs";
@@ -327,7 +320,7 @@
             this.panel6.Controls.Add(this.btnCancelIputOutput);
             this.panel6.Controls.Add(this.BtnApply);
             this.panel6.Location = new System.Drawing.Point(301, 451);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(260, 33);
             this.panel6.TabIndex = 28;
@@ -466,7 +459,7 @@
             this.PnlSecondary.Controls.Add(this.label18);
             this.PnlSecondary.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PnlSecondary.Location = new System.Drawing.Point(353, 41);
-            this.PnlSecondary.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlSecondary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlSecondary.Name = "PnlSecondary";
             this.PnlSecondary.Size = new System.Drawing.Size(144, 334);
             this.PnlSecondary.TabIndex = 4;
@@ -487,7 +480,7 @@
             // 
             this.CmpRIN9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN9.Location = new System.Drawing.Point(58, 176);
-            this.CmpRIN9.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN9.MaxLength = 7;
             this.CmpRIN9.Name = "CmpRIN9";
             this.CmpRIN9.Size = new System.Drawing.Size(72, 20);
@@ -501,7 +494,7 @@
             this.CmpRIN1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN1.Location = new System.Drawing.Point(58, 27);
-            this.CmpRIN1.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN1.MaxLength = 7;
             this.CmpRIN1.Name = "CmpRIN1";
             this.CmpRIN1.Size = new System.Drawing.Size(72, 20);
@@ -535,7 +528,7 @@
             this.CmpRIN8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN8.Location = new System.Drawing.Point(58, 158);
-            this.CmpRIN8.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN8.MaxLength = 7;
             this.CmpRIN8.Name = "CmpRIN8";
             this.CmpRIN8.Size = new System.Drawing.Size(72, 20);
@@ -548,7 +541,7 @@
             // 
             this.CmpRIN10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN10.Location = new System.Drawing.Point(58, 195);
-            this.CmpRIN10.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN10.MaxLength = 7;
             this.CmpRIN10.Name = "CmpRIN10";
             this.CmpRIN10.Size = new System.Drawing.Size(72, 20);
@@ -601,7 +594,7 @@
             // 
             this.CmpRIN16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN16.Location = new System.Drawing.Point(58, 307);
-            this.CmpRIN16.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN16.MaxLength = 7;
             this.CmpRIN16.Name = "CmpRIN16";
             this.CmpRIN16.Size = new System.Drawing.Size(72, 20);
@@ -615,7 +608,7 @@
             this.CmpRIN2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN2.Location = new System.Drawing.Point(58, 45);
-            this.CmpRIN2.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN2.MaxLength = 7;
             this.CmpRIN2.Name = "CmpRIN2";
             this.CmpRIN2.Size = new System.Drawing.Size(72, 20);
@@ -629,7 +622,7 @@
             this.CmpRIN7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN7.Location = new System.Drawing.Point(58, 139);
-            this.CmpRIN7.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN7.MaxLength = 7;
             this.CmpRIN7.Name = "CmpRIN7";
             this.CmpRIN7.Size = new System.Drawing.Size(72, 20);
@@ -642,7 +635,7 @@
             // 
             this.CmpRIN13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN13.Location = new System.Drawing.Point(58, 251);
-            this.CmpRIN13.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN13.MaxLength = 7;
             this.CmpRIN13.Name = "CmpRIN13";
             this.CmpRIN13.Size = new System.Drawing.Size(72, 20);
@@ -695,7 +688,7 @@
             // 
             this.CmpRIN15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN15.Location = new System.Drawing.Point(58, 288);
-            this.CmpRIN15.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN15.MaxLength = 7;
             this.CmpRIN15.Name = "CmpRIN15";
             this.CmpRIN15.Size = new System.Drawing.Size(72, 20);
@@ -709,7 +702,7 @@
             this.CmpRIN5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN5.Location = new System.Drawing.Point(58, 101);
-            this.CmpRIN5.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN5.MaxLength = 7;
             this.CmpRIN5.Name = "CmpRIN5";
             this.CmpRIN5.Size = new System.Drawing.Size(72, 20);
@@ -723,7 +716,7 @@
             this.CmpRIN4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN4.Location = new System.Drawing.Point(58, 83);
-            this.CmpRIN4.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN4.MaxLength = 7;
             this.CmpRIN4.Name = "CmpRIN4";
             this.CmpRIN4.Size = new System.Drawing.Size(72, 20);
@@ -736,7 +729,7 @@
             // 
             this.CmpRIN11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN11.Location = new System.Drawing.Point(58, 214);
-            this.CmpRIN11.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN11.MaxLength = 7;
             this.CmpRIN11.Name = "CmpRIN11";
             this.CmpRIN11.Size = new System.Drawing.Size(72, 20);
@@ -789,7 +782,7 @@
             // 
             this.CmpRIN12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN12.Location = new System.Drawing.Point(58, 232);
-            this.CmpRIN12.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN12.MaxLength = 7;
             this.CmpRIN12.Name = "CmpRIN12";
             this.CmpRIN12.Size = new System.Drawing.Size(72, 20);
@@ -803,7 +796,7 @@
             this.CmpRIN3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN3.Location = new System.Drawing.Point(58, 64);
-            this.CmpRIN3.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN3.MaxLength = 7;
             this.CmpRIN3.Name = "CmpRIN3";
             this.CmpRIN3.Size = new System.Drawing.Size(72, 20);
@@ -817,7 +810,7 @@
             this.CmpRIN6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpRIN6.Location = new System.Drawing.Point(58, 120);
-            this.CmpRIN6.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN6.MaxLength = 7;
             this.CmpRIN6.Name = "CmpRIN6";
             this.CmpRIN6.Size = new System.Drawing.Size(72, 20);
@@ -830,7 +823,7 @@
             // 
             this.CmpRIN14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN14.Location = new System.Drawing.Point(58, 270);
-            this.CmpRIN14.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpRIN14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpRIN14.MaxLength = 7;
             this.CmpRIN14.Name = "CmpRIN14";
             this.CmpRIN14.Size = new System.Drawing.Size(72, 20);
@@ -897,7 +890,7 @@
             this.PnlOut.Controls.Add(this.label33);
             this.PnlOut.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PnlOut.Location = new System.Drawing.Point(603, 41);
-            this.PnlOut.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlOut.Name = "PnlOut";
             this.PnlOut.Size = new System.Drawing.Size(144, 334);
             this.PnlOut.TabIndex = 4;
@@ -918,7 +911,7 @@
             // 
             this.CmpOut9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut9.Location = new System.Drawing.Point(59, 175);
-            this.CmpOut9.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut9.MaxLength = 7;
             this.CmpOut9.Name = "CmpOut9";
             this.CmpOut9.Size = new System.Drawing.Size(72, 20);
@@ -931,7 +924,7 @@
             // 
             this.CmpOut1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut1.Location = new System.Drawing.Point(59, 26);
-            this.CmpOut1.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut1.MaxLength = 7;
             this.CmpOut1.Name = "CmpOut1";
             this.CmpOut1.Size = new System.Drawing.Size(72, 20);
@@ -964,7 +957,7 @@
             // 
             this.CmpOut10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut10.Location = new System.Drawing.Point(59, 194);
-            this.CmpOut10.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut10.MaxLength = 7;
             this.CmpOut10.Name = "CmpOut10";
             this.CmpOut10.Size = new System.Drawing.Size(72, 20);
@@ -977,7 +970,7 @@
             // 
             this.CmpOut2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut2.Location = new System.Drawing.Point(59, 45);
-            this.CmpOut2.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut2.MaxLength = 7;
             this.CmpOut2.Name = "CmpOut2";
             this.CmpOut2.Size = new System.Drawing.Size(72, 20);
@@ -1010,7 +1003,7 @@
             // 
             this.CmpOut13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut13.Location = new System.Drawing.Point(59, 250);
-            this.CmpOut13.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut13.MaxLength = 7;
             this.CmpOut13.Name = "CmpOut13";
             this.CmpOut13.Size = new System.Drawing.Size(72, 20);
@@ -1023,7 +1016,7 @@
             // 
             this.CmpOut5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut5.Location = new System.Drawing.Point(59, 101);
-            this.CmpOut5.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut5.MaxLength = 7;
             this.CmpOut5.Name = "CmpOut5";
             this.CmpOut5.Size = new System.Drawing.Size(72, 20);
@@ -1056,7 +1049,7 @@
             // 
             this.CmpOut11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut11.Location = new System.Drawing.Point(59, 213);
-            this.CmpOut11.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut11.MaxLength = 7;
             this.CmpOut11.Name = "CmpOut11";
             this.CmpOut11.Size = new System.Drawing.Size(72, 20);
@@ -1069,7 +1062,7 @@
             // 
             this.CmpOut3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut3.Location = new System.Drawing.Point(59, 63);
-            this.CmpOut3.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut3.MaxLength = 7;
             this.CmpOut3.Name = "CmpOut3";
             this.CmpOut3.Size = new System.Drawing.Size(72, 20);
@@ -1102,7 +1095,7 @@
             // 
             this.CmpOut14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut14.Location = new System.Drawing.Point(59, 269);
-            this.CmpOut14.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut14.MaxLength = 7;
             this.CmpOut14.Name = "CmpOut14";
             this.CmpOut14.Size = new System.Drawing.Size(72, 20);
@@ -1115,7 +1108,7 @@
             // 
             this.CmpOut6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut6.Location = new System.Drawing.Point(59, 119);
-            this.CmpOut6.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut6.MaxLength = 7;
             this.CmpOut6.Name = "CmpOut6";
             this.CmpOut6.Size = new System.Drawing.Size(72, 20);
@@ -1148,7 +1141,7 @@
             // 
             this.CmpOut12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut12.Location = new System.Drawing.Point(59, 232);
-            this.CmpOut12.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut12.MaxLength = 7;
             this.CmpOut12.Name = "CmpOut12";
             this.CmpOut12.Size = new System.Drawing.Size(72, 20);
@@ -1161,7 +1154,7 @@
             // 
             this.CmpOut4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut4.Location = new System.Drawing.Point(59, 82);
-            this.CmpOut4.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut4.MaxLength = 7;
             this.CmpOut4.Name = "CmpOut4";
             this.CmpOut4.Size = new System.Drawing.Size(72, 20);
@@ -1194,7 +1187,7 @@
             // 
             this.CmpOut15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut15.Location = new System.Drawing.Point(59, 288);
-            this.CmpOut15.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut15.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut15.MaxLength = 7;
             this.CmpOut15.Name = "CmpOut15";
             this.CmpOut15.Size = new System.Drawing.Size(72, 20);
@@ -1207,7 +1200,7 @@
             // 
             this.CmpOut7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut7.Location = new System.Drawing.Point(59, 138);
-            this.CmpOut7.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut7.MaxLength = 7;
             this.CmpOut7.Name = "CmpOut7";
             this.CmpOut7.Size = new System.Drawing.Size(72, 20);
@@ -1240,7 +1233,7 @@
             // 
             this.CmpOut16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut16.Location = new System.Drawing.Point(59, 306);
-            this.CmpOut16.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut16.MaxLength = 7;
             this.CmpOut16.Name = "CmpOut16";
             this.CmpOut16.Size = new System.Drawing.Size(72, 20);
@@ -1263,7 +1256,7 @@
             // 
             this.CmpOut8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpOut8.Location = new System.Drawing.Point(59, 157);
-            this.CmpOut8.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpOut8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpOut8.MaxLength = 7;
             this.CmpOut8.Name = "CmpOut8";
             this.CmpOut8.Size = new System.Drawing.Size(72, 20);
@@ -1321,7 +1314,7 @@
             this.PnlPrimary.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.PnlPrimary.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PnlPrimary.Location = new System.Drawing.Point(121, 41);
-            this.PnlPrimary.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlPrimary.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlPrimary.Name = "PnlPrimary";
             this.PnlPrimary.Size = new System.Drawing.Size(144, 334);
             this.PnlPrimary.TabIndex = 2;
@@ -1342,7 +1335,7 @@
             // 
             this.CmpTIN09.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN09.Location = new System.Drawing.Point(59, 176);
-            this.CmpTIN09.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN09.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN09.MaxLength = 7;
             this.CmpTIN09.Name = "CmpTIN09";
             this.CmpTIN09.Size = new System.Drawing.Size(72, 20);
@@ -1366,7 +1359,7 @@
             this.CmpTIN01.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN01.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN01.Location = new System.Drawing.Point(59, 27);
-            this.CmpTIN01.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN01.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN01.MaxLength = 7;
             this.CmpTIN01.Name = "CmpTIN01";
             this.CmpTIN01.Size = new System.Drawing.Size(72, 20);
@@ -1379,7 +1372,7 @@
             // 
             this.CmpTIN010.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN010.Location = new System.Drawing.Point(59, 195);
-            this.CmpTIN010.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN010.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN010.MaxLength = 7;
             this.CmpTIN010.Name = "CmpTIN010";
             this.CmpTIN010.Size = new System.Drawing.Size(72, 20);
@@ -1414,7 +1407,7 @@
             this.CmpTIN02.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN02.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN02.Location = new System.Drawing.Point(59, 45);
-            this.CmpTIN02.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN02.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN02.MaxLength = 7;
             this.CmpTIN02.Name = "CmpTIN02";
             this.CmpTIN02.Size = new System.Drawing.Size(72, 20);
@@ -1427,7 +1420,7 @@
             // 
             this.CmpTIN013.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN013.Location = new System.Drawing.Point(59, 251);
-            this.CmpTIN013.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN013.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN013.MaxLength = 7;
             this.CmpTIN013.Name = "CmpTIN013";
             this.CmpTIN013.Size = new System.Drawing.Size(72, 20);
@@ -1462,7 +1455,7 @@
             this.CmpTIN05.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN05.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN05.Location = new System.Drawing.Point(59, 101);
-            this.CmpTIN05.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN05.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN05.MaxLength = 7;
             this.CmpTIN05.Name = "CmpTIN05";
             this.CmpTIN05.Size = new System.Drawing.Size(72, 20);
@@ -1475,7 +1468,7 @@
             // 
             this.CmpTIN011.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN011.Location = new System.Drawing.Point(59, 213);
-            this.CmpTIN011.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN011.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN011.MaxLength = 7;
             this.CmpTIN011.Name = "CmpTIN011";
             this.CmpTIN011.Size = new System.Drawing.Size(72, 20);
@@ -1510,7 +1503,7 @@
             this.CmpTIN03.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN03.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN03.Location = new System.Drawing.Point(59, 64);
-            this.CmpTIN03.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN03.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN03.MaxLength = 7;
             this.CmpTIN03.Name = "CmpTIN03";
             this.CmpTIN03.Size = new System.Drawing.Size(72, 20);
@@ -1523,7 +1516,7 @@
             // 
             this.CmpTIN014.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN014.Location = new System.Drawing.Point(59, 269);
-            this.CmpTIN014.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN014.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN014.MaxLength = 7;
             this.CmpTIN014.Name = "CmpTIN014";
             this.CmpTIN014.Size = new System.Drawing.Size(72, 20);
@@ -1558,7 +1551,7 @@
             this.CmpTIN06.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN06.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN06.Location = new System.Drawing.Point(59, 120);
-            this.CmpTIN06.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN06.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN06.MaxLength = 7;
             this.CmpTIN06.Name = "CmpTIN06";
             this.CmpTIN06.Size = new System.Drawing.Size(72, 20);
@@ -1571,7 +1564,7 @@
             // 
             this.CmpTIN012.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN012.Location = new System.Drawing.Point(59, 232);
-            this.CmpTIN012.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN012.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN012.MaxLength = 7;
             this.CmpTIN012.Name = "CmpTIN012";
             this.CmpTIN012.Size = new System.Drawing.Size(72, 20);
@@ -1606,7 +1599,7 @@
             this.CmpTIN04.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN04.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN04.Location = new System.Drawing.Point(59, 83);
-            this.CmpTIN04.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN04.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN04.MaxLength = 7;
             this.CmpTIN04.Name = "CmpTIN04";
             this.CmpTIN04.Size = new System.Drawing.Size(72, 20);
@@ -1619,7 +1612,7 @@
             // 
             this.CmpTIN015.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN015.Location = new System.Drawing.Point(59, 288);
-            this.CmpTIN015.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN015.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN015.MaxLength = 7;
             this.CmpTIN015.Name = "CmpTIN015";
             this.CmpTIN015.Size = new System.Drawing.Size(72, 20);
@@ -1654,7 +1647,7 @@
             this.CmpTIN07.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN07.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN07.Location = new System.Drawing.Point(59, 139);
-            this.CmpTIN07.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN07.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN07.MaxLength = 7;
             this.CmpTIN07.Name = "CmpTIN07";
             this.CmpTIN07.Size = new System.Drawing.Size(72, 20);
@@ -1667,7 +1660,7 @@
             // 
             this.CmpTIN016.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN016.Location = new System.Drawing.Point(59, 307);
-            this.CmpTIN016.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN016.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN016.MaxLength = 7;
             this.CmpTIN016.Name = "CmpTIN016";
             this.CmpTIN016.Size = new System.Drawing.Size(72, 20);
@@ -1702,7 +1695,7 @@
             this.CmpTIN08.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN08.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.CmpTIN08.Location = new System.Drawing.Point(59, 157);
-            this.CmpTIN08.Margin = new System.Windows.Forms.Padding(2);
+            this.CmpTIN08.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CmpTIN08.MaxLength = 7;
             this.CmpTIN08.Name = "CmpTIN08";
             this.CmpTIN08.Size = new System.Drawing.Size(72, 20);
@@ -1731,7 +1724,7 @@
             this.TbcConfiguration.Controls.Add(this.Tbpg4);
             this.TbcConfiguration.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.TbcConfiguration.Location = new System.Drawing.Point(15, 10);
-            this.TbcConfiguration.Margin = new System.Windows.Forms.Padding(2);
+            this.TbcConfiguration.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TbcConfiguration.Name = "TbcConfiguration";
             this.TbcConfiguration.SelectedIndex = 0;
             this.TbcConfiguration.Size = new System.Drawing.Size(863, 569);
@@ -1741,89 +1734,26 @@
             // Tbpg2
             // 
             this.Tbpg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.Tbpg2.Controls.Add(this.Txt_Alt);
-            this.Tbpg2.Controls.Add(this.Txt_original);
             this.Tbpg2.Controls.Add(this.PnlInformationHardware);
             this.Tbpg2.Controls.Add(this.pnlHardware);
             this.Tbpg2.Location = new System.Drawing.Point(4, 22);
-            this.Tbpg2.Margin = new System.Windows.Forms.Padding(2);
+            this.Tbpg2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tbpg2.Name = "Tbpg2";
-            this.Tbpg2.Padding = new System.Windows.Forms.Padding(2);
+            this.Tbpg2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Tbpg2.Size = new System.Drawing.Size(855, 543);
             this.Tbpg2.TabIndex = 1;
             this.Tbpg2.Text = "Hardware";
             // 
-            // Txt_Alt
-            // 
-            this.Txt_Alt.Location = new System.Drawing.Point(422, 260);
-            this.Txt_Alt.Name = "Txt_Alt";
-            this.Txt_Alt.Size = new System.Drawing.Size(225, 20);
-            this.Txt_Alt.TabIndex = 31;
-            // 
-            // Txt_original
-            // 
-            this.Txt_original.Location = new System.Drawing.Point(132, 260);
-            this.Txt_original.Name = "Txt_original";
-            this.Txt_original.Size = new System.Drawing.Size(225, 20);
-            this.Txt_original.TabIndex = 31;
-            // 
             // PnlInformationHardware
             // 
             this.PnlInformationHardware.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.PnlInformationHardware.Controls.Add(this.btnImpCripto);
-            this.PnlInformationHardware.Controls.Add(this.btnExpCripto);
-            this.PnlInformationHardware.Controls.Add(this.btnDecripta);
-            this.PnlInformationHardware.Controls.Add(this.listBox1);
             this.PnlInformationHardware.Controls.Add(this.Informações);
             this.PnlInformationHardware.Controls.Add(this.panel9);
             this.PnlInformationHardware.Location = new System.Drawing.Point(89, 285);
-            this.PnlInformationHardware.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlInformationHardware.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlInformationHardware.Name = "PnlInformationHardware";
             this.PnlInformationHardware.Size = new System.Drawing.Size(645, 201);
             this.PnlInformationHardware.TabIndex = 30;
-            // 
-            // btnImpCripto
-            // 
-            this.btnImpCripto.Location = new System.Drawing.Point(546, 163);
-            this.btnImpCripto.Name = "btnImpCripto";
-            this.btnImpCripto.Size = new System.Drawing.Size(75, 23);
-            this.btnImpCripto.TabIndex = 32;
-            this.btnImpCripto.Text = "Import Cripto";
-            this.btnImpCripto.UseVisualStyleBackColor = true;
-            this.btnImpCripto.Click += new System.EventHandler(this.BtnImpCripto_Click);
-            // 
-            // btnExpCripto
-            // 
-            this.btnExpCripto.Location = new System.Drawing.Point(465, 163);
-            this.btnExpCripto.Name = "btnExpCripto";
-            this.btnExpCripto.Size = new System.Drawing.Size(75, 23);
-            this.btnExpCripto.TabIndex = 31;
-            this.btnExpCripto.Text = "Export Cripto";
-            this.btnExpCripto.UseVisualStyleBackColor = true;
-            this.btnExpCripto.Click += new System.EventHandler(this.Button2_Click);
-            // 
-            // btnDecripta
-            // 
-            this.btnDecripta.Location = new System.Drawing.Point(384, 163);
-            this.btnDecripta.Name = "btnDecripta";
-            this.btnDecripta.Size = new System.Drawing.Size(75, 23);
-            this.btnDecripta.TabIndex = 2;
-            this.btnDecripta.Text = "Decripta";
-            this.btnDecripta.UseVisualStyleBackColor = true;
-            this.btnDecripta.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.listBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(333, 21);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(276, 132);
-            this.listBox1.TabIndex = 8;
-            this.listBox1.TabStop = false;
-            this.listBox1.DoubleClick += new System.EventHandler(this.Informações_DoubleClick);
             // 
             // Informações
             // 
@@ -1831,9 +1761,9 @@
             this.Informações.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Informações.FormattingEnabled = true;
             this.Informações.Location = new System.Drawing.Point(18, 21);
-            this.Informações.Margin = new System.Windows.Forms.Padding(2);
+            this.Informações.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Informações.Name = "Informações";
-            this.Informações.Size = new System.Drawing.Size(276, 132);
+            this.Informações.Size = new System.Drawing.Size(602, 132);
             this.Informações.TabIndex = 8;
             this.Informações.TabStop = false;
             this.Informações.DoubleClick += new System.EventHandler(this.Informações_DoubleClick);
@@ -1844,7 +1774,7 @@
             this.panel9.BackColor = System.Drawing.SystemColors.WindowText;
             this.panel9.Controls.Add(this.BtnClear);
             this.panel9.Location = new System.Drawing.Point(288, 159);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(68, 33);
             this.panel9.TabIndex = 30;
@@ -1881,7 +1811,7 @@
             this.pnlHardware.Controls.Add(this.picSealevel);
             this.pnlHardware.Controls.Add(this.ipAddressControl1);
             this.pnlHardware.Location = new System.Drawing.Point(132, 49);
-            this.pnlHardware.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlHardware.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlHardware.Name = "pnlHardware";
             this.pnlHardware.Size = new System.Drawing.Size(556, 196);
             this.pnlHardware.TabIndex = 0;
@@ -1906,7 +1836,7 @@
             this.ControleDevice.Controls.Add(this.BtnRead);
             this.ControleDevice.Enabled = false;
             this.ControleDevice.Location = new System.Drawing.Point(223, 142);
-            this.ControleDevice.Margin = new System.Windows.Forms.Padding(2);
+            this.ControleDevice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ControleDevice.Name = "ControleDevice";
             this.ControleDevice.Size = new System.Drawing.Size(260, 33);
             this.ControleDevice.TabIndex = 29;
@@ -2012,7 +1942,7 @@
             this.picSealevel.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.picSealevel.Image = ((System.Drawing.Image)(resources.GetObject("picSealevel.Image")));
             this.picSealevel.Location = new System.Drawing.Point(71, 17);
-            this.picSealevel.Margin = new System.Windows.Forms.Padding(2);
+            this.picSealevel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picSealevel.Name = "picSealevel";
             this.picSealevel.Size = new System.Drawing.Size(412, 103);
             this.picSealevel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2034,7 +1964,7 @@
             this.ipAddressControl1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.ipAddressControl1.ReadOnly = false;
             this.ipAddressControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.ipAddressControl1.Size = new System.Drawing.Size(121, 20);
+            this.ipAddressControl1.Size = new System.Drawing.Size(128, 20);
             this.ipAddressControl1.TabIndex = 2;
             this.ipAddressControl1.Text = "...";
             this.ipAddressControl1.Leave += new System.EventHandler(this.IpAddressControl1_MouseLeave);
@@ -2044,25 +1974,15 @@
             // 
             this.Tbpg3.AccessibleRole = System.Windows.Forms.AccessibleRole.Application;
             this.Tbpg3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.Tbpg3.Controls.Add(this.textBox1);
             this.Tbpg3.Controls.Add(this.tabConfig);
             this.Tbpg3.Controls.Add(this.PnlSaveIp);
             this.Tbpg3.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Tbpg3.Location = new System.Drawing.Point(4, 22);
             this.Tbpg3.Name = "Tbpg3";
-            this.Tbpg3.Padding = new System.Windows.Forms.Padding(3);
+            this.Tbpg3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Tbpg3.Size = new System.Drawing.Size(855, 543);
             this.Tbpg3.TabIndex = 2;
             this.Tbpg3.Text = "System";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(759, 70);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(90, 347);
-            this.textBox1.TabIndex = 30;
             // 
             // tabConfig
             // 
@@ -2080,7 +2000,7 @@
             this.tabPage1.Controls.Add(this.PnlSystemChg0);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(643, 343);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "System";
@@ -2095,7 +2015,7 @@
             this.PnlSystemChg0.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.PnlSystemChg0.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlSystemChg0.Location = new System.Drawing.Point(3, 3);
-            this.PnlSystemChg0.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlSystemChg0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlSystemChg0.Name = "PnlSystemChg0";
             this.PnlSystemChg0.Size = new System.Drawing.Size(637, 337);
             this.PnlSystemChg0.TabIndex = 109;
@@ -2224,7 +2144,7 @@
             this.pnlsyschgo.Controls.Add(this.LblSelecaoInputCh0);
             this.pnlsyschgo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pnlsyschgo.Location = new System.Drawing.Point(420, 120);
-            this.pnlsyschgo.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlsyschgo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlsyschgo.Name = "pnlsyschgo";
             this.pnlsyschgo.Size = new System.Drawing.Size(182, 143);
             this.pnlsyschgo.TabIndex = 111;
@@ -2321,7 +2241,7 @@
             this.CbTypeSystem.Items.AddRange(new object[] {
             "Change Over",
             "Matrix of Signals"});
-            this.CbTypeSystem.Location = new System.Drawing.Point(270, 49);
+            this.CbTypeSystem.Location = new System.Drawing.Point(271, 49);
             this.CbTypeSystem.Name = "CbTypeSystem";
             this.CbTypeSystem.Size = new System.Drawing.Size(103, 21);
             this.CbTypeSystem.TabIndex = 11;
@@ -2334,7 +2254,7 @@
             this.tabPage2.Controls.Add(this.Ch_EnableLog);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage2.Size = new System.Drawing.Size(643, 343);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Log\'s";
@@ -2597,7 +2517,7 @@
             this.PnlSaveIp.Controls.Add(this.BtnCancelSystem);
             this.PnlSaveIp.Controls.Add(this.BtnSave_system);
             this.PnlSaveIp.Location = new System.Drawing.Point(371, 458);
-            this.PnlSaveIp.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlSaveIp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PnlSaveIp.Name = "PnlSaveIp";
             this.PnlSaveIp.Size = new System.Drawing.Size(132, 33);
             this.PnlSaveIp.TabIndex = 29;
@@ -2659,7 +2579,7 @@
             this.Tbpg4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Tbpg4.Location = new System.Drawing.Point(4, 22);
             this.Tbpg4.Name = "Tbpg4";
-            this.Tbpg4.Padding = new System.Windows.Forms.Padding(3);
+            this.Tbpg4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.Tbpg4.Size = new System.Drawing.Size(855, 543);
             this.Tbpg4.TabIndex = 3;
             this.Tbpg4.Text = "Matrix";
@@ -2675,7 +2595,7 @@
             this.pnlTabMatrix.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pnlTabMatrix.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTabMatrix.Location = new System.Drawing.Point(3, 3);
-            this.pnlTabMatrix.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlTabMatrix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlTabMatrix.Name = "pnlTabMatrix";
             this.pnlTabMatrix.Size = new System.Drawing.Size(847, 535);
             this.pnlTabMatrix.TabIndex = 222;
@@ -2685,7 +2605,7 @@
             // 
             this.Comb_qtd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Comb_qtd.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Comb_qtd.Location = new System.Drawing.Point(793, 459);
+            this.Comb_qtd.Location = new System.Drawing.Point(792, 459);
             this.Comb_qtd.Name = "Comb_qtd";
             this.Comb_qtd.Size = new System.Drawing.Size(40, 25);
             this.Comb_qtd.TabIndex = 333;
@@ -2696,7 +2616,7 @@
             // 
             this.CountComb.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.CountComb.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CountComb.Location = new System.Drawing.Point(799, 483);
+            this.CountComb.Location = new System.Drawing.Point(798, 482);
             this.CountComb.Name = "CountComb";
             this.CountComb.Size = new System.Drawing.Size(34, 25);
             this.CountComb.TabIndex = 329;
@@ -2783,7 +2703,7 @@
             this.pnlBtns.Controls.Add(this.btnEdit);
             this.pnlBtns.Controls.Add(this.btnAdd);
             this.pnlBtns.Location = new System.Drawing.Point(221, 84);
-            this.pnlBtns.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlBtns.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlBtns.Name = "pnlBtns";
             this.pnlBtns.Size = new System.Drawing.Size(322, 31);
             this.pnlBtns.TabIndex = 28;
@@ -4349,6 +4269,7 @@
             this.dGv.Name = "dGv";
             this.dGv.ReadOnly = true;
             this.dGv.RowHeadersVisible = false;
+            this.dGv.RowHeadersWidth = 51;
             this.dGv.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dGv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dGv.Size = new System.Drawing.Size(820, 370);
@@ -4357,14 +4278,15 @@
             // 
             // Device1
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device1.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device1.DefaultCellStyle = dataGridViewCellStyle10;
             this.Device1.FillWeight = 50F;
             this.Device1.HeaderText = "DEVICE";
             this.Device1.MaxInputLength = 10;
+            this.Device1.MinimumWidth = 6;
             this.Device1.Name = "Device1";
             this.Device1.ReadOnly = true;
             this.Device1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4372,13 +4294,14 @@
             // 
             // Input1
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input1.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input1.DefaultCellStyle = dataGridViewCellStyle11;
             this.Input1.HeaderText = "INPUT  ";
             this.Input1.MaxInputLength = 10;
+            this.Input1.MinimumWidth = 6;
             this.Input1.Name = "Input1";
             this.Input1.ReadOnly = true;
             this.Input1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4386,13 +4309,14 @@
             // 
             // Name1
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name1.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name1.DefaultCellStyle = dataGridViewCellStyle12;
             this.Name1.HeaderText = "NAME";
             this.Name1.MaxInputLength = 7;
+            this.Name1.MinimumWidth = 6;
             this.Name1.Name = "Name1";
             this.Name1.ReadOnly = true;
             this.Name1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4401,13 +4325,14 @@
             // Logic
             // 
             this.Logic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Logic.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Logic.DefaultCellStyle = dataGridViewCellStyle13;
             this.Logic.HeaderText = "LOGIC";
             this.Logic.MaxInputLength = 10;
+            this.Logic.MinimumWidth = 6;
             this.Logic.Name = "Logic";
             this.Logic.ReadOnly = true;
             this.Logic.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4415,13 +4340,14 @@
             // 
             // Device2
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device2.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device2.DefaultCellStyle = dataGridViewCellStyle14;
             this.Device2.HeaderText = "DEVICE";
             this.Device2.MaxInputLength = 50;
+            this.Device2.MinimumWidth = 6;
             this.Device2.Name = "Device2";
             this.Device2.ReadOnly = true;
             this.Device2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4429,13 +4355,14 @@
             // 
             // Input2
             // 
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input2.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input2.DefaultCellStyle = dataGridViewCellStyle15;
             this.Input2.HeaderText = "INPUT  ";
             this.Input2.MaxInputLength = 10;
+            this.Input2.MinimumWidth = 6;
             this.Input2.Name = "Input2";
             this.Input2.ReadOnly = true;
             this.Input2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4443,13 +4370,14 @@
             // 
             // Name2
             // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name2.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name2.DefaultCellStyle = dataGridViewCellStyle16;
             this.Name2.HeaderText = "NAME";
             this.Name2.MaxInputLength = 7;
+            this.Name2.MinimumWidth = 6;
             this.Name2.Name = "Name2";
             this.Name2.ReadOnly = true;
             this.Name2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4458,13 +4386,14 @@
             // Name_Output
             // 
             this.Name_Output.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle17;
             this.Name_Output.HeaderText = "OUTPUT      ";
             this.Name_Output.MaxInputLength = 50;
+            this.Name_Output.MinimumWidth = 6;
             this.Name_Output.Name = "Name_Output";
             this.Name_Output.ReadOnly = true;
             this.Name_Output.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4472,13 +4401,14 @@
             // 
             // NameOut
             // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NameOut.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NameOut.DefaultCellStyle = dataGridViewCellStyle18;
             this.NameOut.HeaderText = "NAME";
             this.NameOut.MaxInputLength = 7;
+            this.NameOut.MinimumWidth = 6;
             this.NameOut.Name = "NameOut";
             this.NameOut.ReadOnly = true;
             this.NameOut.Resizable = System.Windows.Forms.DataGridViewTriState.False;
@@ -4526,7 +4456,7 @@
             this.Controls.Add(this.TbcConfiguration);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FrmConfiguracoes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -4544,7 +4474,6 @@
             this.PnlPrimary.PerformLayout();
             this.TbcConfiguration.ResumeLayout(false);
             this.Tbpg2.ResumeLayout(false);
-            this.Tbpg2.PerformLayout();
             this.PnlInformationHardware.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.pnlHardware.ResumeLayout(false);
@@ -4552,7 +4481,6 @@
             this.ControleDevice.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picSealevel)).EndInit();
             this.Tbpg3.ResumeLayout(false);
-            this.Tbpg3.PerformLayout();
             this.tabConfig.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.PnlSystemChg0.ResumeLayout(false);
@@ -4810,12 +4738,5 @@
         private System.Windows.Forms.Label CountComb;
         private System.Windows.Forms.CheckBox ch_Showcombinacoes;
         private System.Windows.Forms.Label Comb_qtd;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox Txt_original;
-        private System.Windows.Forms.Button btnDecripta;
-        private System.Windows.Forms.TextBox Txt_Alt;
-        private System.Windows.Forms.Button btnExpCripto;
-        public System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button btnImpCripto;
     }
 }
