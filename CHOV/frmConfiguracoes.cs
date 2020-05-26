@@ -42,7 +42,7 @@ namespace CHOV
             //verificando tipo de sistema e habilitando o q necessario
             EnableDisable(Properties.Settings.Default.System);
             //Recebe dados dos Arrays do pgm
-            RecebeNomePainel();
+            RecebeNomesPainel(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
             //Recebe nome Slots
             AssignNames();
             log.Debug("Form Configurações carregado");
@@ -316,7 +316,7 @@ namespace CHOV
                     {
                         ReplicaNomesINOUTS();
                         PassaNomesParaArray();
-                        GravaNomesSettings();
+                        GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                         SaveSettings();
                         AtualizaSettingsnoSistem();
                     }
@@ -466,7 +466,7 @@ namespace CHOV
                                 if (Somente1Chg0Vetor(frmC.ArrayInputPrimary) && Somente1Chg0Vetor(frmC.ArrayInputSecondary) && Somente1Chg0Vetor(frmC.ArrayOutput))
                                 {
                                     //Limpa vetor de sistema e insere o vetor de pgm  no vetor de sistema
-                                    GravaNomesSettings();
+                                    GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                                     SaveSettings();
                                     AtualizaSettingsnoSistem();
                                     using (Form MsgBox4 = new MmsgBox("New names have been applied.", "OK", 1, 0))
@@ -481,7 +481,7 @@ namespace CHOV
                             case "Matrix of Signals":
                                 PassaNomesParaArray();
                                 //Limpa vetor de sistema e insere o vetor de pgm  no vetor de sistema
-                                GravaNomesSettings();
+                                GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                                 SaveSettings();
                                 AtualizaSettingsnoSistem();
                                 DialogResult resultado11 = new DialogResult();
@@ -495,7 +495,7 @@ namespace CHOV
                     if (resultado3 == DialogResult.Cancel)
                     {
                         //Recebe dados dos Arrays do pgm
-                        RecebeNomePainel();
+                        RecebeNomesPainel(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                     }
                 }
             }
@@ -524,7 +524,7 @@ namespace CHOV
                 if (resultado4 == DialogResult.Cancel)
                 {
                     //Recebe dados dos Arrays do pgm
-                    RecebeNomePainel();
+                    RecebeNomesPainel(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                 }
                 log.Debug("Botão Reply acionado");
             }
@@ -551,7 +551,7 @@ namespace CHOV
                 if (resultado5 == DialogResult.Cancel)
                 {
                     //Recebe dados dos Arrays do pgm
-                    RecebeNomePainel();
+                    RecebeNomesPainel(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
                 }
                 log.Debug("Botão Default acionado");
             }
@@ -770,10 +770,23 @@ namespace CHOV
             CbSelecaoInputCh0.Text = entrada[5];
             CbSelecaoCh0.Text = entrada[6];
 
-            Ch_EnableLog.Checked = Funcoes.TrueFalse( entrada[9]);
+            Ch_EnableLog.Checked = Funcoes.TrueFalse(entrada[9]);
             Tbpathselect.Text = entrada[10];
             Cb_MaxSizeLog.Text = entrada[11];
             ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
+
+            List<string> Nprimary = new List<string>(entrada);
+            List<string> Nsecondary = new List<string>(entrada);
+            List<string> Noutput = new List<string>(entrada);
+            List<string> Combinacoes = new List<string>(entrada);
+            string[] Comb = Combinacoes.GetRange(65, (entrada.Length - 65)).ToArray();
+
+            RecebeNomesPainel(Nprimary.GetRange(14, 16).ToArray(), Nsecondary.GetRange(31, 16).ToArray(), Noutput.GetRange(48, 16).ToArray());
+            PassaNomesParaArray();
+            GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
+            Properties.Settings.Default.Combinations.Clear();
+            Properties.Settings.Default.Combinations.AddRange(Comb);
+            AtualizaSettingsnoSistem();
 
         }
 
@@ -847,16 +860,16 @@ namespace CHOV
         /// <summary>
         /// Limpa vetor de sistema e insere o vetor de pgm
         /// </summary>
-        public void GravaNomesSettings()
+        public void GravaNomesSettings(string[] Nprimary, string[] Nsecondary, string[] Noutput)
         {
             //Limpa Vetor do sistema
             Properties.Settings.Default.NamesInputPrimary.Clear();
             //Insere vetor de pgm no vetor de sistema
-            Properties.Settings.Default.NamesInputPrimary.AddRange(frmC.ArrayInputPrimary);
+            Properties.Settings.Default.NamesInputPrimary.AddRange(Nprimary);
             Properties.Settings.Default.NamesInputSecondary.Clear();
-            Properties.Settings.Default.NamesInputSecondary.AddRange(frmC.ArrayInputSecondary);
+            Properties.Settings.Default.NamesInputSecondary.AddRange(Nsecondary);
             Properties.Settings.Default.NamesOutput.Clear();
-            Properties.Settings.Default.NamesOutput.AddRange(frmC.ArrayOutput);
+            Properties.Settings.Default.NamesOutput.AddRange(Noutput);
         }
 
         /// <summary>
@@ -915,7 +928,7 @@ namespace CHOV
         }
 
         /// <summary>
-        /// Recebe dados dos Arrays do pgm
+        /// Recebe dados direto dos Arrays do pgm
         /// </summary>
         public void RecebeNomePainel()
         {
@@ -967,6 +980,63 @@ namespace CHOV
             CmpOut14.Text = frmC.ArrayOutput[13];
             CmpOut15.Text = frmC.ArrayOutput[14];
             CmpOut16.Text = frmC.ArrayOutput[15];
+        }
+
+        /// <summary>
+        /// Recebe os nomes via dados importados
+        /// </summary>
+        public void RecebeNomesPainel(string[] Nprimary, string[] Nsecondary, string[] Noutput)
+        {
+            CmpTIN01.Text  = Nprimary[0];
+            CmpTIN02.Text  = Nprimary[1];
+            CmpTIN03.Text  = Nprimary[2];
+            CmpTIN04.Text  = Nprimary[3];
+            CmpTIN05.Text  = Nprimary[4];
+            CmpTIN06.Text  = Nprimary[5];
+            CmpTIN07.Text  = Nprimary[6];
+            CmpTIN08.Text  = Nprimary[7];
+            CmpTIN09.Text  = Nprimary[8];
+            CmpTIN010.Text = Nprimary[9];
+            CmpTIN011.Text = Nprimary[10];
+            CmpTIN012.Text = Nprimary[11];
+            CmpTIN013.Text = Nprimary[12];
+            CmpTIN014.Text = Nprimary[13];
+            CmpTIN015.Text = Nprimary[14];
+            CmpTIN016.Text = Nprimary[15];
+
+            CmpRIN1.Text  = Nsecondary[0];
+            CmpRIN2.Text  = Nsecondary[1];
+            CmpRIN3.Text  = Nsecondary[2];
+            CmpRIN4.Text  = Nsecondary[3];
+            CmpRIN5.Text  = Nsecondary[4];
+            CmpRIN6.Text  = Nsecondary[5];
+            CmpRIN7.Text  = Nsecondary[6];
+            CmpRIN8.Text  = Nsecondary[7];
+            CmpRIN9.Text  = Nsecondary[8];
+            CmpRIN10.Text = Nsecondary[9];
+            CmpRIN11.Text = Nsecondary[10];
+            CmpRIN12.Text = Nsecondary[11];
+            CmpRIN13.Text = Nsecondary[12];
+            CmpRIN14.Text = Nsecondary[13];
+            CmpRIN15.Text = Nsecondary[14];
+            CmpRIN16.Text = Nsecondary[15];
+
+            CmpOut1.Text  = Noutput[0];
+            CmpOut2.Text  = Noutput[1];
+            CmpOut3.Text  = Noutput[2];
+            CmpOut4.Text  = Noutput[3];
+            CmpOut5.Text  = Noutput[4];
+            CmpOut6.Text  = Noutput[5];
+            CmpOut7.Text  = Noutput[6];
+            CmpOut8.Text  = Noutput[7];
+            CmpOut9.Text  = Noutput[8];
+            CmpOut10.Text = Noutput[9];
+            CmpOut11.Text = Noutput[10];
+            CmpOut12.Text = Noutput[11];
+            CmpOut13.Text = Noutput[12];
+            CmpOut14.Text = Noutput[13];
+            CmpOut15.Text = Noutput[14];
+            CmpOut16.Text = Noutput[15];
         }
 
         /// <summary>
@@ -1072,7 +1142,7 @@ namespace CHOV
             //Passa p Paniel principal
             frmC.AtribuindoNomesPainel();
             //painel inuots
-            RecebeNomePainel();
+            RecebeNomesPainel(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
             //registo log
             log.Debug("Settings foram atualizadas no sistema");
         }
@@ -2697,7 +2767,10 @@ namespace CHOV
         private void Item2_clicked(object sender, EventArgs e)
         {
             log.Debug("Botão Export Congigurações acionado");
+            //Exporta configurações com criptografia
             ExportConfig(GetConfigCripto());
+            //Exporta configurações sem criptografia
+            //ExportConfig(GetConfig());
         }
 
         #endregion
@@ -2712,7 +2785,9 @@ namespace CHOV
         private void BtnImpCripto_Click(object sender, EventArgs e)
         {
             listBox1.Items.AddRange(SetConfig(ImportCripto()));
+            //Preenche os campos com os dados importado e decriptografado
             WritevarSetting((SetConfig(ImportCripto())));
+            //Passa dados dos campos p settings
             WritevarSetting();
             SaveSettings();
         }
