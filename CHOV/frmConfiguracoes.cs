@@ -1875,6 +1875,7 @@ namespace CHOV
             Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
             Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
             Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+
             System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
             System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
             System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
@@ -1941,6 +1942,63 @@ namespace CHOV
             NamesOutput.CopyTo(allFiles, 48);
             allFiles[64] = "->Combinations";
             Combinations.CopyTo(allFiles, 65);
+            return allFiles;
+        }
+
+        public string[] GetCo()
+        {
+            string[] Config = new string[21];
+            Config[0] = "System: " + Properties.Settings.Default.System;
+            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
+            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
+            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
+            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
+            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
+            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
+            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
+            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
+            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
+            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[12] = "Data log:";
+            Config[13] = "Username: " + Properties.Settings.Default.DatawrittenLog[0];
+            Config[14] = "Level: " + Properties.Settings.Default.DatawrittenLog[1];
+            Config[15] = "Method: " + Properties.Settings.Default.DatawrittenLog[2];
+            Config[16] = "Message: " + Properties.Settings.Default.DatawrittenLog[3];
+            Config[17] = "Thread: " + Properties.Settings.Default.DatawrittenLog[4];
+            Config[18] = "Line: " + Properties.Settings.Default.DatawrittenLog[5];
+            Config[19] = "Identity: " + Properties.Settings.Default.DatawrittenLog[6];
+            Config[20] = "Location: " + Properties.Settings.Default.DatawrittenLog[7];
+
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
+
+            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
+            allFiles[0] = "->Configuration";
+            Config.CopyTo(allFiles, 01);
+            allFiles[22] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 23);
+            allFiles[39] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 40);
+            allFiles[56] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 57);
+            allFiles[73] = "->Combinations";
+            Combinations.CopyTo(allFiles, 74);
+            
+            var key = GeraKey();
+            var IV = GeraIv();
+            using (Rijndael myRijndael = Rijndael.Create())
+            {
+                for (int i = 0; i < allFiles.Length; i++)
+                {
+                    // Encrypt the string to an array of bytes.
+                    byte[] encrypted = EncryptStringToBytes(allFiles[i], key, IV);
+                    // Informações.Items.Add(Convert.ToBase64String(encrypted));
+                    allFiles[i] = Convert.ToBase64String(encrypted);
+                }
+            }
             return allFiles;
         }
 
@@ -2095,7 +2153,15 @@ namespace CHOV
             saida[10] = entrada[10].Substring(12);
             saida[11] = entrada[11].Substring(13, 3);
             saida[12] = entrada[12].Substring(25);
-
+            //Data_Logs
+            saida[13] = entrada[14].Substring(10);
+            saida[14] = entrada[15].Substring(7);
+            saida[15] = entrada[16].Substring(7);
+            saida[16] = entrada[17].Substring(9);
+            saida[17] = entrada[18].Substring(8);
+            saida[18] = entrada[19].Substring(6);
+            saida[19] = entrada[20].Substring(10);
+            saida[20] = entrada[21].Substring(10);
             return saida;
         }
 
@@ -2834,5 +2900,9 @@ namespace CHOV
 
         #endregion
 
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            ExportConfig(GetCo());
+        }
     }
 }
