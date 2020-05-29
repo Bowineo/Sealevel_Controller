@@ -87,6 +87,21 @@ namespace CHOV
             InitializeComponent();
             //Parametros iniciais
             PainelStart();
+           
+
+            
+            
+            string[] sasuke = { "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 03 ] 'OUT 03 '", "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 13 ] 'OUT 13 '"};
+            //Limpa Vetor do sistema
+            Properties.Settings.Default.Combinations.Clear();
+            //Insere vetor de pgm no vetor de sistema
+            Properties.Settings.Default.Combinations.AddRange((sasuke));
+
+
+
+            Properties.Settings.Default.Save();
+            FrmConfiguracoes.GetCo();
+            
             //Insere o Ch0v initial
             Funcoes.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
             Properties.Settings.Default.Save();

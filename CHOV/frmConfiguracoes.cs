@@ -768,9 +768,9 @@ namespace CHOV
             List<string> Nsecondary = new List<string>(entrada);
             List<string> Noutput = new List<string>(entrada);
             List<string> Combinacoes = new List<string>(entrada);
-            string[] Comb = Combinacoes.GetRange(65, (entrada.Length - 65)).ToArray();
+            string[] Comb = Combinacoes.GetRange(74, (entrada.Length - 74)).ToArray();
 
-            RecebeNomesPainel(Nprimary.GetRange(14, 16).ToArray(), Nsecondary.GetRange(31, 16).ToArray(), Noutput.GetRange(48, 16).ToArray());
+            RecebeNomesPainel(Nprimary.GetRange(23, 16).ToArray(), Nsecondary.GetRange(40, 16).ToArray(), Noutput.GetRange(57, 16).ToArray());
             PassaNomesParaArray();
             GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
             Properties.Settings.Default.Combinations.Clear();
@@ -1945,7 +1945,7 @@ namespace CHOV
             return allFiles;
         }
 
-        public string[] GetCo()
+        public static string[] GetCo()
         {
             string[] Config = new string[21];
             Config[0] = "System: " + Properties.Settings.Default.System;
@@ -1986,7 +1986,7 @@ namespace CHOV
             NamesOutput.CopyTo(allFiles, 57);
             allFiles[73] = "->Combinations";
             Combinations.CopyTo(allFiles, 74);
-            
+
             var key = GeraKey();
             var IV = GeraIv();
             using (Rijndael myRijndael = Rijndael.Create())
@@ -2874,7 +2874,8 @@ namespace CHOV
             log.Debug("Botão Import Congigurações acionado");
             //ImportConfig();
             //Preenche os campos com os dados importado e decriptografado
-            WritevarSetting((SetConfig(ImportCripto())));
+            string[] s = (SetConfig(ImportCripto()));
+            WritevarSetting(s);
             //Passa dados dos campos p settings
             WritevarSetting();
             SaveSettings();
