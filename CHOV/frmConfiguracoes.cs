@@ -764,6 +764,19 @@ namespace CHOV
             Cb_MaxSizeLog.Text = entrada[11];
             ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
 
+            Ch_Username.Checked = Funcoes.TrueFalse(entrada[13]);
+            Ch_Level.Checked = Funcoes.TrueFalse(entrada[14]);
+            Ch_Method.Checked = Funcoes.TrueFalse(entrada[15]);
+            Ch_Message.Checked = Funcoes.TrueFalse(entrada[16]);
+            Ch_Thread.Checked = Funcoes.TrueFalse(entrada[17]);
+            Ch_Line.Checked = Funcoes.TrueFalse(entrada[18]);
+            Ch_identity.Checked = Funcoes.TrueFalse(entrada[19]);
+            Ch_Location.Checked = Funcoes.TrueFalse(entrada[20]);
+            string[] oit = { entrada[13], entrada[14], entrada[15], entrada[16], entrada[17], entrada[18], entrada[19], entrada[20] };
+            Properties.Settings.Default.DatawrittenLog.Clear();
+            Properties.Settings.Default.DatawrittenLog.AddRange(oit);
+
+
             List<string> Nprimary = new List<string>(entrada);
             List<string> Nsecondary = new List<string>(entrada);
             List<string> Noutput = new List<string>(entrada);
@@ -1862,91 +1875,6 @@ namespace CHOV
         //Função para obter as configuração e retornar em um vertor string criptografado
         public string[] GetConfigCripto()
         {
-            string[] Config = new string[12];
-            Config[0] = "System: " + Properties.Settings.Default.System;
-            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
-            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
-            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
-            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
-            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
-            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
-            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
-            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
-            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
-            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-
-            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
-            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
-            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
-            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
-            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
-            allFiles[0] = "->Configuration";
-            Config.CopyTo(allFiles, 01);
-            allFiles[13] = "->Names Primary";
-            NamesPrimario.CopyTo(allFiles, 14);
-            allFiles[30] = "->Names Secondary";
-            NamesSecundario.CopyTo(allFiles, 31);
-            allFiles[47] = "->Names Output";
-            NamesOutput.CopyTo(allFiles, 48);
-            allFiles[64] = "->Combinations";
-            Combinations.CopyTo(allFiles, 65);
-
-            var key = GeraKey();
-            var IV = GeraIv();
-            using (Rijndael myRijndael = Rijndael.Create())
-            {
-                for (int i = 0; i < allFiles.Length; i++)
-                {
-                    // Encrypt the string to an array of bytes.
-                    byte[] encrypted = EncryptStringToBytes(allFiles[i], key, IV);
-                    // Informações.Items.Add(Convert.ToBase64String(encrypted));
-                    allFiles[i] = Convert.ToBase64String(encrypted);
-                }
-            }
-            return allFiles;
-        }
-
-        //Função para obter as configuração e retornar em um vertor string
-        public string[] GetConfig()
-        {
-            string[] Config = new string[12];
-            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
-            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
-            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
-            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
-            Config[0] = "System: " + Properties.Settings.Default.System;
-            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
-            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
-            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
-            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
-            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
-            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
-            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
-            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
-            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
-            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-
-            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
-            //string[] allFiles = new string[81];
-            allFiles[0] = "->Configuration";
-            Config.CopyTo(allFiles, 01);
-            allFiles[13] = "->Names Primary";
-            NamesPrimario.CopyTo(allFiles, 14);
-            allFiles[30] = "->Names Secondary";
-            NamesSecundario.CopyTo(allFiles, 31);
-            allFiles[47] = "->Names Output";
-            NamesOutput.CopyTo(allFiles, 48);
-            allFiles[64] = "->Combinations";
-            Combinations.CopyTo(allFiles, 65);
-            return allFiles;
-        }
-
-        public static string[] GetCo()
-        {
             string[] Config = new string[21];
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
@@ -1999,6 +1927,43 @@ namespace CHOV
                     allFiles[i] = Convert.ToBase64String(encrypted);
                 }
             }
+            return allFiles;
+        }
+
+        //Função para obter as configuração e retornar em um vertor string
+        public string[] GetConfig()
+        {
+            string[] Config = new string[12];
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
+
+            Config[0] = "System: " + Properties.Settings.Default.System;
+            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
+            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
+            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
+            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
+            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
+            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
+            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
+            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
+            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
+            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+
+            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
+            //string[] allFiles = new string[81];
+            allFiles[0] = "->Configuration";
+            Config.CopyTo(allFiles, 01);
+            allFiles[13] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 14);
+            allFiles[30] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 31);
+            allFiles[47] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 48);
+            allFiles[64] = "->Combinations";
+            Combinations.CopyTo(allFiles, 65);
             return allFiles;
         }
 
@@ -2874,8 +2839,7 @@ namespace CHOV
             log.Debug("Botão Import Congigurações acionado");
             //ImportConfig();
             //Preenche os campos com os dados importado e decriptografado
-            string[] s = (SetConfig(ImportCripto()));
-            WritevarSetting(s);
+            WritevarSetting(SetConfig(ImportCripto()));
             //Passa dados dos campos p settings
             WritevarSetting();
             SaveSettings();
@@ -2900,10 +2864,5 @@ namespace CHOV
         }
 
         #endregion
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            ExportConfig(GetCo());
-        }
     }
 }

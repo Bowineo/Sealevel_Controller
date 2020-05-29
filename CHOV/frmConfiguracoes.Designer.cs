@@ -260,7 +260,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.button1 = new System.Windows.Forms.Button();
             this.Tbpg1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PnlSecondary.SuspendLayout();
@@ -1735,7 +1734,6 @@
             // Tbpg2
             // 
             this.Tbpg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.Tbpg2.Controls.Add(this.button1);
             this.Tbpg2.Controls.Add(this.PnlInformationHardware);
             this.Tbpg2.Controls.Add(this.pnlHardware);
             this.Tbpg2.Location = new System.Drawing.Point(4, 22);
@@ -4449,16 +4447,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Option available only with the system configured as \"Matrix of Signals\"!";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(745, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // FrmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4750,6 +4738,5 @@
         private System.Windows.Forms.Label CountComb;
         private System.Windows.Forms.CheckBox ch_Showcombinacoes;
         private System.Windows.Forms.Label Comb_qtd;
-        private System.Windows.Forms.Button button1;
     }
 }
