@@ -260,6 +260,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.Tbpg1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.PnlSecondary.SuspendLayout();
@@ -1734,6 +1735,7 @@
             // Tbpg2
             // 
             this.Tbpg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.Tbpg2.Controls.Add(this.radioButton1);
             this.Tbpg2.Controls.Add(this.PnlInformationHardware);
             this.Tbpg2.Controls.Add(this.pnlHardware);
             this.Tbpg2.Location = new System.Drawing.Point(4, 22);
@@ -4447,6 +4449,17 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Option available only with the system configured as \"Matrix of Signals\"!";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(591, 16);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(85, 17);
+            this.radioButton1.TabIndex = 2;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "radioButton1";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // FrmConfiguracoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4474,6 +4487,7 @@
             this.PnlPrimary.PerformLayout();
             this.TbcConfiguration.ResumeLayout(false);
             this.Tbpg2.ResumeLayout(false);
+            this.Tbpg2.PerformLayout();
             this.PnlInformationHardware.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.pnlHardware.ResumeLayout(false);
@@ -4738,5 +4752,6 @@
         private System.Windows.Forms.Label CountComb;
         private System.Windows.Forms.CheckBox ch_Showcombinacoes;
         private System.Windows.Forms.Label Comb_qtd;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
