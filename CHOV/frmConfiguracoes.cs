@@ -1930,6 +1930,64 @@ namespace CHOV
             return allFiles;
         }
 
+        //Função para obter as configuração e retornar em um vertor string criptografado
+        public string[] GetCfgCripto()
+        {
+            string[] Config = new string[22];
+            Config[0] = "System: " + Properties.Settings.Default.System;
+            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
+            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
+            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
+            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
+            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
+            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
+            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
+            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
+            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
+            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[12] = "Data log:";
+            Config[13] = "Username: " + Properties.Settings.Default.DatawrittenLog[0];
+            Config[14] = "Level: " + Properties.Settings.Default.DatawrittenLog[1];
+            Config[15] = "Method: " + Properties.Settings.Default.DatawrittenLog[2];
+            Config[16] = "Message: " + Properties.Settings.Default.DatawrittenLog[3];
+            Config[17] = "Thread: " + Properties.Settings.Default.DatawrittenLog[4];
+            Config[18] = "Line: " + Properties.Settings.Default.DatawrittenLog[5];
+            Config[19] = "Identity: " + Properties.Settings.Default.DatawrittenLog[6];
+            Config[20] = "Location: " + Properties.Settings.Default.DatawrittenLog[7];
+            Config[21] = "Current Selection: " + Properties.Settings.Default.CurrentSelection;
+
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
+
+            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
+            allFiles[0] = "->Configuration";
+            Config.CopyTo(allFiles, 01);
+            allFiles[23] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 24);
+            allFiles[40] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 41);
+            allFiles[57] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 58);
+            allFiles[74] = "->Combinations";
+            Combinations.CopyTo(allFiles, 75);
+            /*
+            var key = GeraKey();
+            var IV = GeraIv();
+            using (Rijndael myRijndael = Rijndael.Create())
+            {
+                for (int i = 0; i < allFiles.Length; i++)
+                {
+                    // Encrypt the string to an array of bytes.
+                    byte[] encrypted = EncryptStringToBytes(allFiles[i], key, IV);
+                    // Informações.Items.Add(Convert.ToBase64String(encrypted));
+                    allFiles[i] = Convert.ToBase64String(encrypted);
+                }
+            }*/
+            return allFiles;
+        }
         //Função para obter as configuração e retornar em um vertor string
         public string[] GetConfig()
         {
@@ -2100,7 +2158,38 @@ namespace CHOV
         public string[] SetConfig(string[] entrada)
         {
             string[] saida = entrada;
+            //system
+            saida[1] = entrada[1].Substring(8);
+            //Ip's
+            saida[2] = entrada[2].Substring(12);
+            saida[3] = entrada[3].Substring(14);
+            saida[4] = entrada[4].Substring(11);
+            //Config Chg0
+            saida[5] = entrada[5].Substring(19);
+            saida[6] = entrada[6].Substring(13);
+            saida[7] = entrada[7].Substring(19);
+            //Current Selection
+            saida[8] = entrada[8].Substring(15);
+            //Log's
+            saida[9] = entrada[9].Substring(12);
+            saida[10] = entrada[10].Substring(12);
+            saida[11] = entrada[11].Substring(13, 3);
+            saida[12] = entrada[12].Substring(25);
+            //Data_Logs
+            saida[13] = entrada[14].Substring(10);
+            saida[14] = entrada[15].Substring(7);
+            saida[15] = entrada[16].Substring(7);
+            saida[16] = entrada[17].Substring(9);
+            saida[17] = entrada[18].Substring(8);
+            saida[18] = entrada[19].Substring(6);
+            saida[19] = entrada[20].Substring(10);
+            saida[20] = entrada[21].Substring(10);
+            return saida;
+        }
 
+        public string[] SetCfg(string[] entrada)
+        {
+            string[] saida = entrada;
             //system
             saida[1] = entrada[1].Substring(8);
             //Ip's
@@ -2837,7 +2926,6 @@ namespace CHOV
         private void Item1_clicked(object sender, EventArgs e)
         {
             log.Debug("Botão Import Congigurações acionado");
-            //ImportConfig();
             //Preenche os campos com os dados importado e decriptografado
             WritevarSetting(SetConfig(ImportCripto()));
             //Passa dados dos campos p settings
@@ -2860,9 +2948,13 @@ namespace CHOV
             //Exporta configurações com criptografia
             ExportConfig(GetConfigCripto());
             //Exporta configurações sem criptografia
-            //ExportConfig(GetConfig());
         }
 
         #endregion
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            ExportConfig(GetCfgCripto());
+        }
     }
 }
