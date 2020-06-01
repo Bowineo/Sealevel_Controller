@@ -2178,14 +2178,14 @@ namespace CHOV
             saida[11] = entrada[11].Substring(13, 3);
             saida[12] = entrada[12].Substring(25);
             //Data_Logs
-            saida[13] = entrada[14];
-            saida[14] = entrada[15];
-            saida[15] = entrada[16];
-            saida[16] = entrada[17];
-            saida[17] = entrada[18];
-            saida[18] = entrada[19];
-            saida[19] = entrada[20];
-            saida[20] = entrada[21];
+            saida[13] = entrada[14].Substring(10);
+            saida[14] = entrada[15].Substring(7);
+            saida[15] = entrada[16].Substring(8);
+            saida[16] = entrada[17].Substring(9);
+            saida[17] = entrada[18].Substring(8);
+            saida[18] = entrada[19].Substring(6);
+            saida[19] = entrada[20].Substring(10);
+            saida[20] = entrada[21].Substring(10);
 
             // Extracting a slice into another array
             string[] Slice = new List<string>(entrada).GetRange(22, (entrada.Length - 22)).ToArray();
@@ -2954,7 +2954,7 @@ namespace CHOV
         {
             log.Debug("Botão Export Congigurações acionado");
             //Exporta configurações com criptografia
-            ExportConfig(GetConfigCripto());
+            ExportConfig(GetCfgCripto());
             //Exporta configurações sem criptografia
         }
 
