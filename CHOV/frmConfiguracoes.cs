@@ -1933,7 +1933,7 @@ namespace CHOV
         //Função para obter as configuração e retornar em um vertor string criptografado
         public string[] GetCfgCripto()
         {
-            string[] Config = new string[22];
+            string[] Config = new string[21];
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
             Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
@@ -1955,7 +1955,6 @@ namespace CHOV
             Config[18] = "Line: " + Properties.Settings.Default.DatawrittenLog[5];
             Config[19] = "Identity: " + Properties.Settings.Default.DatawrittenLog[6];
             Config[20] = "Location: " + Properties.Settings.Default.DatawrittenLog[7];
-            Config[21] = "Current Selection: " + Properties.Settings.Default.CurrentSelection;
 
             System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
             System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
@@ -1965,15 +1964,16 @@ namespace CHOV
             string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
             allFiles[0] = "->Configuration";
             Config.CopyTo(allFiles, 01);
-            allFiles[23] = "->Names Primary";
-            NamesPrimario.CopyTo(allFiles, 24);
-            allFiles[40] = "->Names Secondary";
-            NamesSecundario.CopyTo(allFiles, 41);
-            allFiles[57] = "->Names Output";
-            NamesOutput.CopyTo(allFiles, 58);
-            allFiles[74] = "->Combinations";
-            Combinations.CopyTo(allFiles, 75);
-            /*
+            allFiles[22] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 23);
+            allFiles[39] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 40);
+            allFiles[56] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 57);
+            allFiles[73] = "->Combinations";
+            Combinations.CopyTo(allFiles, 74);
+
+
             var key = GeraKey();
             var IV = GeraIv();
             using (Rijndael myRijndael = Rijndael.Create())
@@ -1985,10 +1985,11 @@ namespace CHOV
                     // Informações.Items.Add(Convert.ToBase64String(encrypted));
                     allFiles[i] = Convert.ToBase64String(encrypted);
                 }
-            }*/
+            }
             return allFiles;
         }
         //Função para obter as configuração e retornar em um vertor string
+
         public string[] GetConfig()
         {
             string[] Config = new string[12];
@@ -2157,7 +2158,8 @@ namespace CHOV
 
         public string[] SetConfig(string[] entrada)
         {
-            string[] saida = entrada;
+            string[] saida = new string [entrada.Length -1];
+            saida[0] = "->Configuration";
             //system
             saida[1] = entrada[1].Substring(8);
             //Ip's
@@ -2176,14 +2178,19 @@ namespace CHOV
             saida[11] = entrada[11].Substring(13, 3);
             saida[12] = entrada[12].Substring(25);
             //Data_Logs
-            saida[13] = entrada[14].Substring(10);
-            saida[14] = entrada[15].Substring(7);
-            saida[15] = entrada[16].Substring(7);
-            saida[16] = entrada[17].Substring(9);
-            saida[17] = entrada[18].Substring(8);
-            saida[18] = entrada[19].Substring(6);
-            saida[19] = entrada[20].Substring(10);
-            saida[20] = entrada[21].Substring(10);
+            saida[13] = entrada[14];
+            saida[14] = entrada[15];
+            saida[15] = entrada[16];
+            saida[16] = entrada[17];
+            saida[17] = entrada[18];
+            saida[18] = entrada[19];
+            saida[19] = entrada[20];
+            saida[20] = entrada[21];
+
+            // Extracting a slice into another array
+            string[] Slice = new List<string>(entrada).GetRange(22, (entrada.Length - 22)).ToArray();
+            Slice.CopyTo(saida, 21);
+
             return saida;
         }
 
@@ -2216,6 +2223,7 @@ namespace CHOV
             saida[18] = entrada[19].Substring(6);
             saida[19] = entrada[20].Substring(10);
             saida[20] = entrada[21].Substring(10);
+            saida[21] = entrada[22].Substring(19);
             return saida;
         }
 
@@ -2955,6 +2963,7 @@ namespace CHOV
         private void Button1_Click(object sender, EventArgs e)
         {
             ExportConfig(GetCfgCripto());
+            Informações.Items.AddRange(SetConfig(ImportCripto()));
         }
     }
 }
