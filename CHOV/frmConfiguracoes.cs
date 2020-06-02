@@ -1988,16 +1988,11 @@ namespace CHOV
             }
             return allFiles;
         }
-        //Função para obter as configuração e retornar em um vertor string
 
+        //Função para obter as configuração e retornar em um vertor string
         public string[] GetConfig()
         {
-            string[] Config = new string[12];
-            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
-            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
-            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
-            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
+            string[] Config = new string[21];
             Config[0] = "System: " + Properties.Settings.Default.System;
             Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
             Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
@@ -2010,19 +2005,33 @@ namespace CHOV
             Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
             Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
             Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
+            Config[12] = "Data log:";
+            Config[13] = "Username: " + Properties.Settings.Default.DatawrittenLog[0];
+            Config[14] = "Level: " + Properties.Settings.Default.DatawrittenLog[1];
+            Config[15] = "Method: " + Properties.Settings.Default.DatawrittenLog[2];
+            Config[16] = "Message: " + Properties.Settings.Default.DatawrittenLog[3];
+            Config[17] = "Thread: " + Properties.Settings.Default.DatawrittenLog[4];
+            Config[18] = "Line: " + Properties.Settings.Default.DatawrittenLog[5];
+            Config[19] = "Identity: " + Properties.Settings.Default.DatawrittenLog[6];
+            Config[20] = "Location: " + Properties.Settings.Default.DatawrittenLog[7];
+
+            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
+            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
+            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
+            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
 
             string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
-            //string[] allFiles = new string[81];
             allFiles[0] = "->Configuration";
             Config.CopyTo(allFiles, 01);
-            allFiles[13] = "->Names Primary";
-            NamesPrimario.CopyTo(allFiles, 14);
-            allFiles[30] = "->Names Secondary";
-            NamesSecundario.CopyTo(allFiles, 31);
-            allFiles[47] = "->Names Output";
-            NamesOutput.CopyTo(allFiles, 48);
-            allFiles[64] = "->Combinations";
-            Combinations.CopyTo(allFiles, 65);
+            allFiles[22] = "->Names Primary";
+            NamesPrimario.CopyTo(allFiles, 23);
+            allFiles[39] = "->Names Secondary";
+            NamesSecundario.CopyTo(allFiles, 40);
+            allFiles[56] = "->Names Output";
+            NamesOutput.CopyTo(allFiles, 57);
+            allFiles[73] = "->Combinations";
+            Combinations.CopyTo(allFiles, 74);
+
             return allFiles;
         }
 
@@ -2056,8 +2065,9 @@ namespace CHOV
         /// <summary>
         /// Funçõa para import as configurações para um arquivo .chg0
         /// </summary>
-        public void ImportConfig()
+        public string[] ImportConfig()
         {
+            string[] configura = new string[1];
             using (OpenFileDialog1 = new OpenFileDialog())
             {
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
@@ -2067,8 +2077,8 @@ namespace CHOV
                     {
                         using (var sr = new StreamReader(OpenFileDialog1.FileName))
                         {
-                            Informações.Items.Add(sr.ReadToEnd());
-                            //textBox1.Text = (sr.ReadToEnd());
+                            Array.Resize(ref configura, File.ReadAllLines(OpenFileDialog1.FileName).Length);
+                            configura = File.ReadAllLines(OpenFileDialog1.FileName);
                         }
                     }
                     catch (SecurityException ex)
@@ -2078,6 +2088,8 @@ namespace CHOV
                     }
                 }
             }
+
+            return configura;
         }
 
         public string[] ImportCripto()
@@ -2158,7 +2170,7 @@ namespace CHOV
 
         public string[] SetConfig(string[] entrada)
         {
-            string[] saida = new string [entrada.Length -1];
+            string[] saida = new string[entrada.Length - 1];
             saida[0] = "->Configuration";
             //system
             saida[1] = entrada[1].Substring(8);
