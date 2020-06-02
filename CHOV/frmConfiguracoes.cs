@@ -716,7 +716,6 @@ namespace CHOV
             ClearCamposMtx();
             Replecear();
             AlimenteLIST();
-            // _ResizeDgv(dGv.RowCount);
             VisibleBotoes(false, false, false, false, false);
         }
 
@@ -1075,7 +1074,7 @@ namespace CHOV
                         TbIndexPage = 4;
                         if (frmC.System_pgm == "Matrix of Signals")
                         {
-                           // Replecear();
+                            Replecear();
                             AlimenteLIST();
                             CountCombinacoes();
                         }
@@ -2305,13 +2304,80 @@ namespace CHOV
                     if (CHG0 == "IN 16") { vtPrimary[15] = change; vtSecondary[15] = change; vtOutput[15] = change; CmpTIN016.Enabled = false; }
                     break;
                 case "Matrix of Signals":
-                    { }
+                    { DisableFields(); }
                     break;
                 default:
                     using (Form MsgBox = new MmsgBox("Standard error!", "OK", 3, 0))
                     { _ = MsgBox.ShowDialog(); }
                     break;
             }
+        }
+
+        public void Disablefields_titular()
+        {
+            CmpTIN01.Enabled  = true;
+            CmpTIN02.Enabled  = true;
+            CmpTIN03.Enabled  = true;
+            CmpTIN04.Enabled  = true;
+            CmpTIN05.Enabled  = true;
+            CmpTIN06.Enabled  = true;
+            CmpTIN07.Enabled  = true;
+            CmpTIN08.Enabled  = true;
+            CmpTIN09.Enabled  = true;
+            CmpTIN010.Enabled = true;
+            CmpTIN011.Enabled = true;
+            CmpTIN012.Enabled = true;
+            CmpTIN013.Enabled = true;
+            CmpTIN014.Enabled = true;
+            CmpTIN015.Enabled = true;
+            CmpTIN016.Enabled = true;
+        }
+
+        public void Disablefields_Reserva()
+        {
+            CmpRIN1.Enabled =  true;
+            CmpRIN2.Enabled =  true;
+            CmpRIN3.Enabled =  true;
+            CmpRIN4.Enabled =  true;
+            CmpRIN5.Enabled =  true;
+            CmpRIN6.Enabled =  true;
+            CmpRIN7.Enabled =  true;
+            CmpRIN8.Enabled =  true;
+            CmpRIN9.Enabled =  true;
+            CmpRIN10.Enabled = true;
+            CmpRIN11.Enabled = true;
+            CmpRIN12.Enabled = true;
+            CmpRIN13.Enabled = true;
+            CmpRIN14.Enabled = true;
+            CmpRIN15.Enabled = true;
+            CmpRIN16.Enabled = true;
+        }
+
+        public void DisableFields_Output()
+        {
+            CmpOut1.Enabled =  true;
+            CmpOut2.Enabled =  true;
+            CmpOut3.Enabled =  true;
+            CmpOut4.Enabled =  true;
+            CmpOut5.Enabled =  true;
+            CmpOut6.Enabled =  true;
+            CmpOut7.Enabled =  true;
+            CmpOut8.Enabled =  true;
+            CmpOut9.Enabled =  true;
+            CmpOut10.Enabled = true;
+            CmpOut11.Enabled = true;
+            CmpOut12.Enabled = true;
+            CmpOut13.Enabled = true;
+            CmpOut14.Enabled = true;
+            CmpOut15.Enabled = true;
+            CmpOut16.Enabled = true;
+        }
+
+        public void DisableFields()
+        {
+            Disablefields_titular();
+            Disablefields_Reserva();
+            DisableFields_Output();
         }
 
         /// <summary>
@@ -2951,9 +3017,16 @@ namespace CHOV
             WritevarSetting();
             SaveSettings();
             TabPageIndex();
-
             //verificando tipo de sistema e habilitando o q necessario.
             EnableDisable(Properties.Settings.Default.System);
+
+            //Função verifica em qual posição está "CHG0   ".
+            PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
+            //Função que insere o CHG0   .
+
+            InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+            Properties.Settings.Default.Save();
+
             AtualizaSettingsnoSistem();
             frmC.GetInfoSettings();
             frmC.AtivaPnl(Properties.Settings.Default.System);
@@ -2973,7 +3046,7 @@ namespace CHOV
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            ExportConfig(GetCfgCripto());
+           // ExportConfig(GetCfgCripto());
             Informações.Items.AddRange(SetConfig(ImportCripto()));
         }
     }
