@@ -776,14 +776,13 @@ namespace CHOV
             Properties.Settings.Default.DatawrittenLog.Clear();
             Properties.Settings.Default.DatawrittenLog.AddRange(oit);
 
-
             List<string> Nprimary = new List<string>(entrada);
             List<string> Nsecondary = new List<string>(entrada);
             List<string> Noutput = new List<string>(entrada);
             List<string> Combinacoes = new List<string>(entrada);
-            string[] Comb = Combinacoes.GetRange(74, (entrada.Length - 74)).ToArray();
+            string[] Comb = Combinacoes.GetRange(73, (entrada.Length - 73)).ToArray();
 
-            RecebeNomesPainel(Nprimary.GetRange(23, 16).ToArray(), Nsecondary.GetRange(40, 16).ToArray(), Noutput.GetRange(57, 16).ToArray());
+            RecebeNomesPainel(Nprimary.GetRange(22, 16).ToArray(), Nsecondary.GetRange(39, 16).ToArray(), Noutput.GetRange(56, 16).ToArray());
             PassaNomesParaArray();
             GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
             Properties.Settings.Default.Combinations.Clear();
@@ -1076,7 +1075,7 @@ namespace CHOV
                         TbIndexPage = 4;
                         if (frmC.System_pgm == "Matrix of Signals")
                         {
-                            Replecear();
+                           // Replecear();
                             AlimenteLIST();
                             CountCombinacoes();
                         }
