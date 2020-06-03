@@ -752,7 +752,7 @@ namespace CHOV
             int v = 0;
             if (entrada[0] == "ERRO_CRIPTOGRAFIA")
             {
-               // using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0)){ _ = mmsgBox.ShowDialog(); }
+                // using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0)){ _ = mmsgBox.ShowDialog(); }
             }
             else
             {
@@ -2121,32 +2121,35 @@ namespace CHOV
                             var IV = GeraIv();
                             using (Rijndael myRijndael = Rijndael.Create())
                             {
-                                for (int i = 0; i < configura.Length && chk; i++)
+                                try
                                 {
-                                    byte[] enc = Convert.FromBase64String(configura[i]);
-                                    // Decrypt the bytes to a string.
-                                    string roundtrip = DecryptStringFromBytes(enc, key, IV);
-                                    if (roundtrip == "Erro na decriptografia")
-                                    { chk = false; }
-                                    else
-                                    { configura[i] = roundtrip; }
+                                    Convert.FromBase64String(configura[0]);
+                                    for (int i = 0; i < configura.Length && chk; i++)
+                                    {
+                                        byte[] enc = Convert.FromBase64String(configura[i]);
+                                        // Decrypt the bytes to a string.
+                                        string roundtrip = DecryptStringFromBytes(enc, key, IV);
+                                        if (roundtrip == "Erro na decriptografia")
+                                        { chk = false; }
+                                        else
+                                        { configura[i] = roundtrip; }
+                                    }
+                                }
+                                catch (Exception)
+                                {
+                                    configura = configurar;
+                                    using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
+                                    { _ = mmsgBox.ShowDialog(); }
                                 }
                             }
                         }
                     }
                     catch (SecurityException ex)
-                    {
-                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
-                        $"Details:\n\n{ex.StackTrace}");
-                    }
+                    { MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); }
                 }
                 else
-                {
-                    configura = configurar;
-                }
-
-                    if (chk == false)
                 { configura = configurar; }
+                if (chk == false) { configura = configurar; }
                 return configura;
             }
         }
@@ -2981,11 +2984,8 @@ namespace CHOV
             string chk = arrOctets[3] + arrOctets[2] + arrOctets[1] + arrOctets[0];
             if ((arrOctets[0] == "0" || arrOctets[0] == "" || arrOctets[1] == "" || arrOctets[2] == "" || arrOctets[3] == "") && (chk != ""))
             {
-                using (Form MsgBox = new MmsgBox("Invalid IP!", "OK", 5, 0))
-                {
-                    //Mensagem de confirmação para o usuário.
-                    DialogResult resultado = MsgBox.ShowDialog(); return false;
-                }
+                using (MmsgBox mmsgBox = new MmsgBox("Invalid IP!", "OK", 5, 0))
+                { _ = mmsgBox.ShowDialog(); return false; }
             }
             else
             { if (chk == "") { return false; } return true; }
@@ -3075,10 +3075,5 @@ namespace CHOV
 
         #endregion
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            // ExportConfig(GetCfgCripto());
-            Informações.Items.AddRange(SetConfig(ImportCripto()));
-        }
     }
 }
