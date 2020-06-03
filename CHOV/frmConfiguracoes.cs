@@ -17,9 +17,7 @@ namespace CHOV
 
         private OpenFileDialog openFileDialog1;
         public OpenFileDialog OpenFileDialog1 { get => openFileDialog1; set => openFileDialog1 = value; }
-
-        //variavel para Menu Import/Export
-        private ContextMenu pMenu;
+        public ContextMenu PMenu { get; set; }
 
         #region Call Forms
         public FrmConfiguracoes(FrmPainel frm2)
@@ -47,11 +45,11 @@ namespace CHOV
             AssignNames();
             log.Debug("Form Configurações carregado");
             // Cria menu popup
-            pMenu = new ContextMenu();
+            PMenu = new ContextMenu();
             // Cria eventos do menu
-            pMenu.MenuItems.Add("Configuration").Enabled = false;
-            pMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
-            pMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
+            PMenu.MenuItems.Add("Configuration").Enabled = false;
+            PMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
+            PMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
         }
 
         public static byte[] GeraKey()
@@ -749,45 +747,54 @@ namespace CHOV
         /// <summary>
         /// Escreve nas variavies de sistema
         /// </summary>
-        public void WritevarSetting(string[] entrada)
+        public int WritevarSetting(string[] entrada)
         {
-            CbTypeSystem.Text = entrada[1];
-            IpPrimaryControl.Text = entrada[2];
-            IpSecondaryControl.Text = entrada[3];
-            IpOutputControl.Text = entrada[4];
-            CbSelecaoInputCh0.Text = entrada[5];
-            CbSelecaoCh0.Text = entrada[6];
+            int v = 0;
+            if (entrada[0] == "ERRO_CRIPTOGRAFIA")
+            {
+               // using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0)){ _ = mmsgBox.ShowDialog(); }
+            }
+            else
+            {
+                v = 1;
+                CbTypeSystem.Text = entrada[1];
+                IpPrimaryControl.Text = entrada[2];
+                IpSecondaryControl.Text = entrada[3];
+                IpOutputControl.Text = entrada[4];
+                CbSelecaoInputCh0.Text = entrada[5];
+                CbSelecaoCh0.Text = entrada[6];
 
-            Ch_EnableLog.Checked = Funcoes.TrueFalse(entrada[9]);
-            Tbpathselect.Text = entrada[10];
-            Cb_MaxSizeLog.Text = entrada[11];
-            ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
+                Ch_EnableLog.Checked = Funcoes.TrueFalse(entrada[9]);
+                Tbpathselect.Text = entrada[10];
+                Cb_MaxSizeLog.Text = entrada[11];
+                ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
 
-            Ch_Username.Checked = Funcoes.TrueFalse(entrada[13]);
-            Ch_Level.Checked = Funcoes.TrueFalse(entrada[14]);
-            Ch_Method.Checked = Funcoes.TrueFalse(entrada[15]);
-            Ch_Message.Checked = Funcoes.TrueFalse(entrada[16]);
-            Ch_Thread.Checked = Funcoes.TrueFalse(entrada[17]);
-            Ch_Line.Checked = Funcoes.TrueFalse(entrada[18]);
-            Ch_identity.Checked = Funcoes.TrueFalse(entrada[19]);
-            Ch_Location.Checked = Funcoes.TrueFalse(entrada[20]);
-            string[] oit = { entrada[13], entrada[14], entrada[15], entrada[16], entrada[17], entrada[18], entrada[19], entrada[20] };
-            Properties.Settings.Default.DatawrittenLog.Clear();
-            Properties.Settings.Default.DatawrittenLog.AddRange(oit);
+                Ch_Username.Checked = Funcoes.TrueFalse(entrada[13]);
+                Ch_Level.Checked = Funcoes.TrueFalse(entrada[14]);
+                Ch_Method.Checked = Funcoes.TrueFalse(entrada[15]);
+                Ch_Message.Checked = Funcoes.TrueFalse(entrada[16]);
+                Ch_Thread.Checked = Funcoes.TrueFalse(entrada[17]);
+                Ch_Line.Checked = Funcoes.TrueFalse(entrada[18]);
+                Ch_identity.Checked = Funcoes.TrueFalse(entrada[19]);
+                Ch_Location.Checked = Funcoes.TrueFalse(entrada[20]);
+                string[] oit = { entrada[13], entrada[14], entrada[15], entrada[16], entrada[17], entrada[18], entrada[19], entrada[20] };
+                Properties.Settings.Default.DatawrittenLog.Clear();
+                Properties.Settings.Default.DatawrittenLog.AddRange(oit);
 
-            List<string> Nprimary = new List<string>(entrada);
-            List<string> Nsecondary = new List<string>(entrada);
-            List<string> Noutput = new List<string>(entrada);
-            List<string> Combinacoes = new List<string>(entrada);
-            string[] Comb = Combinacoes.GetRange(73, (entrada.Length - 73)).ToArray();
+                List<string> Nprimary = new List<string>(entrada);
+                List<string> Nsecondary = new List<string>(entrada);
+                List<string> Noutput = new List<string>(entrada);
+                List<string> Combinacoes = new List<string>(entrada);
+                string[] Comb = Combinacoes.GetRange(73, (entrada.Length - 73)).ToArray();
 
-            RecebeNomesPainel(Nprimary.GetRange(22, 16).ToArray(), Nsecondary.GetRange(39, 16).ToArray(), Noutput.GetRange(56, 16).ToArray());
-            PassaNomesParaArray();
-            GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
-            Properties.Settings.Default.Combinations.Clear();
-            Properties.Settings.Default.Combinations.AddRange(Comb);
-            AtualizaSettingsnoSistem();
-
+                RecebeNomesPainel(Nprimary.GetRange(22, 16).ToArray(), Nsecondary.GetRange(39, 16).ToArray(), Noutput.GetRange(56, 16).ToArray());
+                PassaNomesParaArray();
+                GravaNomesSettings(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput);
+                Properties.Settings.Default.Combinations.Clear();
+                Properties.Settings.Default.Combinations.AddRange(Comb);
+                AtualizaSettingsnoSistem();
+            }
+            return v;
         }
 
         /// <summary>
@@ -2057,6 +2064,11 @@ namespace CHOV
                     using (Form MsgBox = new MmsgBox("Configuration were exported in:" + Environment.NewLine + ID, "OK", 1, 0))
                     { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
+                else
+                {
+                    using (Form MsgBox = new MmsgBox("Export configuration canceled", "OK", 1, 0))
+                    { DialogResult resultado = MsgBox.ShowDialog(); }
+                }
             }
         }
 
@@ -2128,7 +2140,12 @@ namespace CHOV
                         $"Details:\n\n{ex.StackTrace}");
                     }
                 }
-                if (chk == false)
+                else
+                {
+                    configura = configurar;
+                }
+
+                    if (chk == false)
                 { configura = configurar; }
                 return configura;
             }
@@ -2169,37 +2186,46 @@ namespace CHOV
         public string[] SetConfig(string[] entrada)
         {
             string[] saida = new string[entrada.Length - 1];
-            saida[0] = "->Configuration";
-            //system
-            saida[1] = entrada[1].Substring(8);
-            //Ip's
-            saida[2] = entrada[2].Substring(12);
-            saida[3] = entrada[3].Substring(14);
-            saida[4] = entrada[4].Substring(11);
-            //Config Chg0
-            saida[5] = entrada[5].Substring(19);
-            saida[6] = entrada[6].Substring(13);
-            saida[7] = entrada[7].Substring(19);
-            //Current Selection
-            saida[8] = entrada[8].Substring(15);
-            //Log's
-            saida[9] = entrada[9].Substring(12);
-            saida[10] = entrada[10].Substring(12);
-            saida[11] = entrada[11].Substring(13, 3);
-            saida[12] = entrada[12].Substring(25);
-            //Data_Logs
-            saida[13] = entrada[14].Substring(10);
-            saida[14] = entrada[15].Substring(7);
-            saida[15] = entrada[16].Substring(8);
-            saida[16] = entrada[17].Substring(9);
-            saida[17] = entrada[18].Substring(8);
-            saida[18] = entrada[19].Substring(6);
-            saida[19] = entrada[20].Substring(10);
-            saida[20] = entrada[21].Substring(10);
+            if (entrada[0] == "ERRO_CRIPTOGRAFIA")
+            {
+                Array.Resize(ref saida, 1);
+                saida[0] = "ERRO_CRIPTOGRAFIA";
+            }
+            else
+            {
+                saida[0] = "->Configuration";
+                //system
+                saida[1] = entrada[1].Substring(8);
+                //Ip's
+                saida[2] = entrada[2].Substring(12);
+                saida[3] = entrada[3].Substring(14);
+                saida[4] = entrada[4].Substring(11);
+                //Config Chg0
+                saida[5] = entrada[5].Substring(19);
+                saida[6] = entrada[6].Substring(13);
+                saida[7] = entrada[7].Substring(19);
+                //Current Selection
+                saida[8] = entrada[8].Substring(15);
+                //Log's
+                saida[9] = entrada[9].Substring(12);
+                saida[10] = entrada[10].Substring(12);
+                saida[11] = entrada[11].Substring(13, 3);
+                saida[12] = entrada[12].Substring(25);
+                //Data_Logs
+                saida[13] = entrada[14].Substring(10);
+                saida[14] = entrada[15].Substring(7);
+                saida[15] = entrada[16].Substring(8);
+                saida[16] = entrada[17].Substring(9);
+                saida[17] = entrada[18].Substring(8);
+                saida[18] = entrada[19].Substring(6);
+                saida[19] = entrada[20].Substring(10);
+                saida[20] = entrada[21].Substring(10);
 
-            // Extracting a slice into another array
-            string[] Slice = new List<string>(entrada).GetRange(22, (entrada.Length - 22)).ToArray();
-            Slice.CopyTo(saida, 21);
+                // Extracting a slice into another array
+                string[] Slice = new List<string>(entrada).GetRange(22, (entrada.Length - 22)).ToArray();
+                Slice.CopyTo(saida, 21);
+            }
+
 
             return saida;
         }
@@ -2304,7 +2330,7 @@ namespace CHOV
                     if (CHG0 == "IN 16") { vtPrimary[15] = change; vtSecondary[15] = change; vtOutput[15] = change; CmpTIN016.Enabled = false; }
                     break;
                 case "Matrix of Signals":
-                    { DisableFields(); }
+                    { EnableFields(); }
                     break;
                 default:
                     using (Form MsgBox = new MmsgBox("Standard error!", "OK", 3, 0))
@@ -2313,17 +2339,17 @@ namespace CHOV
             }
         }
 
-        public void Disablefields_titular()
+        public void Enablefields_titular()
         {
-            CmpTIN01.Enabled  = true;
-            CmpTIN02.Enabled  = true;
-            CmpTIN03.Enabled  = true;
-            CmpTIN04.Enabled  = true;
-            CmpTIN05.Enabled  = true;
-            CmpTIN06.Enabled  = true;
-            CmpTIN07.Enabled  = true;
-            CmpTIN08.Enabled  = true;
-            CmpTIN09.Enabled  = true;
+            CmpTIN01.Enabled = true;
+            CmpTIN02.Enabled = true;
+            CmpTIN03.Enabled = true;
+            CmpTIN04.Enabled = true;
+            CmpTIN05.Enabled = true;
+            CmpTIN06.Enabled = true;
+            CmpTIN07.Enabled = true;
+            CmpTIN08.Enabled = true;
+            CmpTIN09.Enabled = true;
             CmpTIN010.Enabled = true;
             CmpTIN011.Enabled = true;
             CmpTIN012.Enabled = true;
@@ -2333,17 +2359,17 @@ namespace CHOV
             CmpTIN016.Enabled = true;
         }
 
-        public void Disablefields_Reserva()
+        public void Enablefields_Reserva()
         {
-            CmpRIN1.Enabled =  true;
-            CmpRIN2.Enabled =  true;
-            CmpRIN3.Enabled =  true;
-            CmpRIN4.Enabled =  true;
-            CmpRIN5.Enabled =  true;
-            CmpRIN6.Enabled =  true;
-            CmpRIN7.Enabled =  true;
-            CmpRIN8.Enabled =  true;
-            CmpRIN9.Enabled =  true;
+            CmpRIN1.Enabled = true;
+            CmpRIN2.Enabled = true;
+            CmpRIN3.Enabled = true;
+            CmpRIN4.Enabled = true;
+            CmpRIN5.Enabled = true;
+            CmpRIN6.Enabled = true;
+            CmpRIN7.Enabled = true;
+            CmpRIN8.Enabled = true;
+            CmpRIN9.Enabled = true;
             CmpRIN10.Enabled = true;
             CmpRIN11.Enabled = true;
             CmpRIN12.Enabled = true;
@@ -2353,17 +2379,17 @@ namespace CHOV
             CmpRIN16.Enabled = true;
         }
 
-        public void DisableFields_Output()
+        public void EnableFields_Output()
         {
-            CmpOut1.Enabled =  true;
-            CmpOut2.Enabled =  true;
-            CmpOut3.Enabled =  true;
-            CmpOut4.Enabled =  true;
-            CmpOut5.Enabled =  true;
-            CmpOut6.Enabled =  true;
-            CmpOut7.Enabled =  true;
-            CmpOut8.Enabled =  true;
-            CmpOut9.Enabled =  true;
+            CmpOut1.Enabled = true;
+            CmpOut2.Enabled = true;
+            CmpOut3.Enabled = true;
+            CmpOut4.Enabled = true;
+            CmpOut5.Enabled = true;
+            CmpOut6.Enabled = true;
+            CmpOut7.Enabled = true;
+            CmpOut8.Enabled = true;
+            CmpOut9.Enabled = true;
             CmpOut10.Enabled = true;
             CmpOut11.Enabled = true;
             CmpOut12.Enabled = true;
@@ -2373,11 +2399,11 @@ namespace CHOV
             CmpOut16.Enabled = true;
         }
 
-        public void DisableFields()
+        public void EnableFields()
         {
-            Disablefields_titular();
-            Disablefields_Reserva();
-            DisableFields_Output();
+            Enablefields_titular();
+            Enablefields_Reserva();
+            EnableFields_Output();
         }
 
         /// <summary>
@@ -3004,7 +3030,7 @@ namespace CHOV
         private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
-            { pMenu.Show(this, new Point(e.X, e.Y)); }
+            { PMenu.Show(this, new Point(e.X, e.Y)); }
         }
 
         // Eventos dos itens do menu
@@ -3012,26 +3038,31 @@ namespace CHOV
         {
             log.Debug("Botão Import Congigurações acionado");
             //Preenche os campos com os dados importado e decriptografado
-            WritevarSetting(SetConfig(ImportCripto()));
-            //Passa dados dos campos p settings
-            WritevarSetting();
-            SaveSettings();
-            TabPageIndex();
-            //verificando tipo de sistema e habilitando o q necessario.
-            EnableDisable(Properties.Settings.Default.System);
+            if (WritevarSetting(SetConfig(ImportCripto())) == 1)
+            {
+                //Passa dados dos campos p settings
+                WritevarSetting();
+                SaveSettings();
+                TabPageIndex();
+                //verificando tipo de sistema e habilitando o q necessario.
+                EnableDisable(Properties.Settings.Default.System);
+                //Função verifica em qual posição está "CHG0   ".
+                PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
+                //Função que insere o CHG0   .
+                InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+                Properties.Settings.Default.Save();
+                AtualizaSettingsnoSistem();
+                frmC.GetInfoSettings();
+                frmC.AtivaPnl(Properties.Settings.Default.System);
 
-            //Função verifica em qual posição está "CHG0   ".
-            PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
-            //Função que insere o CHG0   .
-
-            InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
-            Properties.Settings.Default.Save();
-
-            AtualizaSettingsnoSistem();
-            frmC.GetInfoSettings();
-            frmC.AtivaPnl(Properties.Settings.Default.System);
-            using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
-            { _ = mmsgBox.ShowDialog(); }
+                using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
+                { _ = mmsgBox.ShowDialog(); }
+            }
+            else
+            {
+                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
+                { _ = mmsgBox.ShowDialog(); }
+            }
         }
 
         private void Item2_clicked(object sender, EventArgs e)
@@ -3046,7 +3077,7 @@ namespace CHOV
 
         private void Button1_Click(object sender, EventArgs e)
         {
-           // ExportConfig(GetCfgCripto());
+            // ExportConfig(GetCfgCripto());
             Informações.Items.AddRange(SetConfig(ImportCripto()));
         }
     }
