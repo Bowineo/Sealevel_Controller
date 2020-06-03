@@ -34,7 +34,6 @@ namespace CHOV
             if ((frmP.Historico.Items.Count - Historico1.Items.Count) == 1) { Historico1.Items.Insert(0, frmP.ArrayHistoric[frmP.ArrayHistoric.Count - 1]); }
         }
 
-
         /// <summary>
         /// Função inicial para obter o histórico
         /// </summary>
@@ -55,7 +54,7 @@ namespace CHOV
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void TimerLogs_Tick(object sender, EventArgs e)
-        { Histt(); LblRelogioLog.Text = frmP.Data_pgm + "   " + frmP.Relogio_pgm; LblRelogioLog.Visible = true; }
+        { Histt(); LblRelogioLog.Text = frmP.Relogio_pgm; LblDataLog.Text = frmP.Data_pgm; LblRelogioLog.Visible = true; LblDataLog.Visible = true; }
 
         /// <summary>
         /// Export Logs
@@ -83,7 +82,7 @@ namespace CHOV
                     Historico1.Items.CopyTo(vet, 0);
                     for (int i = 0; i < Historico1.Items.Count; i++) { arquivo.Write(vet[i]); }
                     arquivo.Close();
-                    using (Form MsgBox = new MmsgBox("O Log " + "'" + nome + "'" + " was successfully exported.", "OK", 1, 0))
+                    using (Form MsgBox = new MmsgBox("Log " + "'" + nome + "'" + " was successfully exported.", "OK", 1, 0))
                     { _ = MsgBox.ShowDialog(); }
                 }
             }
