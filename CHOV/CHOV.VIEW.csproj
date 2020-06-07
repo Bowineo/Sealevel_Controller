@@ -162,6 +162,7 @@
     <None Include="Resources\icons8-privado-50.png" />
     <None Include="Resources\icons8-para-cima-com-quadrado-100.png" />
     <None Include="Resources\837bc87e8ef7988f4e15324e60cfaa4a.png" />
+    <None Include="Resources\Loading.gif" />
     <Content Include="SeaMAX.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

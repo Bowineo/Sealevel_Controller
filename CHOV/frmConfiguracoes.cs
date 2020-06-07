@@ -2112,6 +2112,7 @@ namespace CHOV
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
                 if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
                 {
+
                     try
                     {
                         using (var sr = new StreamReader(OpenFileDialog1.FileName))
@@ -2132,15 +2133,24 @@ namespace CHOV
                                         if (roundtrip == "Erro na decriptografia")
                                         { chk = false; }
                                         else
-                                        { configura[i] = roundtrip; }
+                                        {
+                                            pBar.Visible = true;
+                                            int n = (((i + 1) * 100) / (configura.Length));
+                                                pBar.Value = n;
+
+                                            label66.Text = n.ToString();
+                                            configura[i] = roundtrip;
+                                        }
                                     }
                                 }
-                                catch (Exception)
+                                catch (Exception ex)
                                 {
+                                     MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); 
                                     configura = configurar;
-                                    using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
-                                    { _ = mmsgBox.ShowDialog(); }
+                                  //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
+                                   // { _ = mmsgBox.ShowDialog(); }
                                 }
+                                pBar.Visible = false;
                             }
                         }
                     }
@@ -3036,10 +3046,13 @@ namespace CHOV
         // Eventos dos itens do menu
         private void Item1_clicked(object sender, EventArgs e)
         {
+            //pic_loading.Visible = true;
+
             log.Debug("Botão Import Congigurações acionado");
             //Preenche os campos com os dados importado e decriptografado
             if (WritevarSetting(SetConfig(ImportCripto())) == 1)
             {
+
                 //Passa dados dos campos p settings
                 WritevarSetting();
                 SaveSettings();
@@ -3054,7 +3067,6 @@ namespace CHOV
                 AtualizaSettingsnoSistem();
                 frmC.GetInfoSettings();
                 frmC.AtivaPnl(Properties.Settings.Default.System);
-
                 using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
                 { _ = mmsgBox.ShowDialog(); }
             }
