@@ -2102,6 +2102,25 @@ namespace CHOV
             return configura;
         }
 
+        public int ProgressBar(int entrada)
+        {
+            if (1 < entrada && entrada < 10) { return 10; }
+            if (11 < entrada && entrada < 20) { return 20; }
+            if (21 < entrada && entrada < 30) { return 30; }
+            if (31 < entrada && entrada < 40) { return 40; }
+            if (41 < entrada && entrada < 50) { return 50; }
+            if (51 < entrada && entrada < 60) { return 60; }
+            if (61 < entrada && entrada < 70) { return 70; }
+            if (71 < entrada && entrada < 80) { return 80; }
+            if (81 < entrada && entrada < 90) { return 90; }
+            if (91 < entrada && entrada < 99) { return 99; }
+            else
+            {
+                return 0;
+            }
+
+        }
+
         public string[] ImportCripto()
         {
             string[] configurar = { "ERRO_CRIPTOGRAFIA" };
@@ -2127,6 +2146,8 @@ namespace CHOV
                                     Convert.FromBase64String(configura[0]);
                                     for (int i = 0; i < configura.Length && chk; i++)
                                     {
+
+                                        //label66.Text = n.ToString();
                                         byte[] enc = Convert.FromBase64String(configura[i]);
                                         // Decrypt the bytes to a string.
                                         string roundtrip = DecryptStringFromBytes(enc, key, IV);
@@ -2134,23 +2155,18 @@ namespace CHOV
                                         { chk = false; }
                                         else
                                         {
-                                            pBar.Visible = true;
-                                            int n = (((i + 1) * 100) / (configura.Length));
-                                                pBar.Value = n;
-
-                                            label66.Text = n.ToString();
                                             configura[i] = roundtrip;
                                         }
                                     }
                                 }
                                 catch (Exception ex)
                                 {
-                                     MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); 
+                                    MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}");
                                     configura = configurar;
-                                  //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
-                                   // { _ = mmsgBox.ShowDialog(); }
+                                    //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
+                                    // { _ = mmsgBox.ShowDialog(); }
                                 }
-                                pBar.Visible = false;
+
                             }
                         }
                     }
@@ -2160,6 +2176,7 @@ namespace CHOV
                 else
                 { configura = configurar; }
                 if (chk == false) { configura = configurar; }
+
                 return configura;
             }
         }
@@ -2239,7 +2256,7 @@ namespace CHOV
                 Slice.CopyTo(saida, 21);
             }
 
-
+         
             return saida;
         }
 
@@ -3067,6 +3084,7 @@ namespace CHOV
                 AtualizaSettingsnoSistem();
                 frmC.GetInfoSettings();
                 frmC.AtivaPnl(Properties.Settings.Default.System);
+
                 using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
                 { _ = mmsgBox.ShowDialog(); }
             }
