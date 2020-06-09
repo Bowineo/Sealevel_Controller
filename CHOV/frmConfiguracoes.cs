@@ -1878,65 +1878,10 @@ namespace CHOV
             LblOutput.Text = "";
         }
 
-        //Função para obter as configuração e retornar em um vertor string criptografado
-        public string[] GetConfigCripto()
-        {
-            string[] Config = new string[21];
-            Config[0] = "System: " + Properties.Settings.Default.System;
-            Config[1] = "IP Primary: " + Properties.Settings.Default.IP_Primary;
-            Config[2] = "IP Secondary: " + Properties.Settings.Default.IP_Secondary;
-            Config[3] = "IP Output: " + Properties.Settings.Default.IP_Output;
-            Config[4] = "Input device Chg0: " + Properties.Settings.Default.InputDeviceChg0;
-            Config[5] = "Device Chg0: " + Properties.Settings.Default.DeviceChg0;
-            Config[6] = "Current selection: " + Properties.Settings.Default.CurrentSelection;
-            Config[7] = "Log Operation: " + Properties.Settings.Default.Path_LogOperation;
-            Config[8] = "Enable Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-            Config[9] = "System Log: " + Properties.Settings.Default.SystemLog;
-            Config[10] = "MaxSize Log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "MB";
-            Config[11] = "Enable Combinations Log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
-            Config[12] = "Data log:";
-            Config[13] = "Username: " + Properties.Settings.Default.DatawrittenLog[0];
-            Config[14] = "Level: " + Properties.Settings.Default.DatawrittenLog[1];
-            Config[15] = "Method: " + Properties.Settings.Default.DatawrittenLog[2];
-            Config[16] = "Message: " + Properties.Settings.Default.DatawrittenLog[3];
-            Config[17] = "Thread: " + Properties.Settings.Default.DatawrittenLog[4];
-            Config[18] = "Line: " + Properties.Settings.Default.DatawrittenLog[5];
-            Config[19] = "Identity: " + Properties.Settings.Default.DatawrittenLog[6];
-            Config[20] = "Location: " + Properties.Settings.Default.DatawrittenLog[7];
-
-            System.Collections.Specialized.StringCollection NamesPrimario = Properties.Settings.Default.NamesInputPrimary;
-            System.Collections.Specialized.StringCollection NamesSecundario = Properties.Settings.Default.NamesInputSecondary;
-            System.Collections.Specialized.StringCollection NamesOutput = Properties.Settings.Default.NamesOutput;
-            System.Collections.Specialized.StringCollection Combinations = Properties.Settings.Default.Combinations;
-
-            string[] allFiles = new string[Config.Length + NamesPrimario.Count + NamesSecundario.Count + NamesOutput.Count + Combinations.Count + 5];
-            allFiles[0] = "->Configuration";
-            Config.CopyTo(allFiles, 01);
-            allFiles[22] = "->Names Primary";
-            NamesPrimario.CopyTo(allFiles, 23);
-            allFiles[39] = "->Names Secondary";
-            NamesSecundario.CopyTo(allFiles, 40);
-            allFiles[56] = "->Names Output";
-            NamesOutput.CopyTo(allFiles, 57);
-            allFiles[73] = "->Combinations";
-            Combinations.CopyTo(allFiles, 74);
-
-            var key = GeraKey();
-            var IV = GeraIv();
-            using (Rijndael myRijndael = Rijndael.Create())
-            {
-                for (int i = 0; i < allFiles.Length; i++)
-                {
-                    // Encrypt the string to an array of bytes.
-                    byte[] encrypted = EncryptStringToBytes(allFiles[i], key, IV);
-                    // Informações.Items.Add(Convert.ToBase64String(encrypted));
-                    allFiles[i] = Convert.ToBase64String(encrypted);
-                }
-            }
-            return allFiles;
-        }
-
-        //Função para obter as configuração e retornar em um vertor string criptografado
+        /// <summary>
+        /// Função para obter as configuração e retornar em um vertor string criptografado
+        /// </summary>
+        /// <returns>vetor string com as configurações</returns>
         public string[] GetCfgCripto()
         {
             string[] Config = new string[21];
@@ -1994,7 +1939,10 @@ namespace CHOV
             return allFiles;
         }
 
-        //Função para obter as configuração e retornar em um vertor string
+        /// <summary>
+        /// Função para obter as configuração e retornar em um vertor string SEM criptografia
+        /// </summary>
+        /// <returns>vetor string com as configurações</returns>
         public string[] GetConfig()
         {
             string[] Config = new string[21];
@@ -2075,8 +2023,9 @@ namespace CHOV
         }
 
         /// <summary>
-        /// Funçõa para import as configurações para um arquivo .chg0
+        /// Funçõa para import as configurações para um arquivo .chg0 SEM criptografia
         /// </summary>
+        /// <returns>vetor com as configurações</returns>
         public string[] ImportConfig()
         {
             string[] configura = new string[1];
@@ -2104,6 +2053,10 @@ namespace CHOV
             return configura;
         }
 
+        /// <summary>
+        /// Funçõa para import as configurações para um arquivo .chg0
+        /// </summary>
+        /// <returns>vetor com as configurações</returns>
         public string[] ImportCripto()
         {
             string[] configurar = { "ERRO_CRIPTOGRAFIA" };
@@ -2160,6 +2113,11 @@ namespace CHOV
             }
         }
 
+        /// <summary>
+        /// Função para encriptar, recebe string de entrada e retorna string encriptada
+        /// </summary>
+        /// <param name="entrada">recebe string de entrada a ser encriptada</param>
+        /// <returns>retorna string encriptada</returns>
         public string Encrypto(string entrada)
         {
             var key = GeraKey();
@@ -2169,11 +2127,15 @@ namespace CHOV
             {
                 // Encrypt the string to an array of bytes.
                 byte[] encrypted = EncryptStringToBytes(original, key, IV);
-                // Informações.Items.Add(Convert.ToBase64String(encrypted));
                 return Convert.ToBase64String(encrypted);
             }
         }
 
+        /// <summary>
+        /// Função para decriptar, recebe string entrada e retorna string descriptada
+        /// </summary>
+        /// <param name="entrada">recebe string entrada a ser descriptada</param>
+        /// <returns> retorna string descriptada</returns>
         public string Decrypto(string entrada)
         {
             var key = GeraKey();
@@ -2192,6 +2154,11 @@ namespace CHOV
             }
         }
 
+        /// <summary>
+        /// Função que recebe string[] de "substringa" as configurações  
+        /// </summary>
+        /// <param name="entrada">string[] a ser substringada</param>
+        /// <returns>string[] com substringado </returns>
         public string[] SetConfig(string[] entrada)
         {
             string[] saida = new string[entrada.Length - 1];
@@ -2239,71 +2206,6 @@ namespace CHOV
             return saida;
         }
 
-        public string[] SetCfg(string[] entrada)
-        {
-            string[] saida = entrada;
-            //system
-            saida[1] = entrada[1].Substring(8);
-            //Ip's
-            saida[2] = entrada[2].Substring(12);
-            saida[3] = entrada[3].Substring(14);
-            saida[4] = entrada[4].Substring(11);
-            //Config Chg0
-            saida[5] = entrada[5].Substring(19);
-            saida[6] = entrada[6].Substring(13);
-            saida[7] = entrada[7].Substring(19);
-            //Current Selection
-            saida[8] = entrada[8].Substring(15);
-            //Log's
-            saida[9] = entrada[9].Substring(12);
-            saida[10] = entrada[10].Substring(12);
-            saida[11] = entrada[11].Substring(13, 3);
-            saida[12] = entrada[12].Substring(25);
-            //Data_Logs
-            saida[13] = entrada[14].Substring(10);
-            saida[14] = entrada[15].Substring(7);
-            saida[15] = entrada[16].Substring(7);
-            saida[16] = entrada[17].Substring(9);
-            saida[17] = entrada[18].Substring(8);
-            saida[18] = entrada[19].Substring(6);
-            saida[19] = entrada[20].Substring(10);
-            saida[20] = entrada[21].Substring(10);
-            saida[21] = entrada[22].Substring(19);
-            return saida;
-        }
-
-        public string[] Nprimary(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[14 + i]; }
-            return saida;
-        }
-
-        public string[] Nsecondary(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[31 + i]; }
-            return saida;
-        }
-
-        public string[] Noutput(string[] entrada)
-        {
-            string[] saida = new string[16];
-            for (int i = 0; i < 16; i++)
-            { saida[i] = entrada[48 + i]; }
-            return saida;
-        }
-
-        public string[] Ncombinacoes(string[] entrada)
-        {
-            string[] saida = new string[entrada.Length - 65];
-            for (int i = 0; i < saida.Length; i++)
-            { saida[i] = entrada[65 + i]; }
-            return saida;
-        }
-
         #endregion
 
         #region Names INOUTs
@@ -2348,6 +2250,9 @@ namespace CHOV
             }
         }
 
+        /// <summary>
+        /// Habilita campos dos nomes titulares
+        /// </summary>
         public void Enablefields_titular()
         {
             CmpTIN01.Enabled = true;
@@ -2368,6 +2273,9 @@ namespace CHOV
             CmpTIN016.Enabled = true;
         }
 
+        /// <summary>
+        /// Habilita campos dos nomes reservas
+        /// </summary>
         public void Enablefields_Reserva()
         {
             CmpRIN1.Enabled = true;
@@ -2388,6 +2296,9 @@ namespace CHOV
             CmpRIN16.Enabled = true;
         }
 
+        /// <summary>
+        /// Habilita campos dos nomes saidas
+        /// </summary>
         public void EnableFields_Output()
         {
             CmpOut1.Enabled = true;
@@ -2408,6 +2319,9 @@ namespace CHOV
             CmpOut16.Enabled = true;
         }
 
+        /// <summary>
+        /// Habilita todos os campos dos nomes titulares/reservas/saidas
+        /// </summary>
         public void EnableFields()
         {
             Enablefields_titular();
@@ -2978,6 +2892,7 @@ namespace CHOV
         #endregion
 
         #region IP
+
         /// <summary>
         /// Valida IP
         /// </summary>
@@ -2989,21 +2904,13 @@ namespace CHOV
             string[] arrOctets = strIP.Split(chrFullStop);
             string chk = arrOctets[3] + arrOctets[2] + arrOctets[1] + arrOctets[0];
             if ((arrOctets[0] == "0" || arrOctets[0] == "" || arrOctets[1] == "" || arrOctets[2] == "" || arrOctets[3] == "") && (chk != ""))
-            {
-                using (MmsgBox mmsgBox = new MmsgBox("Invalid IP!", "OK", 5, 0))
-                { _ = mmsgBox.ShowDialog(); return false; }
-            }
-            else
-            { if (chk == "") { return false; } return true; }
+            { using (MmsgBox mmsgBox = new MmsgBox("Invalid IP!", "OK", 5, 0)) { _ = mmsgBox.ShowDialog(); return false; } }
+            else { if (chk == "") { return false; } return true; }
         }
         #endregion
 
         #region Teclas de atalho
-        /// <summary>
-        /// Monitora asteclas de atalho
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+        //Monitora as teclas de atalho
         private void FrmConfiguracoes_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Shift && e.KeyCode == Keys.H) { TbcConfiguration.SelectTab(0); log.Debug("Atalho para Hardware"); }
@@ -3017,29 +2924,11 @@ namespace CHOV
             if (e.Control && e.KeyCode == Keys.Q) { RetornaDebugTest(); }
         }
 
-        /// <summary>
-        /// Função para Salvar um condição "Default" no vetor de combinações
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Informações_DoubleClick(object sender, EventArgs e)
-        {
-            string[] sasuke = new string[1]; sasuke[0] = "[ Primary  :     IN 11 ] 'IN 11  ' [ AND ] [ Secondary:     IN 12 ] 'IN 12  ' ->[ OUT 13 ] 'OUT 13 '";
-            //Limpa Vetor do sistema
-            Properties.Settings.Default.Combinations.Clear();
-            //Insere vetor de pgm no vetor de sistema
-            Properties.Settings.Default.Combinations.AddRange((sasuke));
-            //Save
-            Properties.Settings.Default.Save(); this.Close();
-        }
-
+        // Função para habilitar menu com botão direito para import/export configurações
         private void PnlSystemChg0_MouseUp(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            { PMenu.Show(this, new Point(e.X, e.Y)); }
-        }
+        { if (e.Button == MouseButtons.Right) { PMenu.Show(this, new Point(e.X, e.Y)); } }
 
-        // Eventos dos itens do menu
+        //Menu import configurações
         private void Item1_clicked(object sender, EventArgs e)
         {
             //Preenche os campos com os dados importado e decriptografado
@@ -3072,6 +2961,7 @@ namespace CHOV
             }
         }
 
+        //Menu export configurações
         private void Item2_clicked(object sender, EventArgs e)
         {
             log.Debug("Botão Export Congigurações acionado");
@@ -3081,6 +2971,5 @@ namespace CHOV
         }
 
         #endregion
-
     }
 }
