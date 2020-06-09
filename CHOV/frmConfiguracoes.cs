@@ -1979,7 +1979,6 @@ namespace CHOV
             allFiles[73] = "->Combinations";
             Combinations.CopyTo(allFiles, 74);
 
-
             var key = GeraKey();
             var IV = GeraIv();
             using (Rijndael myRijndael = Rijndael.Create())
@@ -2096,8 +2095,8 @@ namespace CHOV
                     }
                     catch (SecurityException ex)
                     {
-                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
-                        $"Details:\n\n{ex.StackTrace}");
+                        using (MmsgBox mmsgBox = new MmsgBox(($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"), "OK", 3, 0))
+                        { _ = mmsgBox.ShowDialog(); }
                     }
                 }
             }
@@ -2113,46 +2112,44 @@ namespace CHOV
             using (OpenFileDialog1 = new OpenFileDialog())
             {
                 lblLoading.Visible = true;
-
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
-
                 if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-                        try
+                    try
+                    {
+                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
                         {
-                            using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                            configura = File.ReadAllLines(OpenFileDialog1.FileName);
+                            var key = GeraKey();
+                            var IV = GeraIv();
+                            using (Rijndael myRijndael = Rijndael.Create())
                             {
-                                configura = File.ReadAllLines(OpenFileDialog1.FileName);
-                                var key = GeraKey();
-                                var IV = GeraIv();
-                                using (Rijndael myRijndael = Rijndael.Create())
+                                try
                                 {
-                                    try
+                                    Convert.FromBase64String(configura[0]);
+                                    for (int i = 0; i < configura.Length && chk; i++)
                                     {
-                                        Convert.FromBase64String(configura[0]);
-                                        for (int i = 0; i < configura.Length && chk; i++)
-                                        {
-                                            byte[] enc = Convert.FromBase64String(configura[i]);
-                                            // Decrypt the bytes to a string.
-                                            string roundtrip = DecryptStringFromBytes(enc, key, IV);
-                                            if (roundtrip == "Erro na decriptografia")
-                                            { chk = false; }
-                                            else { configura[i] = roundtrip; }
-                                        }
-
+                                        byte[] enc = Convert.FromBase64String(configura[i]);
+                                        // Decrypt the bytes to a string.
+                                        string roundtrip = DecryptStringFromBytes(enc, key, IV);
+                                        if (roundtrip == "Erro na decriptografia")
+                                        { chk = false; }
+                                        else { configura[i] = roundtrip; }
                                     }
-                                    catch (Exception ex)
-                                    {
-                                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}");
-                                        configura = configurar;
-                                        //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
-                                        // { _ = mmsgBox.ShowDialog(); }
-                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    using (MmsgBox mmsgBox = new MmsgBox(($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"), "OK", 3, 0))
+                                    { _ = mmsgBox.ShowDialog(); }
+                                    configura = configurar;
                                 }
                             }
                         }
-                        catch (SecurityException ex)
-                        { MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); 
+                    }
+                    catch (SecurityException ex)
+                    {
+                        using (MmsgBox mmsgBox = new MmsgBox(($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"), "OK", 3, 0))
+                        { _ = mmsgBox.ShowDialog(); }
                     }
                 }
                 else
