@@ -32,6 +32,7 @@ namespace CHOV
             Res = res;
         }
 
+
         /// <summary>
         /// Contrustor generico da mensagem com combinações de matrix
         /// </summary>

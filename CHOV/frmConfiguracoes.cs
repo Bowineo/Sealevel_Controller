@@ -5,6 +5,7 @@ using System.Drawing;
 using System.IO;
 using System.Security;
 using System.Security.Cryptography;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace CHOV
@@ -2046,6 +2047,7 @@ namespace CHOV
         /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
         public void ExportConfig(string[] entrada)
         {
+            lblLoading.Visible = true;
             string[] lines = entrada;
             log.Debug("Botão Export Configuration acionado");
             string pathselect;
@@ -2070,6 +2072,7 @@ namespace CHOV
                     { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
             }
+            lblLoading.Visible = false;
         }
 
         /// <summary>
@@ -2102,25 +2105,6 @@ namespace CHOV
             return configura;
         }
 
-        public int ProgressBar(int entrada)
-        {
-            if (1 < entrada && entrada < 10) { return 10; }
-            if (11 < entrada && entrada < 20) { return 20; }
-            if (21 < entrada && entrada < 30) { return 30; }
-            if (31 < entrada && entrada < 40) { return 40; }
-            if (41 < entrada && entrada < 50) { return 50; }
-            if (51 < entrada && entrada < 60) { return 60; }
-            if (61 < entrada && entrada < 70) { return 70; }
-            if (71 < entrada && entrada < 80) { return 80; }
-            if (81 < entrada && entrada < 90) { return 90; }
-            if (91 < entrada && entrada < 99) { return 99; }
-            else
-            {
-                return 0;
-            }
-
-        }
-
         public string[] ImportCripto()
         {
             string[] configurar = { "ERRO_CRIPTOGRAFIA" };
@@ -2128,55 +2112,53 @@ namespace CHOV
             bool chk = true;
             using (OpenFileDialog1 = new OpenFileDialog())
             {
+                lblLoading.Visible = true;
+
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
+
                 if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
                 {
-
-                    try
-                    {
-                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                        try
                         {
-                            configura = File.ReadAllLines(OpenFileDialog1.FileName);
-                            var key = GeraKey();
-                            var IV = GeraIv();
-                            using (Rijndael myRijndael = Rijndael.Create())
+                            using (var sr = new StreamReader(OpenFileDialog1.FileName))
                             {
-                                try
+                                configura = File.ReadAllLines(OpenFileDialog1.FileName);
+                                var key = GeraKey();
+                                var IV = GeraIv();
+                                using (Rijndael myRijndael = Rijndael.Create())
                                 {
-                                    Convert.FromBase64String(configura[0]);
-                                    for (int i = 0; i < configura.Length && chk; i++)
+                                    try
                                     {
-
-                                        //label66.Text = n.ToString();
-                                        byte[] enc = Convert.FromBase64String(configura[i]);
-                                        // Decrypt the bytes to a string.
-                                        string roundtrip = DecryptStringFromBytes(enc, key, IV);
-                                        if (roundtrip == "Erro na decriptografia")
-                                        { chk = false; }
-                                        else
+                                        Convert.FromBase64String(configura[0]);
+                                        for (int i = 0; i < configura.Length && chk; i++)
                                         {
-                                            configura[i] = roundtrip;
+                                            byte[] enc = Convert.FromBase64String(configura[i]);
+                                            // Decrypt the bytes to a string.
+                                            string roundtrip = DecryptStringFromBytes(enc, key, IV);
+                                            if (roundtrip == "Erro na decriptografia")
+                                            { chk = false; }
+                                            else { configura[i] = roundtrip; }
                                         }
+
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}");
+                                        configura = configurar;
+                                        //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
+                                        // { _ = mmsgBox.ShowDialog(); }
                                     }
                                 }
-                                catch (Exception ex)
-                                {
-                                    MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}");
-                                    configura = configurar;
-                                    //  using (MmsgBox mmsgBox = new MmsgBox("Encryption error!", "OK", 1, 0))
-                                    // { _ = mmsgBox.ShowDialog(); }
-                                }
-
                             }
                         }
+                        catch (SecurityException ex)
+                        { MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); 
                     }
-                    catch (SecurityException ex)
-                    { MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" + $"Details:\n\n{ex.StackTrace}"); }
                 }
                 else
                 { configura = configurar; }
                 if (chk == false) { configura = configurar; }
-
+                lblLoading.Visible = false;
                 return configura;
             }
         }
@@ -2256,7 +2238,7 @@ namespace CHOV
                 Slice.CopyTo(saida, 21);
             }
 
-         
+
             return saida;
         }
 
@@ -3063,13 +3045,10 @@ namespace CHOV
         // Eventos dos itens do menu
         private void Item1_clicked(object sender, EventArgs e)
         {
-            //pic_loading.Visible = true;
-
-            log.Debug("Botão Import Congigurações acionado");
             //Preenche os campos com os dados importado e decriptografado
-            if (WritevarSetting(SetConfig(ImportCripto())) == 1)
+            int n = WritevarSetting(SetConfig(ImportCripto()));
+            if (n == 1)
             {
-
                 //Passa dados dos campos p settings
                 WritevarSetting();
                 SaveSettings();
@@ -3082,6 +3061,7 @@ namespace CHOV
                 InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
                 Properties.Settings.Default.Save();
                 AtualizaSettingsnoSistem();
+
                 frmC.GetInfoSettings();
                 frmC.AtivaPnl(Properties.Settings.Default.System);
 
