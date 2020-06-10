@@ -45,16 +45,16 @@
             this.comb_05 = new System.Windows.Forms.Label();
             this.comb_09 = new System.Windows.Forms.Label();
             this.comb_01 = new System.Windows.Forms.Label();
-            this.pnl_default_msg = new System.Windows.Forms.Panel();
-            this.LblQuestion = new System.Windows.Forms.Label();
-            this.LblMsgBox = new System.Windows.Forms.TextBox();
-            this.pictureBoxMsg = new System.Windows.Forms.PictureBox();
-            this.BtnCancelMsgBox = new System.Windows.Forms.Button();
-            this.BtnOkMsgBox = new System.Windows.Forms.Button();
             this.BtnSaveMsgBox = new System.Windows.Forms.Button();
+            this.BtnOkMsgBox = new System.Windows.Forms.Button();
+            this.BtnCancelMsgBox = new System.Windows.Forms.Button();
+            this.pictureBoxMsg = new System.Windows.Forms.PictureBox();
+            this.LblMsgBox = new System.Windows.Forms.TextBox();
+            this.LblQuestion = new System.Windows.Forms.Label();
+            this.pnl_default_msg = new System.Windows.Forms.Panel();
             this.pnl_Comb.SuspendLayout();
-            this.pnl_default_msg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMsg)).BeginInit();
+            this.pnl_default_msg.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_Comb
@@ -307,75 +307,25 @@
             this.comb_01.TabIndex = 92;
             this.comb_01.Text = "1 Do you really want to save the following combinations?";
             // 
-            // pnl_default_msg
+            // BtnSaveMsgBox
             // 
-            this.pnl_default_msg.Controls.Add(this.LblQuestion);
-            this.pnl_default_msg.Controls.Add(this.LblMsgBox);
-            this.pnl_default_msg.Controls.Add(this.pictureBoxMsg);
-            this.pnl_default_msg.Controls.Add(this.BtnCancelMsgBox);
-            this.pnl_default_msg.Controls.Add(this.BtnOkMsgBox);
-            this.pnl_default_msg.Controls.Add(this.BtnSaveMsgBox);
-            this.pnl_default_msg.Location = new System.Drawing.Point(7, 16);
-            this.pnl_default_msg.Name = "pnl_default_msg";
-            this.pnl_default_msg.Size = new System.Drawing.Size(405, 217);
-            this.pnl_default_msg.TabIndex = 92;
-            // 
-            // LblQuestion
-            // 
-            this.LblQuestion.AutoSize = true;
-            this.LblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblQuestion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LblQuestion.Location = new System.Drawing.Point(49, 60);
-            this.LblQuestion.Name = "LblQuestion";
-            this.LblQuestion.Size = new System.Drawing.Size(303, 15);
-            this.LblQuestion.TabIndex = 95;
-            this.LblQuestion.Text = "Do you really want to save the following combinations?";
-            this.LblQuestion.Visible = false;
-            // 
-            // LblMsgBox
-            // 
-            this.LblMsgBox.BackColor = System.Drawing.SystemColors.WindowText;
-            this.LblMsgBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.LblMsgBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.LblMsgBox.Location = new System.Drawing.Point(7, 87);
-            this.LblMsgBox.Multiline = true;
-            this.LblMsgBox.Name = "LblMsgBox";
-            this.LblMsgBox.ReadOnly = true;
-            this.LblMsgBox.Size = new System.Drawing.Size(390, 77);
-            this.LblMsgBox.TabIndex = 96;
-            this.LblMsgBox.TabStop = false;
-            this.LblMsgBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictureBoxMsg
-            // 
-            this.pictureBoxMsg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxMsg.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBoxMsg.Location = new System.Drawing.Point(178, 11);
-            this.pictureBoxMsg.Name = "pictureBoxMsg";
-            this.pictureBoxMsg.Size = new System.Drawing.Size(45, 40);
-            this.pictureBoxMsg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxMsg.TabIndex = 92;
-            this.pictureBoxMsg.TabStop = false;
-            // 
-            // BtnCancelMsgBox
-            // 
-            this.BtnCancelMsgBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.BtnCancelMsgBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnCancelMsgBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnCancelMsgBox.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BtnCancelMsgBox.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnCancelMsgBox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnCancelMsgBox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnCancelMsgBox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.BtnCancelMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelMsgBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnCancelMsgBox.Location = new System.Drawing.Point(166, 177);
-            this.BtnCancelMsgBox.Name = "BtnCancelMsgBox";
-            this.BtnCancelMsgBox.Size = new System.Drawing.Size(68, 28);
-            this.BtnCancelMsgBox.TabIndex = 91;
-            this.BtnCancelMsgBox.Text = "Cancel";
-            this.BtnCancelMsgBox.UseVisualStyleBackColor = false;
-            this.BtnCancelMsgBox.Visible = false;
+            this.BtnSaveMsgBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.BtnSaveMsgBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnSaveMsgBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnSaveMsgBox.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.BtnSaveMsgBox.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnSaveMsgBox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnSaveMsgBox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnSaveMsgBox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BtnSaveMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSaveMsgBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnSaveMsgBox.Location = new System.Drawing.Point(236, 177);
+            this.BtnSaveMsgBox.Name = "BtnSaveMsgBox";
+            this.BtnSaveMsgBox.Size = new System.Drawing.Size(68, 28);
+            this.BtnSaveMsgBox.TabIndex = 94;
+            this.BtnSaveMsgBox.Text = "Save";
+            this.BtnSaveMsgBox.UseVisualStyleBackColor = false;
+            this.BtnSaveMsgBox.Visible = false;
             // 
             // BtnOkMsgBox
             // 
@@ -397,25 +347,75 @@
             this.BtnOkMsgBox.UseVisualStyleBackColor = false;
             this.BtnOkMsgBox.Visible = false;
             // 
-            // BtnSaveMsgBox
+            // BtnCancelMsgBox
             // 
-            this.BtnSaveMsgBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.BtnSaveMsgBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnSaveMsgBox.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnSaveMsgBox.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.BtnSaveMsgBox.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnSaveMsgBox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnSaveMsgBox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.BtnSaveMsgBox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.BtnSaveMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSaveMsgBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnSaveMsgBox.Location = new System.Drawing.Point(236, 177);
-            this.BtnSaveMsgBox.Name = "BtnSaveMsgBox";
-            this.BtnSaveMsgBox.Size = new System.Drawing.Size(68, 28);
-            this.BtnSaveMsgBox.TabIndex = 94;
-            this.BtnSaveMsgBox.Text = "Save";
-            this.BtnSaveMsgBox.UseVisualStyleBackColor = false;
-            this.BtnSaveMsgBox.Visible = false;
+            this.BtnCancelMsgBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.BtnCancelMsgBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BtnCancelMsgBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnCancelMsgBox.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BtnCancelMsgBox.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnCancelMsgBox.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnCancelMsgBox.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.BtnCancelMsgBox.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BtnCancelMsgBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelMsgBox.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.BtnCancelMsgBox.Location = new System.Drawing.Point(166, 177);
+            this.BtnCancelMsgBox.Name = "BtnCancelMsgBox";
+            this.BtnCancelMsgBox.Size = new System.Drawing.Size(68, 28);
+            this.BtnCancelMsgBox.TabIndex = 91;
+            this.BtnCancelMsgBox.Text = "Cancel";
+            this.BtnCancelMsgBox.UseVisualStyleBackColor = false;
+            this.BtnCancelMsgBox.Visible = false;
+            // 
+            // pictureBoxMsg
+            // 
+            this.pictureBoxMsg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxMsg.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBoxMsg.Location = new System.Drawing.Point(178, 11);
+            this.pictureBoxMsg.Name = "pictureBoxMsg";
+            this.pictureBoxMsg.Size = new System.Drawing.Size(45, 40);
+            this.pictureBoxMsg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxMsg.TabIndex = 92;
+            this.pictureBoxMsg.TabStop = false;
+            // 
+            // LblMsgBox
+            // 
+            this.LblMsgBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.LblMsgBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.LblMsgBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblMsgBox.Location = new System.Drawing.Point(7, 87);
+            this.LblMsgBox.Multiline = true;
+            this.LblMsgBox.Name = "LblMsgBox";
+            this.LblMsgBox.ReadOnly = true;
+            this.LblMsgBox.Size = new System.Drawing.Size(390, 77);
+            this.LblMsgBox.TabIndex = 96;
+            this.LblMsgBox.TabStop = false;
+            this.LblMsgBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // LblQuestion
+            // 
+            this.LblQuestion.AutoSize = true;
+            this.LblQuestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblQuestion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LblQuestion.Location = new System.Drawing.Point(49, 60);
+            this.LblQuestion.Name = "LblQuestion";
+            this.LblQuestion.Size = new System.Drawing.Size(303, 15);
+            this.LblQuestion.TabIndex = 95;
+            this.LblQuestion.Text = "Do you really want to save the following combinations?";
+            this.LblQuestion.Visible = false;
+            // 
+            // pnl_default_msg
+            // 
+            this.pnl_default_msg.Controls.Add(this.LblQuestion);
+            this.pnl_default_msg.Controls.Add(this.LblMsgBox);
+            this.pnl_default_msg.Controls.Add(this.pictureBoxMsg);
+            this.pnl_default_msg.Controls.Add(this.BtnCancelMsgBox);
+            this.pnl_default_msg.Controls.Add(this.BtnOkMsgBox);
+            this.pnl_default_msg.Controls.Add(this.BtnSaveMsgBox);
+            this.pnl_default_msg.Location = new System.Drawing.Point(7, 16);
+            this.pnl_default_msg.Name = "pnl_default_msg";
+            this.pnl_default_msg.Size = new System.Drawing.Size(405, 217);
+            this.pnl_default_msg.TabIndex = 92;
             // 
             // MmsgBox
             // 
@@ -437,9 +437,9 @@
             this.Load += new System.EventHandler(this.MsgBox_Load);
             this.pnl_Comb.ResumeLayout(false);
             this.pnl_Comb.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMsg)).EndInit();
             this.pnl_default_msg.ResumeLayout(false);
             this.pnl_default_msg.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMsg)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -462,12 +462,12 @@
         private System.Windows.Forms.Label comb_05;
         private System.Windows.Forms.Label comb_09;
         private System.Windows.Forms.Label comb_01;
-        private System.Windows.Forms.Panel pnl_default_msg;
-        private System.Windows.Forms.Label LblQuestion;
-        private System.Windows.Forms.TextBox LblMsgBox;
-        private System.Windows.Forms.PictureBox pictureBoxMsg;
-        public System.Windows.Forms.Button BtnCancelMsgBox;
-        public System.Windows.Forms.Button BtnOkMsgBox;
         private System.Windows.Forms.Button BtnSaveMsgBox;
+        public System.Windows.Forms.Button BtnOkMsgBox;
+        public System.Windows.Forms.Button BtnCancelMsgBox;
+        private System.Windows.Forms.PictureBox pictureBoxMsg;
+        private System.Windows.Forms.TextBox LblMsgBox;
+        private System.Windows.Forms.Label LblQuestion;
+        private System.Windows.Forms.Panel pnl_default_msg;
     }
 }

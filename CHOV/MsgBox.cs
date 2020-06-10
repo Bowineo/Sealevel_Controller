@@ -169,6 +169,7 @@ namespace CHOV
             }
             else
             {
+                //condição para resume das combinações
                 if (n == 13)
                 {
                     switch (txt)
@@ -186,23 +187,57 @@ namespace CHOV
                 }
                 else
                 {
-                    switch (txt)
+                    //Condição mostras config importadas
+                    if (n == -13)
                     {
-                        case "OK":
-                            BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = false; BtnOkMsgBox.Location = new Point(170, 320);
-                            break;
-                        case "OK&CANCEL":
-                            BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = true; BtnOkMsgBox.Location = new Point(137, 320); BtnCancelMsgBox.Location = new Point(207, 320);
-                            break;
-                        case "SAVE&CANCEL":
-                            BtnOkMsgBox.Visible = false; BtnSaveMsgBox.Visible = true; BtnCancelMsgBox.Visible = true; BtnSaveMsgBox.Location = new Point(137, 530); BtnCancelMsgBox.Location = new Point(207, 530);
-                            break;
-                        default:
-                            break;
+                        switch (txt)
+                        {
+                            case "OK":
+                                BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = false; BtnOkMsgBox.Location = new Point(170, 187);
+                                break;
+                            case "OK&CANCEL":
+                                BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = true; BtnOkMsgBox.Location = new Point(137, 187); BtnCancelMsgBox.Location = new Point(207, 187);
+                                break;
+                            case "SAVE&CANCEL":
+                                BtnOkMsgBox.Visible = false; BtnSaveMsgBox.Visible = true; BtnCancelMsgBox.Visible = true; BtnSaveMsgBox.Location = new Point(137, 300); BtnCancelMsgBox.Location = new Point(207, 300);
+                                break;
+                        }
+                    }
+                    else
+                    {
+                        switch (txt)
+                        {
+                            case "OK":
+                                BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = false; BtnOkMsgBox.Location = new Point(170, 320);
+                                break;
+                            case "OK&CANCEL":
+                                BtnOkMsgBox.Visible = true; BtnSaveMsgBox.Visible = false; BtnCancelMsgBox.Visible = true; BtnOkMsgBox.Location = new Point(137, 320); BtnCancelMsgBox.Location = new Point(207, 320);
+                                break;
+                            case "SAVE&CANCEL":
+                                BtnOkMsgBox.Visible = false; BtnSaveMsgBox.Visible = true; BtnCancelMsgBox.Visible = true; BtnSaveMsgBox.Location = new Point(137, 530); BtnCancelMsgBox.Location = new Point(207, 530);
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }
 
             }
+        }
+
+        /// <summary>
+        /// Função converte strting[] em string linha a linha
+        /// </summary>
+        /// <param name="entrada">recebe string[]</param>
+        /// <returns>retorna string</returns>
+        public string VetorTOstring(string[] entrada)
+        {
+            string saida = "Do you apply the configurations?" + Environment.NewLine + Environment.NewLine;
+            for (int i = 1; i < 13; i++)
+            {
+                saida += entrada[i] + Environment.NewLine;
+            }
+            return saida;
         }
 
         /// <summary>
@@ -228,6 +263,10 @@ namespace CHOV
             if (count == 14) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; }
             if (count == 15) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; comb_15.Text = saida[14]; }
             if (count == 16) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; comb_15.Text = saida[14]; comb_16.Text = saida[15]; }
+            if (count > 17)
+            {
+                LblMsgBox.Text = VetorTOstring(Lista); LblMsgBox.Height = 180;
+            }
         }
 
         /// <summary>
@@ -257,7 +296,7 @@ namespace CHOV
                 case 14: this.Width = 995; this.Height = 407; pnl_Comb.Width = 540; pnl_Comb.Height = 332; pnl_Comb.Location = new Point(424, 016); pnl_default_msg.Location = new Point(7, 74); return;
                 case 15: this.Width = 995; this.Height = 429; pnl_Comb.Width = 540; pnl_Comb.Height = 354; pnl_Comb.Location = new Point(424, 016); pnl_default_msg.Location = new Point(7, 85); return;
                 case 16: this.Width = 995; this.Height = 451; pnl_Comb.Width = 540; pnl_Comb.Height = 378; pnl_Comb.Location = new Point(424, 016); pnl_default_msg.Location = new Point(7, 99); return;
-                default: break;
+                default: this.Height = 400; pnl_default_msg.Height = (3 * pnl_default_msg.Height); break;
             }
         }
     }

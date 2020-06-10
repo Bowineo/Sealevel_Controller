@@ -2930,35 +2930,51 @@ namespace CHOV
         //Menu import configurações
         private void Item1_clicked(object sender, EventArgs e)
         {
-            //Preenche os campos com os dados importado e decriptografado
-            int n = WritevarSetting(SetConfig(ImportCripto()));
-            if (n == 1)
-            {
-                //Passa dados dos campos p settings
-                WritevarSetting();
-                SaveSettings();
-                TabPageIndex();
-                //verificando tipo de sistema e habilitando o q necessario.
-                EnableDisable(Properties.Settings.Default.System);
-                //Função verifica em qual posição está "CHG0   ".
-                PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
-                //Função que insere o CHG0   .
-                InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
-                Properties.Settings.Default.Save();
-                AtualizaSettingsnoSistem();
+            string[] config = ImportCripto();
 
-                frmC.GetInfoSettings();
-                frmC.AtivaPnl(Properties.Settings.Default.System);
-
-                using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
-                { _ = mmsgBox.ShowDialog(); }
-            }
-            else
+            using (Form MsgBoxhf = new MmsgBox(config, "Do you apply the configurations?", "SAVE&CANCEL", 4, -13))
             {
-                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
-                { _ = mmsgBox.ShowDialog(); }
+                DialogResult resultadohf = MsgBoxhf.ShowDialog();
+                if (resultadohf == DialogResult.Yes)
+                {
+                    //Preenche os campos com os dados importado e decriptografado
+                    int n = WritevarSetting(SetConfig(config));
+                    if (n == 1)
+                    {
+                        //Passa dados dos campos p settings
+                        WritevarSetting();
+                        SaveSettings();
+                        TabPageIndex();
+                        //verificando tipo de sistema e habilitando o q necessario.
+                        EnableDisable(Properties.Settings.Default.System);
+                        //Função verifica em qual posição está "CHG0   ".
+                        PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
+                        //Função que insere o CHG0   .
+                        InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+                        Properties.Settings.Default.Save();
+                        AtualizaSettingsnoSistem();
+
+                        frmC.GetInfoSettings();
+                        frmC.AtivaPnl(Properties.Settings.Default.System);
+
+                        using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
+                        { _ = mmsgBox.ShowDialog(); }
+                    }
+                    else
+                    {
+                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
+                        { _ = mmsgBox.ShowDialog(); }
+                    }
+                }
+                else
+                {
+                    using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
+                    { _ = mmsgBox.ShowDialog(); }
+                }
             }
         }
+
+
 
         //Menu export configurações
         private void Item2_clicked(object sender, EventArgs e)
