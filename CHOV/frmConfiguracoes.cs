@@ -2931,49 +2931,55 @@ namespace CHOV
         private void Item1_clicked(object sender, EventArgs e)
         {
             string[] config = ImportCripto();
-
-            using (Form MsgBoxhf = new MmsgBox(config, "Do you apply the configurations?", "SAVE&CANCEL", 4, -13))
+            if (config[0] != "ERRO_CRIPTOGRAFIA")
             {
-                DialogResult resultadohf = MsgBoxhf.ShowDialog();
-                if (resultadohf == DialogResult.Yes)
+                using (Form MsgBoxhf = new MmsgBox(config, "Do you apply the configurations?", "SAVE&CANCEL", 4, -13))
                 {
-                    //Preenche os campos com os dados importado e decriptografado
-                    int n = WritevarSetting(SetConfig(config));
-                    if (n == 1)
+                    DialogResult resultadohf = MsgBoxhf.ShowDialog();
+                    if (resultadohf == DialogResult.Yes)
                     {
-                        //Passa dados dos campos p settings
-                        WritevarSetting();
-                        SaveSettings();
-                        TabPageIndex();
-                        //verificando tipo de sistema e habilitando o q necessario.
-                        EnableDisable(Properties.Settings.Default.System);
-                        //Função verifica em qual posição está "CHG0   ".
-                        PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
-                        //Função que insere o CHG0   .
-                        InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
-                        Properties.Settings.Default.Save();
-                        AtualizaSettingsnoSistem();
+                        //Preenche os campos com os dados importado e decriptografado
+                        int n = WritevarSetting(SetConfig(config));
+                        if (n == 1)
+                        {
+                            //Passa dados dos campos p settings
+                            WritevarSetting();
+                            SaveSettings();
+                            TabPageIndex();
+                            //verificando tipo de sistema e habilitando o q necessario.
+                            EnableDisable(Properties.Settings.Default.System);
+                            //Função verifica em qual posição está "CHG0   ".
+                            PosicaoChg0noVetor(Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput);
+                            //Função que insere o CHG0   .
+                            InsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+                            Properties.Settings.Default.Save();
+                            AtualizaSettingsnoSistem();
 
-                        frmC.GetInfoSettings();
-                        frmC.AtivaPnl(Properties.Settings.Default.System);
+                            frmC.GetInfoSettings();
+                            frmC.AtivaPnl(Properties.Settings.Default.System);
 
-                        using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
-                        { _ = mmsgBox.ShowDialog(); }
+                            using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
+                            { _ = mmsgBox.ShowDialog(); }
+                        }
+                        else
+                        {
+                            using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
+                            { _ = mmsgBox.ShowDialog(); }
+                        }
                     }
                     else
                     {
-                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
+                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
                         { _ = mmsgBox.ShowDialog(); }
                     }
                 }
-                else
-                {
-                    using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
-                    { _ = mmsgBox.ShowDialog(); }
-                }
+            }
+            else
+            {
+                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
+                { _ = mmsgBox.ShowDialog(); }
             }
         }
-
 
 
         //Menu export configurações

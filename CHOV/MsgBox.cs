@@ -233,10 +233,7 @@ namespace CHOV
         public string VetorTOstring(string[] entrada)
         {
             string saida = "Do you apply the configurations?" + Environment.NewLine + Environment.NewLine;
-            for (int i = 1; i < 13; i++)
-            {
-                saida += entrada[i] + Environment.NewLine;
-            }
+            for (int i = 1; i < 13; i++) { saida += entrada[i] + Environment.NewLine; }
             return saida;
         }
 
@@ -263,10 +260,7 @@ namespace CHOV
             if (count == 14) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; }
             if (count == 15) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; comb_15.Text = saida[14]; }
             if (count == 16) { comb_01.Text = saida[0]; comb_02.Text = saida[1]; comb_03.Text = saida[2]; comb_04.Text = saida[3]; comb_05.Text = saida[4]; comb_06.Text = saida[5]; comb_07.Text = saida[6]; comb_08.Text = saida[7]; comb_09.Text = saida[8]; comb_10.Text = saida[9]; comb_11.Text = saida[10]; comb_12.Text = saida[11]; comb_13.Text = saida[12]; comb_14.Text = saida[13]; comb_15.Text = saida[14]; comb_16.Text = saida[15]; }
-            if (count > 17)
-            {
-                LblMsgBox.Text = VetorTOstring(Lista); LblMsgBox.Height = 180;
-            }
+            if (count > 17) { LblMsgBox.Text = VetorTOstring(Lista); LblMsgBox.Height = 185; }
         }
 
         /// <summary>
