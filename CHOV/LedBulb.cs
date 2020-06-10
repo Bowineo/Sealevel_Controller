@@ -20,9 +20,9 @@ namespace Bulb
 
         private Color _color;
         private bool _on = true;
-        private Color _reflectionColor = Color.FromArgb(180, 255, 255, 255);
-        private Color[] _surroundColor = new Color[] { Color.FromArgb(0, 255, 255, 255) };
-        private Timer _timer = new Timer();
+        private readonly Color _reflectionColor = Color.FromArgb(180, 255, 255, 255);
+        private readonly Color[] _surroundColor = new Color[] { Color.FromArgb(0, 255, 255, 255) };
+        private readonly Timer _timer = new Timer();
 
         /// <summary>
         /// Gets or Sets the color of the LED light
@@ -117,13 +117,13 @@ namespace Bulb
             diameter = Math.Max(diameter - 1, 1);
 
             // Draw the background ellipse
-            var rectangle = new Rectangle(this.Padding.Left, this.Padding.Top, diameter, diameter);
+            Rectangle rectangle = new Rectangle(this.Padding.Left, this.Padding.Top, diameter, diameter);
             g.FillEllipse(new SolidBrush(darkColor), rectangle);
 
             // Draw the glow gradient
-            var path = new GraphicsPath();
+            GraphicsPath path = new GraphicsPath();
             path.AddEllipse(rectangle);
-            var pathBrush = new PathGradientBrush(path)
+            PathGradientBrush pathBrush = new PathGradientBrush(path)
             {
                 CenterColor = lightColor,
                 SurroundColors = new Color[] { Color.FromArgb(0, lightColor) }
@@ -131,12 +131,12 @@ namespace Bulb
             g.FillEllipse(pathBrush, rectangle);
 
             // Draw the white reflection gradient
-            var offset = Convert.ToInt32(diameter * .15F);
-            var diameter1 = Convert.ToInt32(rectangle.Width * .8F);
-            var whiteRect = new Rectangle(rectangle.X - offset, rectangle.Y - offset, diameter1, diameter1);
-            var path1 = new GraphicsPath();
+            int offset = Convert.ToInt32(diameter * .15F);
+            int diameter1 = Convert.ToInt32(rectangle.Width * .8F);
+            Rectangle whiteRect = new Rectangle(rectangle.X - offset, rectangle.Y - offset, diameter1, diameter1);
+            GraphicsPath path1 = new GraphicsPath();
             path1.AddEllipse(whiteRect);
-            var pathBrush1 = new PathGradientBrush(path)
+            PathGradientBrush pathBrush1 = new PathGradientBrush(path)
             {
                 CenterColor = _reflectionColor,
                 SurroundColors = _surroundColor

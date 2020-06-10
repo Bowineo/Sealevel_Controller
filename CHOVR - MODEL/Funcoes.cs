@@ -350,9 +350,9 @@ namespace CHOV
         /// <returns>Retorna 1 se já tiver algum form aberto, retorna 0 se nenhum form estiver aberto</returns>
         public static int CheckFormAberto()
         {
-            var frC = Application.OpenForms["frmConfiguracoes"];
-            var frL = Application.OpenForms["frmLogs"];
-            var frS = Application.OpenForms["frmSobre"];
+            Form frC = Application.OpenForms["frmConfiguracoes"];
+            Form frL = Application.OpenForms["frmLogs"];
+            Form frS = Application.OpenForms["frmSobre"];
             int[] fr = new int[4];
             if (frC == null) { fr[0] = 0; } else { fr[0] = 1; }
             if (frL == null) { fr[1] = 0; } else { fr[1] = 1; }
@@ -370,10 +370,10 @@ namespace CHOV
         /// </summary>
         public static void ReturnPanel()
         {
-            var frC = Application.OpenForms["frmConfiguracoes"];
-            var frL = Application.OpenForms["frmLogs"];
-            var frS = Application.OpenForms["frmSobre"];
-            var frP = Application.OpenForms["frmPainel"];
+            Form frC = Application.OpenForms["frmConfiguracoes"];
+            Form frL = Application.OpenForms["frmLogs"];
+            Form frS = Application.OpenForms["frmSobre"];
+            Form frP = Application.OpenForms["frmPainel"];
             int[] fr = new int[4];
             if (frC == null) { fr[0] = 0; } else { fr[0] = 1; }
             if (frL == null) { fr[1] = 0; } else { fr[1] = 1; }
@@ -599,7 +599,7 @@ namespace CHOV
             int qtd = 0;
             for (int i = 0; i < entrada1.Length; i++)
             {
-                if ((String.IsNullOrEmpty(entrada1[i]) || entrada1[i].Trim().Length == 0) || (String.IsNullOrEmpty(entrada2[i]) || entrada2[i].Trim().Length == 0) || (String.IsNullOrEmpty(entrada3[i]) || entrada3[i].Trim().Length == 0))
+                if ((string.IsNullOrEmpty(entrada1[i]) || entrada1[i].Trim().Length == 0) || (string.IsNullOrEmpty(entrada2[i]) || entrada2[i].Trim().Length == 0) || (string.IsNullOrEmpty(entrada3[i]) || entrada3[i].Trim().Length == 0))
                 { qtd += 1; }
             }
             if (qtd == 0) { return false; }
@@ -1274,7 +1274,7 @@ namespace CHOV
         /// <param name="logFile"> String de entrada com path para arquivo de log</param>
         public static void ConfigureFileAppender(string logFile)
         {
-            var fileAppender = GetFileAppender(logFile);
+            IAppender fileAppender = GetFileAppender(logFile);
             BasicConfigurator.Configure(fileAppender);
             ((Hierarchy)LogManager.GetRepository()).Root.Level = Level.Debug;
         }
@@ -1287,7 +1287,7 @@ namespace CHOV
         /// <param name="dataLog"> String[] com as opções de escolha de seleção dos logs</param>
         public static void ConfigureFileAppender(string logFile, int maxSize, string[] dataLog)
         {
-            var fileAppender = GetFileAppenderSize(logFile, maxSize, dataLog);
+            IAppender fileAppender = GetFileAppenderSize(logFile, maxSize, dataLog);
             BasicConfigurator.Configure(fileAppender);
             ((Hierarchy)LogManager.GetRepository()).Root.Level = Level.Debug;
         }
@@ -1303,7 +1303,7 @@ namespace CHOV
         {
             if (enable == true)
             {
-                var fileAppender = GetFileAppenderSize(logFile, maxSize, dataLog);
+                IAppender fileAppender = GetFileAppenderSize(logFile, maxSize, dataLog);
                 BasicConfigurator.Configure(fileAppender);
                 ((Hierarchy)LogManager.GetRepository()).Root.Level = Level.Debug;
             }
@@ -1316,9 +1316,9 @@ namespace CHOV
         /// <returns> IAppender configurado com path de entrada</returns>
         private static IAppender GetFileAppender(string logFile)
         {
-            var layout = new PatternLayout("%date; %username; [%thread]; %-5level; %method; Message: %message; %newline");
+            PatternLayout layout = new PatternLayout("%date; %username; [%thread]; %-5level; %method; Message: %message; %newline");
             layout.ActivateOptions();
-            var appender = new RollingFileAppender
+            RollingFileAppender appender = new RollingFileAppender
             {
                 MaximumFileSize = "100MB",
                 File = logFile,
@@ -1340,9 +1340,9 @@ namespace CHOV
         private static IAppender GetFileAppenderSize(string logFile, int maxSize, string[] dataLog)
         {
             // var layout = new PatternLayout("%date; %username; [%thread]; %-5level; %method; Message: %message; %newline");
-            var layout = new PatternLayout(DecodeData(dataLog));
+            PatternLayout layout = new PatternLayout(DecodeData(dataLog));
             layout.ActivateOptions();
-            var appender = new RollingFileAppender
+            RollingFileAppender appender = new RollingFileAppender
             {
                 MaximumFileSize = Convert.ToString(maxSize) + "MB",
                 File = logFile,

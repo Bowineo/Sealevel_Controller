@@ -14,9 +14,9 @@ namespace CHOV
         public FrmSobre()
         {
             InitializeComponent();
-            this.Text = String.Format("Sobre {0}", AssemblyTitle);
+            this.Text = string.Format("Sobre {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
-            this.labelVersion.Text = String.Format("Versão {0}", AssemblyVersion);
+            this.labelVersion.Text = string.Format("Versão {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;

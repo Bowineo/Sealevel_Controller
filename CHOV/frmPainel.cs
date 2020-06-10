@@ -307,7 +307,8 @@ namespace CHOV
             {
                 case "Change Over":
                     if (position.ToString() == trigger.Substring(3)) { chg = true; }
-                    else { chg = false; } return chg;
+                    else { chg = false; }
+                    return chg;
                 case "Matrix of Signals": return chg;
             }
             return chg;
@@ -509,7 +510,7 @@ namespace CHOV
             LedT_in7.On = false;
             LedT_in8.On = false;
         }
-       
+
         /// <summary>
         /// Zera entradas titulares 9 a 16.
         /// </summary>
@@ -524,13 +525,13 @@ namespace CHOV
             LedT_in15.On = false;
             LedT_in16.On = false;
         }
-       
+
         /// <summary>
         /// Zera entradas titulares 1 a 16.
         /// </summary>
         public void ZeraAllInT()
         { ZeraInT1a8(); ZeraInT9a16(); }
-       
+
         /// <summary>
         /// Zera entradas reservas 1 a 8.
         /// </summary>
@@ -561,13 +562,13 @@ namespace CHOV
             LedR_in15.On = false;
             LedR_in16.On = false;
         }
-       
+
         /// <summary>
         /// Zera entradas resercas 1 a 16.
         /// </summary>
         public void ZeraAllInR()
         { ZeraInR1a8(); ZeraInR9a16(); }
-        
+
         /// <summary>
         /// Zera saidas 1 a 16.
         /// </summary>
@@ -590,13 +591,13 @@ namespace CHOV
             Led_out15.On = false;
             Led_out16.On = false;
         }
-       
+
         /// <summary>
         /// Zera todas entradas e saidas.
         /// </summary>
         public void ZeraAllInOut()
         { ZeraAllInT(); ZeraAllInR(); ZeraOut1a16(); }
-        
+
         /// <summary>
         /// Ativa as entradas titulares 1 a 8.
         /// </summary>
@@ -611,7 +612,7 @@ namespace CHOV
             LedT_in7.On = true;
             LedT_in8.On = true;
         }
-       
+
         /// <summary>
         /// Ativa as entradas titulares 9 a 16.
         /// </summary>
@@ -626,13 +627,13 @@ namespace CHOV
             LedT_in15.On = true;
             LedT_in16.On = true;
         }
-       
+
         /// <summary>
         /// Ativa todas as entradas titulares.
         /// </summary>
         public void AtivaAllInT()
         { AtivaInT1a8(); AtivaInT9a16(); }
-        
+
         /// <summary>
         /// Ativa as entradas reservas 1 a 8.
         /// </summary>
@@ -647,7 +648,7 @@ namespace CHOV
             LedR_in7.On = true;
             LedR_in8.On = true;
         }
-        
+
         /// <summary>
         /// Ativa as entradas reservas 9 a 16.
         /// </summary>
@@ -662,19 +663,19 @@ namespace CHOV
             LedR_in15.On = true;
             LedR_in16.On = true;
         }
-        
+
         /// <summary>
         /// Ativa todas as entradas reservas.
         /// </summary>
         public void AtivaAllInR()
         { AtivaInR1a8(); AtivaInR9a16(); }
-       
+
         /// <summary>
         /// Ativas todas saida e entradas.
         /// </summary>
         public void AtivaAllInOut()
         { AtivaAllInT(); AtivaAllInR(); AtivaAllOut(); }
-        
+
         /// <summary>
         /// Ativa saidas 1 a 16.
         /// </summary>

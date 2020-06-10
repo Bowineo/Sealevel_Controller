@@ -5,7 +5,6 @@ using System.Drawing;
 using System.IO;
 using System.Security;
 using System.Security.Cryptography;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace CHOV
@@ -55,18 +54,18 @@ namespace CHOV
 
         public static byte[] GeraKey()
         {
-            var salt = new byte[] { 99, 21, 3, 4, 5, 6, 7, 8, 9, 10, 111, 12, 13, 14, 255, 16 };
+            byte[] salt = new byte[] { 99, 21, 3, 4, 5, 6, 7, 8, 9, 10, 111, 12, 13, 14, 255, 16 };
             string password = "my-password";
             using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
-            { var key = pdb.GetBytes(32); return key; }
+            { byte[] key = pdb.GetBytes(32); return key; }
         }
 
         public static byte[] GeraIv()
         {
-            var salt = new byte[] { 13, 2, 3, 4, 5, 6, 255, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+            byte[] salt = new byte[] { 13, 2, 3, 4, 5, 6, 255, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
             string password = "my-password";
             using (Rfc2898DeriveBytes pdb = new Rfc2898DeriveBytes(password, salt))
-            { var iv = pdb.GetBytes(16); return iv; }
+            { byte[] iv = pdb.GetBytes(16); return iv; }
         }
 
         /// <summary>
@@ -1053,7 +1052,7 @@ namespace CHOV
         /// <returns> int representando o numero da pagina atual do Tabpage</returns>
         public int TabPageIndex()
         {
-            String page = TbcConfiguration.SelectedTab.ToString().Substring(10).Replace("}", "");
+            string page = TbcConfiguration.SelectedTab.ToString().Substring(10).Replace("}", "");
             int TbIndexPage;
             if (page != "Null")
             {
@@ -1165,7 +1164,7 @@ namespace CHOV
             int l = entrada;
             string[] sasuke = new string[l];
             string[] k = new string[9];
-            for (Int32 i = 0; i < l; i++)
+            for (int i = 0; i < l; i++)
             {
                 for (int h = 0; h <= 8; h++) { k[h] = dGv.Rows[i].Cells[h].Value.ToString(); }
                 string p1;
@@ -1924,8 +1923,8 @@ namespace CHOV
             allFiles[73] = "->Combinations";
             Combinations.CopyTo(allFiles, 74);
 
-            var key = GeraKey();
-            var IV = GeraIv();
+            byte[] key = GeraKey();
+            byte[] IV = GeraIv();
             using (Rijndael myRijndael = Rijndael.Create())
             {
                 for (int i = 0; i < allFiles.Length; i++)
@@ -2036,7 +2035,7 @@ namespace CHOV
                 {
                     try
                     {
-                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                        using (StreamReader sr = new StreamReader(OpenFileDialog1.FileName))
                         {
                             Array.Resize(ref configura, File.ReadAllLines(OpenFileDialog1.FileName).Length);
                             configura = File.ReadAllLines(OpenFileDialog1.FileName);
@@ -2070,11 +2069,11 @@ namespace CHOV
                 {
                     try
                     {
-                        using (var sr = new StreamReader(OpenFileDialog1.FileName))
+                        using (StreamReader sr = new StreamReader(OpenFileDialog1.FileName))
                         {
                             configura = File.ReadAllLines(OpenFileDialog1.FileName);
-                            var key = GeraKey();
-                            var IV = GeraIv();
+                            byte[] key = GeraKey();
+                            byte[] IV = GeraIv();
                             using (Rijndael myRijndael = Rijndael.Create())
                             {
                                 try
@@ -2120,8 +2119,8 @@ namespace CHOV
         /// <returns>retorna string encriptada</returns>
         public string Encrypto(string entrada)
         {
-            var key = GeraKey();
-            var IV = GeraIv();
+            byte[] key = GeraKey();
+            byte[] IV = GeraIv();
             string original = entrada;
             using (Rijndael myRijndael = Rijndael.Create())
             {
@@ -2138,8 +2137,8 @@ namespace CHOV
         /// <returns> retorna string descriptada</returns>
         public string Decrypto(string entrada)
         {
-            var key = GeraKey();
-            var IV = GeraIv();
+            byte[] key = GeraKey();
+            byte[] IV = GeraIv();
             try
             {
                 byte[] enc = Convert.FromBase64String(entrada);
@@ -2898,7 +2897,7 @@ namespace CHOV
         /// </summary>
         /// <param name="strIP">string com o endereço IP</param>
         /// <returns>Retorna TRUE se for um IP válido</returns>
-        public static bool ValidaIp(String strIP)
+        public static bool ValidaIp(string strIP)
         {
             char chrFullStop = '.';
             string[] arrOctets = strIP.Split(chrFullStop);
