@@ -35,69 +35,37 @@ namespace CHOV
             this.PnlTitular_1a16 = new System.Windows.Forms.Panel();
             this.LblT_in16 = new System.Windows.Forms.Label();
             this.LblT_in8 = new System.Windows.Forms.Label();
-            this.LedT_in16 = new Bulb.LedBulb();
-            this.LedT_in8 = new Bulb.LedBulb();
             this.LblT_in15 = new System.Windows.Forms.Label();
             this.LblT_in7 = new System.Windows.Forms.Label();
-            this.LedT_in15 = new Bulb.LedBulb();
-            this.LedT_in7 = new Bulb.LedBulb();
             this.LblT_in14 = new System.Windows.Forms.Label();
             this.LblT_in6 = new System.Windows.Forms.Label();
-            this.LedT_in14 = new Bulb.LedBulb();
-            this.LedT_in6 = new Bulb.LedBulb();
             this.LblT_in13 = new System.Windows.Forms.Label();
             this.LblT_in5 = new System.Windows.Forms.Label();
-            this.LedT_in13 = new Bulb.LedBulb();
-            this.LedT_in5 = new Bulb.LedBulb();
             this.LblT_in12 = new System.Windows.Forms.Label();
             this.LblT_in4 = new System.Windows.Forms.Label();
-            this.LedT_in12 = new Bulb.LedBulb();
-            this.LedT_in4 = new Bulb.LedBulb();
             this.LblT_in11 = new System.Windows.Forms.Label();
             this.LblT_in3 = new System.Windows.Forms.Label();
-            this.LedT_in11 = new Bulb.LedBulb();
-            this.LedT_in3 = new Bulb.LedBulb();
             this.LblT_in10 = new System.Windows.Forms.Label();
             this.LblT_in2 = new System.Windows.Forms.Label();
-            this.LedT_in10 = new Bulb.LedBulb();
-            this.LedT_in2 = new Bulb.LedBulb();
             this.LblT_in9 = new System.Windows.Forms.Label();
-            this.LedT_in9 = new Bulb.LedBulb();
             this.LblT_in1 = new System.Windows.Forms.Label();
-            this.LedT_in1 = new Bulb.LedBulb();
             this.Pnl_out1a16 = new System.Windows.Forms.Panel();
             this.Lbl_out16 = new System.Windows.Forms.Label();
             this.Lbl_out8 = new System.Windows.Forms.Label();
-            this.Led_out16 = new Bulb.LedBulb();
-            this.Led_out8 = new Bulb.LedBulb();
             this.Lbl_out15 = new System.Windows.Forms.Label();
             this.Lbl_out7 = new System.Windows.Forms.Label();
-            this.Led_out15 = new Bulb.LedBulb();
-            this.Led_out7 = new Bulb.LedBulb();
             this.Lbl_out14 = new System.Windows.Forms.Label();
             this.Lbl_out6 = new System.Windows.Forms.Label();
-            this.Led_out14 = new Bulb.LedBulb();
-            this.Led_out6 = new Bulb.LedBulb();
             this.Lbl_out13 = new System.Windows.Forms.Label();
             this.Lbl_out5 = new System.Windows.Forms.Label();
-            this.Led_out13 = new Bulb.LedBulb();
-            this.Led_out5 = new Bulb.LedBulb();
             this.Lbl_out12 = new System.Windows.Forms.Label();
             this.Lbl_out4 = new System.Windows.Forms.Label();
-            this.Led_out12 = new Bulb.LedBulb();
-            this.Led_out4 = new Bulb.LedBulb();
             this.Lbl_out11 = new System.Windows.Forms.Label();
             this.Lbl_out3 = new System.Windows.Forms.Label();
-            this.Led_out11 = new Bulb.LedBulb();
-            this.Led_out3 = new Bulb.LedBulb();
             this.Lbl_out10 = new System.Windows.Forms.Label();
             this.Lbl_out2 = new System.Windows.Forms.Label();
-            this.Led_out10 = new Bulb.LedBulb();
-            this.Led_out2 = new Bulb.LedBulb();
             this.Lbl_out9 = new System.Windows.Forms.Label();
             this.Lbl_out1 = new System.Windows.Forms.Label();
-            this.Led_out9 = new Bulb.LedBulb();
-            this.Led_out1 = new Bulb.LedBulb();
             this.lblSaida = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.painelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,36 +78,20 @@ namespace CHOV
             this.PnlReserva_1a16 = new System.Windows.Forms.Panel();
             this.LblR_in16 = new System.Windows.Forms.Label();
             this.LblR_in8 = new System.Windows.Forms.Label();
-            this.LedR_in16 = new Bulb.LedBulb();
-            this.LedR_in8 = new Bulb.LedBulb();
             this.LblR_in15 = new System.Windows.Forms.Label();
             this.LblR_in7 = new System.Windows.Forms.Label();
-            this.LedR_in15 = new Bulb.LedBulb();
-            this.LedR_in7 = new Bulb.LedBulb();
             this.LblR_in14 = new System.Windows.Forms.Label();
             this.LblR_in6 = new System.Windows.Forms.Label();
-            this.LedR_in14 = new Bulb.LedBulb();
-            this.LedR_in6 = new Bulb.LedBulb();
             this.LblR_in13 = new System.Windows.Forms.Label();
             this.LblR_in5 = new System.Windows.Forms.Label();
-            this.LedR_in13 = new Bulb.LedBulb();
-            this.LedR_in5 = new Bulb.LedBulb();
             this.LblR_in12 = new System.Windows.Forms.Label();
             this.LblR_in4 = new System.Windows.Forms.Label();
-            this.LedR_in12 = new Bulb.LedBulb();
-            this.LedR_in4 = new Bulb.LedBulb();
             this.LblR_in11 = new System.Windows.Forms.Label();
             this.LblR_in3 = new System.Windows.Forms.Label();
-            this.LedR_in11 = new Bulb.LedBulb();
-            this.LedR_in3 = new Bulb.LedBulb();
             this.LblR_in10 = new System.Windows.Forms.Label();
             this.LblR_in2 = new System.Windows.Forms.Label();
-            this.LedR_in10 = new Bulb.LedBulb();
-            this.LedR_in2 = new Bulb.LedBulb();
             this.LblR_in9 = new System.Windows.Forms.Label();
-            this.LedR_in9 = new Bulb.LedBulb();
             this.LblR_in1 = new System.Windows.Forms.Label();
-            this.LedR_in1 = new Bulb.LedBulb();
             this.status = new System.Windows.Forms.TextBox();
             this.PnlPulses = new System.Windows.Forms.Panel();
             this.SecondaryInputs = new System.Windows.Forms.Label();
@@ -202,6 +154,54 @@ namespace CHOV
             this.txt = new System.Windows.Forms.TextBox();
             this.LblData = new System.Windows.Forms.Label();
             this.LedHeart = new Bulb.LedBulb();
+            this.Led_out16 = new Bulb.LedBulb();
+            this.Led_out8 = new Bulb.LedBulb();
+            this.Led_out15 = new Bulb.LedBulb();
+            this.Led_out7 = new Bulb.LedBulb();
+            this.Led_out14 = new Bulb.LedBulb();
+            this.Led_out6 = new Bulb.LedBulb();
+            this.Led_out13 = new Bulb.LedBulb();
+            this.Led_out5 = new Bulb.LedBulb();
+            this.Led_out12 = new Bulb.LedBulb();
+            this.Led_out4 = new Bulb.LedBulb();
+            this.Led_out11 = new Bulb.LedBulb();
+            this.Led_out3 = new Bulb.LedBulb();
+            this.Led_out10 = new Bulb.LedBulb();
+            this.Led_out2 = new Bulb.LedBulb();
+            this.Led_out9 = new Bulb.LedBulb();
+            this.Led_out1 = new Bulb.LedBulb();
+            this.LedR_in16 = new Bulb.LedBulb();
+            this.LedR_in8 = new Bulb.LedBulb();
+            this.LedR_in15 = new Bulb.LedBulb();
+            this.LedR_in7 = new Bulb.LedBulb();
+            this.LedR_in14 = new Bulb.LedBulb();
+            this.LedR_in6 = new Bulb.LedBulb();
+            this.LedR_in13 = new Bulb.LedBulb();
+            this.LedR_in5 = new Bulb.LedBulb();
+            this.LedR_in12 = new Bulb.LedBulb();
+            this.LedR_in4 = new Bulb.LedBulb();
+            this.LedR_in11 = new Bulb.LedBulb();
+            this.LedR_in3 = new Bulb.LedBulb();
+            this.LedR_in10 = new Bulb.LedBulb();
+            this.LedR_in2 = new Bulb.LedBulb();
+            this.LedR_in9 = new Bulb.LedBulb();
+            this.LedR_in1 = new Bulb.LedBulb();
+            this.LedT_in16 = new Bulb.LedBulb();
+            this.LedT_in8 = new Bulb.LedBulb();
+            this.LedT_in15 = new Bulb.LedBulb();
+            this.LedT_in7 = new Bulb.LedBulb();
+            this.LedT_in14 = new Bulb.LedBulb();
+            this.LedT_in6 = new Bulb.LedBulb();
+            this.LedT_in13 = new Bulb.LedBulb();
+            this.LedT_in5 = new Bulb.LedBulb();
+            this.LedT_in12 = new Bulb.LedBulb();
+            this.LedT_in4 = new Bulb.LedBulb();
+            this.LedT_in11 = new Bulb.LedBulb();
+            this.LedT_in3 = new Bulb.LedBulb();
+            this.LedT_in10 = new Bulb.LedBulb();
+            this.LedT_in2 = new Bulb.LedBulb();
+            this.LedT_in9 = new Bulb.LedBulb();
+            this.LedT_in1 = new Bulb.LedBulb();
             this.PnlTitular_1a16.SuspendLayout();
             this.Pnl_out1a16.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -280,30 +280,6 @@ namespace CHOV
             this.LblT_in8.Text = "WWWWWW";
             this.LblT_in8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedT_in16
-            // 
-            this.LedT_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in16.Location = new System.Drawing.Point(520, 84);
-            this.LedT_in16.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in16.Name = "LedT_in16";
-            this.LedT_in16.On = true;
-            this.LedT_in16.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in16.TabIndex = 91;
-            this.LedT_in16.TabStop = false;
-            this.LedT_in16.Text = "ledBulb1";
-            // 
-            // LedT_in8
-            // 
-            this.LedT_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in8.Location = new System.Drawing.Point(520, 31);
-            this.LedT_in8.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in8.Name = "LedT_in8";
-            this.LedT_in8.On = true;
-            this.LedT_in8.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in8.TabIndex = 91;
-            this.LedT_in8.TabStop = false;
-            this.LedT_in8.Text = "ledBulb1";
-            // 
             // LblT_in15
             // 
             this.LblT_in15.AutoEllipsis = true;
@@ -329,30 +305,6 @@ namespace CHOV
             this.LblT_in7.TabIndex = 90;
             this.LblT_in7.Text = "WWWWWW";
             this.LblT_in7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedT_in15
-            // 
-            this.LedT_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in15.Location = new System.Drawing.Point(449, 84);
-            this.LedT_in15.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in15.Name = "LedT_in15";
-            this.LedT_in15.On = true;
-            this.LedT_in15.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in15.TabIndex = 89;
-            this.LedT_in15.TabStop = false;
-            this.LedT_in15.Text = "ledBulb1";
-            // 
-            // LedT_in7
-            // 
-            this.LedT_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in7.Location = new System.Drawing.Point(449, 31);
-            this.LedT_in7.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in7.Name = "LedT_in7";
-            this.LedT_in7.On = true;
-            this.LedT_in7.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in7.TabIndex = 89;
-            this.LedT_in7.TabStop = false;
-            this.LedT_in7.Text = "ledBulb1";
             // 
             // LblT_in14
             // 
@@ -380,30 +332,6 @@ namespace CHOV
             this.LblT_in6.Text = "WWWWWW";
             this.LblT_in6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedT_in14
-            // 
-            this.LedT_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in14.Location = new System.Drawing.Point(378, 84);
-            this.LedT_in14.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in14.Name = "LedT_in14";
-            this.LedT_in14.On = true;
-            this.LedT_in14.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in14.TabIndex = 87;
-            this.LedT_in14.TabStop = false;
-            this.LedT_in14.Text = "ledBulb1";
-            // 
-            // LedT_in6
-            // 
-            this.LedT_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in6.Location = new System.Drawing.Point(378, 31);
-            this.LedT_in6.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in6.Name = "LedT_in6";
-            this.LedT_in6.On = true;
-            this.LedT_in6.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in6.TabIndex = 87;
-            this.LedT_in6.TabStop = false;
-            this.LedT_in6.Text = "ledBulb1";
-            // 
             // LblT_in13
             // 
             this.LblT_in13.AutoEllipsis = true;
@@ -429,30 +357,6 @@ namespace CHOV
             this.LblT_in5.TabIndex = 86;
             this.LblT_in5.Text = "WWWWWW";
             this.LblT_in5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedT_in13
-            // 
-            this.LedT_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in13.Location = new System.Drawing.Point(307, 84);
-            this.LedT_in13.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in13.Name = "LedT_in13";
-            this.LedT_in13.On = true;
-            this.LedT_in13.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in13.TabIndex = 85;
-            this.LedT_in13.TabStop = false;
-            this.LedT_in13.Text = "ledBulb1";
-            // 
-            // LedT_in5
-            // 
-            this.LedT_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in5.Location = new System.Drawing.Point(307, 31);
-            this.LedT_in5.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in5.Name = "LedT_in5";
-            this.LedT_in5.On = true;
-            this.LedT_in5.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in5.TabIndex = 85;
-            this.LedT_in5.TabStop = false;
-            this.LedT_in5.Text = "ledBulb1";
             // 
             // LblT_in12
             // 
@@ -480,30 +384,6 @@ namespace CHOV
             this.LblT_in4.Text = "WWWWWW";
             this.LblT_in4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedT_in12
-            // 
-            this.LedT_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in12.Location = new System.Drawing.Point(235, 84);
-            this.LedT_in12.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in12.Name = "LedT_in12";
-            this.LedT_in12.On = true;
-            this.LedT_in12.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in12.TabIndex = 83;
-            this.LedT_in12.TabStop = false;
-            this.LedT_in12.Text = "ledBulb1";
-            // 
-            // LedT_in4
-            // 
-            this.LedT_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in4.Location = new System.Drawing.Point(235, 31);
-            this.LedT_in4.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in4.Name = "LedT_in4";
-            this.LedT_in4.On = true;
-            this.LedT_in4.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in4.TabIndex = 83;
-            this.LedT_in4.TabStop = false;
-            this.LedT_in4.Text = "ledBulb1";
-            // 
             // LblT_in11
             // 
             this.LblT_in11.AutoEllipsis = true;
@@ -529,30 +409,6 @@ namespace CHOV
             this.LblT_in3.TabIndex = 82;
             this.LblT_in3.Text = "WWWWWW";
             this.LblT_in3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedT_in11
-            // 
-            this.LedT_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in11.Location = new System.Drawing.Point(164, 84);
-            this.LedT_in11.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in11.Name = "LedT_in11";
-            this.LedT_in11.On = true;
-            this.LedT_in11.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in11.TabIndex = 81;
-            this.LedT_in11.TabStop = false;
-            this.LedT_in11.Text = "ledBulb1";
-            // 
-            // LedT_in3
-            // 
-            this.LedT_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in3.Location = new System.Drawing.Point(164, 31);
-            this.LedT_in3.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in3.Name = "LedT_in3";
-            this.LedT_in3.On = true;
-            this.LedT_in3.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in3.TabIndex = 81;
-            this.LedT_in3.TabStop = false;
-            this.LedT_in3.Text = "ledBulb1";
             // 
             // LblT_in10
             // 
@@ -580,30 +436,6 @@ namespace CHOV
             this.LblT_in2.Text = "WWWWWW";
             this.LblT_in2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedT_in10
-            // 
-            this.LedT_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in10.Location = new System.Drawing.Point(93, 84);
-            this.LedT_in10.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in10.Name = "LedT_in10";
-            this.LedT_in10.On = true;
-            this.LedT_in10.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in10.TabIndex = 79;
-            this.LedT_in10.TabStop = false;
-            this.LedT_in10.Text = "ledBulb1";
-            // 
-            // LedT_in2
-            // 
-            this.LedT_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in2.Location = new System.Drawing.Point(93, 31);
-            this.LedT_in2.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in2.Name = "LedT_in2";
-            this.LedT_in2.On = true;
-            this.LedT_in2.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in2.TabIndex = 79;
-            this.LedT_in2.TabStop = false;
-            this.LedT_in2.Text = "ledBulb1";
-            // 
             // LblT_in9
             // 
             this.LblT_in9.AutoEllipsis = true;
@@ -617,18 +449,6 @@ namespace CHOV
             this.LblT_in9.Text = "WWWWWW";
             this.LblT_in9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedT_in9
-            // 
-            this.LedT_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in9.Location = new System.Drawing.Point(22, 84);
-            this.LedT_in9.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in9.Name = "LedT_in9";
-            this.LedT_in9.On = true;
-            this.LedT_in9.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in9.TabIndex = 77;
-            this.LedT_in9.TabStop = false;
-            this.LedT_in9.Text = "ledBulb1";
-            // 
             // LblT_in1
             // 
             this.LblT_in1.AutoEllipsis = true;
@@ -641,19 +461,6 @@ namespace CHOV
             this.LblT_in1.TabIndex = 78;
             this.LblT_in1.Text = "WWWWWW";
             this.LblT_in1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedT_in1
-            // 
-            this.LedT_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LedT_in1.Location = new System.Drawing.Point(22, 31);
-            this.LedT_in1.Margin = new System.Windows.Forms.Padding(2);
-            this.LedT_in1.Name = "LedT_in1";
-            this.LedT_in1.On = true;
-            this.LedT_in1.Size = new System.Drawing.Size(24, 20);
-            this.LedT_in1.TabIndex = 77;
-            this.LedT_in1.TabStop = false;
-            this.LedT_in1.Text = "ledBulb1";
             // 
             // Pnl_out1a16
             // 
@@ -724,30 +531,6 @@ namespace CHOV
             this.Lbl_out8.Text = "WWWWWW";
             this.Lbl_out8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Led_out16
-            // 
-            this.Led_out16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out16.Location = new System.Drawing.Point(520, 84);
-            this.Led_out16.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out16.Name = "Led_out16";
-            this.Led_out16.On = true;
-            this.Led_out16.Size = new System.Drawing.Size(24, 20);
-            this.Led_out16.TabIndex = 91;
-            this.Led_out16.TabStop = false;
-            this.Led_out16.Text = "ledBulb1";
-            // 
-            // Led_out8
-            // 
-            this.Led_out8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out8.Location = new System.Drawing.Point(520, 30);
-            this.Led_out8.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out8.Name = "Led_out8";
-            this.Led_out8.On = true;
-            this.Led_out8.Size = new System.Drawing.Size(24, 20);
-            this.Led_out8.TabIndex = 91;
-            this.Led_out8.TabStop = false;
-            this.Led_out8.Text = "ledBulb1";
-            // 
             // Lbl_out15
             // 
             this.Lbl_out15.AutoEllipsis = true;
@@ -773,30 +556,6 @@ namespace CHOV
             this.Lbl_out7.TabIndex = 90;
             this.Lbl_out7.Text = "WWWWWW";
             this.Lbl_out7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Led_out15
-            // 
-            this.Led_out15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out15.Location = new System.Drawing.Point(449, 84);
-            this.Led_out15.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out15.Name = "Led_out15";
-            this.Led_out15.On = true;
-            this.Led_out15.Size = new System.Drawing.Size(24, 20);
-            this.Led_out15.TabIndex = 89;
-            this.Led_out15.TabStop = false;
-            this.Led_out15.Text = "ledBulb1";
-            // 
-            // Led_out7
-            // 
-            this.Led_out7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out7.Location = new System.Drawing.Point(449, 30);
-            this.Led_out7.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out7.Name = "Led_out7";
-            this.Led_out7.On = true;
-            this.Led_out7.Size = new System.Drawing.Size(24, 20);
-            this.Led_out7.TabIndex = 89;
-            this.Led_out7.TabStop = false;
-            this.Led_out7.Text = "ledBulb1";
             // 
             // Lbl_out14
             // 
@@ -824,30 +583,6 @@ namespace CHOV
             this.Lbl_out6.Text = "WWWWWW";
             this.Lbl_out6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Led_out14
-            // 
-            this.Led_out14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out14.Location = new System.Drawing.Point(378, 84);
-            this.Led_out14.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out14.Name = "Led_out14";
-            this.Led_out14.On = true;
-            this.Led_out14.Size = new System.Drawing.Size(24, 20);
-            this.Led_out14.TabIndex = 87;
-            this.Led_out14.TabStop = false;
-            this.Led_out14.Text = "ledBulb1";
-            // 
-            // Led_out6
-            // 
-            this.Led_out6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out6.Location = new System.Drawing.Point(378, 30);
-            this.Led_out6.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out6.Name = "Led_out6";
-            this.Led_out6.On = true;
-            this.Led_out6.Size = new System.Drawing.Size(24, 20);
-            this.Led_out6.TabIndex = 87;
-            this.Led_out6.TabStop = false;
-            this.Led_out6.Text = "ledBulb1";
-            // 
             // Lbl_out13
             // 
             this.Lbl_out13.AutoEllipsis = true;
@@ -873,30 +608,6 @@ namespace CHOV
             this.Lbl_out5.TabIndex = 86;
             this.Lbl_out5.Text = "WWWWWW";
             this.Lbl_out5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Led_out13
-            // 
-            this.Led_out13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out13.Location = new System.Drawing.Point(307, 84);
-            this.Led_out13.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out13.Name = "Led_out13";
-            this.Led_out13.On = true;
-            this.Led_out13.Size = new System.Drawing.Size(24, 20);
-            this.Led_out13.TabIndex = 85;
-            this.Led_out13.TabStop = false;
-            this.Led_out13.Text = "ledBulb1";
-            // 
-            // Led_out5
-            // 
-            this.Led_out5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out5.Location = new System.Drawing.Point(307, 30);
-            this.Led_out5.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out5.Name = "Led_out5";
-            this.Led_out5.On = true;
-            this.Led_out5.Size = new System.Drawing.Size(24, 20);
-            this.Led_out5.TabIndex = 85;
-            this.Led_out5.TabStop = false;
-            this.Led_out5.Text = "ledBulb1";
             // 
             // Lbl_out12
             // 
@@ -924,30 +635,6 @@ namespace CHOV
             this.Lbl_out4.Text = "WWWWWW";
             this.Lbl_out4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Led_out12
-            // 
-            this.Led_out12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out12.Location = new System.Drawing.Point(235, 84);
-            this.Led_out12.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out12.Name = "Led_out12";
-            this.Led_out12.On = true;
-            this.Led_out12.Size = new System.Drawing.Size(24, 20);
-            this.Led_out12.TabIndex = 83;
-            this.Led_out12.TabStop = false;
-            this.Led_out12.Text = "ledBulb1";
-            // 
-            // Led_out4
-            // 
-            this.Led_out4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out4.Location = new System.Drawing.Point(235, 30);
-            this.Led_out4.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out4.Name = "Led_out4";
-            this.Led_out4.On = true;
-            this.Led_out4.Size = new System.Drawing.Size(24, 20);
-            this.Led_out4.TabIndex = 83;
-            this.Led_out4.TabStop = false;
-            this.Led_out4.Text = "ledBulb1";
-            // 
             // Lbl_out11
             // 
             this.Lbl_out11.AutoEllipsis = true;
@@ -973,30 +660,6 @@ namespace CHOV
             this.Lbl_out3.TabIndex = 82;
             this.Lbl_out3.Text = "WWWWWW";
             this.Lbl_out3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Led_out11
-            // 
-            this.Led_out11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out11.Location = new System.Drawing.Point(164, 84);
-            this.Led_out11.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out11.Name = "Led_out11";
-            this.Led_out11.On = true;
-            this.Led_out11.Size = new System.Drawing.Size(24, 20);
-            this.Led_out11.TabIndex = 81;
-            this.Led_out11.TabStop = false;
-            this.Led_out11.Text = "ledBulb1";
-            // 
-            // Led_out3
-            // 
-            this.Led_out3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out3.Location = new System.Drawing.Point(164, 30);
-            this.Led_out3.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out3.Name = "Led_out3";
-            this.Led_out3.On = true;
-            this.Led_out3.Size = new System.Drawing.Size(24, 20);
-            this.Led_out3.TabIndex = 81;
-            this.Led_out3.TabStop = false;
-            this.Led_out3.Text = "ledBulb1";
             // 
             // Lbl_out10
             // 
@@ -1024,30 +687,6 @@ namespace CHOV
             this.Lbl_out2.Text = "WWWWWW";
             this.Lbl_out2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Led_out10
-            // 
-            this.Led_out10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out10.Location = new System.Drawing.Point(93, 84);
-            this.Led_out10.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out10.Name = "Led_out10";
-            this.Led_out10.On = true;
-            this.Led_out10.Size = new System.Drawing.Size(24, 20);
-            this.Led_out10.TabIndex = 79;
-            this.Led_out10.TabStop = false;
-            this.Led_out10.Text = "ledBulb1";
-            // 
-            // Led_out2
-            // 
-            this.Led_out2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out2.Location = new System.Drawing.Point(93, 30);
-            this.Led_out2.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out2.Name = "Led_out2";
-            this.Led_out2.On = true;
-            this.Led_out2.Size = new System.Drawing.Size(24, 20);
-            this.Led_out2.TabIndex = 79;
-            this.Led_out2.TabStop = false;
-            this.Led_out2.Text = "ledBulb1";
-            // 
             // Lbl_out9
             // 
             this.Lbl_out9.AutoEllipsis = true;
@@ -1073,30 +712,6 @@ namespace CHOV
             this.Lbl_out1.TabIndex = 78;
             this.Lbl_out1.Text = "WWWWWW";
             this.Lbl_out1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Led_out9
-            // 
-            this.Led_out9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out9.Location = new System.Drawing.Point(22, 84);
-            this.Led_out9.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out9.Name = "Led_out9";
-            this.Led_out9.On = true;
-            this.Led_out9.Size = new System.Drawing.Size(24, 20);
-            this.Led_out9.TabIndex = 77;
-            this.Led_out9.TabStop = false;
-            this.Led_out9.Text = "ledBulb1";
-            // 
-            // Led_out1
-            // 
-            this.Led_out1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out1.Location = new System.Drawing.Point(22, 30);
-            this.Led_out1.Margin = new System.Windows.Forms.Padding(2);
-            this.Led_out1.Name = "Led_out1";
-            this.Led_out1.On = true;
-            this.Led_out1.Size = new System.Drawing.Size(24, 20);
-            this.Led_out1.TabIndex = 77;
-            this.Led_out1.TabStop = false;
-            this.Led_out1.Text = "ledBulb1";
             // 
             // lblSaida
             // 
@@ -1254,30 +869,6 @@ namespace CHOV
             this.LblR_in8.Text = "WWWWWW";
             this.LblR_in8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedR_in16
-            // 
-            this.LedR_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in16.Location = new System.Drawing.Point(520, 84);
-            this.LedR_in16.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in16.Name = "LedR_in16";
-            this.LedR_in16.On = true;
-            this.LedR_in16.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in16.TabIndex = 91;
-            this.LedR_in16.TabStop = false;
-            this.LedR_in16.Text = "ledBulb1";
-            // 
-            // LedR_in8
-            // 
-            this.LedR_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in8.Location = new System.Drawing.Point(520, 33);
-            this.LedR_in8.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in8.Name = "LedR_in8";
-            this.LedR_in8.On = true;
-            this.LedR_in8.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in8.TabIndex = 91;
-            this.LedR_in8.TabStop = false;
-            this.LedR_in8.Text = "ledBulb1";
-            // 
             // LblR_in15
             // 
             this.LblR_in15.AutoEllipsis = true;
@@ -1303,30 +894,6 @@ namespace CHOV
             this.LblR_in7.TabIndex = 90;
             this.LblR_in7.Text = "WWWWWW";
             this.LblR_in7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedR_in15
-            // 
-            this.LedR_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in15.Location = new System.Drawing.Point(449, 84);
-            this.LedR_in15.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in15.Name = "LedR_in15";
-            this.LedR_in15.On = true;
-            this.LedR_in15.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in15.TabIndex = 89;
-            this.LedR_in15.TabStop = false;
-            this.LedR_in15.Text = "ledBulb1";
-            // 
-            // LedR_in7
-            // 
-            this.LedR_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in7.Location = new System.Drawing.Point(449, 33);
-            this.LedR_in7.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in7.Name = "LedR_in7";
-            this.LedR_in7.On = true;
-            this.LedR_in7.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in7.TabIndex = 89;
-            this.LedR_in7.TabStop = false;
-            this.LedR_in7.Text = "ledBulb1";
             // 
             // LblR_in14
             // 
@@ -1354,30 +921,6 @@ namespace CHOV
             this.LblR_in6.Text = "WWWWWW";
             this.LblR_in6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedR_in14
-            // 
-            this.LedR_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in14.Location = new System.Drawing.Point(378, 84);
-            this.LedR_in14.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in14.Name = "LedR_in14";
-            this.LedR_in14.On = true;
-            this.LedR_in14.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in14.TabIndex = 87;
-            this.LedR_in14.TabStop = false;
-            this.LedR_in14.Text = "ledBulb1";
-            // 
-            // LedR_in6
-            // 
-            this.LedR_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in6.Location = new System.Drawing.Point(378, 33);
-            this.LedR_in6.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in6.Name = "LedR_in6";
-            this.LedR_in6.On = true;
-            this.LedR_in6.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in6.TabIndex = 87;
-            this.LedR_in6.TabStop = false;
-            this.LedR_in6.Text = "ledBulb1";
-            // 
             // LblR_in13
             // 
             this.LblR_in13.AutoEllipsis = true;
@@ -1403,30 +946,6 @@ namespace CHOV
             this.LblR_in5.TabIndex = 86;
             this.LblR_in5.Text = "WWWWWW";
             this.LblR_in5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedR_in13
-            // 
-            this.LedR_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in13.Location = new System.Drawing.Point(307, 84);
-            this.LedR_in13.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in13.Name = "LedR_in13";
-            this.LedR_in13.On = true;
-            this.LedR_in13.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in13.TabIndex = 85;
-            this.LedR_in13.TabStop = false;
-            this.LedR_in13.Text = "ledBulb1";
-            // 
-            // LedR_in5
-            // 
-            this.LedR_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in5.Location = new System.Drawing.Point(307, 33);
-            this.LedR_in5.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in5.Name = "LedR_in5";
-            this.LedR_in5.On = true;
-            this.LedR_in5.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in5.TabIndex = 85;
-            this.LedR_in5.TabStop = false;
-            this.LedR_in5.Text = "ledBulb1";
             // 
             // LblR_in12
             // 
@@ -1454,30 +973,6 @@ namespace CHOV
             this.LblR_in4.Text = "WWWWWW";
             this.LblR_in4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedR_in12
-            // 
-            this.LedR_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in12.Location = new System.Drawing.Point(235, 84);
-            this.LedR_in12.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in12.Name = "LedR_in12";
-            this.LedR_in12.On = true;
-            this.LedR_in12.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in12.TabIndex = 83;
-            this.LedR_in12.TabStop = false;
-            this.LedR_in12.Text = "ledBulb1";
-            // 
-            // LedR_in4
-            // 
-            this.LedR_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in4.Location = new System.Drawing.Point(235, 33);
-            this.LedR_in4.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in4.Name = "LedR_in4";
-            this.LedR_in4.On = true;
-            this.LedR_in4.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in4.TabIndex = 83;
-            this.LedR_in4.TabStop = false;
-            this.LedR_in4.Text = "ledBulb1";
-            // 
             // LblR_in11
             // 
             this.LblR_in11.AutoEllipsis = true;
@@ -1503,30 +998,6 @@ namespace CHOV
             this.LblR_in3.TabIndex = 82;
             this.LblR_in3.Text = "WWWWWW";
             this.LblR_in3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedR_in11
-            // 
-            this.LedR_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in11.Location = new System.Drawing.Point(164, 84);
-            this.LedR_in11.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in11.Name = "LedR_in11";
-            this.LedR_in11.On = true;
-            this.LedR_in11.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in11.TabIndex = 81;
-            this.LedR_in11.TabStop = false;
-            this.LedR_in11.Text = "ledBulb1";
-            // 
-            // LedR_in3
-            // 
-            this.LedR_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in3.Location = new System.Drawing.Point(164, 33);
-            this.LedR_in3.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in3.Name = "LedR_in3";
-            this.LedR_in3.On = true;
-            this.LedR_in3.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in3.TabIndex = 81;
-            this.LedR_in3.TabStop = false;
-            this.LedR_in3.Text = "ledBulb1";
             // 
             // LblR_in10
             // 
@@ -1554,30 +1025,6 @@ namespace CHOV
             this.LblR_in2.Text = "WWWWWW";
             this.LblR_in2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedR_in10
-            // 
-            this.LedR_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in10.Location = new System.Drawing.Point(93, 84);
-            this.LedR_in10.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in10.Name = "LedR_in10";
-            this.LedR_in10.On = true;
-            this.LedR_in10.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in10.TabIndex = 79;
-            this.LedR_in10.TabStop = false;
-            this.LedR_in10.Text = "ledBulb1";
-            // 
-            // LedR_in2
-            // 
-            this.LedR_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in2.Location = new System.Drawing.Point(93, 33);
-            this.LedR_in2.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in2.Name = "LedR_in2";
-            this.LedR_in2.On = true;
-            this.LedR_in2.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in2.TabIndex = 79;
-            this.LedR_in2.TabStop = false;
-            this.LedR_in2.Text = "ledBulb1";
-            // 
             // LblR_in9
             // 
             this.LblR_in9.AutoEllipsis = true;
@@ -1591,18 +1038,6 @@ namespace CHOV
             this.LblR_in9.Text = "WWWWWW";
             this.LblR_in9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // LedR_in9
-            // 
-            this.LedR_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in9.Location = new System.Drawing.Point(22, 84);
-            this.LedR_in9.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in9.Name = "LedR_in9";
-            this.LedR_in9.On = true;
-            this.LedR_in9.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in9.TabIndex = 77;
-            this.LedR_in9.TabStop = false;
-            this.LedR_in9.Text = "ledBulb1";
-            // 
             // LblR_in1
             // 
             this.LblR_in1.AutoEllipsis = true;
@@ -1615,18 +1050,6 @@ namespace CHOV
             this.LblR_in1.TabIndex = 78;
             this.LblR_in1.Text = "WWWWWW";
             this.LblR_in1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LedR_in1
-            // 
-            this.LedR_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in1.Location = new System.Drawing.Point(22, 33);
-            this.LedR_in1.Margin = new System.Windows.Forms.Padding(2);
-            this.LedR_in1.Name = "LedR_in1";
-            this.LedR_in1.On = true;
-            this.LedR_in1.Size = new System.Drawing.Size(24, 20);
-            this.LedR_in1.TabIndex = 77;
-            this.LedR_in1.TabStop = false;
-            this.LedR_in1.Text = "ledBulb1";
             // 
             // status
             // 
@@ -2433,6 +1856,7 @@ namespace CHOV
             this.txt.Size = new System.Drawing.Size(143, 93);
             this.txt.TabIndex = 108;
             this.txt.TabStop = false;
+            this.txt.Visible = false;
             // 
             // LblData
             // 
@@ -2458,6 +1882,583 @@ namespace CHOV
             this.LedHeart.Size = new System.Drawing.Size(16, 17);
             this.LedHeart.TabIndex = 93;
             this.LedHeart.Text = "ledBulb1";
+            // 
+            // Led_out16
+            // 
+            this.Led_out16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out16.Location = new System.Drawing.Point(520, 84);
+            this.Led_out16.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out16.Name = "Led_out16";
+            this.Led_out16.On = true;
+            this.Led_out16.Size = new System.Drawing.Size(24, 20);
+            this.Led_out16.TabIndex = 91;
+            this.Led_out16.TabStop = false;
+            this.Led_out16.Text = "ledBulb1";
+            // 
+            // Led_out8
+            // 
+            this.Led_out8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out8.Location = new System.Drawing.Point(520, 30);
+            this.Led_out8.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out8.Name = "Led_out8";
+            this.Led_out8.On = true;
+            this.Led_out8.Size = new System.Drawing.Size(24, 20);
+            this.Led_out8.TabIndex = 91;
+            this.Led_out8.TabStop = false;
+            this.Led_out8.Text = "ledBulb1";
+            // 
+            // Led_out15
+            // 
+            this.Led_out15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out15.Location = new System.Drawing.Point(449, 84);
+            this.Led_out15.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out15.Name = "Led_out15";
+            this.Led_out15.On = true;
+            this.Led_out15.Size = new System.Drawing.Size(24, 20);
+            this.Led_out15.TabIndex = 89;
+            this.Led_out15.TabStop = false;
+            this.Led_out15.Text = "ledBulb1";
+            // 
+            // Led_out7
+            // 
+            this.Led_out7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out7.Location = new System.Drawing.Point(449, 30);
+            this.Led_out7.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out7.Name = "Led_out7";
+            this.Led_out7.On = true;
+            this.Led_out7.Size = new System.Drawing.Size(24, 20);
+            this.Led_out7.TabIndex = 89;
+            this.Led_out7.TabStop = false;
+            this.Led_out7.Text = "ledBulb1";
+            // 
+            // Led_out14
+            // 
+            this.Led_out14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out14.Location = new System.Drawing.Point(378, 84);
+            this.Led_out14.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out14.Name = "Led_out14";
+            this.Led_out14.On = true;
+            this.Led_out14.Size = new System.Drawing.Size(24, 20);
+            this.Led_out14.TabIndex = 87;
+            this.Led_out14.TabStop = false;
+            this.Led_out14.Text = "ledBulb1";
+            // 
+            // Led_out6
+            // 
+            this.Led_out6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out6.Location = new System.Drawing.Point(378, 30);
+            this.Led_out6.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out6.Name = "Led_out6";
+            this.Led_out6.On = true;
+            this.Led_out6.Size = new System.Drawing.Size(24, 20);
+            this.Led_out6.TabIndex = 87;
+            this.Led_out6.TabStop = false;
+            this.Led_out6.Text = "ledBulb1";
+            // 
+            // Led_out13
+            // 
+            this.Led_out13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out13.Location = new System.Drawing.Point(307, 84);
+            this.Led_out13.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out13.Name = "Led_out13";
+            this.Led_out13.On = true;
+            this.Led_out13.Size = new System.Drawing.Size(24, 20);
+            this.Led_out13.TabIndex = 85;
+            this.Led_out13.TabStop = false;
+            this.Led_out13.Text = "ledBulb1";
+            // 
+            // Led_out5
+            // 
+            this.Led_out5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out5.Location = new System.Drawing.Point(307, 30);
+            this.Led_out5.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out5.Name = "Led_out5";
+            this.Led_out5.On = true;
+            this.Led_out5.Size = new System.Drawing.Size(24, 20);
+            this.Led_out5.TabIndex = 85;
+            this.Led_out5.TabStop = false;
+            this.Led_out5.Text = "ledBulb1";
+            // 
+            // Led_out12
+            // 
+            this.Led_out12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out12.Location = new System.Drawing.Point(235, 84);
+            this.Led_out12.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out12.Name = "Led_out12";
+            this.Led_out12.On = true;
+            this.Led_out12.Size = new System.Drawing.Size(24, 20);
+            this.Led_out12.TabIndex = 83;
+            this.Led_out12.TabStop = false;
+            this.Led_out12.Text = "ledBulb1";
+            // 
+            // Led_out4
+            // 
+            this.Led_out4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out4.Location = new System.Drawing.Point(235, 30);
+            this.Led_out4.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out4.Name = "Led_out4";
+            this.Led_out4.On = true;
+            this.Led_out4.Size = new System.Drawing.Size(24, 20);
+            this.Led_out4.TabIndex = 83;
+            this.Led_out4.TabStop = false;
+            this.Led_out4.Text = "ledBulb1";
+            // 
+            // Led_out11
+            // 
+            this.Led_out11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out11.Location = new System.Drawing.Point(164, 84);
+            this.Led_out11.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out11.Name = "Led_out11";
+            this.Led_out11.On = true;
+            this.Led_out11.Size = new System.Drawing.Size(24, 20);
+            this.Led_out11.TabIndex = 81;
+            this.Led_out11.TabStop = false;
+            this.Led_out11.Text = "ledBulb1";
+            // 
+            // Led_out3
+            // 
+            this.Led_out3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out3.Location = new System.Drawing.Point(164, 30);
+            this.Led_out3.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out3.Name = "Led_out3";
+            this.Led_out3.On = true;
+            this.Led_out3.Size = new System.Drawing.Size(24, 20);
+            this.Led_out3.TabIndex = 81;
+            this.Led_out3.TabStop = false;
+            this.Led_out3.Text = "ledBulb1";
+            // 
+            // Led_out10
+            // 
+            this.Led_out10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out10.Location = new System.Drawing.Point(93, 84);
+            this.Led_out10.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out10.Name = "Led_out10";
+            this.Led_out10.On = true;
+            this.Led_out10.Size = new System.Drawing.Size(24, 20);
+            this.Led_out10.TabIndex = 79;
+            this.Led_out10.TabStop = false;
+            this.Led_out10.Text = "ledBulb1";
+            // 
+            // Led_out2
+            // 
+            this.Led_out2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out2.Location = new System.Drawing.Point(93, 30);
+            this.Led_out2.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out2.Name = "Led_out2";
+            this.Led_out2.On = true;
+            this.Led_out2.Size = new System.Drawing.Size(24, 20);
+            this.Led_out2.TabIndex = 79;
+            this.Led_out2.TabStop = false;
+            this.Led_out2.Text = "ledBulb1";
+            // 
+            // Led_out9
+            // 
+            this.Led_out9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out9.Location = new System.Drawing.Point(22, 84);
+            this.Led_out9.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out9.Name = "Led_out9";
+            this.Led_out9.On = true;
+            this.Led_out9.Size = new System.Drawing.Size(24, 20);
+            this.Led_out9.TabIndex = 77;
+            this.Led_out9.TabStop = false;
+            this.Led_out9.Text = "ledBulb1";
+            // 
+            // Led_out1
+            // 
+            this.Led_out1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.Led_out1.Location = new System.Drawing.Point(22, 30);
+            this.Led_out1.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out1.Name = "Led_out1";
+            this.Led_out1.On = true;
+            this.Led_out1.Size = new System.Drawing.Size(24, 20);
+            this.Led_out1.TabIndex = 77;
+            this.Led_out1.TabStop = false;
+            this.Led_out1.Text = "ledBulb1";
+            // 
+            // LedR_in16
+            // 
+            this.LedR_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in16.Location = new System.Drawing.Point(520, 84);
+            this.LedR_in16.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in16.Name = "LedR_in16";
+            this.LedR_in16.On = true;
+            this.LedR_in16.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in16.TabIndex = 91;
+            this.LedR_in16.TabStop = false;
+            this.LedR_in16.Text = "ledBulb1";
+            // 
+            // LedR_in8
+            // 
+            this.LedR_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in8.Location = new System.Drawing.Point(520, 33);
+            this.LedR_in8.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in8.Name = "LedR_in8";
+            this.LedR_in8.On = true;
+            this.LedR_in8.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in8.TabIndex = 91;
+            this.LedR_in8.TabStop = false;
+            this.LedR_in8.Text = "ledBulb1";
+            // 
+            // LedR_in15
+            // 
+            this.LedR_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in15.Location = new System.Drawing.Point(449, 84);
+            this.LedR_in15.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in15.Name = "LedR_in15";
+            this.LedR_in15.On = true;
+            this.LedR_in15.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in15.TabIndex = 89;
+            this.LedR_in15.TabStop = false;
+            this.LedR_in15.Text = "ledBulb1";
+            // 
+            // LedR_in7
+            // 
+            this.LedR_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in7.Location = new System.Drawing.Point(449, 33);
+            this.LedR_in7.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in7.Name = "LedR_in7";
+            this.LedR_in7.On = true;
+            this.LedR_in7.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in7.TabIndex = 89;
+            this.LedR_in7.TabStop = false;
+            this.LedR_in7.Text = "ledBulb1";
+            // 
+            // LedR_in14
+            // 
+            this.LedR_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in14.Location = new System.Drawing.Point(378, 84);
+            this.LedR_in14.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in14.Name = "LedR_in14";
+            this.LedR_in14.On = true;
+            this.LedR_in14.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in14.TabIndex = 87;
+            this.LedR_in14.TabStop = false;
+            this.LedR_in14.Text = "ledBulb1";
+            // 
+            // LedR_in6
+            // 
+            this.LedR_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in6.Location = new System.Drawing.Point(378, 33);
+            this.LedR_in6.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in6.Name = "LedR_in6";
+            this.LedR_in6.On = true;
+            this.LedR_in6.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in6.TabIndex = 87;
+            this.LedR_in6.TabStop = false;
+            this.LedR_in6.Text = "ledBulb1";
+            // 
+            // LedR_in13
+            // 
+            this.LedR_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in13.Location = new System.Drawing.Point(307, 84);
+            this.LedR_in13.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in13.Name = "LedR_in13";
+            this.LedR_in13.On = true;
+            this.LedR_in13.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in13.TabIndex = 85;
+            this.LedR_in13.TabStop = false;
+            this.LedR_in13.Text = "ledBulb1";
+            // 
+            // LedR_in5
+            // 
+            this.LedR_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in5.Location = new System.Drawing.Point(307, 33);
+            this.LedR_in5.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in5.Name = "LedR_in5";
+            this.LedR_in5.On = true;
+            this.LedR_in5.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in5.TabIndex = 85;
+            this.LedR_in5.TabStop = false;
+            this.LedR_in5.Text = "ledBulb1";
+            // 
+            // LedR_in12
+            // 
+            this.LedR_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in12.Location = new System.Drawing.Point(235, 84);
+            this.LedR_in12.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in12.Name = "LedR_in12";
+            this.LedR_in12.On = true;
+            this.LedR_in12.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in12.TabIndex = 83;
+            this.LedR_in12.TabStop = false;
+            this.LedR_in12.Text = "ledBulb1";
+            // 
+            // LedR_in4
+            // 
+            this.LedR_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in4.Location = new System.Drawing.Point(235, 33);
+            this.LedR_in4.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in4.Name = "LedR_in4";
+            this.LedR_in4.On = true;
+            this.LedR_in4.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in4.TabIndex = 83;
+            this.LedR_in4.TabStop = false;
+            this.LedR_in4.Text = "ledBulb1";
+            // 
+            // LedR_in11
+            // 
+            this.LedR_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in11.Location = new System.Drawing.Point(164, 84);
+            this.LedR_in11.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in11.Name = "LedR_in11";
+            this.LedR_in11.On = true;
+            this.LedR_in11.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in11.TabIndex = 81;
+            this.LedR_in11.TabStop = false;
+            this.LedR_in11.Text = "ledBulb1";
+            // 
+            // LedR_in3
+            // 
+            this.LedR_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in3.Location = new System.Drawing.Point(164, 33);
+            this.LedR_in3.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in3.Name = "LedR_in3";
+            this.LedR_in3.On = true;
+            this.LedR_in3.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in3.TabIndex = 81;
+            this.LedR_in3.TabStop = false;
+            this.LedR_in3.Text = "ledBulb1";
+            // 
+            // LedR_in10
+            // 
+            this.LedR_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in10.Location = new System.Drawing.Point(93, 84);
+            this.LedR_in10.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in10.Name = "LedR_in10";
+            this.LedR_in10.On = true;
+            this.LedR_in10.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in10.TabIndex = 79;
+            this.LedR_in10.TabStop = false;
+            this.LedR_in10.Text = "ledBulb1";
+            // 
+            // LedR_in2
+            // 
+            this.LedR_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in2.Location = new System.Drawing.Point(93, 33);
+            this.LedR_in2.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in2.Name = "LedR_in2";
+            this.LedR_in2.On = true;
+            this.LedR_in2.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in2.TabIndex = 79;
+            this.LedR_in2.TabStop = false;
+            this.LedR_in2.Text = "ledBulb1";
+            // 
+            // LedR_in9
+            // 
+            this.LedR_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in9.Location = new System.Drawing.Point(22, 84);
+            this.LedR_in9.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in9.Name = "LedR_in9";
+            this.LedR_in9.On = true;
+            this.LedR_in9.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in9.TabIndex = 77;
+            this.LedR_in9.TabStop = false;
+            this.LedR_in9.Text = "ledBulb1";
+            // 
+            // LedR_in1
+            // 
+            this.LedR_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedR_in1.Location = new System.Drawing.Point(22, 33);
+            this.LedR_in1.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in1.Name = "LedR_in1";
+            this.LedR_in1.On = true;
+            this.LedR_in1.Size = new System.Drawing.Size(24, 20);
+            this.LedR_in1.TabIndex = 77;
+            this.LedR_in1.TabStop = false;
+            this.LedR_in1.Text = "ledBulb1";
+            // 
+            // LedT_in16
+            // 
+            this.LedT_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in16.Location = new System.Drawing.Point(520, 84);
+            this.LedT_in16.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in16.Name = "LedT_in16";
+            this.LedT_in16.On = true;
+            this.LedT_in16.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in16.TabIndex = 91;
+            this.LedT_in16.TabStop = false;
+            this.LedT_in16.Text = "ledBulb1";
+            // 
+            // LedT_in8
+            // 
+            this.LedT_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in8.Location = new System.Drawing.Point(520, 31);
+            this.LedT_in8.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in8.Name = "LedT_in8";
+            this.LedT_in8.On = true;
+            this.LedT_in8.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in8.TabIndex = 91;
+            this.LedT_in8.TabStop = false;
+            this.LedT_in8.Text = "ledBulb1";
+            // 
+            // LedT_in15
+            // 
+            this.LedT_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in15.Location = new System.Drawing.Point(449, 84);
+            this.LedT_in15.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in15.Name = "LedT_in15";
+            this.LedT_in15.On = true;
+            this.LedT_in15.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in15.TabIndex = 89;
+            this.LedT_in15.TabStop = false;
+            this.LedT_in15.Text = "ledBulb1";
+            // 
+            // LedT_in7
+            // 
+            this.LedT_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in7.Location = new System.Drawing.Point(449, 31);
+            this.LedT_in7.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in7.Name = "LedT_in7";
+            this.LedT_in7.On = true;
+            this.LedT_in7.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in7.TabIndex = 89;
+            this.LedT_in7.TabStop = false;
+            this.LedT_in7.Text = "ledBulb1";
+            // 
+            // LedT_in14
+            // 
+            this.LedT_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in14.Location = new System.Drawing.Point(378, 84);
+            this.LedT_in14.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in14.Name = "LedT_in14";
+            this.LedT_in14.On = true;
+            this.LedT_in14.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in14.TabIndex = 87;
+            this.LedT_in14.TabStop = false;
+            this.LedT_in14.Text = "ledBulb1";
+            // 
+            // LedT_in6
+            // 
+            this.LedT_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in6.Location = new System.Drawing.Point(378, 31);
+            this.LedT_in6.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in6.Name = "LedT_in6";
+            this.LedT_in6.On = true;
+            this.LedT_in6.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in6.TabIndex = 87;
+            this.LedT_in6.TabStop = false;
+            this.LedT_in6.Text = "ledBulb1";
+            // 
+            // LedT_in13
+            // 
+            this.LedT_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in13.Location = new System.Drawing.Point(307, 84);
+            this.LedT_in13.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in13.Name = "LedT_in13";
+            this.LedT_in13.On = true;
+            this.LedT_in13.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in13.TabIndex = 85;
+            this.LedT_in13.TabStop = false;
+            this.LedT_in13.Text = "ledBulb1";
+            // 
+            // LedT_in5
+            // 
+            this.LedT_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in5.Location = new System.Drawing.Point(307, 31);
+            this.LedT_in5.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in5.Name = "LedT_in5";
+            this.LedT_in5.On = true;
+            this.LedT_in5.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in5.TabIndex = 85;
+            this.LedT_in5.TabStop = false;
+            this.LedT_in5.Text = "ledBulb1";
+            // 
+            // LedT_in12
+            // 
+            this.LedT_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in12.Location = new System.Drawing.Point(235, 84);
+            this.LedT_in12.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in12.Name = "LedT_in12";
+            this.LedT_in12.On = true;
+            this.LedT_in12.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in12.TabIndex = 83;
+            this.LedT_in12.TabStop = false;
+            this.LedT_in12.Text = "ledBulb1";
+            // 
+            // LedT_in4
+            // 
+            this.LedT_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in4.Location = new System.Drawing.Point(235, 31);
+            this.LedT_in4.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in4.Name = "LedT_in4";
+            this.LedT_in4.On = true;
+            this.LedT_in4.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in4.TabIndex = 83;
+            this.LedT_in4.TabStop = false;
+            this.LedT_in4.Text = "ledBulb1";
+            // 
+            // LedT_in11
+            // 
+            this.LedT_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in11.Location = new System.Drawing.Point(164, 84);
+            this.LedT_in11.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in11.Name = "LedT_in11";
+            this.LedT_in11.On = true;
+            this.LedT_in11.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in11.TabIndex = 81;
+            this.LedT_in11.TabStop = false;
+            this.LedT_in11.Text = "ledBulb1";
+            // 
+            // LedT_in3
+            // 
+            this.LedT_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in3.Location = new System.Drawing.Point(164, 31);
+            this.LedT_in3.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in3.Name = "LedT_in3";
+            this.LedT_in3.On = true;
+            this.LedT_in3.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in3.TabIndex = 81;
+            this.LedT_in3.TabStop = false;
+            this.LedT_in3.Text = "ledBulb1";
+            // 
+            // LedT_in10
+            // 
+            this.LedT_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in10.Location = new System.Drawing.Point(93, 84);
+            this.LedT_in10.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in10.Name = "LedT_in10";
+            this.LedT_in10.On = true;
+            this.LedT_in10.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in10.TabIndex = 79;
+            this.LedT_in10.TabStop = false;
+            this.LedT_in10.Text = "ledBulb1";
+            // 
+            // LedT_in2
+            // 
+            this.LedT_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in2.Location = new System.Drawing.Point(93, 31);
+            this.LedT_in2.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in2.Name = "LedT_in2";
+            this.LedT_in2.On = true;
+            this.LedT_in2.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in2.TabIndex = 79;
+            this.LedT_in2.TabStop = false;
+            this.LedT_in2.Text = "ledBulb1";
+            // 
+            // LedT_in9
+            // 
+            this.LedT_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in9.Location = new System.Drawing.Point(22, 84);
+            this.LedT_in9.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in9.Name = "LedT_in9";
+            this.LedT_in9.On = true;
+            this.LedT_in9.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in9.TabIndex = 77;
+            this.LedT_in9.TabStop = false;
+            this.LedT_in9.Text = "ledBulb1";
+            // 
+            // LedT_in1
+            // 
+            this.LedT_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.LedT_in1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LedT_in1.Location = new System.Drawing.Point(22, 31);
+            this.LedT_in1.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in1.Name = "LedT_in1";
+            this.LedT_in1.On = true;
+            this.LedT_in1.Size = new System.Drawing.Size(24, 20);
+            this.LedT_in1.TabIndex = 77;
+            this.LedT_in1.TabStop = false;
+            this.LedT_in1.Text = "ledBulb1";
             // 
             // FrmPainel
             // 
