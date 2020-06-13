@@ -93,10 +93,11 @@ namespace CHOV
          * 1-Sucess 
          * 2-Info 
          * 3-Alert 
-         * 4-Pergunta? 
+         * 4-Question 
          * 5-Delete 
          * 6-RecycleBin.
-         * 7-Sem img
+         * 7-None img
+         * 8-Save
         */
         /// <summary>
         /// Determina o icone da mensagem.
@@ -133,6 +134,10 @@ namespace CHOV
                 case 7:
                     MmsgBox.ActiveForm.Text = "Combinations";
                     pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_respostas_50;
+                    break;
+                case 8:
+                    MmsgBox.ActiveForm.Text = "Save";
+                    pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_salvar_50;
                     break;
 
             }

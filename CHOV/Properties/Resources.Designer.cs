@@ -83,36 +83,6 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _837bc87e8ef7988f4e15324e60cfaa4a {
-            get {
-                object obj = ResourceManager.GetObject("837bc87e8ef7988f4e15324e60cfaa4a", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap depression_button_md {
-            get {
-                object obj = ResourceManager.GetObject("depression-button-md", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap depression_button_md1 {
-            get {
-                object obj = ResourceManager.GetObject("depression-button-md1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Empty_device {
             get {
                 object obj = ResourceManager.GetObject("Empty device", resourceCulture);
@@ -123,69 +93,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_abaixo_dentro_de_um_círculo_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-abaixo-dentro-de-um-círculo-100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_acima_dentro_de_um_círculo_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-acima-dentro-de-um-círculo-100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_ajuda_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-ajuda-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_alta_importância_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-alta-importância-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_darth_vader_filled_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-darth-vader-filled-100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_divisa_circulada_à_abaixo_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-divisa-circulada-à-abaixo-100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_divisa_circulada_acima_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-divisa-circulada-acima-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -213,59 +123,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_informações_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-informações-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_informações_50_2 {
             get {
                 object obj = ResourceManager.GetObject("icons8-informações-50-2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_manual_do_usuário_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-manual-do-usuário-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_manutenção_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-manutenção-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_não_perturbe_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-não-perturbe-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_ok_50_2 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-ok-50-2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -303,39 +163,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_pergunte_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-pergunte-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_privado_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-privado-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_respostas_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-respostas-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_risco_médio_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-risco-médio-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,39 +183,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_selecionado_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-selecionado-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_selecionado_50_2 {
             get {
                 object obj = ResourceManager.GetObject("icons8-selecionado-50-2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_suporte_50 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-suporte-50", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Loading {
-            get {
-                object obj = ResourceManager.GetObject("Loading", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,69 +203,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap swap {
-            get {
-                object obj = ResourceManager.GetObject("swap", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Tit {
             get {
                 object obj = ResourceManager.GetObject("Tit", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wall_button_md {
-            get {
-                object obj = ResourceManager.GetObject("wall-button-md", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wall_switch_md {
-            get {
-                object obj = ResourceManager.GetObject("wall-switch-md", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wall_switch_md2 {
-            get {
-                object obj = ResourceManager.GetObject("wall-switch-md2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wall_switch_mdf {
-            get {
-                object obj = ResourceManager.GetObject("wall-switch-mdf", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wall_switch_mdf1 {
-            get {
-                object obj = ResourceManager.GetObject("wall-switch-mdf1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

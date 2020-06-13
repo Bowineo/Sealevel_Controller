@@ -97,6 +97,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="frmConfiguracoes.resx">
       <DependentUpon>frmConfiguracoes.cs</DependentUpon>
@@ -125,11 +130,6 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -162,7 +162,6 @@
     <None Include="Resources\icons8-privado-50.png" />
     <None Include="Resources\icons8-para-cima-com-quadrado-100.png" />
     <None Include="Resources\837bc87e8ef7988f4e15324e60cfaa4a.png" />
-    <None Include="Resources\Loading.gif" />
     <Content Include="SeaMAX.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

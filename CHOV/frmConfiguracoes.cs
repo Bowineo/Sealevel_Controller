@@ -662,7 +662,7 @@ namespace CHOV
             }
             else
             {
-                using (Form MsgBoxhf = new MmsgBox(GetDgv(dGv.Rows.Count), "Do you save the combinations?", "OK&CANCEL", 1, 13))
+                using (Form MsgBoxhf = new MmsgBox(GetDgv(dGv.Rows.Count), "Do you save the combinations?", "OK&CANCEL", 4, 13))
                 {
                     DialogResult resultadohf = MsgBoxhf.ShowDialog();
                     if (resultadohf == DialogResult.OK)
@@ -2963,20 +2963,20 @@ namespace CHOV
                         }
                         else
                         {
-                            using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0))
+                            using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 3, 0))
                             { _ = mmsgBox.ShowDialog(); }
                         }
                     }
                     else
                     {
-                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
+                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 3, 0))
                         { _ = mmsgBox.ShowDialog(); }
                     }
                 }
             }
             else
             {
-                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 1, 0))
+                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 3, 0))
                 { _ = mmsgBox.ShowDialog(); }
             }
         }
