@@ -805,7 +805,7 @@ namespace CHOV
             //Função que recebe info atualizadas do settings
             frmC.RefreshSettings();
             //Load imagem empty device
-            picSealevel.Image = CHOV.Properties.Resources.Empty_device;
+            picSealevel.Image = CHOV.Properties.Resources.Device_Empty;
             IpPrimaryControl.Text = frmC.IP_Primary_pgm;
             IpSecondaryControl.Text = frmC.IP_Secondary_pgm;
             IpOutputControl.Text = frmC.IP_OutputIP_pgm;
@@ -1248,7 +1248,7 @@ namespace CHOV
         {
             if (frmC.exp1 == 0)
             {
-                pictureBoxMore.Image = CHOV.Properties.Resources.icons8_para_cima_com_quadrado_100;
+                pictureBoxMore.Image = CHOV.Properties.Resources.icon_Up;
                 pnlBtns.Location = new Point(6, 84);
                 pnlSimulaRead.Visible = true;
                 frmC.exp1 = 1;
@@ -2847,8 +2847,8 @@ namespace CHOV
         private void IpAddressControl1_MouseLeave(object sender, EventArgs e)
         {
             if (ValidaIp(ipAddressControl1.Text) == false)
-            { ControleDevice.Enabled = false; picSealevel.Image = CHOV.Properties.Resources.Empty_device; }
-            else { ControleDevice.Enabled = true; picSealevel.Image = CHOV.Properties.Resources._410E; }
+            { ControleDevice.Enabled = false; picSealevel.Image = CHOV.Properties.Resources.Device_Empty; }
+            else { ControleDevice.Enabled = true; picSealevel.Image = CHOV.Properties.Resources.Device_410E; }
         }
         #endregion
 

@@ -320,7 +320,7 @@
             this.panel6.Controls.Add(this.btnReply);
             this.panel6.Controls.Add(this.btnCancelIputOutput);
             this.panel6.Controls.Add(this.BtnApply);
-            this.panel6.Location = new System.Drawing.Point(301, 467);
+            this.panel6.Location = new System.Drawing.Point(294, 467);
             this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(260, 33);
@@ -4444,7 +4444,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CHOV.Properties.Resources.icons8_erro_50;
+            this.pictureBox1.Image = global::CHOV.Properties.Resources.icon_Alert;
             this.pictureBox1.Location = new System.Drawing.Point(383, 188);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 50);

@@ -63,16 +63,6 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _410E {
-            get {
-                object obj = ResourceManager.GetObject("410E", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _410E___Empty {
             get {
                 object obj = ResourceManager.GetObject("410E - Empty", resourceCulture);
@@ -83,9 +73,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Empty_device {
+        internal static System.Drawing.Bitmap Device_410E {
             get {
-                object obj = ResourceManager.GetObject("Empty device", resourceCulture);
+                object obj = ResourceManager.GetObject("Device_410E", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +83,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_ajuda_50 {
+        internal static System.Drawing.Bitmap Device_Empty {
             get {
-                object obj = ResourceManager.GetObject("icons8-ajuda-50", resourceCulture);
+                object obj = ResourceManager.GetObject("Device_Empty", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +93,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_erro_50 {
+        internal static System.Drawing.Bitmap icon_Alert {
             get {
-                object obj = ResourceManager.GetObject("icons8-erro-50", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_Alert", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +103,9 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_excluir_50 {
+        internal static System.Drawing.Bitmap icon_Delete {
             get {
-                object obj = ResourceManager.GetObject("icons8-excluir-50", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_Delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +113,29 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_informações_50_2 {
+        internal static System.Drawing.Bitmap icon_Information {
             get {
-                object obj = ResourceManager.GetObject("icons8-informações-50-2", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_Information", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_Question {
+            get {
+                object obj = ResourceManager.GetObject("icon_Question", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_Up {
+            get {
+                object obj = ResourceManager.GetObject("icon_Up", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,16 +146,6 @@ namespace CHOV.Properties {
         internal static System.Drawing.Bitmap icons8_para_baixo_com_quadrado_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-para-baixo-com-quadrado-100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_para_cima_com_quadrado_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-para-cima-com-quadrado-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

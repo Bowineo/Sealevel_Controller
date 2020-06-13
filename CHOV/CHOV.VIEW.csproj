@@ -140,20 +140,20 @@
     <Content Include="ftd2xx.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\410E.jpg" />
+    <None Include="Resources\Device_410E.jpg" />
     <Content Include="IPAddressControlLib.dll" />
-    <None Include="Resources\Empty device.jpg" />
+    <None Include="Resources\Device_Empty.jpg" />
     <None Include="Resources\Reser.png" />
     <None Include="Resources\Tit.png" />
-    <None Include="Resources\icons8-ajuda-50.png" />
-    <None Include="Resources\icons8-erro-50.png" />
-    <None Include="Resources\icons8-excluir-50.png" />
-    <None Include="Resources\icons8-informações-50-2.png" />
+    <None Include="Resources\icon_Question.png" />
+    <None Include="Resources\icon_Alert.png" />
+    <None Include="Resources\icon_Delete.png" />
+    <None Include="Resources\icon_Information.png" />
     <None Include="Resources\icons8-perguntas-50.png" />
     <None Include="Resources\icons8-respostas-50.png" />
     <None Include="Resources\icons8-salvar-50.png" />
     <None Include="Resources\icons8-selecionado-50-2.png" />
-    <None Include="Resources\icons8-para-cima-com-quadrado-100.png" />
+    <None Include="Resources\icon_Up.png" />
     <Content Include="SeaMAX.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

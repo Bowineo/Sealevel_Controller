@@ -1115,7 +1115,7 @@ namespace CHOV
         {
             if (exp == 0)
             {
-                pictureBox2.Image = CHOV.Properties.Resources.icons8_para_cima_com_quadrado_100;
+                pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
                 this.Height = 640;
                 exp = 1;
             }
