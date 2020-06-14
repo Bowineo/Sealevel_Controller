@@ -271,7 +271,7 @@ namespace CHOV.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute(@"<?xml version=""1.0"" encoding=""utf-16""?>
 <ArrayOfString xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"">
-  <string>[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 03 ] 'OUT 03 '</string>
+  <string>[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' -&gt;[ OUT 03 ] 'OUT 03 '</string>
 </ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection Combinations {
             get {
