@@ -1121,7 +1121,7 @@ namespace CHOV
             }
             else
             {
-                pictureBox2.Image = CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
+                pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
                 this.Height = 477;
                 exp = 0;
             }

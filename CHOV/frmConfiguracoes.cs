@@ -1255,7 +1255,7 @@ namespace CHOV
             }
             else
             {
-                pictureBoxMore.Image = CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
+                pictureBoxMore.Image = CHOV.Properties.Resources.icon_Down;
                 pnlBtns.Location = new Point(221, 84);
                 pnlSimulaRead.Visible = false;
                 frmC.exp1 = 0;

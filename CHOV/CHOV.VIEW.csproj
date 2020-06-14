@@ -153,6 +153,7 @@
     <None Include="Resources\icon_Save.png" />
     <None Include="Resources\icon_Sucess.png" />
     <None Include="Resources\icon_Up.png" />
+    <Content Include="Resources\icon_Down.png" />
     <Content Include="SeaMAX.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

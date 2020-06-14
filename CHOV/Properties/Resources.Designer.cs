@@ -63,16 +63,6 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _410E___Empty {
-            get {
-                object obj = ResourceManager.GetObject("410E - Empty", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Active_Primary {
             get {
                 object obj = ResourceManager.GetObject("Active_Primary", resourceCulture);
@@ -143,6 +133,16 @@ namespace CHOV.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_Down {
+            get {
+                object obj = ResourceManager.GetObject("icon_Down", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_Information {
             get {
                 object obj = ResourceManager.GetObject("icon_Information", resourceCulture);
@@ -186,16 +186,6 @@ namespace CHOV.Properties {
         internal static System.Drawing.Bitmap icon_Up {
             get {
                 object obj = ResourceManager.GetObject("icon_Up", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap icons8_para_baixo_com_quadrado_100 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-para-baixo-com-quadrado-100", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -2699,7 +2699,7 @@
             // 
             this.pictureBoxMore.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBoxMore.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxMore.Image = global::CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
+            this.pictureBoxMore.Image = global::CHOV.Properties.Resources.icon_Down;
             this.pictureBoxMore.Location = new System.Drawing.Point(711, 50);
             this.pictureBoxMore.Name = "pictureBoxMore";
             this.pictureBoxMore.Size = new System.Drawing.Size(16, 15);

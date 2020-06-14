@@ -1839,7 +1839,7 @@ namespace CHOV
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = global::CHOV.Properties.Resources.icons8_para_baixo_com_quadrado_100;
+            this.pictureBox2.Image = global::CHOV.Properties.Resources.icon_Down;
             this.pictureBox2.Location = new System.Drawing.Point(10, 414);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 15);
