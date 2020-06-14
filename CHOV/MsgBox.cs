@@ -124,7 +124,7 @@ namespace CHOV
                     pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Question;
                     break;
                 case 5:
-                    MmsgBox.ActiveForm.Text = "Error";
+                    MmsgBox.ActiveForm.Text = "Delete";
                     pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Delete;
                     break;
                 case 6:

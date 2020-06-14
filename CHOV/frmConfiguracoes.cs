@@ -107,7 +107,7 @@ namespace CHOV
         private void BtnWrite_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Write acionado");
-            using (Form MsgBox2 = new MmsgBox("Do you want to write in outputs?", "OK&CANCEL", 4, 0))
+            using (Form MsgBox2 = new MmsgBox("Do you want to write to the outputs of device "+ ipAddressControl1.Text + " ?", "OK&CANCEL", 4, 0))
             {   //Mensagem de confirmação para o usuário
                 DialogResult resultado2 = MsgBox2.ShowDialog();
                 if (resultado2 == DialogResult.OK) { log.Debug("Confirmação 'Write' nas saidas"); }
@@ -123,7 +123,7 @@ namespace CHOV
         private void BtnClear_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Clear acionado");
-            using (Form MsgBox3 = new MmsgBox("Do you want to clear the information?", "OK&CANCEL", 4, 0))
+            using (Form MsgBox3 = new MmsgBox("Do you want to clear the information?", "OK&CANCEL", 5, 0))
             {   //Mensagem de confirmação para o usuário
                 DialogResult resultado3 = MsgBox3.ShowDialog();
                 if (resultado3 == DialogResult.OK)
@@ -222,11 +222,13 @@ namespace CHOV
         private void BtnSearch_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Search acionado");
-            using (Form MsgBox4 = new MmsgBox("Do you want to search for devices?", "OK&CANCEL", 4, 0))
+            using (Form MsgBox4 = new MmsgBox("Do you want to search for device " + ipAddressControl1.Text + " ?", "OK&CANCEL", 4, 0))
             {   //Mensagem de confirmação para o usuário
                 DialogResult resultado4 = MsgBox4.ShowDialog();
-                if (resultado4 == DialogResult.OK) { log.Debug("Confirmação do 'Search' "); }
-                if (resultado4 == DialogResult.Cancel) { log.Debug("Cancelamento do 'Search' "); }
+                if (resultado4 == DialogResult.OK)
+                { log.Debug("Confirmação do 'Search' "); }
+                if (resultado4 == DialogResult.Cancel)
+                { log.Debug("Cancelamento do 'Search' "); }
             }
         }
 
@@ -238,7 +240,7 @@ namespace CHOV
         private void BtnOpen_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Open acionado");
-            using (Form MsgBox5 = new MmsgBox("Do you want to open the device?", "OK&CANCEL", 4, 0))
+            using (Form MsgBox5 = new MmsgBox("Do you want to open the device " + ipAddressControl1.Text + " ? ", "OK&CANCEL", 4, 0))
             {
                 //Mensagem de confirmação para o usuário
                 DialogResult resultado5 = MsgBox5.ShowDialog();
@@ -255,7 +257,7 @@ namespace CHOV
         private void BtnRead_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Read acionado");
-            using (Form MsgBox6 = new MmsgBox("Do you want to read the inputs?", "OK&CANCEL", 4, 0))
+            using (Form MsgBox6 = new MmsgBox("Do you want to read the device entries " + ipAddressControl1.Text + " ? ", "OK&CANCEL", 4, 0))
             {   //Mensagem de confirmação para o usuário
                 DialogResult resultado6 = MsgBox6.ShowDialog();
                 if (resultado6 == DialogResult.OK) { log.Debug("Confirmação do 'Read' "); }
@@ -275,7 +277,7 @@ namespace CHOV
         private void BtnSave_system_Click(object sender, EventArgs e)
         {
             log.Debug("Botão Save acionado");
-            using (Form MsgBox = new MmsgBox("Do you want to save the settings?", "SAVE&CANCEL", 4, 0))
+            using (Form MsgBox = new MmsgBox("Do you want to save the settings?", "SAVE&CANCEL", 8, 0))
             {   //Mensagem de confirmação para o usuário.
                 DialogResult resultado = MsgBox.ShowDialog();
                 if (resultado == DialogResult.Yes)
@@ -582,7 +584,7 @@ namespace CHOV
             bool val = ValidaCombinations(cmBdeviceposicao1.Text, cmBposicao1.Text, cmbOperamtx.Text, cmBdeviceposicao2.Text, cmBposicao2.Text, cmbSaida.Text);
             if (dGv.RowCount >= 16)
             {
-                using (Form MsgBox12w = new MmsgBox("Condition could not be recorded, limit of 16 conditions exceeded!", "OK", 4, 0))
+                using (Form MsgBox12w = new MmsgBox("Condition could not be recorded, limit of 16 conditions exceeded!", "OK", 3, 0))
                 {
                     DialogResult resultado12w = MsgBox12w.ShowDialog();
                     if (resultado12w == DialogResult.OK)
@@ -608,6 +610,9 @@ namespace CHOV
                             Properties.Settings.Default.Save();
                             ComboBoxMtx();
                             VisibleBotoes(false, false, false, false, true);
+                            DialogResult resultado = new DialogResult();
+                            using (Form MsgBox8y = new MmsgBox("The combination was added!", "OK", 1, 0))
+                            { resultado = MsgBox8y.ShowDialog(); if (resultado == DialogResult.OK) { log.Debug("Mensagem de sucesso da adição da combinação"); } }
                         }
                     }
                 }
@@ -625,7 +630,7 @@ namespace CHOV
             {
                 log.Debug("Botão 'Delete' foi acionado");
                 string[] msg = GetLineDgV();
-                using (Form MsgBox43 = new MmsgBox("Do you want to delete this combination?" + Environment.NewLine + Environment.NewLine + "( " + msg[0] + ": " + msg[1] + " ) <" + msg[3] + "> ( " + msg[4] + "  : " + msg[5] + " )  -> " + msg[7] + Environment.NewLine + Environment.NewLine + " ' " + msg[2] + " ' <" + msg[3] + "> ' " + msg[6] + " '  -> ' " + msg[8] + " '", "OK&CANCEL", 3, 0))
+                using (Form MsgBox43 = new MmsgBox("Do you want to delete this combination?" + Environment.NewLine + Environment.NewLine + "( " + msg[0] + ": " + msg[1] + " ) <" + msg[3] + "> ( " + msg[4] + "  : " + msg[5] + " )  -> " + msg[7] + Environment.NewLine + Environment.NewLine + " ' " + msg[2] + " ' <" + msg[3] + "> ' " + msg[6] + " '  -> ' " + msg[8] + " '", "OK&CANCEL", 5, 0))
                 {
                     DialogResult resultado2p = MsgBox43.ShowDialog();
                     if (resultado2p == DialogResult.OK)
@@ -634,6 +639,10 @@ namespace CHOV
                         int delindex = dGv.CurrentRow.Index;
                         dGv.Rows.RemoveAt(delindex);
                         VisibleBotoes(false, false, false, false, true);
+
+                        DialogResult resultado = new DialogResult();
+                        using (Form MsgBox8y = new MmsgBox("The combination have been deleted!", "OK", 5, 0))
+                        { resultado = MsgBox8y.ShowDialog(); if (resultado == DialogResult.OK) { log.Debug("Mensagem de sucesso da exclusão da combinação"); } }
                     }
                     else
                     {
@@ -663,7 +672,7 @@ namespace CHOV
             }
             else
             {
-                using (Form MsgBoxhf = new MmsgBox(GetDgv(dGv.Rows.Count), "Do you save the combinations?", "OK&CANCEL", 4, 13))
+                using (Form MsgBoxhf = new MmsgBox(GetDgv(dGv.Rows.Count), "Do you save the combinations?", "OK&CANCEL", 8, 13))
                 {
                     DialogResult resultadohf = MsgBoxhf.ShowDialog();
                     if (resultadohf == DialogResult.OK)
@@ -690,6 +699,17 @@ namespace CHOV
                     {
                         log.Debug("Cancelado a operação 'Save' das combinações");
                         VisibleBotoes(false, false, false, false, false);
+                        DialogResult resultado8ye = new DialogResult();
+
+                        using (Form MsgBox8y = new MmsgBox("The combinations have not been saved!", "OK", 3, 0))
+                        {
+                            resultado8ye = MsgBox8y.ShowDialog();
+                            if (resultado8ye == DialogResult.OK)
+                            {
+                                log.Debug("Mensagem de cancelamento da gravaçao das combinações");
+                            }
+                        }
+
                     }
                     CountCombinacoes();
                 }
