@@ -53,7 +53,7 @@
             this.Historico1.FormattingEnabled = true;
             this.Historico1.HorizontalScrollbar = true;
             this.Historico1.Location = new System.Drawing.Point(25, 33);
-            this.Historico1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Historico1.Margin = new System.Windows.Forms.Padding(2);
             this.Historico1.Name = "Historico1";
             this.Historico1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.Historico1.Size = new System.Drawing.Size(997, 327);
@@ -90,6 +90,7 @@
             this.pnlStatLog.Name = "pnlStatLog";
             this.pnlStatLog.Size = new System.Drawing.Size(612, 24);
             this.pnlStatLog.TabIndex = 53;
+            this.pnlStatLog.Visible = false;
             // 
             // TimerLogs
             // 
@@ -156,7 +157,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmLogs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

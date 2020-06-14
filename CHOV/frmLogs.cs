@@ -80,7 +80,7 @@ namespace CHOV
                     int n = Historico1.Items.Count;
                     string[] vet = new string[n];
                     Historico1.Items.CopyTo(vet, 0);
-                    for (int i = 0; i < Historico1.Items.Count; i++) { arquivo.Write(vet[i]); }
+                    for (int i = 0; i < Historico1.Items.Count; i++) { arquivo.WriteLine(vet[i]); }
                     arquivo.Close();
                     using (Form MsgBox = new MmsgBox("Log " + "'" + nome + "'" + " was successfully exported.", "OK", 1, 0))
                     { _ = MsgBox.ShowDialog(); }

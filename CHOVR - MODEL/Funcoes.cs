@@ -1005,7 +1005,7 @@ namespace CHOV
         public static string SlotsLogs(bool[] read)
         {
             string Saida = "";
-            for (int i = 0; i < read.Length; i++) { if (read[i] == true) { Saida = Saida + DateTime.Now.ToString() + " < " + "OUT" + " " + (i + 1) + " Acionada >"; } }
+            for (int i = 0; i < read.Length; i++) { if (read[i] == true) { Saida = Saida + "<" + DateTime.Now.ToString() + " - "+ "OUT" + " " + (i + 1) + "  Active>"; } }
             return Saida;
         }
 
