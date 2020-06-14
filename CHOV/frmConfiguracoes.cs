@@ -206,8 +206,9 @@ namespace CHOV
                 }
                 catch (Exception)
                 {
-                    plaintext = "Erro na decriptografia";
-                    MessageBox.Show("Erro na decriptografia");
+                    plaintext = "Decryption error";
+                    using (MmsgBox mmsgBox = new MmsgBox("Decryption error", "OK", 3, 0))
+                    { _ = mmsgBox.ShowDialog(); }
                 }
             }
             return plaintext;
@@ -750,7 +751,7 @@ namespace CHOV
         public int WritevarSetting(string[] entrada)
         {
             int v = 0;
-            if (entrada[0] == "ERRO_CRIPTOGRAFIA")
+            if (entrada[0] == "ERROR_CRYPTOGRAPHY")
             {
                 // using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 1, 0)){ _ = mmsgBox.ShowDialog(); }
             }
@@ -1757,7 +1758,7 @@ namespace CHOV
             }
             else
             {
-                using (Form MsgBox1w = new MmsgBox("erro tamanho string: " + dados.Length.ToString(), "OK", 4, 0))
+                using (Form MsgBox1w = new MmsgBox("String size error: " + dados.Length.ToString(), "OK", 4, 0))
                 {
                     DialogResult resultado1w = MsgBox1w.ShowDialog();
                     if (resultado1w == DialogResult.OK)
@@ -1995,7 +1996,7 @@ namespace CHOV
         {
             lblLoading.Visible = true;
             string[] lines = entrada;
-            log.Debug("Botão Export Configuration acionado");
+            log.Debug("Botão export configuration acionado");
             string pathselect;
             string ID;
             using (FolderBrowserDialog folderDlg = new FolderBrowserDialog { ShowNewFolderButton = true })
@@ -2058,7 +2059,7 @@ namespace CHOV
         /// <returns>vetor com as configurações</returns>
         public string[] ImportCripto()
         {
-            string[] configurar = { "ERRO_CRIPTOGRAFIA" };
+            string[] configurar = { "ERROR_CRYPTOGRAPHY" };
             string[] configura = new string[70];
             bool chk = true;
             using (OpenFileDialog1 = new OpenFileDialog())
@@ -2084,7 +2085,7 @@ namespace CHOV
                                         byte[] enc = Convert.FromBase64String(configura[i]);
                                         // Decrypt the bytes to a string.
                                         string roundtrip = DecryptStringFromBytes(enc, key, IV);
-                                        if (roundtrip == "Erro na decriptografia")
+                                        if (roundtrip == "Decryption error")
                                         { chk = false; }
                                         else { configura[i] = roundtrip; }
                                     }
@@ -2144,12 +2145,12 @@ namespace CHOV
                 byte[] enc = Convert.FromBase64String(entrada);
                 // Decrypt the bytes to a string.
                 string roundtrip = DecryptStringFromBytes(enc, key, IV);
-                return ("Resultado: " + roundtrip);
+                return ("Result: " + roundtrip);
             }
             catch (Exception)
             {
-                MessageBox.Show("Erro na codificação");
-                return ("Resultado: " + "Erro decriptografia");
+                MessageBox.Show("Encoding error");
+                return ("Result: " + "Encoding error");
             }
         }
 
@@ -2161,10 +2162,10 @@ namespace CHOV
         public string[] SetConfig(string[] entrada)
         {
             string[] saida = new string[entrada.Length - 1];
-            if (entrada[0] == "ERRO_CRIPTOGRAFIA")
+            if (entrada[0] == "ERROR_CRYPTOGRAPHY")
             {
                 Array.Resize(ref saida, 1);
-                saida[0] = "ERRO_CRIPTOGRAFIA";
+                saida[0] = "ERROR_CRYPTOGRAPHY";
             }
             else
             {
@@ -2912,11 +2913,11 @@ namespace CHOV
         //Monitora as teclas de atalho
         private void FrmConfiguracoes_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.Shift && e.KeyCode == Keys.H) { TbcConfiguration.SelectTab(0); log.Debug("Atalho para Hardware"); }
-            if (e.Shift && e.KeyCode == Keys.S) { TbcConfiguration.SelectTab(1); log.Debug("Atalho para System"); }
-            if (e.Shift && e.KeyCode == Keys.I) { TbcConfiguration.SelectTab(2); log.Debug("Atalho para InOut"); }
-            if (e.Shift && e.KeyCode == Keys.M) { TbcConfiguration.SelectTab(3); log.Debug("Atalho para Matrix"); }
-            if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para Painel"); Funcoes.ReturnPanel(); }
+            if (e.Shift && e.KeyCode == Keys.H) { TbcConfiguration.SelectTab(0); log.Debug("Atalho para hardware"); }
+            if (e.Shift && e.KeyCode == Keys.S) { TbcConfiguration.SelectTab(1); log.Debug("Atalho para system"); }
+            if (e.Shift && e.KeyCode == Keys.I) { TbcConfiguration.SelectTab(2); log.Debug("Atalho para inout"); }
+            if (e.Shift && e.KeyCode == Keys.M) { TbcConfiguration.SelectTab(3); log.Debug("Atalho para matrix"); }
+            if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para painel"); Funcoes.ReturnPanel(); }
             //atalho para preencher names 'WWWWWWW' usada somente com sistema em 'Mtx'
             if (e.Control && e.KeyCode == Keys.W) { RetornaDebug(); }
             //atalho para preencher names com valores simulando valores de um sistema real, usada somente com sistema em 'Mtx'
@@ -2931,7 +2932,7 @@ namespace CHOV
         private void Item1_clicked(object sender, EventArgs e)
         {
             string[] config = ImportCripto();
-            if (config[0] != "ERRO_CRIPTOGRAFIA")
+            if (config[0] != "ERROR_CRYPTOGRAPHY")
             {
                 using (Form MsgBoxhf = new MmsgBox(config, "Do you apply the configurations?", "SAVE&CANCEL", 4, -13))
                 {
@@ -2958,25 +2959,25 @@ namespace CHOV
                             frmC.GetInfoSettings();
                             frmC.AtivaPnl(Properties.Settings.Default.System);
 
-                            using (MmsgBox mmsgBox = new MmsgBox("Import Complete!", "OK", 1, 0))
+                            using (MmsgBox mmsgBox = new MmsgBox("Import complete!", "OK", 1, 0))
                             { _ = mmsgBox.ShowDialog(); }
                         }
                         else
                         {
-                            using (MmsgBox mmsgBox = new MmsgBox("Import Canceled!", "OK", 3, 0))
+                            using (MmsgBox mmsgBox = new MmsgBox("Import canceled!", "OK", 3, 0))
                             { _ = mmsgBox.ShowDialog(); }
                         }
                     }
                     else
                     {
-                        using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 3, 0))
+                        using (MmsgBox mmsgBox = new MmsgBox("Import canceled for user!", "OK", 3, 0))
                         { _ = mmsgBox.ShowDialog(); }
                     }
                 }
             }
             else
             {
-                using (MmsgBox mmsgBox = new MmsgBox("Import Canceled for user", "OK", 3, 0))
+                using (MmsgBox mmsgBox = new MmsgBox("Importa canceled for user!", "OK", 3, 0))
                 { _ = mmsgBox.ShowDialog(); }
             }
         }
@@ -2985,7 +2986,7 @@ namespace CHOV
         //Menu export configurações
         private void Item2_clicked(object sender, EventArgs e)
         {
-            log.Debug("Botão Export Congigurações acionado");
+            log.Debug("Botão export congigurações acionado");
             //Exporta configurações com criptografia
             ExportConfig(GetCfgCripto());
             //Exporta configurações sem criptografia
