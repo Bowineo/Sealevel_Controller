@@ -27,7 +27,7 @@ namespace CHOV
         /// </summary>
         public void Histt()
         {
-            LblNitensHistorico.Text = "Diferential historical - Logs:" + (frmP.Historico.Items.Count - Historico1.Items.Count).ToString();
+            LblNitensHistorico.Text = "Diferentials historical - Logs:" + (frmP.Historico.Items.Count - Historico1.Items.Count).ToString();
             label1LblNitensLog.Text = "Number of historical readings:" + frmP.Historico.Items.Count.ToString();
             if ((frmP.Historico.Items.Count - Historico1.Items.Count) == 2)
             { Historico1.Items.Insert(0, frmP.ArrayHistoric[frmP.ArrayHistoric.Count - 2]); Historico1.Items.Insert(0, frmP.ArrayHistoric[frmP.ArrayHistoric.Count - 1]); }
