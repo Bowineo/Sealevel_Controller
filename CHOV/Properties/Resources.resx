@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="icons8-respostas-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-respostas-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Answer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Answer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="410E - Empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\410E - Empty.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,14 +133,11 @@
   <data name="icon_Information" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_Information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Reser" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reser.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Active_Secondary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Active_Secondary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-selecionado-50-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-selecionado-50-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icons8-perguntas-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-perguntas-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Sucess" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Sucess.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8-para-baixo-com-quadrado-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-para-baixo-com-quadrado-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +148,8 @@
   <data name="icon_Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_Up.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-salvar-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-salvar-50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon_Save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_Question" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon_Question.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,7 +157,7 @@
   <data name="Device_410E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Device_410E.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Active_Primary" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Active_Primary.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

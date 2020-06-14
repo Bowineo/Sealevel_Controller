@@ -338,7 +338,7 @@ namespace CHOV
                                 log.Info("Primary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
                                 ArrayHistoric.Add(DateTime.Now.ToString() + " - #Chg0!" + " - Secondary is selected now!" + Environment.NewLine);
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                                PicChang0ver.Image = CHOV.Properties.Resources.Reser; CurrentSelection_pgm = "Secondary";
+                                PicChang0ver.Image = CHOV.Properties.Resources.Active_Secondary; CurrentSelection_pgm = "Secondary";
                                 ReservaAtivado();
                                 Properties.Settings.Default.CurrentSelection = CurrentSelection_pgm; Properties.Settings.Default.Save();
                                 GetInfoSettings();
@@ -350,7 +350,7 @@ namespace CHOV
                                 log.Info("Secondary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
                                 ArrayHistoric.Add(DateTime.Now.ToString() + " - #Chg0!" + " - Primary is selected now!" + Environment.NewLine);
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                                PicChang0ver.Image = CHOV.Properties.Resources.Tit; CurrentSelection_pgm = "Primary";
+                                PicChang0ver.Image = CHOV.Properties.Resources.Active_Primary; CurrentSelection_pgm = "Primary";
                                 TitularAtivado();
                                 Properties.Settings.Default.CurrentSelection = CurrentSelection_pgm; Properties.Settings.Default.Save();
                                 //Atualiza as informções atuais salvas no settings.
@@ -378,7 +378,7 @@ namespace CHOV
         {
             if (CurrentSelection_pgm == "Primary")
             {
-                PicChang0ver.Image = CHOV.Properties.Resources.Reser; CurrentSelection_pgm = "Secondary";
+                PicChang0ver.Image = CHOV.Properties.Resources.Active_Secondary; CurrentSelection_pgm = "Secondary";
                 ReservaAtivado();
                 Properties.Settings.Default.CurrentSelection = CurrentSelection_pgm; Properties.Settings.Default.Save();
                 //Atualiza as informções atuais salvas no settings.
@@ -389,7 +389,7 @@ namespace CHOV
             }
             else
             {
-                PicChang0ver.Image = CHOV.Properties.Resources.Tit; CurrentSelection_pgm = "Primary";
+                PicChang0ver.Image = CHOV.Properties.Resources.Active_Primary; CurrentSelection_pgm = "Primary";
                 TitularAtivado();
                 Properties.Settings.Default.CurrentSelection = CurrentSelection_pgm; Properties.Settings.Default.Save();
                 //Atualiza as informções atuais salvas no settings.

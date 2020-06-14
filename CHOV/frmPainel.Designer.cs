@@ -1350,7 +1350,7 @@ namespace CHOV
             this.PicChang0ver.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.PicChang0ver.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PicChang0ver.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PicChang0ver.Image = global::CHOV.Properties.Resources.Tit;
+            this.PicChang0ver.Image = global::CHOV.Properties.Resources.Active_Primary;
             this.PicChang0ver.Location = new System.Drawing.Point(440, 24);
             this.PicChang0ver.Name = "PicChang0ver";
             this.PicChang0ver.Size = new System.Drawing.Size(45, 33);

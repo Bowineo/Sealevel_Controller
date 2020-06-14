@@ -109,7 +109,7 @@ namespace CHOV
             {
                 case 1:
                     MmsgBox.ActiveForm.Text = "Sucess";
-                    pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_selecionado_50_2;
+                    pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Sucess;
                     break;
                 case 2:
                     MmsgBox.ActiveForm.Text = "Information";
@@ -120,12 +120,12 @@ namespace CHOV
                     pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Alert;
                     break;
                 case 4:
-                    MmsgBox.ActiveForm.Text = "Alert";
+                    MmsgBox.ActiveForm.Text = "?";
                     pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Question;
                     break;
                 case 5:
                     MmsgBox.ActiveForm.Text = "Error";
-                    pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_respostas_50;
+                    pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Delete;
                     break;
                 case 6:
                     MmsgBox.ActiveForm.Text = "Alert";
@@ -133,11 +133,11 @@ namespace CHOV
                     break;
                 case 7:
                     MmsgBox.ActiveForm.Text = "Combinations";
-                    pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_respostas_50;
+                    pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Answer;
                     break;
                 case 8:
                     MmsgBox.ActiveForm.Text = "Save";
-                    pictureBoxMsg.Image = CHOV.Properties.Resources.icons8_salvar_50;
+                    pictureBoxMsg.Image = CHOV.Properties.Resources.icon_Save;
                     break;
 
             }
