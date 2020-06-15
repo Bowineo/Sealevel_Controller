@@ -87,17 +87,6 @@ namespace CHOV
             InitializeComponent();
             //Parametros iniciais
             PainelStart();
-
-            /*
-            string[] sasuke = { "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 03 ] 'OUT 03 '", "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 02 ] 'IN 02  ' --[ OUT 13 ] 'OUT 13 '"};
-            //Limpa Vetor do sistema
-            Properties.Settings.Default.Combinations.Clear();
-            //Insere vetor de pgm no vetor de sistema
-            Properties.Settings.Default.Combinations.AddRange((sasuke));
-            Properties.Settings.Default.Save();
-            FrmConfiguracoes.GetCo();
-            */
-
             //Insere o Ch0v initial
             Funcoes.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
             Properties.Settings.Default.Save();
@@ -412,6 +401,14 @@ namespace CHOV
         {
             if (vt.Contains("CHG0") == true) { return vt.IndexOf("CHG0"); }
             else { return 99; }
+        }
+
+        //Botão write test
+        private void BtnWriteTest_Click(object sender, EventArgs e)
+        {
+            log.Debug("Botão Write Mtx acionado");
+            //frmC.Saida1a16(Funcoes.Slotnot(frmC.ArraySlotsP, frmC.ArraySlotsOp, frmC.ArraySlotsS, frmC.ArraySlotsO, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
+            Saida1a16(Funcoes.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
         }
 
         /// <summary>
@@ -1152,6 +1149,9 @@ namespace CHOV
             if (e.KeyCode == Keys.Space) { log.Debug("Expandido painel"); Expand(); }
         }
 
+        private void BtnWriteTest_MouseEnter(object sender, EventArgs e) { BtnWriteTest.ForeColor = SystemColors.WindowText; }
+
+        private void BtnWriteTest_MouseLeave(object sender, EventArgs e) { BtnWriteTest.ForeColor = SystemColors.ButtonFace; }
         #endregion
 
         #region Main Timer Routine for Read / Write

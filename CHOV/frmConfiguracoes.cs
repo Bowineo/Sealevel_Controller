@@ -561,17 +561,6 @@ namespace CHOV
         #endregion
 
         #region Matrix
-        /// <summary>
-        /// Escrever na saida
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void BtWrite_Click(object sender, EventArgs e)
-        {
-            log.Debug("Botão Write Mtx acionado");
-            //frmC.Saida1a16(Funcoes.Slotnot(frmC.ArraySlotsP, frmC.ArraySlotsOp, frmC.ArraySlotsS, frmC.ArraySlotsO, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
-            frmC.Saida1a16(Funcoes.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
-        }
 
         /// <summary>
         /// Adiciona a combinação para Datagridview
@@ -1258,29 +1247,6 @@ namespace CHOV
             string config2 = "Enable log: " + Properties.Settings.Default.EnableCombinationsLog.ToString() + " - " + "Max size log: " + Properties.Settings.Default.MaxSizeLog.ToString() + "Mb" + " - " + "Path Log operation: " + Properties.Settings.Default.Path_LogOperation + " - " + "Enable combinations log: " + Properties.Settings.Default.EnableCombinationsLog.ToString();
             log.Debug(config1);
             log.Debug(config2);
-        }
-
-        /// <summary>
-        /// Expandir form
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PictureBoxMore_Click(object sender, EventArgs e)
-        {
-            if (frmC.exp1 == 0)
-            {
-                pictureBoxMore.Image = CHOV.Properties.Resources.icon_Up;
-                pnlBtns.Location = new Point(6, 84);
-                pnlSimulaRead.Visible = true;
-                frmC.exp1 = 1;
-            }
-            else
-            {
-                pictureBoxMore.Image = CHOV.Properties.Resources.icon_Down;
-                pnlBtns.Location = new Point(221, 84);
-                pnlSimulaRead.Visible = false;
-                frmC.exp1 = 0;
-            }
         }
 
         /// <summary>
