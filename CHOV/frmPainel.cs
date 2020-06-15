@@ -1039,9 +1039,7 @@ namespace CHOV
             if (Funcoes.CheckFormAberto() == 0)
             {
                 log.Debug("Load Sobre");
-#pragma warning disable IDE0067 // Descartar objetos antes de perder o escopo
-                Form Sobre = new FrmSobre(); Sobre.Show();
-#pragma warning restore IDE0067 // Descartar objetos antes de perder o escopo
+                using (Form Sobre = new FrmSobre()) { Sobre.ShowDialog(); }
             }
         }
 
@@ -1055,9 +1053,7 @@ namespace CHOV
             if (Funcoes.CheckFormAberto() == 0)
             {
                 log.Debug("Load Configurações");
-#pragma warning disable IDE0067 // Descartar objetos antes de perder o escopo
-                Form Config = new FrmConfiguracoes(this); Config.Show();
-#pragma warning restore IDE0067 // Descartar objetos antes de perder o escopo
+                using (Form Config = new FrmConfiguracoes(this)) { Config.ShowDialog(); }
             }
         }
 
@@ -1071,9 +1067,7 @@ namespace CHOV
             if (Funcoes.CheckFormAberto() == 0)
             {
                 log.Debug("Load Logs");
-#pragma warning disable IDE0067 // Descartar objetos antes de perder o escopo
                 Form logs = new FrmLogs(this); logs.Show();
-#pragma warning restore IDE0067 // Descartar objetos antes de perder o escopo
             }
         }
 
@@ -1119,13 +1113,13 @@ namespace CHOV
             if (exp == 0)
             {
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
-                this.Height = 640;
+                this.Height = 605;
                 exp = 1;
             }
             else
             {
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
-                this.Height = 477;
+                this.Height = 519;
                 exp = 0;
             }
         }
@@ -1360,7 +1354,6 @@ namespace CHOV
         }
 
         #endregion
-
     }
 }
 

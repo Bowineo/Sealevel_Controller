@@ -506,7 +506,7 @@ namespace CHOV
             this.Pnl_out1a16.Controls.Add(this.Led_out9);
             this.Pnl_out1a16.Controls.Add(this.Led_out1);
             this.Pnl_out1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Pnl_out1a16.Location = new System.Drawing.Point(301, 236);
+            this.Pnl_out1a16.Location = new System.Drawing.Point(301, 228);
             this.Pnl_out1a16.Margin = new System.Windows.Forms.Padding(2);
             this.Pnl_out1a16.Name = "Pnl_out1a16";
             this.Pnl_out1a16.Size = new System.Drawing.Size(578, 128);
@@ -725,7 +725,7 @@ namespace CHOV
             this.lblSaida.AutoSize = true;
             this.lblSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaida.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblSaida.Location = new System.Drawing.Point(565, 214);
+            this.lblSaida.Location = new System.Drawing.Point(565, 206);
             this.lblSaida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaida.Name = "lblSaida";
             this.lblSaida.Size = new System.Drawing.Size(51, 17);
@@ -794,7 +794,7 @@ namespace CHOV
             this.Historico.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Historico.FormattingEnabled = true;
             this.Historico.HorizontalScrollbar = true;
-            this.Historico.Location = new System.Drawing.Point(10, 444);
+            this.Historico.Location = new System.Drawing.Point(10, 404);
             this.Historico.Margin = new System.Windows.Forms.Padding(2);
             this.Historico.Name = "Historico";
             this.Historico.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
@@ -1137,7 +1137,7 @@ namespace CHOV
             this.PnlPulses.Controls.Add(this.checkBox4T);
             this.PnlPulses.Controls.Add(this.checkBox3T);
             this.PnlPulses.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PnlPulses.Location = new System.Drawing.Point(183, 521);
+            this.PnlPulses.Location = new System.Drawing.Point(183, 483);
             this.PnlPulses.Name = "PnlPulses";
             this.PnlPulses.Size = new System.Drawing.Size(816, 69);
             this.PnlPulses.TabIndex = 105;
@@ -3075,7 +3075,7 @@ namespace CHOV
             this.LblRodape.AutoEllipsis = true;
             this.LblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.LblRodape.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblRodape.Location = new System.Drawing.Point(38, 407);
+            this.LblRodape.Location = new System.Drawing.Point(38, 368);
             this.LblRodape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRodape.Name = "LblRodape";
             this.LblRodape.Size = new System.Drawing.Size(1106, 22);
@@ -3088,7 +3088,7 @@ namespace CHOV
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::CHOV.Properties.Resources.icon_Down;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 414);
+            this.pictureBox2.Location = new System.Drawing.Point(10, 375);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 15);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3713,7 +3713,7 @@ namespace CHOV
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1186, 434);
+            this.ClientSize = new System.Drawing.Size(1186, 480);
             this.Controls.Add(this.LblData);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.LedHeart);
