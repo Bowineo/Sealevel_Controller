@@ -105,13 +105,7 @@ namespace CHOV
         /// Configurações iniciais do projeto.
         /// </summary>
         public void PainelStart()
-        { AtivaPnl(Properties.Settings.Default.System); status.Text = CurrentSelection_pgm; MostraSelecaoAtual(); }
-
-        /// <summary>
-        /// Mostra a seleção atual do sistema
-        /// </summary>
-        public void MostraSelecaoAtual()
-        { txt.Text = "Seleção atual: " + Environment.NewLine + CurrentSelection_pgm + Environment.NewLine + "Device configurado: " + Environment.NewLine + DeviceChg0_pgm; }
+        { AtivaPnl(Properties.Settings.Default.System); status.Text = CurrentSelection_pgm; }
 
         /// <summary>
         /// Vetores pgm recebem os nomes dos vetores do settings.
@@ -1112,14 +1106,18 @@ namespace CHOV
         {
             if (exp == 0)
             {
+                LblRodape.Location = new Point(34, 460);
+                PnlPulses.Location = new Point(182, 375);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
-                this.Height = 605;
+                this.Height = 525;
                 exp = 1;
             }
             else
             {
+                LblRodape.Location = new Point(34, 371);
+                PnlPulses.Location = new Point(182, 403);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
-                this.Height = 519;
+                this.Height = 410;
                 exp = 0;
             }
         }
@@ -1354,6 +1352,7 @@ namespace CHOV
         }
 
         #endregion
+
     }
 }
 
