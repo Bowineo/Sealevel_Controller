@@ -1107,12 +1107,12 @@ namespace CHOV
             // lblSaida
             // 
             this.lblSaida.AutoSize = true;
-            this.lblSaida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaida.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaida.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblSaida.Location = new System.Drawing.Point(565, 206);
             this.lblSaida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaida.Name = "lblSaida";
-            this.lblSaida.Size = new System.Drawing.Size(51, 17);
+            this.lblSaida.Size = new System.Drawing.Size(50, 16);
             this.lblSaida.TabIndex = 96;
             this.lblSaida.Text = "Output";
             this.lblSaida.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3612,12 +3612,12 @@ namespace CHOV
             // lblPrimary
             // 
             this.lblPrimary.AutoSize = true;
-            this.lblPrimary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrimary.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrimary.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblPrimary.Location = new System.Drawing.Point(271, 42);
             this.lblPrimary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrimary.Name = "lblPrimary";
-            this.lblPrimary.Size = new System.Drawing.Size(56, 17);
+            this.lblPrimary.Size = new System.Drawing.Size(58, 16);
             this.lblPrimary.TabIndex = 2;
             this.lblPrimary.Text = "Primary";
             this.lblPrimary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -3625,12 +3625,12 @@ namespace CHOV
             // lblSecondary
             // 
             this.lblSecondary.AutoSize = true;
-            this.lblSecondary.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSecondary.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecondary.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblSecondary.Location = new System.Drawing.Point(846, 42);
             this.lblSecondary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecondary.Name = "lblSecondary";
-            this.lblSecondary.Size = new System.Drawing.Size(76, 17);
+            this.lblSecondary.Size = new System.Drawing.Size(76, 16);
             this.lblSecondary.TabIndex = 96;
             this.lblSecondary.Text = "Secondary";
             this.lblSecondary.TextAlign = System.Drawing.ContentAlignment.TopCenter;
