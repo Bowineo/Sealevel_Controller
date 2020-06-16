@@ -1106,8 +1106,8 @@ namespace CHOV
         {
             if (exp == 0)
             {
-                LblRodape.Location = new Point(34, 460);
-                PnlPulses.Location = new Point(182, 375);
+                LblRodape.Location = new Point(34, 457);
+                PnlPulses.Location = new Point(182, 377);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
                 this.Height = 525;
                 exp = 1;

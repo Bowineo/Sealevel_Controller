@@ -1714,7 +1714,7 @@ namespace CHOV
             this.PnlPulses.Controls.Add(this.checkBox4T);
             this.PnlPulses.Controls.Add(this.checkBox3T);
             this.PnlPulses.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PnlPulses.Location = new System.Drawing.Point(182, 378);
+            this.PnlPulses.Location = new System.Drawing.Point(182, 376);
             this.PnlPulses.Name = "PnlPulses";
             this.PnlPulses.Size = new System.Drawing.Size(816, 69);
             this.PnlPulses.TabIndex = 105;
@@ -3652,7 +3652,7 @@ namespace CHOV
             this.LblRodape.AutoEllipsis = true;
             this.LblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.LblRodape.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblRodape.Location = new System.Drawing.Point(34, 460);
+            this.LblRodape.Location = new System.Drawing.Point(34, 457);
             this.LblRodape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRodape.Name = "LblRodape";
             this.LblRodape.Size = new System.Drawing.Size(1106, 22);
