@@ -52,11 +52,11 @@
             this.Historico1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Historico1.FormattingEnabled = true;
             this.Historico1.HorizontalScrollbar = true;
-            this.Historico1.Location = new System.Drawing.Point(25, 33);
+            this.Historico1.Location = new System.Drawing.Point(23, 36);
             this.Historico1.Margin = new System.Windows.Forms.Padding(2);
             this.Historico1.Name = "Historico1";
             this.Historico1.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.Historico1.Size = new System.Drawing.Size(997, 327);
+            this.Historico1.Size = new System.Drawing.Size(1138, 171);
             this.Historico1.TabIndex = 48;
             this.Historico1.TabStop = false;
             // 
@@ -74,7 +74,7 @@
             // 
             this.label1LblNitensLog.AutoSize = true;
             this.label1LblNitensLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1LblNitensLog.Location = new System.Drawing.Point(325, 6);
+            this.label1LblNitensLog.Location = new System.Drawing.Point(193, 6);
             this.label1LblNitensLog.Name = "label1LblNitensLog";
             this.label1LblNitensLog.Size = new System.Drawing.Size(146, 13);
             this.label1LblNitensLog.TabIndex = 52;
@@ -86,9 +86,9 @@
             this.pnlStatLog.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlStatLog.Controls.Add(this.LblNitensHistorico);
             this.pnlStatLog.Controls.Add(this.label1LblNitensLog);
-            this.pnlStatLog.Location = new System.Drawing.Point(217, 377);
+            this.pnlStatLog.Location = new System.Drawing.Point(23, 6);
             this.pnlStatLog.Name = "pnlStatLog";
-            this.pnlStatLog.Size = new System.Drawing.Size(612, 24);
+            this.pnlStatLog.Size = new System.Drawing.Size(390, 24);
             this.pnlStatLog.TabIndex = 53;
             this.pnlStatLog.Visible = false;
             // 
@@ -101,7 +101,7 @@
             // 
             this.LblRelogioLog.BackColor = System.Drawing.SystemColors.ControlText;
             this.LblRelogioLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblRelogioLog.Location = new System.Drawing.Point(968, 9);
+            this.LblRelogioLog.Location = new System.Drawing.Point(1110, 9);
             this.LblRelogioLog.Name = "LblRelogioLog";
             this.LblRelogioLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LblRelogioLog.Size = new System.Drawing.Size(54, 18);
@@ -123,7 +123,7 @@
             this.BtnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnExport.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnExport.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnExport.Location = new System.Drawing.Point(960, 376);
+            this.BtnExport.Location = new System.Drawing.Point(561, 218);
             this.BtnExport.Name = "BtnExport";
             this.BtnExport.Size = new System.Drawing.Size(62, 27);
             this.BtnExport.TabIndex = 7;
@@ -135,7 +135,7 @@
             // 
             this.LblDataLog.BackColor = System.Drawing.SystemColors.ControlText;
             this.LblDataLog.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LblDataLog.Location = new System.Drawing.Point(731, 9);
+            this.LblDataLog.Location = new System.Drawing.Point(873, 9);
             this.LblDataLog.Name = "LblDataLog";
             this.LblDataLog.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.LblDataLog.Size = new System.Drawing.Size(231, 18);
@@ -148,7 +148,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
-            this.ClientSize = new System.Drawing.Size(1047, 419);
+            this.ClientSize = new System.Drawing.Size(1186, 258);
             this.Controls.Add(this.BtnExport);
             this.Controls.Add(this.LblDataLog);
             this.Controls.Add(this.LblRelogioLog);
@@ -160,9 +160,10 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "FrmLogs";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Logs";
             this.TopMost = true;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmLogs_FormClosed);
             this.Shown += new System.EventHandler(this.FrmLogs_Shown);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmLogs_KeyDown);
             this.pnlStatLog.ResumeLayout(false);

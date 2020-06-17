@@ -1033,7 +1033,7 @@ namespace CHOV
             if (Funcoes.CheckFormAberto() == 0)
             {
                 log.Debug("Load Sobre");
-                using (Form Sobre = new FrmSobre()) { Sobre.ShowDialog(); }
+               Form Sobre = new FrmSobre(); Sobre.Show(); 
             }
         }
 
@@ -1047,7 +1047,7 @@ namespace CHOV
             if (Funcoes.CheckFormAberto() == 0)
             {
                 log.Debug("Load Configurações");
-                using (Form Config = new FrmConfiguracoes(this)) { Config.ShowDialog(); }
+                Form Config = new FrmConfiguracoes(this);  Config.Show(); 
             }
         }
 
@@ -1060,8 +1060,12 @@ namespace CHOV
         {
             if (Funcoes.CheckFormAberto() == 0)
             {
+                this.Location = new Point(100, 0);
+                Expand(true);
                 log.Debug("Load Logs");
                 Form logs = new FrmLogs(this); logs.Show();
+                logs.Location = new Point(100, 517);
+
             }
         }
 
@@ -1102,7 +1106,7 @@ namespace CHOV
         /// <summary>
         /// Função para expandir form painel
         /// </summary>
-        private void Expand()
+        public void Expand()
         {
             if (exp == 0)
             {
@@ -1118,6 +1122,33 @@ namespace CHOV
                 PnlPulses.Location = new Point(182, 403);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
                 this.Height = 410;
+                exp = 0;
+            }
+        }
+
+        /// <summary>
+        /// Função para expandir form painel/Logs
+        /// </summary>
+        public void Expand(bool n)
+        {
+            if (n)
+            {
+                LblRodape.Location = new Point(34, 457);
+                PnlPulses.Location = new Point(182, 377);
+                pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
+                this.Height = 525;
+                exp = 1;
+            }
+            else
+            {
+                LblRodape.Location = new Point(34, 371);
+                PnlPulses.Location = new Point(182, 403);
+                pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
+                this.Height = 410;
+
+                this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
+                      (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
+
                 exp = 0;
             }
         }

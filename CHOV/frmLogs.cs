@@ -87,6 +87,9 @@ namespace CHOV
                 }
             }
         }
+
+        private void FrmLogs_FormClosed(object sender, FormClosedEventArgs e)
+        {            frmP.Expand(false);        }
     }
 }
 
