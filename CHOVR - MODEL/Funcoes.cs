@@ -951,7 +951,7 @@ namespace CHOV
         {
             string[] inputs = FormatVetorStatus(read);
             string historico;
-            historico = "<" + DateTime.Now.ToString() + " - Secondary: " + InOnlyOn(inputs) + ">";
+            historico = "<" + DateTime.Now.ToString() + " - Secondary  " + InOnlyOn(inputs) + ">";
             return historico;
         }
 
@@ -963,20 +963,28 @@ namespace CHOV
         {
             string[] inputs = FormatVetorStatus(read);
             string historico;
-            historico = "<" + DateTime.Now.ToString() + " - Primary: " + InOnlyOn(inputs) + ">";
+            historico = "<" + DateTime.Now.ToString() + " - Primary    " + InOnlyOn(inputs) + ">";
             return historico;
         }
 
         /// <summary>
         /// Função para registar apenas como a entrada estiver ativa.
         /// </summary>
-        /// <param name="vetorstringentrada"> String[] entrada para verificar quais eatão ativas</param>
+        /// <param name="vetorstringentrada"> String[] entrada para verificar quais estão ativas</param>
         /// <returns> String representando as entradas acionadas</returns>
         public static string InOnlyOn(string[] vetorstringentrada)
         {
             string Saida = "";
             for (int i = 0; i < vetorstringentrada.Length; i++)
-            { if (vetorstringentrada[i] == "ON; ") { Saida += " " + "IN" + " " + (i + 1) + ":" + " " + vetorstringentrada[i].Substring(0, 2); } }
+            {
+                if (vetorstringentrada[i] == "ON; ")
+                {
+                    string s = "0";
+                    if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
+                    else { s += (i + 1).ToString(); }
+                    Saida += " " + "IN" + " " + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                }
+            }
             return Saida;
         }
 
@@ -989,7 +997,15 @@ namespace CHOV
         {
             string Saida = "";
             for (int i = 0; i < vetorstringentrada.Length; i++)
-            { if (vetorstringentrada[i] == "ON; ") { Saida += " " + "IN" + " " + (i + 1) + ":" + " " + vetorstringentrada[i].Substring(0, 2); } }
+            {
+                if (vetorstringentrada[i] == "ON; ")
+                {
+                    string s = "0";
+                    if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
+                    else { s += (i + 1).ToString(); }
+                    Saida += " " + "IN"  + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                }
+            }
             return Saida;
         }
 
@@ -1001,7 +1017,16 @@ namespace CHOV
         public static string SlotsLogs(bool[] read)
         {
             string Saida = "";
-            for (int i = 0; i < read.Length; i++) { if (read[i] == true) { Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (i + 1) + "  Active>"; } }
+            for (int i = 0; i < read.Length; i++)
+            {
+                if (read[i] == true)
+                {
+                    string s = "0";
+                    if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
+                    else { s += (i + 1).ToString(); }
+                    Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + ": ON> ";
+                }
+            }
             return Saida;
         }
 
@@ -1015,7 +1040,13 @@ namespace CHOV
             string Saida = "";
             for (int i = 0; i < Entrada.Length; i++)
             {
-                if (Entrada[i] == "ON; ") { Saida = Saida + " " + "OUT" + " " + (i + 1) + ":" + " " + Entrada[i].Substring(0, 2); }
+                if (Entrada[i] == "ON; ")
+                {
+                    string s = "0";
+                    if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
+                    else { s += (i + 1).ToString(); }
+                    Saida += " " + "OUT" + " " + (s) + ":  " + Entrada[i].Substring(0, 2);
+                }
             }
             return Saida;
         }
