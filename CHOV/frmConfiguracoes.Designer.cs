@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConfiguracoes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Tbpg1 = new System.Windows.Forms.TabPage();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btnDefault = new System.Windows.Forms.Button();
@@ -469,11 +469,11 @@
             // CmpRIN9
             // 
             this.CmpRIN9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN9.Location = new System.Drawing.Point(58, 176);
+            this.CmpRIN9.Location = new System.Drawing.Point(50, 176);
             this.CmpRIN9.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN9.MaxLength = 7;
             this.CmpRIN9.Name = "CmpRIN9";
-            this.CmpRIN9.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN9.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN9.TabIndex = 24;
             this.CmpRIN9.Text = "WWWWWWW";
             this.CmpRIN9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -483,11 +483,11 @@
             // 
             this.CmpRIN1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN1.Location = new System.Drawing.Point(58, 27);
+            this.CmpRIN1.Location = new System.Drawing.Point(50, 27);
             this.CmpRIN1.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN1.MaxLength = 7;
             this.CmpRIN1.Name = "CmpRIN1";
-            this.CmpRIN1.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN1.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN1.TabIndex = 16;
             this.CmpRIN1.Text = "WWWWWWW";
             this.CmpRIN1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -495,7 +495,7 @@
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(10, 309);
+            this.label32.Location = new System.Drawing.Point(7, 309);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(33, 13);
@@ -505,7 +505,7 @@
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(10, 29);
+            this.label17.Location = new System.Drawing.Point(7, 29);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(33, 13);
@@ -517,11 +517,11 @@
             // 
             this.CmpRIN8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN8.Location = new System.Drawing.Point(58, 158);
+            this.CmpRIN8.Location = new System.Drawing.Point(50, 158);
             this.CmpRIN8.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN8.MaxLength = 7;
             this.CmpRIN8.Name = "CmpRIN8";
-            this.CmpRIN8.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN8.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN8.TabIndex = 23;
             this.CmpRIN8.Text = "WWWWWWW";
             this.CmpRIN8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -530,11 +530,11 @@
             // CmpRIN10
             // 
             this.CmpRIN10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN10.Location = new System.Drawing.Point(58, 195);
+            this.CmpRIN10.Location = new System.Drawing.Point(50, 195);
             this.CmpRIN10.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN10.MaxLength = 7;
             this.CmpRIN10.Name = "CmpRIN10";
-            this.CmpRIN10.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN10.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN10.TabIndex = 25;
             this.CmpRIN10.Text = "WWWWWWW";
             this.CmpRIN10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -542,7 +542,7 @@
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(10, 179);
+            this.label25.Location = new System.Drawing.Point(7, 179);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(33, 13);
@@ -552,7 +552,7 @@
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(10, 160);
+            this.label24.Location = new System.Drawing.Point(7, 160);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(33, 13);
@@ -562,7 +562,7 @@
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(10, 104);
+            this.label21.Location = new System.Drawing.Point(7, 104);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(33, 13);
@@ -572,7 +572,7 @@
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(10, 235);
+            this.label28.Location = new System.Drawing.Point(7, 235);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(33, 13);
@@ -583,11 +583,11 @@
             // CmpRIN16
             // 
             this.CmpRIN16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN16.Location = new System.Drawing.Point(58, 307);
+            this.CmpRIN16.Location = new System.Drawing.Point(50, 307);
             this.CmpRIN16.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN16.MaxLength = 7;
             this.CmpRIN16.Name = "CmpRIN16";
-            this.CmpRIN16.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN16.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN16.TabIndex = 31;
             this.CmpRIN16.Text = "WWWWWWW";
             this.CmpRIN16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -597,11 +597,11 @@
             // 
             this.CmpRIN2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN2.Location = new System.Drawing.Point(58, 45);
+            this.CmpRIN2.Location = new System.Drawing.Point(50, 45);
             this.CmpRIN2.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN2.MaxLength = 7;
             this.CmpRIN2.Name = "CmpRIN2";
-            this.CmpRIN2.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN2.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN2.TabIndex = 17;
             this.CmpRIN2.Text = "WWWWWWW";
             this.CmpRIN2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -611,11 +611,11 @@
             // 
             this.CmpRIN7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN7.Location = new System.Drawing.Point(58, 139);
+            this.CmpRIN7.Location = new System.Drawing.Point(50, 139);
             this.CmpRIN7.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN7.MaxLength = 7;
             this.CmpRIN7.Name = "CmpRIN7";
-            this.CmpRIN7.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN7.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN7.TabIndex = 22;
             this.CmpRIN7.Text = "WWWWWWW";
             this.CmpRIN7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -624,11 +624,11 @@
             // CmpRIN13
             // 
             this.CmpRIN13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN13.Location = new System.Drawing.Point(58, 251);
+            this.CmpRIN13.Location = new System.Drawing.Point(50, 251);
             this.CmpRIN13.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN13.MaxLength = 7;
             this.CmpRIN13.Name = "CmpRIN13";
-            this.CmpRIN13.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN13.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN13.TabIndex = 28;
             this.CmpRIN13.Text = "WWWWWWW";
             this.CmpRIN13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -636,7 +636,7 @@
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(10, 253);
+            this.label29.Location = new System.Drawing.Point(7, 253);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(33, 13);
@@ -646,7 +646,7 @@
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(10, 85);
+            this.label20.Location = new System.Drawing.Point(7, 85);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(33, 13);
@@ -656,7 +656,7 @@
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(10, 66);
+            this.label19.Location = new System.Drawing.Point(7, 66);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(33, 13);
@@ -666,7 +666,7 @@
             // 
             // label30
             // 
-            this.label30.Location = new System.Drawing.Point(10, 272);
+            this.label30.Location = new System.Drawing.Point(7, 272);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(33, 13);
@@ -677,11 +677,11 @@
             // CmpRIN15
             // 
             this.CmpRIN15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN15.Location = new System.Drawing.Point(58, 288);
+            this.CmpRIN15.Location = new System.Drawing.Point(50, 288);
             this.CmpRIN15.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN15.MaxLength = 7;
             this.CmpRIN15.Name = "CmpRIN15";
-            this.CmpRIN15.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN15.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN15.TabIndex = 30;
             this.CmpRIN15.Text = "WWWWWWW";
             this.CmpRIN15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -691,11 +691,11 @@
             // 
             this.CmpRIN5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN5.Location = new System.Drawing.Point(58, 101);
+            this.CmpRIN5.Location = new System.Drawing.Point(50, 101);
             this.CmpRIN5.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN5.MaxLength = 7;
             this.CmpRIN5.Name = "CmpRIN5";
-            this.CmpRIN5.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN5.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN5.TabIndex = 20;
             this.CmpRIN5.Text = "WWWWWWW";
             this.CmpRIN5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -705,11 +705,11 @@
             // 
             this.CmpRIN4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN4.Location = new System.Drawing.Point(58, 83);
+            this.CmpRIN4.Location = new System.Drawing.Point(50, 83);
             this.CmpRIN4.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN4.MaxLength = 7;
             this.CmpRIN4.Name = "CmpRIN4";
-            this.CmpRIN4.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN4.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN4.TabIndex = 19;
             this.CmpRIN4.Text = "WWWWWWW";
             this.CmpRIN4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -718,11 +718,11 @@
             // CmpRIN11
             // 
             this.CmpRIN11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN11.Location = new System.Drawing.Point(58, 214);
+            this.CmpRIN11.Location = new System.Drawing.Point(50, 214);
             this.CmpRIN11.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN11.MaxLength = 7;
             this.CmpRIN11.Name = "CmpRIN11";
-            this.CmpRIN11.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN11.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN11.TabIndex = 26;
             this.CmpRIN11.Text = "WWWWWWW";
             this.CmpRIN11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -730,7 +730,7 @@
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(10, 216);
+            this.label27.Location = new System.Drawing.Point(7, 216);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(33, 13);
@@ -740,7 +740,7 @@
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(10, 123);
+            this.label22.Location = new System.Drawing.Point(7, 123);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 13);
@@ -750,7 +750,7 @@
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(10, 141);
+            this.label23.Location = new System.Drawing.Point(7, 141);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(33, 13);
@@ -760,7 +760,7 @@
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(10, 197);
+            this.label26.Location = new System.Drawing.Point(7, 197);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(33, 13);
@@ -771,11 +771,11 @@
             // CmpRIN12
             // 
             this.CmpRIN12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN12.Location = new System.Drawing.Point(58, 232);
+            this.CmpRIN12.Location = new System.Drawing.Point(50, 232);
             this.CmpRIN12.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN12.MaxLength = 7;
             this.CmpRIN12.Name = "CmpRIN12";
-            this.CmpRIN12.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN12.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN12.TabIndex = 27;
             this.CmpRIN12.Text = "WWWWWWW";
             this.CmpRIN12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -785,11 +785,11 @@
             // 
             this.CmpRIN3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN3.Location = new System.Drawing.Point(58, 64);
+            this.CmpRIN3.Location = new System.Drawing.Point(50, 64);
             this.CmpRIN3.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN3.MaxLength = 7;
             this.CmpRIN3.Name = "CmpRIN3";
-            this.CmpRIN3.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN3.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN3.TabIndex = 18;
             this.CmpRIN3.Text = "WWWWWWW";
             this.CmpRIN3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -799,11 +799,11 @@
             // 
             this.CmpRIN6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpRIN6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpRIN6.Location = new System.Drawing.Point(58, 120);
+            this.CmpRIN6.Location = new System.Drawing.Point(50, 120);
             this.CmpRIN6.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN6.MaxLength = 7;
             this.CmpRIN6.Name = "CmpRIN6";
-            this.CmpRIN6.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN6.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN6.TabIndex = 21;
             this.CmpRIN6.Text = "WWWWWWW";
             this.CmpRIN6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -812,11 +812,11 @@
             // CmpRIN14
             // 
             this.CmpRIN14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpRIN14.Location = new System.Drawing.Point(58, 270);
+            this.CmpRIN14.Location = new System.Drawing.Point(50, 270);
             this.CmpRIN14.Margin = new System.Windows.Forms.Padding(2);
             this.CmpRIN14.MaxLength = 7;
             this.CmpRIN14.Name = "CmpRIN14";
-            this.CmpRIN14.Size = new System.Drawing.Size(72, 20);
+            this.CmpRIN14.Size = new System.Drawing.Size(85, 20);
             this.CmpRIN14.TabIndex = 29;
             this.CmpRIN14.Text = "WWWWWWW";
             this.CmpRIN14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -824,7 +824,7 @@
             // 
             // label31
             // 
-            this.label31.Location = new System.Drawing.Point(10, 291);
+            this.label31.Location = new System.Drawing.Point(7, 291);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(33, 13);
@@ -834,7 +834,7 @@
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(10, 48);
+            this.label18.Location = new System.Drawing.Point(7, 48);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(33, 13);
@@ -900,11 +900,11 @@
             // CmpOut9
             // 
             this.CmpOut9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut9.Location = new System.Drawing.Point(59, 175);
+            this.CmpOut9.Location = new System.Drawing.Point(51, 175);
             this.CmpOut9.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut9.MaxLength = 7;
             this.CmpOut9.Name = "CmpOut9";
-            this.CmpOut9.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut9.Size = new System.Drawing.Size(85, 20);
             this.CmpOut9.TabIndex = 40;
             this.CmpOut9.Text = "WWWWWWW";
             this.CmpOut9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -913,11 +913,11 @@
             // CmpOut1
             // 
             this.CmpOut1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut1.Location = new System.Drawing.Point(59, 26);
+            this.CmpOut1.Location = new System.Drawing.Point(51, 26);
             this.CmpOut1.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut1.MaxLength = 7;
             this.CmpOut1.Name = "CmpOut1";
-            this.CmpOut1.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut1.Size = new System.Drawing.Size(85, 20);
             this.CmpOut1.TabIndex = 32;
             this.CmpOut1.Text = "WWWWWWW";
             this.CmpOut1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -925,7 +925,7 @@
             // 
             // label48
             // 
-            this.label48.Location = new System.Drawing.Point(6, 309);
+            this.label48.Location = new System.Drawing.Point(3, 309);
             this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(45, 13);
@@ -935,7 +935,7 @@
             // 
             // label40
             // 
-            this.label40.Location = new System.Drawing.Point(6, 159);
+            this.label40.Location = new System.Drawing.Point(3, 159);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(45, 13);
@@ -946,11 +946,11 @@
             // CmpOut10
             // 
             this.CmpOut10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut10.Location = new System.Drawing.Point(59, 194);
+            this.CmpOut10.Location = new System.Drawing.Point(51, 194);
             this.CmpOut10.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut10.MaxLength = 7;
             this.CmpOut10.Name = "CmpOut10";
-            this.CmpOut10.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut10.Size = new System.Drawing.Size(85, 20);
             this.CmpOut10.TabIndex = 41;
             this.CmpOut10.Text = "WWWWWWW";
             this.CmpOut10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -959,11 +959,11 @@
             // CmpOut2
             // 
             this.CmpOut2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut2.Location = new System.Drawing.Point(59, 45);
+            this.CmpOut2.Location = new System.Drawing.Point(51, 45);
             this.CmpOut2.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut2.MaxLength = 7;
             this.CmpOut2.Name = "CmpOut2";
-            this.CmpOut2.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut2.Size = new System.Drawing.Size(85, 20);
             this.CmpOut2.TabIndex = 33;
             this.CmpOut2.Text = "WWWWWWW";
             this.CmpOut2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -971,7 +971,7 @@
             // 
             // label44
             // 
-            this.label44.Location = new System.Drawing.Point(6, 234);
+            this.label44.Location = new System.Drawing.Point(3, 234);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(45, 13);
@@ -981,7 +981,7 @@
             // 
             // label36
             // 
-            this.label36.Location = new System.Drawing.Point(6, 84);
+            this.label36.Location = new System.Drawing.Point(3, 84);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(45, 13);
@@ -992,11 +992,11 @@
             // CmpOut13
             // 
             this.CmpOut13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut13.Location = new System.Drawing.Point(59, 250);
+            this.CmpOut13.Location = new System.Drawing.Point(51, 250);
             this.CmpOut13.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut13.MaxLength = 7;
             this.CmpOut13.Name = "CmpOut13";
-            this.CmpOut13.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut13.Size = new System.Drawing.Size(85, 20);
             this.CmpOut13.TabIndex = 44;
             this.CmpOut13.Text = "WWWWWWW";
             this.CmpOut13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1005,11 +1005,11 @@
             // CmpOut5
             // 
             this.CmpOut5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut5.Location = new System.Drawing.Point(59, 101);
+            this.CmpOut5.Location = new System.Drawing.Point(51, 101);
             this.CmpOut5.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut5.MaxLength = 7;
             this.CmpOut5.Name = "CmpOut5";
-            this.CmpOut5.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut5.Size = new System.Drawing.Size(85, 20);
             this.CmpOut5.TabIndex = 36;
             this.CmpOut5.Text = "WWWWWWW";
             this.CmpOut5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1017,7 +1017,7 @@
             // 
             // label46
             // 
-            this.label46.Location = new System.Drawing.Point(6, 271);
+            this.label46.Location = new System.Drawing.Point(3, 271);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(45, 13);
@@ -1027,7 +1027,7 @@
             // 
             // label38
             // 
-            this.label38.Location = new System.Drawing.Point(6, 122);
+            this.label38.Location = new System.Drawing.Point(3, 122);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(45, 13);
@@ -1038,11 +1038,11 @@
             // CmpOut11
             // 
             this.CmpOut11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut11.Location = new System.Drawing.Point(59, 213);
+            this.CmpOut11.Location = new System.Drawing.Point(51, 213);
             this.CmpOut11.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut11.MaxLength = 7;
             this.CmpOut11.Name = "CmpOut11";
-            this.CmpOut11.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut11.Size = new System.Drawing.Size(85, 20);
             this.CmpOut11.TabIndex = 42;
             this.CmpOut11.Text = "WWWWWWW";
             this.CmpOut11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1051,11 +1051,11 @@
             // CmpOut3
             // 
             this.CmpOut3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut3.Location = new System.Drawing.Point(59, 63);
+            this.CmpOut3.Location = new System.Drawing.Point(51, 63);
             this.CmpOut3.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut3.MaxLength = 7;
             this.CmpOut3.Name = "CmpOut3";
-            this.CmpOut3.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut3.Size = new System.Drawing.Size(85, 20);
             this.CmpOut3.TabIndex = 34;
             this.CmpOut3.Text = "WWWWWWW";
             this.CmpOut3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1063,7 +1063,7 @@
             // 
             // label42
             // 
-            this.label42.Location = new System.Drawing.Point(6, 197);
+            this.label42.Location = new System.Drawing.Point(3, 197);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(45, 13);
@@ -1073,7 +1073,7 @@
             // 
             // label34
             // 
-            this.label34.Location = new System.Drawing.Point(6, 47);
+            this.label34.Location = new System.Drawing.Point(3, 47);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(45, 13);
@@ -1084,11 +1084,11 @@
             // CmpOut14
             // 
             this.CmpOut14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut14.Location = new System.Drawing.Point(59, 269);
+            this.CmpOut14.Location = new System.Drawing.Point(51, 269);
             this.CmpOut14.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut14.MaxLength = 7;
             this.CmpOut14.Name = "CmpOut14";
-            this.CmpOut14.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut14.Size = new System.Drawing.Size(85, 20);
             this.CmpOut14.TabIndex = 45;
             this.CmpOut14.Text = "WWWWWWW";
             this.CmpOut14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1097,11 +1097,11 @@
             // CmpOut6
             // 
             this.CmpOut6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut6.Location = new System.Drawing.Point(59, 119);
+            this.CmpOut6.Location = new System.Drawing.Point(51, 119);
             this.CmpOut6.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut6.MaxLength = 7;
             this.CmpOut6.Name = "CmpOut6";
-            this.CmpOut6.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut6.Size = new System.Drawing.Size(85, 20);
             this.CmpOut6.TabIndex = 37;
             this.CmpOut6.Text = "WWWWWWW";
             this.CmpOut6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1109,7 +1109,7 @@
             // 
             // label47
             // 
-            this.label47.Location = new System.Drawing.Point(6, 290);
+            this.label47.Location = new System.Drawing.Point(3, 290);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(45, 13);
@@ -1119,7 +1119,7 @@
             // 
             // label39
             // 
-            this.label39.Location = new System.Drawing.Point(6, 140);
+            this.label39.Location = new System.Drawing.Point(3, 140);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(45, 13);
@@ -1130,11 +1130,11 @@
             // CmpOut12
             // 
             this.CmpOut12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut12.Location = new System.Drawing.Point(59, 232);
+            this.CmpOut12.Location = new System.Drawing.Point(51, 232);
             this.CmpOut12.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut12.MaxLength = 7;
             this.CmpOut12.Name = "CmpOut12";
-            this.CmpOut12.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut12.Size = new System.Drawing.Size(85, 20);
             this.CmpOut12.TabIndex = 43;
             this.CmpOut12.Text = "WWWWWWW";
             this.CmpOut12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1143,11 +1143,11 @@
             // CmpOut4
             // 
             this.CmpOut4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut4.Location = new System.Drawing.Point(59, 82);
+            this.CmpOut4.Location = new System.Drawing.Point(51, 82);
             this.CmpOut4.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut4.MaxLength = 7;
             this.CmpOut4.Name = "CmpOut4";
-            this.CmpOut4.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut4.Size = new System.Drawing.Size(85, 20);
             this.CmpOut4.TabIndex = 35;
             this.CmpOut4.Text = "WWWWWWW";
             this.CmpOut4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1155,7 +1155,7 @@
             // 
             // label43
             // 
-            this.label43.Location = new System.Drawing.Point(6, 215);
+            this.label43.Location = new System.Drawing.Point(3, 215);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(45, 13);
@@ -1165,7 +1165,7 @@
             // 
             // label35
             // 
-            this.label35.Location = new System.Drawing.Point(6, 66);
+            this.label35.Location = new System.Drawing.Point(3, 66);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(45, 13);
@@ -1176,11 +1176,11 @@
             // CmpOut15
             // 
             this.CmpOut15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut15.Location = new System.Drawing.Point(59, 288);
+            this.CmpOut15.Location = new System.Drawing.Point(51, 288);
             this.CmpOut15.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut15.MaxLength = 7;
             this.CmpOut15.Name = "CmpOut15";
-            this.CmpOut15.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut15.Size = new System.Drawing.Size(85, 20);
             this.CmpOut15.TabIndex = 46;
             this.CmpOut15.Text = "WWWWWWW";
             this.CmpOut15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1189,11 +1189,11 @@
             // CmpOut7
             // 
             this.CmpOut7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut7.Location = new System.Drawing.Point(59, 138);
+            this.CmpOut7.Location = new System.Drawing.Point(51, 138);
             this.CmpOut7.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut7.MaxLength = 7;
             this.CmpOut7.Name = "CmpOut7";
-            this.CmpOut7.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut7.Size = new System.Drawing.Size(85, 20);
             this.CmpOut7.TabIndex = 38;
             this.CmpOut7.Text = "WWWWWWW";
             this.CmpOut7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1201,7 +1201,7 @@
             // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(6, 253);
+            this.label45.Location = new System.Drawing.Point(3, 253);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(45, 13);
@@ -1211,7 +1211,7 @@
             // 
             // label37
             // 
-            this.label37.Location = new System.Drawing.Point(6, 103);
+            this.label37.Location = new System.Drawing.Point(3, 103);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(45, 13);
@@ -1222,11 +1222,11 @@
             // CmpOut16
             // 
             this.CmpOut16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut16.Location = new System.Drawing.Point(59, 306);
+            this.CmpOut16.Location = new System.Drawing.Point(51, 306);
             this.CmpOut16.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut16.MaxLength = 7;
             this.CmpOut16.Name = "CmpOut16";
-            this.CmpOut16.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut16.Size = new System.Drawing.Size(85, 20);
             this.CmpOut16.TabIndex = 47;
             this.CmpOut16.Text = "WWWWWWW";
             this.CmpOut16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1234,7 +1234,7 @@
             // 
             // label41
             // 
-            this.label41.Location = new System.Drawing.Point(6, 178);
+            this.label41.Location = new System.Drawing.Point(3, 178);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(45, 13);
@@ -1245,11 +1245,11 @@
             // CmpOut8
             // 
             this.CmpOut8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpOut8.Location = new System.Drawing.Point(59, 157);
+            this.CmpOut8.Location = new System.Drawing.Point(51, 157);
             this.CmpOut8.Margin = new System.Windows.Forms.Padding(2);
             this.CmpOut8.MaxLength = 7;
             this.CmpOut8.Name = "CmpOut8";
-            this.CmpOut8.Size = new System.Drawing.Size(72, 20);
+            this.CmpOut8.Size = new System.Drawing.Size(85, 20);
             this.CmpOut8.TabIndex = 39;
             this.CmpOut8.Text = "WWWWWWW";
             this.CmpOut8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1257,7 +1257,7 @@
             // 
             // label33
             // 
-            this.label33.Location = new System.Drawing.Point(6, 28);
+            this.label33.Location = new System.Drawing.Point(3, 28);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(45, 13);
@@ -1324,11 +1324,11 @@
             // CmpTIN09
             // 
             this.CmpTIN09.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN09.Location = new System.Drawing.Point(59, 176);
+            this.CmpTIN09.Location = new System.Drawing.Point(51, 176);
             this.CmpTIN09.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN09.MaxLength = 7;
             this.CmpTIN09.Name = "CmpTIN09";
-            this.CmpTIN09.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN09.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN09.TabIndex = 8;
             this.CmpTIN09.Text = "WWWWWWW";
             this.CmpTIN09.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1336,7 +1336,7 @@
             // 
             // label49
             // 
-            this.label49.Location = new System.Drawing.Point(12, 309);
+            this.label49.Location = new System.Drawing.Point(9, 309);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(33, 13);
@@ -1348,11 +1348,11 @@
             // 
             this.CmpTIN01.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN01.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN01.Location = new System.Drawing.Point(59, 27);
+            this.CmpTIN01.Location = new System.Drawing.Point(51, 27);
             this.CmpTIN01.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN01.MaxLength = 7;
             this.CmpTIN01.Name = "CmpTIN01";
-            this.CmpTIN01.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN01.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN01.TabIndex = 0;
             this.CmpTIN01.Text = "WWWWWWW";
             this.CmpTIN01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1361,11 +1361,11 @@
             // CmpTIN010
             // 
             this.CmpTIN010.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN010.Location = new System.Drawing.Point(59, 195);
+            this.CmpTIN010.Location = new System.Drawing.Point(51, 195);
             this.CmpTIN010.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN010.MaxLength = 7;
             this.CmpTIN010.Name = "CmpTIN010";
-            this.CmpTIN010.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN010.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN010.TabIndex = 9;
             this.CmpTIN010.Text = "WWWWWWW";
             this.CmpTIN010.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1374,7 +1374,7 @@
             // label50
             // 
             this.label50.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label50.Location = new System.Drawing.Point(11, 160);
+            this.label50.Location = new System.Drawing.Point(8, 160);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(33, 13);
@@ -1384,7 +1384,7 @@
             // 
             // label51
             // 
-            this.label51.Location = new System.Drawing.Point(11, 235);
+            this.label51.Location = new System.Drawing.Point(8, 235);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(33, 13);
@@ -1396,11 +1396,11 @@
             // 
             this.CmpTIN02.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN02.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN02.Location = new System.Drawing.Point(59, 45);
+            this.CmpTIN02.Location = new System.Drawing.Point(51, 45);
             this.CmpTIN02.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN02.MaxLength = 7;
             this.CmpTIN02.Name = "CmpTIN02";
-            this.CmpTIN02.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN02.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN02.TabIndex = 1;
             this.CmpTIN02.Text = "WWWWWWW";
             this.CmpTIN02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1409,11 +1409,11 @@
             // CmpTIN013
             // 
             this.CmpTIN013.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN013.Location = new System.Drawing.Point(59, 251);
+            this.CmpTIN013.Location = new System.Drawing.Point(51, 251);
             this.CmpTIN013.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN013.MaxLength = 7;
             this.CmpTIN013.Name = "CmpTIN013";
-            this.CmpTIN013.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN013.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN013.TabIndex = 12;
             this.CmpTIN013.Text = "WWWWWWW";
             this.CmpTIN013.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1422,7 +1422,7 @@
             // label52
             // 
             this.label52.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label52.Location = new System.Drawing.Point(11, 85);
+            this.label52.Location = new System.Drawing.Point(8, 85);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(33, 13);
@@ -1432,7 +1432,7 @@
             // 
             // label53
             // 
-            this.label53.Location = new System.Drawing.Point(11, 272);
+            this.label53.Location = new System.Drawing.Point(8, 272);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(33, 13);
@@ -1444,11 +1444,11 @@
             // 
             this.CmpTIN05.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN05.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN05.Location = new System.Drawing.Point(59, 101);
+            this.CmpTIN05.Location = new System.Drawing.Point(51, 101);
             this.CmpTIN05.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN05.MaxLength = 7;
             this.CmpTIN05.Name = "CmpTIN05";
-            this.CmpTIN05.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN05.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN05.TabIndex = 4;
             this.CmpTIN05.Text = "WWWWWWW";
             this.CmpTIN05.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1457,11 +1457,11 @@
             // CmpTIN011
             // 
             this.CmpTIN011.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN011.Location = new System.Drawing.Point(59, 213);
+            this.CmpTIN011.Location = new System.Drawing.Point(51, 213);
             this.CmpTIN011.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN011.MaxLength = 7;
             this.CmpTIN011.Name = "CmpTIN011";
-            this.CmpTIN011.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN011.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN011.TabIndex = 10;
             this.CmpTIN011.Text = "WWWWWWW";
             this.CmpTIN011.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1470,7 +1470,7 @@
             // label54
             // 
             this.label54.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label54.Location = new System.Drawing.Point(11, 122);
+            this.label54.Location = new System.Drawing.Point(8, 122);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(33, 13);
@@ -1480,7 +1480,7 @@
             // 
             // label55
             // 
-            this.label55.Location = new System.Drawing.Point(11, 197);
+            this.label55.Location = new System.Drawing.Point(8, 197);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(33, 13);
@@ -1492,11 +1492,11 @@
             // 
             this.CmpTIN03.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN03.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN03.Location = new System.Drawing.Point(59, 64);
+            this.CmpTIN03.Location = new System.Drawing.Point(51, 64);
             this.CmpTIN03.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN03.MaxLength = 7;
             this.CmpTIN03.Name = "CmpTIN03";
-            this.CmpTIN03.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN03.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN03.TabIndex = 2;
             this.CmpTIN03.Text = "WWWWWWW";
             this.CmpTIN03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1505,11 +1505,11 @@
             // CmpTIN014
             // 
             this.CmpTIN014.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN014.Location = new System.Drawing.Point(59, 269);
+            this.CmpTIN014.Location = new System.Drawing.Point(51, 269);
             this.CmpTIN014.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN014.MaxLength = 7;
             this.CmpTIN014.Name = "CmpTIN014";
-            this.CmpTIN014.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN014.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN014.TabIndex = 13;
             this.CmpTIN014.Text = "WWWWWWW";
             this.CmpTIN014.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1518,7 +1518,7 @@
             // label56
             // 
             this.label56.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label56.Location = new System.Drawing.Point(11, 48);
+            this.label56.Location = new System.Drawing.Point(8, 48);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(33, 13);
@@ -1528,7 +1528,7 @@
             // 
             // label57
             // 
-            this.label57.Location = new System.Drawing.Point(11, 291);
+            this.label57.Location = new System.Drawing.Point(8, 291);
             this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(33, 13);
@@ -1540,11 +1540,11 @@
             // 
             this.CmpTIN06.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN06.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN06.Location = new System.Drawing.Point(59, 120);
+            this.CmpTIN06.Location = new System.Drawing.Point(51, 120);
             this.CmpTIN06.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN06.MaxLength = 7;
             this.CmpTIN06.Name = "CmpTIN06";
-            this.CmpTIN06.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN06.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN06.TabIndex = 5;
             this.CmpTIN06.Text = "WWWWWWW";
             this.CmpTIN06.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1553,11 +1553,11 @@
             // CmpTIN012
             // 
             this.CmpTIN012.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN012.Location = new System.Drawing.Point(59, 232);
+            this.CmpTIN012.Location = new System.Drawing.Point(51, 232);
             this.CmpTIN012.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN012.MaxLength = 7;
             this.CmpTIN012.Name = "CmpTIN012";
-            this.CmpTIN012.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN012.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN012.TabIndex = 11;
             this.CmpTIN012.Text = "WWWWWWW";
             this.CmpTIN012.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1566,7 +1566,7 @@
             // label58
             // 
             this.label58.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label58.Location = new System.Drawing.Point(11, 141);
+            this.label58.Location = new System.Drawing.Point(8, 141);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(33, 13);
@@ -1576,7 +1576,7 @@
             // 
             // label59
             // 
-            this.label59.Location = new System.Drawing.Point(11, 216);
+            this.label59.Location = new System.Drawing.Point(8, 216);
             this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(33, 13);
@@ -1588,11 +1588,11 @@
             // 
             this.CmpTIN04.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN04.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN04.Location = new System.Drawing.Point(59, 83);
+            this.CmpTIN04.Location = new System.Drawing.Point(51, 83);
             this.CmpTIN04.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN04.MaxLength = 7;
             this.CmpTIN04.Name = "CmpTIN04";
-            this.CmpTIN04.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN04.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN04.TabIndex = 3;
             this.CmpTIN04.Text = "WWWWWWW";
             this.CmpTIN04.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1601,11 +1601,11 @@
             // CmpTIN015
             // 
             this.CmpTIN015.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN015.Location = new System.Drawing.Point(59, 288);
+            this.CmpTIN015.Location = new System.Drawing.Point(51, 288);
             this.CmpTIN015.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN015.MaxLength = 7;
             this.CmpTIN015.Name = "CmpTIN015";
-            this.CmpTIN015.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN015.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN015.TabIndex = 14;
             this.CmpTIN015.Text = "WWWWWWW";
             this.CmpTIN015.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1614,7 +1614,7 @@
             // label60
             // 
             this.label60.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label60.Location = new System.Drawing.Point(11, 66);
+            this.label60.Location = new System.Drawing.Point(8, 66);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(33, 13);
@@ -1624,7 +1624,7 @@
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(11, 253);
+            this.label61.Location = new System.Drawing.Point(8, 253);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(33, 13);
@@ -1636,11 +1636,11 @@
             // 
             this.CmpTIN07.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN07.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN07.Location = new System.Drawing.Point(59, 139);
+            this.CmpTIN07.Location = new System.Drawing.Point(51, 139);
             this.CmpTIN07.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN07.MaxLength = 7;
             this.CmpTIN07.Name = "CmpTIN07";
-            this.CmpTIN07.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN07.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN07.TabIndex = 6;
             this.CmpTIN07.Text = "WWWWWWW";
             this.CmpTIN07.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1649,11 +1649,11 @@
             // CmpTIN016
             // 
             this.CmpTIN016.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.CmpTIN016.Location = new System.Drawing.Point(59, 307);
+            this.CmpTIN016.Location = new System.Drawing.Point(51, 307);
             this.CmpTIN016.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN016.MaxLength = 7;
             this.CmpTIN016.Name = "CmpTIN016";
-            this.CmpTIN016.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN016.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN016.TabIndex = 15;
             this.CmpTIN016.Text = "WWWWWWW";
             this.CmpTIN016.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1662,7 +1662,7 @@
             // label62
             // 
             this.label62.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label62.Location = new System.Drawing.Point(11, 104);
+            this.label62.Location = new System.Drawing.Point(8, 104);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(33, 13);
@@ -1672,7 +1672,7 @@
             // 
             // label63
             // 
-            this.label63.Location = new System.Drawing.Point(11, 178);
+            this.label63.Location = new System.Drawing.Point(8, 178);
             this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(33, 13);
@@ -1684,11 +1684,11 @@
             // 
             this.CmpTIN08.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.CmpTIN08.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.CmpTIN08.Location = new System.Drawing.Point(59, 157);
+            this.CmpTIN08.Location = new System.Drawing.Point(51, 157);
             this.CmpTIN08.Margin = new System.Windows.Forms.Padding(2);
             this.CmpTIN08.MaxLength = 7;
             this.CmpTIN08.Name = "CmpTIN08";
-            this.CmpTIN08.Size = new System.Drawing.Size(72, 20);
+            this.CmpTIN08.Size = new System.Drawing.Size(85, 20);
             this.CmpTIN08.TabIndex = 7;
             this.CmpTIN08.Text = "WWWWWWW";
             this.CmpTIN08.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1697,7 +1697,7 @@
             // label64
             // 
             this.label64.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label64.Location = new System.Drawing.Point(11, 29);
+            this.label64.Location = new System.Drawing.Point(8, 29);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(33, 13);
@@ -3152,11 +3152,11 @@
             // 
             // Device1
             // 
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device1.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device1.DefaultCellStyle = dataGridViewCellStyle1;
             this.Device1.FillWeight = 50F;
             this.Device1.HeaderText = "DEVICE";
             this.Device1.MaxInputLength = 10;
@@ -3168,11 +3168,11 @@
             // 
             // Input1
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input1.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input1.DefaultCellStyle = dataGridViewCellStyle2;
             this.Input1.HeaderText = "INPUT  ";
             this.Input1.MaxInputLength = 10;
             this.Input1.MinimumWidth = 6;
@@ -3183,11 +3183,11 @@
             // 
             // Name1
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name1.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name1.DefaultCellStyle = dataGridViewCellStyle3;
             this.Name1.HeaderText = "NAME";
             this.Name1.MaxInputLength = 7;
             this.Name1.MinimumWidth = 6;
@@ -3199,11 +3199,11 @@
             // Logic
             // 
             this.Logic.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Logic.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Logic.DefaultCellStyle = dataGridViewCellStyle4;
             this.Logic.HeaderText = "LOGIC";
             this.Logic.MaxInputLength = 10;
             this.Logic.MinimumWidth = 6;
@@ -3214,11 +3214,11 @@
             // 
             // Device2
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Device2.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Device2.DefaultCellStyle = dataGridViewCellStyle5;
             this.Device2.HeaderText = "DEVICE";
             this.Device2.MaxInputLength = 50;
             this.Device2.MinimumWidth = 6;
@@ -3229,11 +3229,11 @@
             // 
             // Input2
             // 
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Input2.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Input2.DefaultCellStyle = dataGridViewCellStyle6;
             this.Input2.HeaderText = "INPUT  ";
             this.Input2.MaxInputLength = 10;
             this.Input2.MinimumWidth = 6;
@@ -3244,11 +3244,11 @@
             // 
             // Name2
             // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name2.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name2.DefaultCellStyle = dataGridViewCellStyle7;
             this.Name2.HeaderText = "NAME";
             this.Name2.MaxInputLength = 7;
             this.Name2.MinimumWidth = 6;
@@ -3260,11 +3260,11 @@
             // Name_Output
             // 
             this.Name_Output.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Name_Output.DefaultCellStyle = dataGridViewCellStyle8;
             this.Name_Output.HeaderText = "OUTPUT      ";
             this.Name_Output.MaxInputLength = 50;
             this.Name_Output.MinimumWidth = 6;
@@ -3275,11 +3275,11 @@
             // 
             // NameOut
             // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.NameOut.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NameOut.DefaultCellStyle = dataGridViewCellStyle9;
             this.NameOut.HeaderText = "NAME";
             this.NameOut.MaxInputLength = 7;
             this.NameOut.MinimumWidth = 6;

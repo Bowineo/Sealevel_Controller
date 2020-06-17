@@ -255,7 +255,7 @@ namespace CHOV
             this.PnlTitular_1a16.Controls.Add(this.LedT_in1);
             this.PnlTitular_1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PnlTitular_1a16.Location = new System.Drawing.Point(10, 66);
-            this.PnlTitular_1a16.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlTitular_1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PnlTitular_1a16.Name = "PnlTitular_1a16";
             this.PnlTitular_1a16.Size = new System.Drawing.Size(578, 128);
             this.PnlTitular_1a16.TabIndex = 76;
@@ -290,7 +290,7 @@ namespace CHOV
             // 
             this.LedT_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in16.Location = new System.Drawing.Point(520, 84);
-            this.LedT_in16.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in16.Name = "LedT_in16";
             this.LedT_in16.On = true;
             this.LedT_in16.Size = new System.Drawing.Size(24, 20);
@@ -301,8 +301,8 @@ namespace CHOV
             // LedT_in8
             // 
             this.LedT_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in8.Location = new System.Drawing.Point(520, 31);
-            this.LedT_in8.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in8.Location = new System.Drawing.Point(520, 30);
+            this.LedT_in8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in8.Name = "LedT_in8";
             this.LedT_in8.On = true;
             this.LedT_in8.Size = new System.Drawing.Size(24, 20);
@@ -340,7 +340,7 @@ namespace CHOV
             // 
             this.LedT_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in15.Location = new System.Drawing.Point(449, 84);
-            this.LedT_in15.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in15.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in15.Name = "LedT_in15";
             this.LedT_in15.On = true;
             this.LedT_in15.Size = new System.Drawing.Size(24, 20);
@@ -351,8 +351,8 @@ namespace CHOV
             // LedT_in7
             // 
             this.LedT_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in7.Location = new System.Drawing.Point(449, 31);
-            this.LedT_in7.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in7.Location = new System.Drawing.Point(449, 30);
+            this.LedT_in7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in7.Name = "LedT_in7";
             this.LedT_in7.On = true;
             this.LedT_in7.Size = new System.Drawing.Size(24, 20);
@@ -390,7 +390,7 @@ namespace CHOV
             // 
             this.LedT_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in14.Location = new System.Drawing.Point(378, 84);
-            this.LedT_in14.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in14.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in14.Name = "LedT_in14";
             this.LedT_in14.On = true;
             this.LedT_in14.Size = new System.Drawing.Size(24, 20);
@@ -401,8 +401,8 @@ namespace CHOV
             // LedT_in6
             // 
             this.LedT_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in6.Location = new System.Drawing.Point(378, 31);
-            this.LedT_in6.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in6.Location = new System.Drawing.Point(378, 30);
+            this.LedT_in6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in6.Name = "LedT_in6";
             this.LedT_in6.On = true;
             this.LedT_in6.Size = new System.Drawing.Size(24, 20);
@@ -440,7 +440,7 @@ namespace CHOV
             // 
             this.LedT_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in13.Location = new System.Drawing.Point(307, 84);
-            this.LedT_in13.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in13.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in13.Name = "LedT_in13";
             this.LedT_in13.On = true;
             this.LedT_in13.Size = new System.Drawing.Size(24, 20);
@@ -451,8 +451,8 @@ namespace CHOV
             // LedT_in5
             // 
             this.LedT_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in5.Location = new System.Drawing.Point(307, 31);
-            this.LedT_in5.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in5.Location = new System.Drawing.Point(307, 30);
+            this.LedT_in5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in5.Name = "LedT_in5";
             this.LedT_in5.On = true;
             this.LedT_in5.Size = new System.Drawing.Size(24, 20);
@@ -490,7 +490,7 @@ namespace CHOV
             // 
             this.LedT_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in12.Location = new System.Drawing.Point(235, 84);
-            this.LedT_in12.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in12.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in12.Name = "LedT_in12";
             this.LedT_in12.On = true;
             this.LedT_in12.Size = new System.Drawing.Size(24, 20);
@@ -501,8 +501,8 @@ namespace CHOV
             // LedT_in4
             // 
             this.LedT_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in4.Location = new System.Drawing.Point(235, 31);
-            this.LedT_in4.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in4.Location = new System.Drawing.Point(235, 30);
+            this.LedT_in4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in4.Name = "LedT_in4";
             this.LedT_in4.On = true;
             this.LedT_in4.Size = new System.Drawing.Size(24, 20);
@@ -515,7 +515,7 @@ namespace CHOV
             this.LblT_in11.AutoEllipsis = true;
             this.LblT_in11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.LblT_in11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblT_in11.Location = new System.Drawing.Point(141, 68);
+            this.LblT_in11.Location = new System.Drawing.Point(140, 68);
             this.LblT_in11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblT_in11.Name = "LblT_in11";
             this.LblT_in11.Size = new System.Drawing.Size(71, 13);
@@ -528,7 +528,7 @@ namespace CHOV
             this.LblT_in3.AutoEllipsis = true;
             this.LblT_in3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.LblT_in3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblT_in3.Location = new System.Drawing.Point(141, 12);
+            this.LblT_in3.Location = new System.Drawing.Point(140, 12);
             this.LblT_in3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblT_in3.Name = "LblT_in3";
             this.LblT_in3.Size = new System.Drawing.Size(71, 13);
@@ -540,7 +540,7 @@ namespace CHOV
             // 
             this.LedT_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in11.Location = new System.Drawing.Point(164, 84);
-            this.LedT_in11.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in11.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in11.Name = "LedT_in11";
             this.LedT_in11.On = true;
             this.LedT_in11.Size = new System.Drawing.Size(24, 20);
@@ -551,8 +551,8 @@ namespace CHOV
             // LedT_in3
             // 
             this.LedT_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in3.Location = new System.Drawing.Point(164, 31);
-            this.LedT_in3.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in3.Location = new System.Drawing.Point(164, 30);
+            this.LedT_in3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in3.Name = "LedT_in3";
             this.LedT_in3.On = true;
             this.LedT_in3.Size = new System.Drawing.Size(24, 20);
@@ -589,8 +589,8 @@ namespace CHOV
             // LedT_in10
             // 
             this.LedT_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in10.Location = new System.Drawing.Point(93, 84);
-            this.LedT_in10.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in10.Location = new System.Drawing.Point(92, 84);
+            this.LedT_in10.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in10.Name = "LedT_in10";
             this.LedT_in10.On = true;
             this.LedT_in10.Size = new System.Drawing.Size(24, 20);
@@ -601,8 +601,8 @@ namespace CHOV
             // LedT_in2
             // 
             this.LedT_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedT_in2.Location = new System.Drawing.Point(93, 31);
-            this.LedT_in2.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in2.Location = new System.Drawing.Point(92, 30);
+            this.LedT_in2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in2.Name = "LedT_in2";
             this.LedT_in2.On = true;
             this.LedT_in2.Size = new System.Drawing.Size(24, 20);
@@ -627,7 +627,7 @@ namespace CHOV
             // 
             this.LedT_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in9.Location = new System.Drawing.Point(22, 84);
-            this.LedT_in9.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in9.Name = "LedT_in9";
             this.LedT_in9.On = true;
             this.LedT_in9.Size = new System.Drawing.Size(24, 20);
@@ -638,7 +638,7 @@ namespace CHOV
             // LblT_in1
             // 
             this.LblT_in1.AutoEllipsis = true;
-            this.LblT_in1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblT_in1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.LblT_in1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.LblT_in1.Location = new System.Drawing.Point(-1, 12);
             this.LblT_in1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -652,8 +652,8 @@ namespace CHOV
             // 
             this.LedT_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedT_in1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LedT_in1.Location = new System.Drawing.Point(22, 31);
-            this.LedT_in1.Margin = new System.Windows.Forms.Padding(2);
+            this.LedT_in1.Location = new System.Drawing.Point(22, 30);
+            this.LedT_in1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedT_in1.Name = "LedT_in1";
             this.LedT_in1.On = true;
             this.LedT_in1.Size = new System.Drawing.Size(24, 20);
@@ -699,7 +699,7 @@ namespace CHOV
             this.Pnl_out1a16.Controls.Add(this.Led_out1);
             this.Pnl_out1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Pnl_out1a16.Location = new System.Drawing.Point(301, 228);
-            this.Pnl_out1a16.Margin = new System.Windows.Forms.Padding(2);
+            this.Pnl_out1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Pnl_out1a16.Name = "Pnl_out1a16";
             this.Pnl_out1a16.Size = new System.Drawing.Size(578, 128);
             this.Pnl_out1a16.TabIndex = 93;
@@ -709,7 +709,7 @@ namespace CHOV
             this.Lbl_out16.AutoEllipsis = true;
             this.Lbl_out16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out16.Location = new System.Drawing.Point(497, 67);
+            this.Lbl_out16.Location = new System.Drawing.Point(497, 66);
             this.Lbl_out16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out16.Name = "Lbl_out16";
             this.Lbl_out16.Size = new System.Drawing.Size(71, 13);
@@ -734,7 +734,7 @@ namespace CHOV
             // 
             this.Led_out16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out16.Location = new System.Drawing.Point(520, 84);
-            this.Led_out16.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out16.Name = "Led_out16";
             this.Led_out16.On = true;
             this.Led_out16.Size = new System.Drawing.Size(24, 20);
@@ -746,7 +746,7 @@ namespace CHOV
             // 
             this.Led_out8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out8.Location = new System.Drawing.Point(520, 30);
-            this.Led_out8.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out8.Name = "Led_out8";
             this.Led_out8.On = true;
             this.Led_out8.Size = new System.Drawing.Size(24, 20);
@@ -759,7 +759,7 @@ namespace CHOV
             this.Lbl_out15.AutoEllipsis = true;
             this.Lbl_out15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out15.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out15.Location = new System.Drawing.Point(426, 67);
+            this.Lbl_out15.Location = new System.Drawing.Point(426, 66);
             this.Lbl_out15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out15.Name = "Lbl_out15";
             this.Lbl_out15.Size = new System.Drawing.Size(71, 13);
@@ -784,7 +784,7 @@ namespace CHOV
             // 
             this.Led_out15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out15.Location = new System.Drawing.Point(449, 84);
-            this.Led_out15.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out15.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out15.Name = "Led_out15";
             this.Led_out15.On = true;
             this.Led_out15.Size = new System.Drawing.Size(24, 20);
@@ -796,7 +796,7 @@ namespace CHOV
             // 
             this.Led_out7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out7.Location = new System.Drawing.Point(449, 30);
-            this.Led_out7.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out7.Name = "Led_out7";
             this.Led_out7.On = true;
             this.Led_out7.Size = new System.Drawing.Size(24, 20);
@@ -809,7 +809,7 @@ namespace CHOV
             this.Lbl_out14.AutoEllipsis = true;
             this.Lbl_out14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out14.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out14.Location = new System.Drawing.Point(355, 67);
+            this.Lbl_out14.Location = new System.Drawing.Point(355, 66);
             this.Lbl_out14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out14.Name = "Lbl_out14";
             this.Lbl_out14.Size = new System.Drawing.Size(71, 13);
@@ -834,7 +834,7 @@ namespace CHOV
             // 
             this.Led_out14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out14.Location = new System.Drawing.Point(378, 84);
-            this.Led_out14.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out14.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out14.Name = "Led_out14";
             this.Led_out14.On = true;
             this.Led_out14.Size = new System.Drawing.Size(24, 20);
@@ -846,7 +846,7 @@ namespace CHOV
             // 
             this.Led_out6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out6.Location = new System.Drawing.Point(378, 30);
-            this.Led_out6.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out6.Name = "Led_out6";
             this.Led_out6.On = true;
             this.Led_out6.Size = new System.Drawing.Size(24, 20);
@@ -859,7 +859,7 @@ namespace CHOV
             this.Lbl_out13.AutoEllipsis = true;
             this.Lbl_out13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out13.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out13.Location = new System.Drawing.Point(284, 67);
+            this.Lbl_out13.Location = new System.Drawing.Point(284, 66);
             this.Lbl_out13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out13.Name = "Lbl_out13";
             this.Lbl_out13.Size = new System.Drawing.Size(71, 13);
@@ -884,7 +884,7 @@ namespace CHOV
             // 
             this.Led_out13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out13.Location = new System.Drawing.Point(307, 84);
-            this.Led_out13.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out13.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out13.Name = "Led_out13";
             this.Led_out13.On = true;
             this.Led_out13.Size = new System.Drawing.Size(24, 20);
@@ -896,7 +896,7 @@ namespace CHOV
             // 
             this.Led_out5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out5.Location = new System.Drawing.Point(307, 30);
-            this.Led_out5.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out5.Name = "Led_out5";
             this.Led_out5.On = true;
             this.Led_out5.Size = new System.Drawing.Size(24, 20);
@@ -909,7 +909,7 @@ namespace CHOV
             this.Lbl_out12.AutoEllipsis = true;
             this.Lbl_out12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out12.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out12.Location = new System.Drawing.Point(212, 67);
+            this.Lbl_out12.Location = new System.Drawing.Point(212, 66);
             this.Lbl_out12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out12.Name = "Lbl_out12";
             this.Lbl_out12.Size = new System.Drawing.Size(71, 13);
@@ -934,7 +934,7 @@ namespace CHOV
             // 
             this.Led_out12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out12.Location = new System.Drawing.Point(235, 84);
-            this.Led_out12.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out12.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out12.Name = "Led_out12";
             this.Led_out12.On = true;
             this.Led_out12.Size = new System.Drawing.Size(24, 20);
@@ -946,7 +946,7 @@ namespace CHOV
             // 
             this.Led_out4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out4.Location = new System.Drawing.Point(235, 30);
-            this.Led_out4.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out4.Name = "Led_out4";
             this.Led_out4.On = true;
             this.Led_out4.Size = new System.Drawing.Size(24, 20);
@@ -959,7 +959,7 @@ namespace CHOV
             this.Lbl_out11.AutoEllipsis = true;
             this.Lbl_out11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out11.Location = new System.Drawing.Point(141, 67);
+            this.Lbl_out11.Location = new System.Drawing.Point(140, 66);
             this.Lbl_out11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out11.Name = "Lbl_out11";
             this.Lbl_out11.Size = new System.Drawing.Size(71, 13);
@@ -972,7 +972,7 @@ namespace CHOV
             this.Lbl_out3.AutoEllipsis = true;
             this.Lbl_out3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out3.Location = new System.Drawing.Point(141, 12);
+            this.Lbl_out3.Location = new System.Drawing.Point(140, 12);
             this.Lbl_out3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out3.Name = "Lbl_out3";
             this.Lbl_out3.Size = new System.Drawing.Size(71, 13);
@@ -984,7 +984,7 @@ namespace CHOV
             // 
             this.Led_out11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out11.Location = new System.Drawing.Point(164, 84);
-            this.Led_out11.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out11.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out11.Name = "Led_out11";
             this.Led_out11.On = true;
             this.Led_out11.Size = new System.Drawing.Size(24, 20);
@@ -996,7 +996,7 @@ namespace CHOV
             // 
             this.Led_out3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out3.Location = new System.Drawing.Point(164, 30);
-            this.Led_out3.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out3.Name = "Led_out3";
             this.Led_out3.On = true;
             this.Led_out3.Size = new System.Drawing.Size(24, 20);
@@ -1009,7 +1009,7 @@ namespace CHOV
             this.Lbl_out10.AutoEllipsis = true;
             this.Lbl_out10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out10.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out10.Location = new System.Drawing.Point(70, 67);
+            this.Lbl_out10.Location = new System.Drawing.Point(70, 66);
             this.Lbl_out10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out10.Name = "Lbl_out10";
             this.Lbl_out10.Size = new System.Drawing.Size(71, 13);
@@ -1033,8 +1033,8 @@ namespace CHOV
             // Led_out10
             // 
             this.Led_out10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out10.Location = new System.Drawing.Point(93, 84);
-            this.Led_out10.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out10.Location = new System.Drawing.Point(92, 84);
+            this.Led_out10.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out10.Name = "Led_out10";
             this.Led_out10.On = true;
             this.Led_out10.Size = new System.Drawing.Size(24, 20);
@@ -1045,8 +1045,8 @@ namespace CHOV
             // Led_out2
             // 
             this.Led_out2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.Led_out2.Location = new System.Drawing.Point(93, 30);
-            this.Led_out2.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out2.Location = new System.Drawing.Point(92, 30);
+            this.Led_out2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out2.Name = "Led_out2";
             this.Led_out2.On = true;
             this.Led_out2.Size = new System.Drawing.Size(24, 20);
@@ -1059,7 +1059,7 @@ namespace CHOV
             this.Lbl_out9.AutoEllipsis = true;
             this.Lbl_out9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.Lbl_out9.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Lbl_out9.Location = new System.Drawing.Point(-1, 67);
+            this.Lbl_out9.Location = new System.Drawing.Point(-1, 66);
             this.Lbl_out9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Lbl_out9.Name = "Lbl_out9";
             this.Lbl_out9.Size = new System.Drawing.Size(71, 13);
@@ -1084,7 +1084,7 @@ namespace CHOV
             // 
             this.Led_out9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out9.Location = new System.Drawing.Point(22, 84);
-            this.Led_out9.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out9.Name = "Led_out9";
             this.Led_out9.On = true;
             this.Led_out9.Size = new System.Drawing.Size(24, 20);
@@ -1096,7 +1096,7 @@ namespace CHOV
             // 
             this.Led_out1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.Led_out1.Location = new System.Drawing.Point(22, 30);
-            this.Led_out1.Margin = new System.Windows.Forms.Padding(2);
+            this.Led_out1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Led_out1.Name = "Led_out1";
             this.Led_out1.On = true;
             this.Led_out1.Size = new System.Drawing.Size(24, 20);
@@ -1109,7 +1109,7 @@ namespace CHOV
             this.lblSaida.AutoSize = true;
             this.lblSaida.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaida.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblSaida.Location = new System.Drawing.Point(565, 206);
+            this.lblSaida.Location = new System.Drawing.Point(565, 207);
             this.lblSaida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaida.Name = "lblSaida";
             this.lblSaida.Size = new System.Drawing.Size(50, 16);
@@ -1128,7 +1128,7 @@ namespace CHOV
             this.ajudaToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 3);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStrip1.Size = new System.Drawing.Size(1186, 24);
             this.menuStrip1.TabIndex = 1;
@@ -1179,7 +1179,7 @@ namespace CHOV
             this.Historico.FormattingEnabled = true;
             this.Historico.HorizontalScrollbar = true;
             this.Historico.Location = new System.Drawing.Point(910, 247);
-            this.Historico.Margin = new System.Windows.Forms.Padding(2);
+            this.Historico.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Historico.Name = "Historico";
             this.Historico.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
             this.Historico.Size = new System.Drawing.Size(254, 91);
@@ -1230,7 +1230,7 @@ namespace CHOV
             this.PnlReserva_1a16.Controls.Add(this.LedR_in1);
             this.PnlReserva_1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.PnlReserva_1a16.Location = new System.Drawing.Point(595, 66);
-            this.PnlReserva_1a16.Margin = new System.Windows.Forms.Padding(2);
+            this.PnlReserva_1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PnlReserva_1a16.Name = "PnlReserva_1a16";
             this.PnlReserva_1a16.Size = new System.Drawing.Size(578, 128);
             this.PnlReserva_1a16.TabIndex = 76;
@@ -1265,7 +1265,7 @@ namespace CHOV
             // 
             this.LedR_in16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in16.Location = new System.Drawing.Point(520, 84);
-            this.LedR_in16.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in16.Name = "LedR_in16";
             this.LedR_in16.On = true;
             this.LedR_in16.Size = new System.Drawing.Size(24, 20);
@@ -1277,7 +1277,7 @@ namespace CHOV
             // 
             this.LedR_in8.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in8.Location = new System.Drawing.Point(520, 33);
-            this.LedR_in8.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in8.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in8.Name = "LedR_in8";
             this.LedR_in8.On = true;
             this.LedR_in8.Size = new System.Drawing.Size(24, 20);
@@ -1315,7 +1315,7 @@ namespace CHOV
             // 
             this.LedR_in15.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in15.Location = new System.Drawing.Point(449, 84);
-            this.LedR_in15.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in15.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in15.Name = "LedR_in15";
             this.LedR_in15.On = true;
             this.LedR_in15.Size = new System.Drawing.Size(24, 20);
@@ -1327,7 +1327,7 @@ namespace CHOV
             // 
             this.LedR_in7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in7.Location = new System.Drawing.Point(449, 33);
-            this.LedR_in7.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in7.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in7.Name = "LedR_in7";
             this.LedR_in7.On = true;
             this.LedR_in7.Size = new System.Drawing.Size(24, 20);
@@ -1365,7 +1365,7 @@ namespace CHOV
             // 
             this.LedR_in14.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in14.Location = new System.Drawing.Point(378, 84);
-            this.LedR_in14.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in14.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in14.Name = "LedR_in14";
             this.LedR_in14.On = true;
             this.LedR_in14.Size = new System.Drawing.Size(24, 20);
@@ -1377,7 +1377,7 @@ namespace CHOV
             // 
             this.LedR_in6.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in6.Location = new System.Drawing.Point(378, 33);
-            this.LedR_in6.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in6.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in6.Name = "LedR_in6";
             this.LedR_in6.On = true;
             this.LedR_in6.Size = new System.Drawing.Size(24, 20);
@@ -1415,7 +1415,7 @@ namespace CHOV
             // 
             this.LedR_in13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in13.Location = new System.Drawing.Point(307, 84);
-            this.LedR_in13.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in13.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in13.Name = "LedR_in13";
             this.LedR_in13.On = true;
             this.LedR_in13.Size = new System.Drawing.Size(24, 20);
@@ -1427,7 +1427,7 @@ namespace CHOV
             // 
             this.LedR_in5.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in5.Location = new System.Drawing.Point(307, 33);
-            this.LedR_in5.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in5.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in5.Name = "LedR_in5";
             this.LedR_in5.On = true;
             this.LedR_in5.Size = new System.Drawing.Size(24, 20);
@@ -1465,7 +1465,7 @@ namespace CHOV
             // 
             this.LedR_in12.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in12.Location = new System.Drawing.Point(235, 84);
-            this.LedR_in12.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in12.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in12.Name = "LedR_in12";
             this.LedR_in12.On = true;
             this.LedR_in12.Size = new System.Drawing.Size(24, 20);
@@ -1477,7 +1477,7 @@ namespace CHOV
             // 
             this.LedR_in4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in4.Location = new System.Drawing.Point(235, 33);
-            this.LedR_in4.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in4.Name = "LedR_in4";
             this.LedR_in4.On = true;
             this.LedR_in4.Size = new System.Drawing.Size(24, 20);
@@ -1490,7 +1490,7 @@ namespace CHOV
             this.LblR_in11.AutoEllipsis = true;
             this.LblR_in11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.LblR_in11.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblR_in11.Location = new System.Drawing.Point(141, 68);
+            this.LblR_in11.Location = new System.Drawing.Point(140, 68);
             this.LblR_in11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblR_in11.Name = "LblR_in11";
             this.LblR_in11.Size = new System.Drawing.Size(71, 13);
@@ -1503,7 +1503,7 @@ namespace CHOV
             this.LblR_in3.AutoEllipsis = true;
             this.LblR_in3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F);
             this.LblR_in3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblR_in3.Location = new System.Drawing.Point(141, 13);
+            this.LblR_in3.Location = new System.Drawing.Point(140, 13);
             this.LblR_in3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblR_in3.Name = "LblR_in3";
             this.LblR_in3.Size = new System.Drawing.Size(71, 13);
@@ -1515,7 +1515,7 @@ namespace CHOV
             // 
             this.LedR_in11.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in11.Location = new System.Drawing.Point(164, 84);
-            this.LedR_in11.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in11.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in11.Name = "LedR_in11";
             this.LedR_in11.On = true;
             this.LedR_in11.Size = new System.Drawing.Size(24, 20);
@@ -1527,7 +1527,7 @@ namespace CHOV
             // 
             this.LedR_in3.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in3.Location = new System.Drawing.Point(164, 33);
-            this.LedR_in3.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in3.Name = "LedR_in3";
             this.LedR_in3.On = true;
             this.LedR_in3.Size = new System.Drawing.Size(24, 20);
@@ -1564,8 +1564,8 @@ namespace CHOV
             // LedR_in10
             // 
             this.LedR_in10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in10.Location = new System.Drawing.Point(93, 84);
-            this.LedR_in10.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in10.Location = new System.Drawing.Point(92, 84);
+            this.LedR_in10.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in10.Name = "LedR_in10";
             this.LedR_in10.On = true;
             this.LedR_in10.Size = new System.Drawing.Size(24, 20);
@@ -1576,8 +1576,8 @@ namespace CHOV
             // LedR_in2
             // 
             this.LedR_in2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.LedR_in2.Location = new System.Drawing.Point(93, 33);
-            this.LedR_in2.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in2.Location = new System.Drawing.Point(92, 33);
+            this.LedR_in2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in2.Name = "LedR_in2";
             this.LedR_in2.On = true;
             this.LedR_in2.Size = new System.Drawing.Size(24, 20);
@@ -1602,7 +1602,7 @@ namespace CHOV
             // 
             this.LedR_in9.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in9.Location = new System.Drawing.Point(22, 84);
-            this.LedR_in9.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in9.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in9.Name = "LedR_in9";
             this.LedR_in9.On = true;
             this.LedR_in9.Size = new System.Drawing.Size(24, 20);
@@ -1627,7 +1627,7 @@ namespace CHOV
             // 
             this.LedR_in1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.LedR_in1.Location = new System.Drawing.Point(22, 33);
-            this.LedR_in1.Margin = new System.Windows.Forms.Padding(2);
+            this.LedR_in1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedR_in1.Name = "LedR_in1";
             this.LedR_in1.On = true;
             this.LedR_in1.Size = new System.Drawing.Size(24, 20);
@@ -1641,8 +1641,8 @@ namespace CHOV
             this.status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.status.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.status.Location = new System.Drawing.Point(549, 39);
-            this.status.Margin = new System.Windows.Forms.Padding(2);
+            this.status.Location = new System.Drawing.Point(548, 39);
+            this.status.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.status.Name = "status";
             this.status.ReadOnly = true;
             this.status.Size = new System.Drawing.Size(84, 23);
@@ -1715,6 +1715,7 @@ namespace CHOV
             this.PnlPulses.Controls.Add(this.checkBox3T);
             this.PnlPulses.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PnlPulses.Location = new System.Drawing.Point(182, 376);
+            this.PnlPulses.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PnlPulses.Name = "PnlPulses";
             this.PnlPulses.Size = new System.Drawing.Size(816, 69);
             this.PnlPulses.TabIndex = 105;
@@ -1728,6 +1729,7 @@ namespace CHOV
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(522, 42);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 12);
             this.label1.TabIndex = 223;
@@ -1742,6 +1744,7 @@ namespace CHOV
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(524, 20);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 12);
             this.label2.TabIndex = 224;
@@ -1762,6 +1765,7 @@ namespace CHOV
             this.BtnWriteTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnWriteTest.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnWriteTest.Location = new System.Drawing.Point(736, 19);
+            this.BtnWriteTest.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.BtnWriteTest.Name = "BtnWriteTest";
             this.BtnWriteTest.Size = new System.Drawing.Size(62, 27);
             this.BtnWriteTest.TabIndex = 110;
@@ -1780,6 +1784,7 @@ namespace CHOV
             this.SecondaryInputs.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SecondaryInputs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.SecondaryInputs.Location = new System.Drawing.Point(10, 42);
+            this.SecondaryInputs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SecondaryInputs.Name = "SecondaryInputs";
             this.SecondaryInputs.Size = new System.Drawing.Size(64, 12);
             this.SecondaryInputs.TabIndex = 106;
@@ -1794,6 +1799,7 @@ namespace CHOV
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label20.Location = new System.Drawing.Point(86, 6);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(10, 12);
             this.label20.TabIndex = 106;
@@ -1808,6 +1814,7 @@ namespace CHOV
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label19.Location = new System.Drawing.Point(106, 6);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(10, 12);
             this.label19.TabIndex = 106;
@@ -1822,6 +1829,7 @@ namespace CHOV
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label12.Location = new System.Drawing.Point(246, 6);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(10, 12);
             this.label12.TabIndex = 106;
@@ -2090,7 +2098,8 @@ namespace CHOV
             "253",
             "254",
             "255"});
-            this.cBs1a8.Location = new System.Drawing.Point(603, 35);
+            this.cBs1a8.Location = new System.Drawing.Point(602, 35);
+            this.cBs1a8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cBs1a8.Name = "cBs1a8";
             this.cBs1a8.Size = new System.Drawing.Size(48, 21);
             this.cBs1a8.TabIndex = 222;
@@ -2106,6 +2115,7 @@ namespace CHOV
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label11.Location = new System.Drawing.Point(264, 6);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(15, 12);
             this.label11.TabIndex = 106;
@@ -2120,6 +2130,7 @@ namespace CHOV
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label8.Location = new System.Drawing.Point(324, 6);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(15, 12);
             this.label8.TabIndex = 106;
@@ -2134,6 +2145,7 @@ namespace CHOV
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label18.Location = new System.Drawing.Point(166, 6);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(10, 12);
             this.label18.TabIndex = 106;
@@ -2148,6 +2160,7 @@ namespace CHOV
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label10.Location = new System.Drawing.Point(284, 6);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(15, 12);
             this.label10.TabIndex = 106;
@@ -2417,6 +2430,7 @@ namespace CHOV
             "254",
             "255"});
             this.cBs9a16.Location = new System.Drawing.Point(666, 35);
+            this.cBs9a16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cBs9a16.Name = "cBs9a16";
             this.cBs9a16.Size = new System.Drawing.Size(48, 21);
             this.cBs9a16.TabIndex = 222;
@@ -2432,6 +2446,7 @@ namespace CHOV
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label7.Location = new System.Drawing.Point(344, 6);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(15, 12);
             this.label7.TabIndex = 106;
@@ -2446,6 +2461,7 @@ namespace CHOV
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label9.Location = new System.Drawing.Point(304, 6);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(15, 12);
             this.label9.TabIndex = 106;
@@ -2460,6 +2476,7 @@ namespace CHOV
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label17.Location = new System.Drawing.Point(126, 6);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(10, 12);
             this.label17.TabIndex = 106;
@@ -2728,7 +2745,8 @@ namespace CHOV
             "253",
             "254",
             "255"});
-            this.cBp1a8.Location = new System.Drawing.Point(603, 11);
+            this.cBp1a8.Location = new System.Drawing.Point(602, 12);
+            this.cBp1a8.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cBp1a8.Name = "cBp1a8";
             this.cBp1a8.Size = new System.Drawing.Size(48, 21);
             this.cBp1a8.TabIndex = 222;
@@ -2744,6 +2762,7 @@ namespace CHOV
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(364, 6);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(15, 12);
             this.label6.TabIndex = 106;
@@ -2758,6 +2777,7 @@ namespace CHOV
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Location = new System.Drawing.Point(384, 6);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(15, 12);
             this.label5.TabIndex = 106;
@@ -2772,6 +2792,7 @@ namespace CHOV
             this.PrimaryInputs.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PrimaryInputs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.PrimaryInputs.Location = new System.Drawing.Point(12, 20);
+            this.PrimaryInputs.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PrimaryInputs.Name = "PrimaryInputs";
             this.PrimaryInputs.Size = new System.Drawing.Size(49, 12);
             this.PrimaryInputs.TabIndex = 106;
@@ -3040,7 +3061,8 @@ namespace CHOV
             "253",
             "254",
             "255"});
-            this.cBp9a16.Location = new System.Drawing.Point(666, 11);
+            this.cBp9a16.Location = new System.Drawing.Point(666, 12);
+            this.cBp9a16.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.cBp9a16.Name = "cBp9a16";
             this.cBp9a16.Size = new System.Drawing.Size(48, 21);
             this.cBp9a16.TabIndex = 222;
@@ -3056,6 +3078,7 @@ namespace CHOV
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label16.Location = new System.Drawing.Point(186, 6);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(10, 12);
             this.label16.TabIndex = 106;
@@ -3070,6 +3093,7 @@ namespace CHOV
             this.LblChangeover.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblChangeover.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.LblChangeover.Location = new System.Drawing.Point(418, 6);
+            this.LblChangeover.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblChangeover.Name = "LblChangeover";
             this.LblChangeover.Size = new System.Drawing.Size(75, 12);
             this.LblChangeover.TabIndex = 106;
@@ -3083,7 +3107,8 @@ namespace CHOV
             this.checkBox16R.AutoSize = true;
             this.checkBox16R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox16R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox16R.Location = new System.Drawing.Point(384, 41);
+            this.checkBox16R.Location = new System.Drawing.Point(384, 40);
+            this.checkBox16R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox16R.Name = "checkBox16R";
             this.checkBox16R.Size = new System.Drawing.Size(15, 14);
             this.checkBox16R.TabIndex = 123;
@@ -3099,6 +3124,7 @@ namespace CHOV
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label15.Location = new System.Drawing.Point(146, 6);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(10, 12);
             this.label15.TabIndex = 106;
@@ -3110,7 +3136,8 @@ namespace CHOV
             this.PicChang0ver.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PicChang0ver.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicChang0ver.Image = global::CHOV.Properties.Resources.Active_Primary;
-            this.PicChang0ver.Location = new System.Drawing.Point(433, 21);
+            this.PicChang0ver.Location = new System.Drawing.Point(433, 22);
+            this.PicChang0ver.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PicChang0ver.Name = "PicChang0ver";
             this.PicChang0ver.Size = new System.Drawing.Size(42, 33);
             this.PicChang0ver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3127,6 +3154,7 @@ namespace CHOV
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label14.Location = new System.Drawing.Point(206, 6);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(10, 12);
             this.label14.TabIndex = 106;
@@ -3140,7 +3168,8 @@ namespace CHOV
             this.checkBox15R.AutoSize = true;
             this.checkBox15R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox15R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox15R.Location = new System.Drawing.Point(364, 41);
+            this.checkBox15R.Location = new System.Drawing.Point(364, 40);
+            this.checkBox15R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox15R.Name = "checkBox15R";
             this.checkBox15R.Size = new System.Drawing.Size(15, 14);
             this.checkBox15R.TabIndex = 122;
@@ -3156,6 +3185,7 @@ namespace CHOV
             this.checkBox16T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox16T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox16T.Location = new System.Drawing.Point(384, 19);
+            this.checkBox16T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox16T.Name = "checkBox16T";
             this.checkBox16T.Size = new System.Drawing.Size(15, 14);
             this.checkBox16T.TabIndex = 123;
@@ -3170,7 +3200,8 @@ namespace CHOV
             this.checkBox14R.AutoSize = true;
             this.checkBox14R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox14R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox14R.Location = new System.Drawing.Point(344, 41);
+            this.checkBox14R.Location = new System.Drawing.Point(344, 40);
+            this.checkBox14R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox14R.Name = "checkBox14R";
             this.checkBox14R.Size = new System.Drawing.Size(15, 14);
             this.checkBox14R.TabIndex = 121;
@@ -3186,6 +3217,7 @@ namespace CHOV
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label13.Location = new System.Drawing.Point(226, 6);
+            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(10, 12);
             this.label13.TabIndex = 106;
@@ -3200,6 +3232,7 @@ namespace CHOV
             this.checkBox15T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox15T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox15T.Location = new System.Drawing.Point(364, 19);
+            this.checkBox15T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox15T.Name = "checkBox15T";
             this.checkBox15T.Size = new System.Drawing.Size(15, 14);
             this.checkBox15T.TabIndex = 122;
@@ -3214,7 +3247,8 @@ namespace CHOV
             this.checkBox13R.AutoSize = true;
             this.checkBox13R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox13R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox13R.Location = new System.Drawing.Point(324, 41);
+            this.checkBox13R.Location = new System.Drawing.Point(324, 40);
+            this.checkBox13R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox13R.Name = "checkBox13R";
             this.checkBox13R.Size = new System.Drawing.Size(15, 14);
             this.checkBox13R.TabIndex = 120;
@@ -3230,6 +3264,7 @@ namespace CHOV
             this.checkBox14T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox14T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox14T.Location = new System.Drawing.Point(344, 19);
+            this.checkBox14T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox14T.Name = "checkBox14T";
             this.checkBox14T.Size = new System.Drawing.Size(15, 14);
             this.checkBox14T.TabIndex = 121;
@@ -3244,7 +3279,8 @@ namespace CHOV
             this.checkBox12R.AutoSize = true;
             this.checkBox12R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox12R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox12R.Location = new System.Drawing.Point(304, 41);
+            this.checkBox12R.Location = new System.Drawing.Point(304, 40);
+            this.checkBox12R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox12R.Name = "checkBox12R";
             this.checkBox12R.Size = new System.Drawing.Size(15, 14);
             this.checkBox12R.TabIndex = 119;
@@ -3260,6 +3296,7 @@ namespace CHOV
             this.checkBox13T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox13T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox13T.Location = new System.Drawing.Point(324, 19);
+            this.checkBox13T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox13T.Name = "checkBox13T";
             this.checkBox13T.Size = new System.Drawing.Size(15, 14);
             this.checkBox13T.TabIndex = 120;
@@ -3274,7 +3311,8 @@ namespace CHOV
             this.checkBox11R.AutoSize = true;
             this.checkBox11R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox11R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox11R.Location = new System.Drawing.Point(284, 41);
+            this.checkBox11R.Location = new System.Drawing.Point(284, 40);
+            this.checkBox11R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox11R.Name = "checkBox11R";
             this.checkBox11R.Size = new System.Drawing.Size(15, 14);
             this.checkBox11R.TabIndex = 118;
@@ -3290,6 +3328,7 @@ namespace CHOV
             this.checkBox12T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox12T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox12T.Location = new System.Drawing.Point(304, 19);
+            this.checkBox12T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox12T.Name = "checkBox12T";
             this.checkBox12T.Size = new System.Drawing.Size(15, 14);
             this.checkBox12T.TabIndex = 119;
@@ -3303,7 +3342,8 @@ namespace CHOV
             | System.Windows.Forms.AnchorStyles.Right)));
             this.checkBox2R.AutoSize = true;
             this.checkBox2R.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox2R.Location = new System.Drawing.Point(104, 41);
+            this.checkBox2R.Location = new System.Drawing.Point(104, 40);
+            this.checkBox2R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox2R.Name = "checkBox2R";
             this.checkBox2R.Size = new System.Drawing.Size(15, 14);
             this.checkBox2R.TabIndex = 109;
@@ -3319,6 +3359,7 @@ namespace CHOV
             this.checkBox11T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox11T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox11T.Location = new System.Drawing.Point(284, 19);
+            this.checkBox11T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox11T.Name = "checkBox11T";
             this.checkBox11T.Size = new System.Drawing.Size(15, 14);
             this.checkBox11T.TabIndex = 118;
@@ -3333,7 +3374,8 @@ namespace CHOV
             this.checkBox10R.AutoSize = true;
             this.checkBox10R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox10R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox10R.Location = new System.Drawing.Point(264, 41);
+            this.checkBox10R.Location = new System.Drawing.Point(264, 40);
+            this.checkBox10R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox10R.Name = "checkBox10R";
             this.checkBox10R.Size = new System.Drawing.Size(15, 14);
             this.checkBox10R.TabIndex = 117;
@@ -3348,6 +3390,7 @@ namespace CHOV
             this.checkBox2T.AutoSize = true;
             this.checkBox2T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox2T.Location = new System.Drawing.Point(104, 19);
+            this.checkBox2T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox2T.Name = "checkBox2T";
             this.checkBox2T.Size = new System.Drawing.Size(15, 14);
             this.checkBox2T.TabIndex = 109;
@@ -3362,7 +3405,8 @@ namespace CHOV
             this.checkBox1R.AutoSize = true;
             this.checkBox1R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox1R.Location = new System.Drawing.Point(84, 41);
+            this.checkBox1R.Location = new System.Drawing.Point(84, 40);
+            this.checkBox1R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox1R.Name = "checkBox1R";
             this.checkBox1R.Size = new System.Drawing.Size(15, 14);
             this.checkBox1R.TabIndex = 108;
@@ -3378,6 +3422,7 @@ namespace CHOV
             this.checkBox10T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox10T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox10T.Location = new System.Drawing.Point(264, 19);
+            this.checkBox10T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox10T.Name = "checkBox10T";
             this.checkBox10T.Size = new System.Drawing.Size(15, 14);
             this.checkBox10T.TabIndex = 117;
@@ -3392,7 +3437,8 @@ namespace CHOV
             this.checkBox9R.AutoSize = true;
             this.checkBox9R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox9R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox9R.Location = new System.Drawing.Point(244, 41);
+            this.checkBox9R.Location = new System.Drawing.Point(244, 40);
+            this.checkBox9R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox9R.Name = "checkBox9R";
             this.checkBox9R.Size = new System.Drawing.Size(15, 14);
             this.checkBox9R.TabIndex = 116;
@@ -3408,6 +3454,7 @@ namespace CHOV
             this.checkBox1T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox1T.Location = new System.Drawing.Point(84, 19);
+            this.checkBox1T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox1T.Name = "checkBox1T";
             this.checkBox1T.Size = new System.Drawing.Size(15, 14);
             this.checkBox1T.TabIndex = 108;
@@ -3422,7 +3469,8 @@ namespace CHOV
             this.checkBox8R.AutoSize = true;
             this.checkBox8R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox8R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox8R.Location = new System.Drawing.Point(224, 41);
+            this.checkBox8R.Location = new System.Drawing.Point(224, 40);
+            this.checkBox8R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox8R.Name = "checkBox8R";
             this.checkBox8R.Size = new System.Drawing.Size(15, 14);
             this.checkBox8R.TabIndex = 115;
@@ -3438,6 +3486,7 @@ namespace CHOV
             this.checkBox9T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox9T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox9T.Location = new System.Drawing.Point(244, 19);
+            this.checkBox9T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox9T.Name = "checkBox9T";
             this.checkBox9T.Size = new System.Drawing.Size(15, 14);
             this.checkBox9T.TabIndex = 116;
@@ -3452,7 +3501,8 @@ namespace CHOV
             this.checkBox7R.AutoSize = true;
             this.checkBox7R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox7R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox7R.Location = new System.Drawing.Point(204, 41);
+            this.checkBox7R.Location = new System.Drawing.Point(204, 40);
+            this.checkBox7R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox7R.Name = "checkBox7R";
             this.checkBox7R.Size = new System.Drawing.Size(15, 14);
             this.checkBox7R.TabIndex = 114;
@@ -3468,6 +3518,7 @@ namespace CHOV
             this.checkBox8T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox8T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox8T.Location = new System.Drawing.Point(224, 19);
+            this.checkBox8T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox8T.Name = "checkBox8T";
             this.checkBox8T.Size = new System.Drawing.Size(15, 14);
             this.checkBox8T.TabIndex = 115;
@@ -3482,7 +3533,8 @@ namespace CHOV
             this.checkBox6R.AutoSize = true;
             this.checkBox6R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox6R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox6R.Location = new System.Drawing.Point(184, 41);
+            this.checkBox6R.Location = new System.Drawing.Point(184, 40);
+            this.checkBox6R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox6R.Name = "checkBox6R";
             this.checkBox6R.Size = new System.Drawing.Size(15, 14);
             this.checkBox6R.TabIndex = 113;
@@ -3498,6 +3550,7 @@ namespace CHOV
             this.checkBox7T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox7T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox7T.Location = new System.Drawing.Point(204, 19);
+            this.checkBox7T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox7T.Name = "checkBox7T";
             this.checkBox7T.Size = new System.Drawing.Size(15, 14);
             this.checkBox7T.TabIndex = 114;
@@ -3512,7 +3565,8 @@ namespace CHOV
             this.checkBox5R.AutoSize = true;
             this.checkBox5R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox5R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox5R.Location = new System.Drawing.Point(164, 41);
+            this.checkBox5R.Location = new System.Drawing.Point(164, 40);
+            this.checkBox5R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox5R.Name = "checkBox5R";
             this.checkBox5R.Size = new System.Drawing.Size(15, 14);
             this.checkBox5R.TabIndex = 112;
@@ -3528,6 +3582,7 @@ namespace CHOV
             this.checkBox6T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox6T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox6T.Location = new System.Drawing.Point(184, 19);
+            this.checkBox6T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox6T.Name = "checkBox6T";
             this.checkBox6T.Size = new System.Drawing.Size(15, 14);
             this.checkBox6T.TabIndex = 113;
@@ -3542,7 +3597,8 @@ namespace CHOV
             this.checkBox4R.AutoSize = true;
             this.checkBox4R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox4R.Location = new System.Drawing.Point(144, 41);
+            this.checkBox4R.Location = new System.Drawing.Point(144, 40);
+            this.checkBox4R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox4R.Name = "checkBox4R";
             this.checkBox4R.Size = new System.Drawing.Size(15, 14);
             this.checkBox4R.TabIndex = 111;
@@ -3558,6 +3614,7 @@ namespace CHOV
             this.checkBox5T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox5T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox5T.Location = new System.Drawing.Point(164, 19);
+            this.checkBox5T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox5T.Name = "checkBox5T";
             this.checkBox5T.Size = new System.Drawing.Size(15, 14);
             this.checkBox5T.TabIndex = 112;
@@ -3572,7 +3629,8 @@ namespace CHOV
             this.checkBox3R.AutoSize = true;
             this.checkBox3R.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3R.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkBox3R.Location = new System.Drawing.Point(124, 41);
+            this.checkBox3R.Location = new System.Drawing.Point(124, 40);
+            this.checkBox3R.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox3R.Name = "checkBox3R";
             this.checkBox3R.Size = new System.Drawing.Size(15, 14);
             this.checkBox3R.TabIndex = 110;
@@ -3588,6 +3646,7 @@ namespace CHOV
             this.checkBox4T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox4T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox4T.Location = new System.Drawing.Point(144, 19);
+            this.checkBox4T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox4T.Name = "checkBox4T";
             this.checkBox4T.Size = new System.Drawing.Size(15, 14);
             this.checkBox4T.TabIndex = 111;
@@ -3603,6 +3662,7 @@ namespace CHOV
             this.checkBox3T.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox3T.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.checkBox3T.Location = new System.Drawing.Point(124, 19);
+            this.checkBox3T.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.checkBox3T.Name = "checkBox3T";
             this.checkBox3T.Size = new System.Drawing.Size(15, 14);
             this.checkBox3T.TabIndex = 110;
@@ -3640,9 +3700,10 @@ namespace CHOV
             this.LblRelogio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LblRelogio.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LblRelogio.Location = new System.Drawing.Point(1099, 9);
+            this.LblRelogio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRelogio.Name = "LblRelogio";
             this.LblRelogio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LblRelogio.Size = new System.Drawing.Size(58, 18);
+            this.LblRelogio.Size = new System.Drawing.Size(58, 17);
             this.LblRelogio.TabIndex = 107;
             this.LblRelogio.Text = "00:00:00";
             this.LblRelogio.Visible = false;
@@ -3652,7 +3713,7 @@ namespace CHOV
             this.LblRodape.AutoEllipsis = true;
             this.LblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.LblRodape.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblRodape.Location = new System.Drawing.Point(34, 457);
+            this.LblRodape.Location = new System.Drawing.Point(34, 456);
             this.LblRodape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRodape.Name = "LblRodape";
             this.LblRodape.Size = new System.Drawing.Size(1106, 22);
@@ -3666,8 +3727,9 @@ namespace CHOV
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::CHOV.Properties.Resources.icon_Down;
             this.pictureBox2.Location = new System.Drawing.Point(10, 341);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(16, 15);
+            this.pictureBox2.Size = new System.Drawing.Size(16, 14);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 106;
             this.pictureBox2.TabStop = false;
@@ -3678,9 +3740,10 @@ namespace CHOV
             this.LblData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LblData.ForeColor = System.Drawing.SystemColors.ControlText;
             this.LblData.Location = new System.Drawing.Point(857, 9);
+            this.LblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblData.Name = "LblData";
             this.LblData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.LblData.Size = new System.Drawing.Size(251, 18);
+            this.LblData.Size = new System.Drawing.Size(251, 17);
             this.LblData.TabIndex = 109;
             this.LblData.Text = "00/00/0000";
             this.LblData.Visible = false;
@@ -3690,8 +3753,8 @@ namespace CHOV
             this.LedHeart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LedHeart.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(230)))), ((int)(((byte)(64)))));
             this.LedHeart.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LedHeart.Location = new System.Drawing.Point(1165, 8);
-            this.LedHeart.Margin = new System.Windows.Forms.Padding(2);
+            this.LedHeart.Location = new System.Drawing.Point(1165, 9);
+            this.LedHeart.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedHeart.Name = "LedHeart";
             this.LedHeart.On = true;
             this.LedHeart.Size = new System.Drawing.Size(16, 17);
@@ -3723,7 +3786,7 @@ namespace CHOV
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.MaximizeBox = false;
             this.Name = "FrmPainel";
             this.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
