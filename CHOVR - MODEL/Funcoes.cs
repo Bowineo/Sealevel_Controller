@@ -951,7 +951,7 @@ namespace CHOV
         {
             string[] inputs = FormatVetorStatus(read);
             string historico;
-            historico = "<" + DateTime.Now.ToString() + " - Secondary  " + InOnlyOn(inputs) + ">";
+            historico = "<" + DateTime.Now.ToString() + " - Secondary  " + InOnlyOn(inputs);
             return historico;
         }
 
@@ -963,7 +963,7 @@ namespace CHOV
         {
             string[] inputs = FormatVetorStatus(read);
             string historico;
-            historico = "<" + DateTime.Now.ToString() + " - Primary    " + InOnlyOn(inputs) + ">";
+            historico = "<" + DateTime.Now.ToString() + " - Primary    " + InOnlyOn(inputs);
             return historico;
         }
 
@@ -982,7 +982,8 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    Saida += " " + "IN" + " " + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                   // Saida += " " + "IN" + " " + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                    Saida += " " + "IN" + " " + (s) + ">";
                 }
             }
             return Saida;
@@ -1003,7 +1004,8 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    Saida += " " + "IN"  + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                  //  Saida += " " + "IN"  + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
+                    Saida += " " + "IN" + (s) + "> ";
                 }
             }
             return Saida;
@@ -1024,7 +1026,8 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + ": ON> ";
+                    //Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + ": ON> ";
+                    Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + "> ";
                 }
             }
             return Saida;
@@ -1045,7 +1048,8 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    Saida += " " + "OUT" + " " + (s) + ":  " + Entrada[i].Substring(0, 2);
+                    // Saida += " " + "OUT" + " " + (s) + ":  " + Entrada[i].Substring(0, 2);
+                    Saida += " " + "OUT" + (s) + "> ";
                 }
             }
             return Saida;
