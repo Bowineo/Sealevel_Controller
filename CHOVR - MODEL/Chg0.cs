@@ -20,7 +20,7 @@ namespace CHOV
         /// <param name="ReadPrimary"> String de entrada para ser convertida e aglutinada em um vetor bool de 16 posições</param>
         /// <param name="ReadPrimary1"> String de entrada para ser convertida e aglutinada em um vetor bool de 16 posições</param>
         /// <returns> Retorna um vetor bool juntando as 2 entradas string e convertendo para um vetor bool de 16 posições</returns>
-        public static bool[] Bool16position(string ReadPrimary, string ReadPrimary1)
+        public static bool[] Bool_16position(string ReadPrimary, string ReadPrimary1)
         {
             bool[] VreadPrimary1 = VetorBoolean(FormatByte(ReadPrimary));
             bool[] VreadPrimary2 = VetorBoolean(FormatByte(ReadPrimary1));
@@ -39,17 +39,17 @@ namespace CHOV
         /// <param name="readSecondary">String com o valor decimal da leitura do secondary 1-8</param>
         /// <param name="readSecondary1">String com o valor decimal da leitura do secondary 9-16</param>
         /// <returns>Vetor booleano com o status das combinações para escrever nas respectivas saidas</returns>
-        public static bool[] ExeCombinacoes(System.Collections.Specialized.StringCollection combinacoes, string readPrimary, string readPrimary1, string readSecondary, string readSecondary1)
+        public static bool[] ExecuteCombinations(System.Collections.Specialized.StringCollection combinations, string readPrimary, string readPrimary1, string readSecondary, string readSecondary1)
         {
-            bool[] VreadPrimary = Bool16position(readPrimary, readPrimary1);
-            bool[] VreadSecondary = Bool16position(readSecondary, readSecondary1);
+            bool[] VreadPrimary = Bool_16position(readPrimary, readPrimary1);
+            bool[] VreadSecondary = Bool_16position(readSecondary, readSecondary1);
             bool[] SlotV1 = new bool[18];
             bool[] SlotV2 = new bool[18];
             bool[] SlotT1 = new bool[18];
             bool[] SlotT2 = new bool[18];
             bool[] Z1 = new bool[18];
             bool[] Z2 = new bool[18];
-            int t = combinacoes.Count;
+            int t = combinations.Count;
             string[] device1 = new string[t];
             string[] name1 = new string[t];
             int[] input1 = new int[t];
@@ -65,18 +65,18 @@ namespace CHOV
 
             for (int i = 0; i < t; i++)
             {
-                string[] comb = Dvet(combinacoes[i]);
+                string[] comb = DiscreetCombination(combinations[i]);
                 device1[i] = comb[0];
-                in1_isNot[i] = TToNintINnot(comb[1]);
-                input1[i] = Math.Abs(ZeroNegativo(TToNintINnot(comb[1])));
+                in1_isNot[i] = InputStringToInt_not(comb[1]);
+                input1[i] = Math.Abs(ZeroNegative(InputStringToInt_not(comb[1])));
                 name1[i] = comb[2];
                 operacao[i] = comb[3];
                 device2[i] = comb[4];
-                in2_isNot[i] = TToNintINnot(comb[5]);
-                input2[i] = Math.Abs(ZeroNegativo(TToNintINnot(comb[5])));
+                in2_isNot[i] = InputStringToInt_not(comb[5]);
+                input2[i] = Math.Abs(ZeroNegative(InputStringToInt_not(comb[5])));
                 name2[i] = comb[6];
                 nameoutput[i] = comb[8];
-                output[i] = ToNintOUT(comb[7]);
+                output[i] = OutputStringToInt(comb[7]);
             }
             //Vetor para saida do sistema com a resposta das operação direto p saida do hardware.
             bool[] VwriteOutput = new bool[18];
@@ -85,12 +85,12 @@ namespace CHOV
                 if (in1_isNot[i] < 0)
                 {
                     if (device1[i] == "Primary  ")
-                    { SlotV1[i] = OpNOT(VreadPrimary[input1[i]]); }
+                    { SlotV1[i] = OperationNOT(VreadPrimary[input1[i]]); }
                     else
                     {
                         if (device1[i] == "- null -")
                         { SlotV1[i] = false; }
-                        else { SlotV2[i] = OpNOT(VreadSecondary[input1[i]]); }
+                        else { SlotV2[i] = OperationNOT(VreadSecondary[input1[i]]); }
                     }
                 }
                 else
@@ -107,12 +107,12 @@ namespace CHOV
                 if (in2_isNot[i] < 0)
                 {
                     if (device2[i] == "Primary  ")
-                    { SlotT1[i] = OpNOT(VreadPrimary[input2[i]]); }
+                    { SlotT1[i] = OperationNOT(VreadPrimary[input2[i]]); }
                     else
                     {
                         if (device2[i] == "- null -")
                         { SlotT2[i] = false; }
-                        else { SlotT2[i] = OpNOT(VreadSecondary[input2[i]]); }
+                        else { SlotT2[i] = OperationNOT(VreadSecondary[input2[i]]); }
                     }
                 }
                 else
@@ -144,7 +144,7 @@ namespace CHOV
                         if (device2[i] == "- null -") { Z2[i] = false; }
                         else { Z2[i] = SlotT2[i]; }
                     }
-                    VwriteOutput[output[i]] = OpOR(VwriteOutput[output[i]], (OpAND(Z1[i], Z2[i])));
+                    VwriteOutput[output[i]] = OperationOR(VwriteOutput[output[i]], (OperationAND(Z1[i], Z2[i])));
                 }
                 else
                 {
@@ -160,7 +160,7 @@ namespace CHOV
                         if (device2[i] == "- null -") { Z2[i] = false; }
                         else { Z2[i] = SlotT2[i]; }
                     }
-                    VwriteOutput[output[i]] = OpOR(VwriteOutput[output[i]], (OpOR(Z1[i], Z2[i])));
+                    VwriteOutput[output[i]] = OperationOR(VwriteOutput[output[i]], (OperationOR(Z1[i], Z2[i])));
                 }
             }
             return VwriteOutput;
@@ -172,7 +172,7 @@ namespace CHOV
         /// <param name="n1"> StringCollection[] de input onde será procurado determinado 'name'</param>
         /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
         /// <returns> Retorna string com a posição do name de input</returns>
-        public static string PosicaoIndexNEW(System.Collections.Specialized.StringCollection n1, string name)
+        public static string PositionIndexIN(System.Collections.Specialized.StringCollection n1, string name)
         {
             if (name.Length > 5) { return _ = n1[Convert.ToInt32(name.Substring(7, 2)) - 1]; }
             else
@@ -188,7 +188,7 @@ namespace CHOV
         /// <param name="n1"> StringCollection[] de output onde será procurado determinado 'name'</param>
         /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
         /// <returns> Retorna string com a posição do name de saida</returns>
-        public static string PosicaoIndexOut(System.Collections.Specialized.StringCollection n1, string name)
+        public static string PositionIndexOUT(System.Collections.Specialized.StringCollection n1, string name)
         {
             if ((Convert.ToInt32(name.Substring(4, 2)) - 1) >= 0) { return _ = n1[Convert.ToInt32(name.Substring(4, 2)) - 1]; }
             else { return "- null -"; }
@@ -231,7 +231,6 @@ namespace CHOV
             }
         }
         //modelo do Indentifica: "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 16 ] 'IN 16  ' ->[ OUT 13 ] 'OUT 13 '"
-
     }
 
     public class Functions
@@ -241,7 +240,7 @@ namespace CHOV
         /// Função para checar se durante a chamada de um Form, se algum  outro form está aberto.
         /// </summary>
         /// <returns>Retorna 1 se já tiver algum form aberto, retorna 0 se nenhum form estiver aberto</returns>
-        public static int CheckFormAberto()
+        public static int CheckFormOpen()
         {
             Form frC = Application.OpenForms["frmConfiguracoes"];
             Form frL = Application.OpenForms["frmLogs"];
@@ -279,13 +278,13 @@ namespace CHOV
         }
 
         /// <summary>
-        /// Recebe 3 entrdas bool e retorna uma string identificando qual o status das 3 entrada do tipo 'VVF'/'FVF' etc
+        /// Recebe 3 entradas booleanas e retorna uma string identificando qual o status das 3 entrada do tipo 'VVF'/'FVF' etc
         /// </summary>
         /// <param name="one"> Primeira entrada bool</param>
         /// <param name="two"> Segunda entrada bool</param>
         /// <param name="tree"> Segunda entrada bool </param>
         /// <returns> Retorna uma string identificando qual o status das 3 entrada do tipo 'VVF'/'FVF' etc</returns>
-        public static string IdentificaTrueFalse(bool one, bool two, bool tree)
+        public static string IdentifyTrueFalse(bool one, bool two, bool tree)
         {
             bool[] vetor = new bool[3];
             vetor[0] = one;
@@ -304,22 +303,22 @@ namespace CHOV
         /// <summary>
         /// Recebe string de entrada e retorna um Int
         /// </summary>
-        /// <param name="stringentrada"> String de entrada para ser discretado/convertido em Int</param>
+        /// <param name="input"> String de entrada para ser discretado/convertido em Int</param>
         /// <returns> Retorna Int discretando/convertendo a string de entrada</returns>
-        public static int DiscretagemInt(string stringentrada)
+        public static int InputStringToInt(string input)
         {
-            if (stringentrada.Length == 10) { return Convert.ToInt32(stringentrada.Substring(8, 1)); }
-            else { return Convert.ToInt32(stringentrada.Substring(7, 1)); }
+            if (input.Length == 10) { return Convert.ToInt32(input.Substring(8, 1)); }
+            else { return Convert.ToInt32(input.Substring(7, 1)); }
         }
 
         /// <summary>
         /// Recebe uma String de entrada e converte para Int (INPUT)
         /// </summary>
-        /// <param name="stringentrada"> String de entrada a ser convertida para Int</param>
+        /// <param name="input"> String de entrada a ser convertida para Int</param>
         /// <returns> Int convertido a saida da conversão da String de entrda</returns>
-        public static int ToNintIN(string stringentrada)
+        public static int InputIntToString(string input)
         {
-            switch (stringentrada)
+            switch (input)
             {
                 case "IN 01": return 01;
                 case "IN 02": return 2;
@@ -346,10 +345,10 @@ namespace CHOV
         /// </summary>
         /// <param name="vetorstringentrada">  String[] de entrada a ser convertida para Int[]</param>
         /// <returns> Int[] convertido a saida da conversão da String[] de entrda</returns>
-        public static int[] ToVNintIN(string[] vetorstringentrada)
+        public static int[] InputStringToInt(string[] input)
         {
             int[] saida = new int[17];
-            for (int i = 0; i < vetorstringentrada.Length; i++) { saida[i] = ToNintIN((vetorstringentrada[i])); }
+            for (int i = 0; i < input.Length; i++) { saida[i] = InputIntToString((input[i])); }
             return saida;
         }
 
@@ -358,9 +357,9 @@ namespace CHOV
         /// </summary>
         /// <param name="entrada"> String de entrada a ser convertida para Int</param>
         /// <returns> Int convertido a saida da conversão da String de entrda</returns>
-        public static int ToNintOUT(string entrada)
+        public static int OutputStringToInt(string input)
         {
-            switch (entrada)
+            switch (input)
             {
                 case "OUT 01": return 0;
                 case "OUT 02": return 1;
@@ -385,23 +384,23 @@ namespace CHOV
         /// <summary>
         /// Recebe uma String[] de entrada e converte para Int[] (OUTPUT)
         /// </summary>
-        /// <param name="vetorstringentrada"> String[] de entrada a ser convertida para Int[]</param>
+        /// <param name="input"> String[] de entrada a ser convertida para Int[]</param>
         /// /// <returns> Int[] convertido a saida da conversão da String[] de entrda</returns>
-        public static int[] ToVNintOUT(string[] vetorstringentrada)
+        public static int[] OutputStringToInt(string[] input)
         {
-            int[] saida = new int[17];
-            for (int i = 0; i < vetorstringentrada.Length; i++) { saida[i] = ToNintOUT(vetorstringentrada[i]); }
-            return saida;
+            int[] output = new int[17];
+            for (int i = 0; i < input.Length; i++) { output[i] = OutputStringToInt(input[i]); }
+            return output;
         }
 
         /// <summary>
         ///  Recebe uma String de entrada e converte para Int (Implementado função NOT)
         /// </summary>
-        /// <param name="entrada"> String de entrada a ser convertida para Int</param>
+        /// <param name="input"> String de entrada a ser convertida para Int</param>
         /// <returns> Int convertido a saida da conversão da String de entrda</returns>
-        public static int TToNintINnot(string entrada)
+        public static int InputStringToInt_not(string input)
         {
-            switch (entrada)
+            switch (input)
             {
                 case "IN 01": return 0;
                 case "IN 02": return 1;
@@ -440,59 +439,18 @@ namespace CHOV
         }
 
         /// <summary>
-        ///  Recebe uma String de entrada e converte para Int (Implementado função NOT)
-        /// </summary>
-        /// <param name="entrada"> String de entrada a ser convertida para Int</param>
-        /// <returns> Int convertido a saida da conversão da String de entrda</returns>
-        public static int ToNintINnot(string entrada)
-        {
-            switch (entrada)
-            {
-                case "NOT - IN 01": return -01;
-                case "NOT - IN 02": return -2;
-                case "NOT - IN 03": return -3;
-                case "NOT - IN 04": return -4;
-                case "NOT - IN 05": return -5;
-                case "NOT - IN 06": return -6;
-                case "NOT - IN 07": return -7;
-                case "NOT - IN 08": return -8;
-                case "NOT - IN 09": return -9;
-                case "NOT - IN 10": return -10;
-                case "NOT - IN 11": return -11;
-                case "NOT - IN 12": return -12;
-                case "NOT - IN 13": return -13;
-                case "NOT - IN 14": return -14;
-                case "NOT - IN 15": return -15;
-                case "NOT - IN 16": return -16;
-                default: return 0;
-            }
-        }
-
-        /// <summary>
-        /// Recebe uma String de entrada e converte para Int (Implementado função NOT)
-        /// </summary>
-        /// <param name="entrada"> String[] de entrada a ser convertida para Int[] </param>
-        /// <returns>  Int[] convertido a saida da conversão da String[] de entrda</returns>
-        public static int[] ToVNintINnot(string[] entrada)
-        {
-            int[] saida = new int[17];
-            for (int i = 0; i < entrada.Length; i++) { saida[i] = ToNintINnot((entrada[i])); }
-            return saida;
-        }
-
-        /// <summary>
         /// Retorna true se tiver algum item nulo ou vazio de  vetores
         /// </summary>
-        /// <param name="entrada1"> String[] de entrada poisção 1</param>
-        /// <param name="entrada2"> String[] de entrada poisção 2</param>
-        /// <param name="entrada3"> String[] de entrada poisção 3</param>
+        /// <param name="input"> String[] de entrada poisção 1</param>
+        /// <param name="input1"> String[] de entrada poisção 2</param>
+        /// <param name="input2"> String[] de entrada poisção 3</param>
         /// <returns> Bool indicando se possui algum item nulo ou vazio em um dos 3 arrays de entrada</returns>
-        public static bool NullOrempty(string[] entrada1, string[] entrada2, string[] entrada3)
+        public static bool NullOrempty(string[] input, string[] input1, string[] input2)
         {
             int qtd = 0;
-            for (int i = 0; i < entrada1.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if ((string.IsNullOrEmpty(entrada1[i]) || entrada1[i].Trim().Length == 0) || (string.IsNullOrEmpty(entrada2[i]) || entrada2[i].Trim().Length == 0) || (string.IsNullOrEmpty(entrada3[i]) || entrada3[i].Trim().Length == 0))
+                if ((string.IsNullOrEmpty(input[i]) || input[i].Trim().Length == 0) || (string.IsNullOrEmpty(input1[i]) || input1[i].Trim().Length == 0) || (string.IsNullOrEmpty(input2[i]) || input2[i].Trim().Length == 0))
                 { qtd += 1; }
             }
             if (qtd == 0) { return false; }
@@ -502,11 +460,11 @@ namespace CHOV
         /// <summary>
         /// Recebe uma string de entrada representando um index e retorna uma string com a 'IN' equivalente
         /// </summary>
-        /// <param name="entrada"> String que representa um index de um vetor</param>
+        /// <param name="input"> String que representa um index de um vetor</param>
         /// <returns> Retorna a entrada 'IN' equivalente </returns>
-        public static string QualIN(string entrada)
+        public static string WhatIn(string input)
         {
-            switch (entrada)
+            switch (input)
             {
                 case "0": return "IN 01";
                 case "1": return "IN 02";
@@ -547,11 +505,11 @@ namespace CHOV
         /// <summary>
         /// Recebe uma string de entrada representando um index e retorna uma string com a 'OUT' equivalente
         /// </summary>
-        /// <param name="stringIndex"> String que representa um index de um vetor</param>
+        /// <param name="index"> String que representa um index de um vetor</param>
         /// <returns> Retorna a entrada 'OUT' equivalente </returns>
-        public static string QualOUT(string stringIndex)
+        public static string WhatOut(string index)
         {
-            switch (stringIndex)
+            switch (index)
             {
                 case "0": return "OUT 01";
                 case "1": return "OUT 02";
@@ -576,9 +534,9 @@ namespace CHOV
         /// <summary>
         /// Função que recebe uma combinação e retorna um vetor com cada elemento da combinação
         /// </summary>
-        /// <param name="e">string de entrada para ser extraida os elementos da combinação</param>
+        /// <param name="input">string de entrada para ser extraida os elementos da combinação</param>
         /// <returns>string[] com os elementos da combinação</returns>
-        public static string[] Dvet(string e)
+        public static string[] DiscreetCombination(string input)
         {
             /*
               00 device1
@@ -593,60 +551,60 @@ namespace CHOV
            */
             string[] s = new string[9];
             //quando infos do dev1 for nulo
-            if (e.Substring(2, 1) == "-")
+            if (input.Substring(2, 1) == "-")
             {
                 s[0] = "- null  -"; //device1
                 s[1] = "- null  -"; //input1
                 s[2] = "-null!-"; //name1
-                s[3] = e.Substring(37, 3); //Logic
-                s[4] = e.Substring(45, 9); //device2
-                if (e.Substring(56, 4) == "NOT-")
+                s[3] = input.Substring(37, 3); //Logic
+                s[4] = input.Substring(45, 9); //device2
+                if (input.Substring(56, 4) == "NOT-")
                 {
-                    s[5] = e.Substring(56, 9); //input2
+                    s[5] = input.Substring(56, 9); //input2
                 }
                 else
                 {
-                    s[5] = e.Substring(60, 5); //input2
+                    s[5] = input.Substring(60, 5); //input2
                 }
-                s[6] = e.Substring(69, 7); //name2
-                s[7] = e.Substring(82, 6); //out
-                s[8] = e.Substring(92, 7); //nameout
+                s[6] = input.Substring(69, 7); //name2
+                s[7] = input.Substring(82, 6); //out
+                s[8] = input.Substring(92, 7); //nameout
             }
             else
             {
-                s[0] = e.Substring(2, 9); //device1
-                if (e.Substring(13, 4) == "NOT-")
+                s[0] = input.Substring(2, 9); //device1
+                if (input.Substring(13, 4) == "NOT-")
                 {
-                    s[1] = e.Substring(13, 9);//input1
+                    s[1] = input.Substring(13, 9);//input1
                 }
                 else
                 {
-                    s[1] = e.Substring(17, 5);//input1
+                    s[1] = input.Substring(17, 5);//input1
                 }
-                s[2] = e.Substring(26, 7); //nome1
-                s[3] = e.Substring(37, 3); //Logic
-                if (e.Substring(45, 1) == "-")
+                s[2] = input.Substring(26, 7); //nome1
+                s[3] = input.Substring(37, 3); //Logic
+                if (input.Substring(45, 1) == "-")
                 {
                     s[4] = "- null  -"; //device2
                     s[5] = "- null  -"; //input
                     s[6] = "-null!-"; //name2
-                    s[7] = e.Substring(82, 6); //out
-                    s[8] = e.Substring(92, 7); //nameout
+                    s[7] = input.Substring(82, 6); //out
+                    s[8] = input.Substring(92, 7); //nameout
                 }
                 else
                 {
-                    s[4] = e.Substring(45, 9);//device2
-                    if (e.Substring(56, 4) == "NOT-")
+                    s[4] = input.Substring(45, 9);//device2
+                    if (input.Substring(56, 4) == "NOT-")
                     {
-                        s[5] = e.Substring(56, 9);//input2
+                        s[5] = input.Substring(56, 9);//input2
                     }
                     else
                     {
-                        s[5] = e.Substring(60, 5);//input2
+                        s[5] = input.Substring(60, 5);//input2
                     }
-                    s[6] = e.Substring(69, 7); //name2
-                    s[7] = e.Substring(82, 6); //out
-                    s[8] = e.Substring(92, 7); //nameout                                        
+                    s[6] = input.Substring(69, 7); //name2
+                    s[7] = input.Substring(82, 6); //out
+                    s[8] = input.Substring(92, 7); //nameout                                        
                 }
             }
             return s;
@@ -656,42 +614,41 @@ namespace CHOV
         /// Recebe os elementos da combinação e cria uma string com a combinação completa
         /// </summary>
         /// <param name="device1">string device 1</param>
-        /// <param name="posicao1">string posição 1</param>
+        /// <param name="position1">string posição 1</param>
         /// <param name="name1">string name 1</param>
         /// <param name="logic">string logica operação</param>
         /// <param name="device2">string device 2</param>
-        /// <param name="posicao2">string posição 2</param>
+        /// <param name="position2">string posição 2</param>
         /// <param name="name2">string name 2</param>
         /// <param name="output">string output</param>
         /// <param name="nameout">string name output</param>
         /// <returns>string com a combinação completa</returns>
-        public static string Cvet(string device1, string posicao1, string name1, string logic, string device2, string posicao2, string name2, string output, string nameout)
-        {   //                              9           9           7           3       9           9           7           6           7
-            //string[] b = Funcoes.Dvet("[ Secondary: NOT-IN 01 ] 'WWWWWWW' [ AND ] [ Secondary: NOT-IN 02 ] 'ABCDEFG' ->[ OUT 13 ] '1234567'");
-            _ = new string[] { device1, posicao1, name1, logic, device2, posicao2, name2, output, nameout };
-            string j = "[ " + device1 + ": " + posicao1 + " ]" + " '" + name1 + "' " + "[ " + logic + " ] " + "[ " + device2 + ": " + posicao2 + " ]" + " '" + name2 + "' " + "->[ " + output + " ]" + " '" + nameout + "'";
+        public static string EncryptCombination(string device1, string position1, string name1, string logic, string device2, string position2, string name2, string output, string nameout)
+        {  
+            _ = new string[] { device1, position1, name1, logic, device2, position2, name2, output, nameout };
+            string j = "[ " + device1 + ": " + position1 + " ]" + " '" + name1 + "' " + "[ " + logic + " ] " + "[ " + device2 + ": " + position2 + " ]" + " '" + name2 + "' " + "->[ " + output + " ]" + " '" + nameout + "'";
             return j;
         }
 
         /// <summary>
         /// Recebe string de entrada e completa total de 7 caracteres
         /// </summary>
-        /// <param name="e">string entrada para ser completada com total de 7 caracteres</param>
+        /// <param name="input">string entrada para ser completada com total de 7 caracteres</param>
         /// <returns>string de entrada com total de 7 caracteres</returns>
-        public static string String7chars(string e)
+        public static string Complete7Chars(string input)
         {
             int z;
             string s;
-            switch (e.Length)
+            switch (input.Length)
             {
-                case 1: z = 6; s = e; break;
-                case 2: z = 5; s = e; break;
-                case 3: z = 4; s = e; break;
-                case 4: z = 3; s = e; break;
-                case 5: z = 2; s = e; break;
-                case 6: z = 1; s = e; break;
-                case 7: z = 0; s = e; break;
-                default: s = e; z = 0; break;
+                case 1: z = 6; s = input; break;
+                case 2: z = 5; s = input; break;
+                case 3: z = 4; s = input; break;
+                case 4: z = 3; s = input; break;
+                case 5: z = 2; s = input; break;
+                case 6: z = 1; s = input; break;
+                case 7: z = 0; s = input; break;
+                default: s = input; z = 0; break;
             }
             for (int i = 0; i < z; i++) { s += " "; }
             return s;
@@ -703,44 +660,44 @@ namespace CHOV
         /// <summary>
         /// fimção para corrigir problema do zero negativo
         /// </summary>
-        /// <param name="entrada">entrada string representa a posição do input</param>
+        /// <param name="input">entrada string representa a posição do input</param>
         /// <returns>int com numero da posição</returns>
-        public static int ZeroNegativo(int entrada)
+        public static int ZeroNegative(int input)
         {
-            if (entrada == -100) { return 0; }
-            else { return entrada; }
+            if (input == -100) { return 0; }
+            else { return input; }
         }
 
         /// <summary>
         /// Identifica se a operação lógica é AND 
         /// </summary>
-        /// <param name="Operacao"Recebe string entrada que representa a opração a se identificada></param>
+        /// <param name="operation"Recebe string entrada que representa a opração a se identificada></param>
         /// <returns> Retorna bool caso a sring de entrada seja 'AND'</returns>
-        public static bool IsAnd(string Operacao)
+        public static bool IsAnd(string operation)
         {
-            if (Operacao.ToUpper() == "AND") { return true; }
+            if (operation.ToUpper() == "AND") { return true; }
             else { return false; }
         }
 
         /// <summary>
         /// Identifica se a operação lógica é  OR 
         /// </summary>
-        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
+        /// <param name="operation"> Recebe string entrada que representa a opração a se identificada</param>
         /// <returns> Retorna bool caso a sring de entrada seja ' OR'</returns>
-        public static bool IsOr(string Operacao)
+        public static bool IsOr(string operation)
         {
-            if (Operacao.ToUpper() == " OR") { return true; }
+            if (operation.ToUpper() == " OR") { return true; }
             else { return false; }
         }
 
         /// <summary>
         /// Identifica se a operação lógica é NOT 
         /// </summary>
-        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
+        /// <param name="operation"> Recebe string entrada que representa a opração a se identificada</param>
         /// <returns> Retorna bool caso a sring de entrada seja 'NOT'</returns>
-        public static bool IsNot(string Operacao)
+        public static bool IsNot(string operation)
         {
-            if (Operacao.ToUpper() == "NOT")
+            if (operation.ToUpper() == "NOT")
             { return true; }
             else { return false; }
         }
@@ -751,7 +708,7 @@ namespace CHOV
         /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação AND</param>
         /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação AND</param>
         /// <returns> Retorna Bool com o resultado da operação AND entre 'n1 e 'n2'</returns>
-        public static bool OpAND(bool n1, bool n2)
+        public static bool OperationAND(bool n1, bool n2)
         {
             bool resp = false;
             if (n1 == false && n2 == false) { resp = false; }
@@ -767,7 +724,7 @@ namespace CHOV
         /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação OR</param>
         /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação OR</param>
         /// <returns> Retorna Bool com o resultado da operação OR entre 'n1 e 'n2'</returns>
-        public static bool OpOR(bool n1, bool n2)
+        public static bool OperationOR(bool n1, bool n2)
         {
             bool resp = true;
             if (n1 == false && n2 == false) { resp = false; }
@@ -782,7 +739,7 @@ namespace CHOV
         /// </summary>
         /// <param name="n"> Bool para realiazr a operação NOT</param>
         /// <returns> Retorna Bool com o resultado da operação NOT com a entrada 'n1'</returns>
-        public static bool OpNOT(bool n)
+        public static bool OperationNOT(bool n)
         {
             bool resp;
             if (n == false) { resp = true; }
@@ -807,102 +764,102 @@ namespace CHOV
         /// <summary>
         /// Função que recebe uma string de entrada e formata para byte.
         /// </summary>
-        /// <param name="textoIN"> String de entrada a ser formatada para byte</param>
+        /// <param name="input"> String de entrada a ser formatada para byte</param>
         /// <returns> Retorna a string de saída formatada para byte com 8 digitos</returns>
-        public static string FormatByte(string textoIN)
+        public static string FormatByte(string input)
         {
             byte[] Data = new byte[16];
-            Data[0] = Convert.ToByte(textoIN);
-            string bin = DecimalParaBinario(Data[0].ToString());
-            string bits = Functions.Completa8(bin);
-            string bina = InverterString(bits);
-            _ = BinarioParaDecimal(bits).ToString();
+            Data[0] = Convert.ToByte(input);
+            string bin = DecimalToBinary(Data[0].ToString());
+            string bits = Functions.Complete8Chars(bin);
+            string bina = InvertString(bits);
+            _ = BinaryToDecimal(bits).ToString();
             return bina;
         }
 
         /// <summary>
         /// Função que recebe 1 string e converte para um vetor booleano.
         /// </summary>
-        /// <param name="textoIN1"> String 1 de entrada a ser transformada em um vetor booleano</param>
+        /// <param name="input"> String 1 de entrada a ser transformada em um vetor booleano</param>
         /// <returns> Retorna um booleano[] que representa as strings de entrada</returns>
-        public static bool[] VetorBoolean(string textoIN1)
+        public static bool[] VetorBoolean(string input)
         {
             bool[] vetor = new bool[16];
-            vetor[0] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(0, 1)));
-            vetor[1] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(1, 1)));
-            vetor[2] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(2, 1)));
-            vetor[3] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(3, 1)));
-            vetor[4] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(4, 1)));
-            vetor[5] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(5, 1)));
-            vetor[6] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(6, 1)));
-            vetor[7] = Convert.ToBoolean(Convert.ToDecimal(textoIN1.Substring(7, 1)));
+            vetor[0] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(0, 1)));
+            vetor[1] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(1, 1)));
+            vetor[2] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(2, 1)));
+            vetor[3] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(3, 1)));
+            vetor[4] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(4, 1)));
+            vetor[5] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(5, 1)));
+            vetor[6] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(6, 1)));
+            vetor[7] = Convert.ToBoolean(Convert.ToDecimal(input.Substring(7, 1)));
             return vetor;
         }
 
         /// <summary>
         /// Função que recebe string e completa para 8 digitos de um byte
         /// </summary>
-        /// <param name="entrada"> String de entrada</param>
+        /// <param name="input"> String de entrada</param>
         /// <returns> Retorna uma string de saida com 8 digitos</returns>
         /// 
-        public static string Completa8(string entrada)
+        public static string Complete8Chars(string input)
         {
-            int tamanho = entrada.Length;
-            string saida = entrada;
-            if (tamanho == 8 || tamanho == 0) { saida = entrada; }
-            if (tamanho == 7) { saida = "0" + entrada; }
-            if (tamanho == 6) { saida = "00" + entrada; }
-            if (tamanho == 5) { saida = "000" + entrada; }
-            if (tamanho == 4) { saida = "0000" + entrada; }
-            if (tamanho == 3) { saida = "00000" + entrada; }
-            if (tamanho == 2) { saida = "000000" + entrada; }
-            if (tamanho == 1) { saida = "0000000" + entrada; }
+            int tamanho = input.Length;
+            string saida = input;
+            if (tamanho == 8 || tamanho == 0) { saida = input; }
+            if (tamanho == 7) { saida = "0" + input; }
+            if (tamanho == 6) { saida = "00" + input; }
+            if (tamanho == 5) { saida = "000" + input; }
+            if (tamanho == 4) { saida = "0000" + input; }
+            if (tamanho == 3) { saida = "00000" + input; }
+            if (tamanho == 2) { saida = "000000" + input; }
+            if (tamanho == 1) { saida = "0000000" + input; }
             return saida;
         }
 
         /// <summary>
         /// Função que converte um decimal para binário
         /// </summary>
-        /// <param name="numero"> String de entrada para ser convertida para binário</param>
+        /// <param name="input"> String de entrada para ser convertida para binário</param>
         /// <returns> Retorna uma string representando o valor de entrada em binário</returns>
-        public static string DecimalParaBinario(string numero)
+        public static string DecimalToBinary(string input)
         {
             string valor = "";
-            int dividendo = Convert.ToInt32(numero);
+            int dividendo = Convert.ToInt32(input);
             if (dividendo == 0 || dividendo == 1)
             { return Convert.ToString(dividendo); }
             else
             {
                 while (dividendo > 0)
                 { valor += Convert.ToString(dividendo % 2); dividendo /= 2; }
-                return InverterString(valor);
+                return InvertString(valor);
             }
         }
 
         /// <summary>
         /// Função que inverte os caracteres de uma string
         /// </summary>
-        /// <param name="str"> String de entrada para ser invertida</param>
+        /// <param name="input"> String de entrada para ser invertida</param>
         /// <returns> Retorna invertid a string de entrada</returns>
-        public static string InverterString(string str)
+        public static string InvertString(string input)
         {
-            int tamanho = str.Length;
+            int tamanho = input.Length;
             char[] caracteres = new char[tamanho];
-            for (int i = 0; i < tamanho; i++) { caracteres[i] = str[tamanho - 1 - i]; }
+            for (int i = 0; i < tamanho; i++) { caracteres[i] = input[tamanho - 1 - i]; }
             return new string(caracteres);
         }
 
         /// <summary>
         /// Função converte um binário para decimal.
         /// </summary>
-        /// <param name="valorBinario"> String de entrada representando um valor em binário a ser convertido para decimal</param>
+        /// <param name="input"> String de entrada representando um valor em binário a ser convertido para decimal</param>
         /// <returns >Retorna um int (Decimal) com o valor da entrada em binário </returns>
-        public static int BinarioParaDecimal(string valorBinario)
+        public static int BinaryToDecimal(string input)
         {
             int expoente = 0;
             int numero;
             int soma = 0;
-            string numeroInvertido = InverterString(valorBinario);
+            string numeroInvertido = InvertString(input);
             for (int i = 0; i < numeroInvertido.Length; i++)
             {
                 //pega dígito por dígito do número digitado
@@ -915,9 +872,9 @@ namespace CHOV
             return soma;
         }
 
-        public static bool TrueFalse(string entrada)
+        public static bool StringToBoolean(string input)
         {
-            if (entrada == "True")
+            if (input == "True")
             { return true; }
             else
             { return false; }

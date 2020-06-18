@@ -400,7 +400,7 @@ namespace CHOV
         {
             log.Debug("Botão Write Mtx acionado");
             //frmC.Saida1a16(Funcoes.Slotnot(frmC.ArraySlotsP, frmC.ArraySlotsOp, frmC.ArraySlotsS, frmC.ArraySlotsO, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
-            Saida1a16(SystemSoftware.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
+            Saida1a16(SystemSoftware.ExecuteCombinations(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
         }
 
         /// <summary>
@@ -1028,7 +1028,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void SobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Functions.CheckFormAberto() == 0)
+            if (Functions.CheckFormOpen() == 0)
             {
                 log.Debug("Load Sobre");
                Form Sobre = new FrmSobre(); Sobre.Show(); 
@@ -1042,7 +1042,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void ConfiguraçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Functions.CheckFormAberto() == 0)
+            if (Functions.CheckFormOpen() == 0)
             {
                 log.Debug("Load Configurações");
                 Form Config = new FrmConfiguracoes(this);  Config.Show();
@@ -1056,7 +1056,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void LogsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Functions.CheckFormAberto() == 0)
+            if (Functions.CheckFormOpen() == 0)
             {
                 this.Location = new Point(100, 0);
                 Expand(true);
@@ -1352,7 +1352,7 @@ namespace CHOV
                     }
                     return;
                 case "Matrix of Signals":
-                    bool[] Exeslots = SystemSoftware.ExeCombinacoes(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
+                    bool[] Exeslots = SystemSoftware.ExecuteCombinations(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
                     Saida1a16(Exeslots);
                     if (Records.TemTrue(Exeslots) == true)
                     {
