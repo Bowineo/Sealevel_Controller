@@ -319,7 +319,7 @@ namespace CHOV
                             case "Primary":
                                 //Registro Logs
                                 log.Info("Primary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
-                                ArrayHistoric.Add(DateTime.Now.ToString() + " - #Chg0!" + " - Secondary is selected now!" + Environment.NewLine);
+                                ArrayHistoric.Add("<" + DateTime.Now.ToString() + " - Chg0!" + " - Secondary is selected now>");
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 PicChang0ver.Image = CHOV.Properties.Resources.Active_Secondary; CurrentSelection_pgm = "Secondary";
                                 ReservaAtivado();
@@ -327,11 +327,10 @@ namespace CHOV
                                 GetInfoSettings();
                                 log.Warn(DateTime.Now.ToString() + " - CHANGE OVER - Secondary is selected now!");
                                 break;
-
                             case "Secondary":
                                 //Registro Logs
                                 log.Info("Secondary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
-                                ArrayHistoric.Add(DateTime.Now.ToString() + " - #Chg0!" + " - Primary is selected now!" + Environment.NewLine);
+                                ArrayHistoric.Add("<"+ DateTime.Now.ToString() + " - Chg0!" + " - Primary is selected now!>");
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 PicChang0ver.Image = CHOV.Properties.Resources.Active_Primary; CurrentSelection_pgm = "Primary";
                                 TitularAtivado();
@@ -340,7 +339,6 @@ namespace CHOV
                                 GetInfoSettings();
                                 log.Warn(DateTime.Now.ToString() + " - CHANGE OVER - Primary is selected now!");
                                 break;
-
                             default: break;
                         }
                         chg = true;
