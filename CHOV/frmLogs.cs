@@ -46,7 +46,7 @@ namespace CHOV
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void FrmLogs_KeyDown(object sender, KeyEventArgs e)
-        { if (e.Shift && e.KeyCode == Keys.P) { Funcoes.ReturnPanel(); log.Debug("Atalho painel acionado"); } }
+        { if (e.Shift && e.KeyCode == Keys.P) { Function.ReturnPanel(); log.Debug("Atalho painel acionado"); } }
 
         /// <summary>
         /// Relogio Log

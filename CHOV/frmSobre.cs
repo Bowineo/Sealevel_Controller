@@ -102,7 +102,7 @@ namespace CHOV
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void FrmSobre_KeyDown(object sender, KeyEventArgs e)
-        { if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para painel acionado"); Funcoes.ReturnPanel(); } }
+        { if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para painel acionado"); Function.ReturnPanel(); } }
 
         /// <summary>
         /// Load Form

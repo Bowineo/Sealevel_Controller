@@ -495,7 +495,7 @@
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(7, 309);
+            this.label32.Location = new System.Drawing.Point(7, 313);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(33, 13);
@@ -505,7 +505,7 @@
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(7, 29);
+            this.label17.Location = new System.Drawing.Point(7, 33);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(33, 13);
@@ -542,7 +542,7 @@
             // 
             // label25
             // 
-            this.label25.Location = new System.Drawing.Point(7, 179);
+            this.label25.Location = new System.Drawing.Point(7, 183);
             this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(33, 13);
@@ -552,7 +552,7 @@
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(7, 160);
+            this.label24.Location = new System.Drawing.Point(7, 164);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(33, 13);
@@ -562,7 +562,7 @@
             // 
             // label21
             // 
-            this.label21.Location = new System.Drawing.Point(7, 104);
+            this.label21.Location = new System.Drawing.Point(7, 108);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(33, 13);
@@ -572,7 +572,7 @@
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(7, 235);
+            this.label28.Location = new System.Drawing.Point(7, 239);
             this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(33, 13);
@@ -636,7 +636,7 @@
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(7, 253);
+            this.label29.Location = new System.Drawing.Point(7, 257);
             this.label29.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(33, 13);
@@ -646,7 +646,7 @@
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(7, 85);
+            this.label20.Location = new System.Drawing.Point(7, 89);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(33, 13);
@@ -656,7 +656,7 @@
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(7, 66);
+            this.label19.Location = new System.Drawing.Point(7, 70);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(33, 13);
@@ -666,7 +666,7 @@
             // 
             // label30
             // 
-            this.label30.Location = new System.Drawing.Point(7, 272);
+            this.label30.Location = new System.Drawing.Point(7, 276);
             this.label30.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(33, 13);
@@ -730,7 +730,7 @@
             // 
             // label27
             // 
-            this.label27.Location = new System.Drawing.Point(7, 216);
+            this.label27.Location = new System.Drawing.Point(7, 220);
             this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(33, 13);
@@ -740,7 +740,7 @@
             // 
             // label22
             // 
-            this.label22.Location = new System.Drawing.Point(7, 123);
+            this.label22.Location = new System.Drawing.Point(7, 127);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 13);
@@ -750,7 +750,7 @@
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(7, 141);
+            this.label23.Location = new System.Drawing.Point(7, 145);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(33, 13);
@@ -760,7 +760,7 @@
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(7, 197);
+            this.label26.Location = new System.Drawing.Point(7, 201);
             this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(33, 13);
@@ -824,7 +824,7 @@
             // 
             // label31
             // 
-            this.label31.Location = new System.Drawing.Point(7, 291);
+            this.label31.Location = new System.Drawing.Point(7, 295);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(33, 13);
@@ -834,7 +834,7 @@
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(7, 48);
+            this.label18.Location = new System.Drawing.Point(7, 52);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(33, 13);
@@ -925,7 +925,7 @@
             // 
             // label48
             // 
-            this.label48.Location = new System.Drawing.Point(3, 309);
+            this.label48.Location = new System.Drawing.Point(3, 312);
             this.label48.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(45, 13);
@@ -935,7 +935,7 @@
             // 
             // label40
             // 
-            this.label40.Location = new System.Drawing.Point(3, 159);
+            this.label40.Location = new System.Drawing.Point(3, 162);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(45, 13);
@@ -971,7 +971,7 @@
             // 
             // label44
             // 
-            this.label44.Location = new System.Drawing.Point(3, 234);
+            this.label44.Location = new System.Drawing.Point(3, 237);
             this.label44.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(45, 13);
@@ -981,7 +981,7 @@
             // 
             // label36
             // 
-            this.label36.Location = new System.Drawing.Point(3, 84);
+            this.label36.Location = new System.Drawing.Point(3, 87);
             this.label36.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(45, 13);
@@ -1017,7 +1017,7 @@
             // 
             // label46
             // 
-            this.label46.Location = new System.Drawing.Point(3, 271);
+            this.label46.Location = new System.Drawing.Point(3, 274);
             this.label46.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(45, 13);
@@ -1027,7 +1027,7 @@
             // 
             // label38
             // 
-            this.label38.Location = new System.Drawing.Point(3, 122);
+            this.label38.Location = new System.Drawing.Point(3, 125);
             this.label38.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(45, 13);
@@ -1063,7 +1063,7 @@
             // 
             // label42
             // 
-            this.label42.Location = new System.Drawing.Point(3, 197);
+            this.label42.Location = new System.Drawing.Point(3, 200);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(45, 13);
@@ -1073,7 +1073,7 @@
             // 
             // label34
             // 
-            this.label34.Location = new System.Drawing.Point(3, 47);
+            this.label34.Location = new System.Drawing.Point(3, 50);
             this.label34.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(45, 13);
@@ -1109,7 +1109,7 @@
             // 
             // label47
             // 
-            this.label47.Location = new System.Drawing.Point(3, 290);
+            this.label47.Location = new System.Drawing.Point(3, 293);
             this.label47.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(45, 13);
@@ -1119,7 +1119,7 @@
             // 
             // label39
             // 
-            this.label39.Location = new System.Drawing.Point(3, 140);
+            this.label39.Location = new System.Drawing.Point(3, 143);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(45, 13);
@@ -1155,7 +1155,7 @@
             // 
             // label43
             // 
-            this.label43.Location = new System.Drawing.Point(3, 215);
+            this.label43.Location = new System.Drawing.Point(3, 218);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(45, 13);
@@ -1165,7 +1165,7 @@
             // 
             // label35
             // 
-            this.label35.Location = new System.Drawing.Point(3, 66);
+            this.label35.Location = new System.Drawing.Point(3, 69);
             this.label35.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(45, 13);
@@ -1201,7 +1201,7 @@
             // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(3, 253);
+            this.label45.Location = new System.Drawing.Point(3, 256);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(45, 13);
@@ -1211,7 +1211,7 @@
             // 
             // label37
             // 
-            this.label37.Location = new System.Drawing.Point(3, 103);
+            this.label37.Location = new System.Drawing.Point(3, 106);
             this.label37.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(45, 13);
@@ -1234,7 +1234,7 @@
             // 
             // label41
             // 
-            this.label41.Location = new System.Drawing.Point(3, 178);
+            this.label41.Location = new System.Drawing.Point(3, 181);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(45, 13);
@@ -1257,7 +1257,7 @@
             // 
             // label33
             // 
-            this.label33.Location = new System.Drawing.Point(3, 28);
+            this.label33.Location = new System.Drawing.Point(3, 31);
             this.label33.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(45, 13);
@@ -1336,7 +1336,7 @@
             // 
             // label49
             // 
-            this.label49.Location = new System.Drawing.Point(9, 309);
+            this.label49.Location = new System.Drawing.Point(9, 313);
             this.label49.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(33, 13);
@@ -1374,7 +1374,7 @@
             // label50
             // 
             this.label50.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label50.Location = new System.Drawing.Point(8, 160);
+            this.label50.Location = new System.Drawing.Point(8, 164);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(33, 13);
@@ -1384,7 +1384,7 @@
             // 
             // label51
             // 
-            this.label51.Location = new System.Drawing.Point(8, 235);
+            this.label51.Location = new System.Drawing.Point(8, 239);
             this.label51.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(33, 13);
@@ -1422,7 +1422,7 @@
             // label52
             // 
             this.label52.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label52.Location = new System.Drawing.Point(8, 85);
+            this.label52.Location = new System.Drawing.Point(8, 89);
             this.label52.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(33, 13);
@@ -1432,7 +1432,7 @@
             // 
             // label53
             // 
-            this.label53.Location = new System.Drawing.Point(8, 272);
+            this.label53.Location = new System.Drawing.Point(8, 276);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(33, 13);
@@ -1470,7 +1470,7 @@
             // label54
             // 
             this.label54.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label54.Location = new System.Drawing.Point(8, 122);
+            this.label54.Location = new System.Drawing.Point(8, 126);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(33, 13);
@@ -1480,7 +1480,7 @@
             // 
             // label55
             // 
-            this.label55.Location = new System.Drawing.Point(8, 197);
+            this.label55.Location = new System.Drawing.Point(8, 201);
             this.label55.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(33, 13);
@@ -1518,7 +1518,7 @@
             // label56
             // 
             this.label56.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label56.Location = new System.Drawing.Point(8, 48);
+            this.label56.Location = new System.Drawing.Point(8, 52);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(33, 13);
@@ -1528,7 +1528,7 @@
             // 
             // label57
             // 
-            this.label57.Location = new System.Drawing.Point(8, 291);
+            this.label57.Location = new System.Drawing.Point(8, 295);
             this.label57.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(33, 13);
@@ -1566,7 +1566,7 @@
             // label58
             // 
             this.label58.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label58.Location = new System.Drawing.Point(8, 141);
+            this.label58.Location = new System.Drawing.Point(8, 145);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(33, 13);
@@ -1576,7 +1576,7 @@
             // 
             // label59
             // 
-            this.label59.Location = new System.Drawing.Point(8, 216);
+            this.label59.Location = new System.Drawing.Point(8, 220);
             this.label59.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(33, 13);
@@ -1614,7 +1614,7 @@
             // label60
             // 
             this.label60.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label60.Location = new System.Drawing.Point(8, 66);
+            this.label60.Location = new System.Drawing.Point(8, 70);
             this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(33, 13);
@@ -1624,7 +1624,7 @@
             // 
             // label61
             // 
-            this.label61.Location = new System.Drawing.Point(8, 253);
+            this.label61.Location = new System.Drawing.Point(8, 257);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(33, 13);
@@ -1662,7 +1662,7 @@
             // label62
             // 
             this.label62.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label62.Location = new System.Drawing.Point(8, 104);
+            this.label62.Location = new System.Drawing.Point(8, 108);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(33, 13);
@@ -1672,7 +1672,7 @@
             // 
             // label63
             // 
-            this.label63.Location = new System.Drawing.Point(8, 178);
+            this.label63.Location = new System.Drawing.Point(8, 182);
             this.label63.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label63.Name = "label63";
             this.label63.Size = new System.Drawing.Size(33, 13);
@@ -1697,7 +1697,7 @@
             // label64
             // 
             this.label64.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label64.Location = new System.Drawing.Point(8, 29);
+            this.label64.Location = new System.Drawing.Point(8, 33);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
             this.label64.Size = new System.Drawing.Size(33, 13);

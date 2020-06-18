@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CHOV
 {
-    public class Funcoes
+    public class Function
     {
         #region System
 
@@ -831,7 +831,7 @@ namespace CHOV
             byte[] Data = new byte[16];
             Data[0] = Convert.ToByte(textoIN);
             string bin = DecimalParaBinario(Data[0].ToString());
-            string bits = Funcoes.Completa8(bin);
+            string bits = Function.Completa8(bin);
             string bina = InverterString(bits);
             _ = BinarioParaDecimal(bits).ToString();
             return bina;
@@ -939,10 +939,12 @@ namespace CHOV
             else
             { return false; }
         }
-
+       
         #endregion
+    }
 
-        #region Records
+    public class Records
+    {
         /// <summary>
         /// Função indicando/Registrando status das entradas 1-16
         /// </summary>
@@ -982,7 +984,6 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                   // Saida += " " + "IN" + " " + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
                     Saida += " " + "IN" + " " + (s) + ">";
                 }
             }
@@ -1004,7 +1005,6 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                  //  Saida += " " + "IN"  + (s) + ":  " + vetorstringentrada[i].Substring(0, 2);
                     Saida += " " + "IN" + (s) + "> ";
                 }
             }
@@ -1026,7 +1026,6 @@ namespace CHOV
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    //Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + ": ON> ";
                     Saida += "<" + DateTime.Now.ToString() + " - " + " OUT" + " " + (s) + "> ";
                 }
             }
@@ -1038,17 +1037,16 @@ namespace CHOV
         /// </summary>
         /// <param name="Entrada"> String entrada para verificar quais saidas acionadas, usado em LOGS</param>
         /// <returns> String representa quais saidas acionadas</returns>
-        public static string OutOnlyOnLog(string[] Entrada)
+        public static string OutOnlyOnLog(string[] input)
         {
             string Saida = "";
-            for (int i = 0; i < Entrada.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if (Entrada[i] == "ON; ")
+                if (input[i] == "ON; ")
                 {
                     string s = "0";
                     if ((i + 1).ToString().Length > 1) { s = (i + 1).ToString(); }
                     else { s += (i + 1).ToString(); }
-                    // Saida += " " + "OUT" + " " + (s) + ":  " + Entrada[i].Substring(0, 2);
                     Saida += " " + "OUT" + (s) + "> ";
                 }
             }
@@ -1083,7 +1081,6 @@ namespace CHOV
             else { vs = false; }
             return vs;
         }
-        #endregion
     }
 
     public class Seamax

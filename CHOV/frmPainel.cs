@@ -88,7 +88,7 @@ namespace CHOV
             //Parametros iniciais
             PainelStart();
             //Insere o Ch0v initial
-            Funcoes.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+            Function.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
             Properties.Settings.Default.Save();
             //Lendo vetores de nomes
             RecebeNomeSettings();
@@ -318,7 +318,7 @@ namespace CHOV
                         {
                             case "Primary":
                                 //Registro Logs
-                                log.Info("Primary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Primary:" + Records.InOnlyOnLog(Records.FormatVetorStatus(vt)));
                                 ArrayHistoric.Add("<" + DateTime.Now.ToString() + " - Chg0!" + " - Secondary is selected now>");
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 PicChang0ver.Image = CHOV.Properties.Resources.Active_Secondary; CurrentSelection_pgm = "Secondary";
@@ -329,7 +329,7 @@ namespace CHOV
                                 break;
                             case "Secondary":
                                 //Registro Logs
-                                log.Info("Secondary:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Secondary:" + Records.InOnlyOnLog(Records.FormatVetorStatus(vt)));
                                 ArrayHistoric.Add("<"+ DateTime.Now.ToString() + " - Chg0!" + " - Primary is selected now!>");
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 PicChang0ver.Image = CHOV.Properties.Resources.Active_Primary; CurrentSelection_pgm = "Primary";
@@ -400,7 +400,7 @@ namespace CHOV
         {
             log.Debug("Botão Write Mtx acionado");
             //frmC.Saida1a16(Funcoes.Slotnot(frmC.ArraySlotsP, frmC.ArraySlotsOp, frmC.ArraySlotsS, frmC.ArraySlotsO, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
-            Saida1a16(Funcoes.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
+            Saida1a16(Function.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
         }
 
         /// <summary>
@@ -1028,7 +1028,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void SobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Funcoes.CheckFormAberto() == 0)
+            if (Function.CheckFormAberto() == 0)
             {
                 log.Debug("Load Sobre");
                Form Sobre = new FrmSobre(); Sobre.Show(); 
@@ -1042,7 +1042,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void ConfiguraçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Funcoes.CheckFormAberto() == 0)
+            if (Function.CheckFormAberto() == 0)
             {
                 log.Debug("Load Configurações");
                 Form Config = new FrmConfiguracoes(this);  Config.Show(); 
@@ -1056,7 +1056,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void LogsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Funcoes.CheckFormAberto() == 0)
+            if (Function.CheckFormAberto() == 0)
             {
                 this.Location = new Point(100, 0);
                 Expand(true);
@@ -1076,7 +1076,7 @@ namespace CHOV
         {
             log.Debug("Retorno painel");
             //Fecha os demais forms e da topMost no Panel principal.
-            Funcoes.ReturnPanel();
+            Function.ReturnPanel();
         }
 
         /// <summary>
@@ -1294,14 +1294,14 @@ namespace CHOV
             int p = PositionPulse(CtT, CtR, CHOV.Properties.Settings.Default.DeviceChg0);
             //Relógio & Data
             LblRelogio.Text = Relogio_pgm = DateTime.Now.ToLongTimeString();
-            LblData.Text = Data_pgm = Funcoes.GetDateSystem();
+            LblData.Text = Data_pgm = Function.GetDateSystem();
             LblRelogio.Visible = true;
             LblData.Visible = true;
             ZeraAllInOut();
             switch (System_pgm)
             {
                 case "Change Over":
-                    if (Funcoes.TemTrue(CtT) || Funcoes.TemTrue(CtR))
+                    if (Records.TemTrue(CtT) || Records.TemTrue(CtR))
                     {
 
                         if (CurrentSelection_pgm == "Primary")
@@ -1310,18 +1310,18 @@ namespace CHOV
                             {
                                 vt = CtR;
                                 EntradasR1a16(vt);
-                                ArrayHistoric.Add(Funcoes.StatusIn1a16ChgT(vt));
+                                ArrayHistoric.Add(Records.StatusIn1a16ChgT(vt));
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 Saida1a16(vt);
-                                log.Info("Output:" + Funcoes.OutOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Output:" + Records.OutOnlyOnLog(Records.FormatVetorStatus(vt)));
                             }
-                            if (Funcoes.TemTrue(CtT) && CurrentSelection_pgm == "Primary")
+                            if (Records.TemTrue(CtT) && CurrentSelection_pgm == "Primary")
                             {
                                 vt = CtT;
                                 EntradasT1a16(vt);
-                                ArrayHistoric.Add(Funcoes.StatusIn1a16ChgR(vt));
+                                ArrayHistoric.Add(Records.StatusIn1a16ChgR(vt));
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                                log.Info("Output:" + Funcoes.OutOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Output:" + Records.OutOnlyOnLog(Records.FormatVetorStatus(vt)));
                                 Saida1a16(vt);
                             }
                         }
@@ -1331,19 +1331,19 @@ namespace CHOV
                             {
                                 vt = CtT;
                                 EntradasT1a16(vt);
-                                ArrayHistoric.Add(Funcoes.StatusIn1a16ChgR(vt));
+                                ArrayHistoric.Add(Records.StatusIn1a16ChgR(vt));
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 Saida1a16(vt);
-                                log.Info("Output:" + Funcoes.OutOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Output:" + Records.OutOnlyOnLog(Records.FormatVetorStatus(vt)));
                             }
-                            if (Funcoes.TemTrue(CtR) && CurrentSelection_pgm == "Secondary")
+                            if (Records.TemTrue(CtR) && CurrentSelection_pgm == "Secondary")
                             {
                                 vt = CtR;
                                 EntradasR1a16(vt);
-                                ArrayHistoric.Add(Funcoes.StatusIn1a16ChgT(vt));
+                                ArrayHistoric.Add(Records.StatusIn1a16ChgT(vt));
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 Saida1a16(vt);
-                                log.Info("Output:" + Funcoes.OutOnlyOnLog(Funcoes.FormatVetorStatus(vt)));
+                                log.Info("Output:" + Records.OutOnlyOnLog(Records.FormatVetorStatus(vt)));
                             }
                         }
                         Chg0verON(CHOV.Properties.Settings.Default.InputDeviceChg0, p, CHOV.Properties.Settings.Default.System);
@@ -1352,28 +1352,28 @@ namespace CHOV
                     }
                     return;
                 case "Matrix of Signals":
-                    bool[] Exeslots = Funcoes.ExeCombinacoes(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
+                    bool[] Exeslots = Function.ExeCombinacoes(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
                     Saida1a16(Exeslots);
-                    if (Funcoes.TemTrue(Exeslots) == true)
+                    if (Records.TemTrue(Exeslots) == true)
                     {
-                        string inflog = Funcoes.SlotsLogs(Exeslots);
+                        string inflog = Records.SlotsLogs(Exeslots);
                         ArrayHistoric.Add(inflog);
                         Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                        log.Info("Output:" + Funcoes.OutOnlyOnLog(Funcoes.FormatVetorStatus(Exeslots)));
+                        log.Info("Output:" + Records.OutOnlyOnLog(Records.FormatVetorStatus(Exeslots)));
                         CombinacoesSalvas(Properties.Settings.Default.Combinations, Properties.Settings.Default.EnableCombinationsLog);
                     }
                     //Desflega o controle manual.
-                    if (Funcoes.TemTrue(CtT))
+                    if (Records.TemTrue(CtT))
                     {
-                        ArrayHistoric.Add(Funcoes.StatusIn1a16ChgR(CtT));
+                        ArrayHistoric.Add(Records.StatusIn1a16ChgR(CtT));
                         Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                        log.Info("Input:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(CtT)));
+                        log.Info("Input:" + Records.InOnlyOnLog(Records.FormatVetorStatus(CtT)));
                     }
-                    if (Funcoes.TemTrue(CtR))
+                    if (Records.TemTrue(CtR))
                     {
-                        ArrayHistoric.Add(Funcoes.StatusIn1a16ChgT(CtR));
+                        ArrayHistoric.Add(Records.StatusIn1a16ChgT(CtR));
                         Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
-                        log.Info("Input:" + Funcoes.InOnlyOnLog(Funcoes.FormatVetorStatus(CtR)));
+                        log.Info("Input:" + Records.InOnlyOnLog(Records.FormatVetorStatus(CtR)));
                     }
                     LiberaControleManual();
                     return;

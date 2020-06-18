@@ -373,54 +373,54 @@ namespace CHOV
         /// </summary>
         public void CompletaString()
         {
-            CmpTIN01.Text = Funcoes.String7chars(CmpTIN01.Text);
-            CmpTIN02.Text = Funcoes.String7chars(CmpTIN02.Text);
-            CmpTIN03.Text = Funcoes.String7chars(CmpTIN03.Text);
-            CmpTIN04.Text = Funcoes.String7chars(CmpTIN04.Text);
-            CmpTIN05.Text = Funcoes.String7chars(CmpTIN05.Text);
-            CmpTIN06.Text = Funcoes.String7chars(CmpTIN06.Text);
-            CmpTIN07.Text = Funcoes.String7chars(CmpTIN07.Text);
-            CmpTIN08.Text = Funcoes.String7chars(CmpTIN08.Text);
-            CmpTIN09.Text = Funcoes.String7chars(CmpTIN09.Text);
-            CmpTIN010.Text = Funcoes.String7chars(CmpTIN010.Text);
-            CmpTIN011.Text = Funcoes.String7chars(CmpTIN011.Text);
-            CmpTIN012.Text = Funcoes.String7chars(CmpTIN012.Text);
-            CmpTIN013.Text = Funcoes.String7chars(CmpTIN013.Text);
-            CmpTIN014.Text = Funcoes.String7chars(CmpTIN014.Text);
-            CmpTIN015.Text = Funcoes.String7chars(CmpTIN015.Text);
-            CmpTIN016.Text = Funcoes.String7chars(CmpTIN016.Text);
-            CmpRIN1.Text = Funcoes.String7chars(CmpRIN1.Text);
-            CmpRIN2.Text = Funcoes.String7chars(CmpRIN2.Text);
-            CmpRIN3.Text = Funcoes.String7chars(CmpRIN3.Text);
-            CmpRIN4.Text = Funcoes.String7chars(CmpRIN4.Text);
-            CmpRIN5.Text = Funcoes.String7chars(CmpRIN5.Text);
-            CmpRIN6.Text = Funcoes.String7chars(CmpRIN6.Text);
-            CmpRIN7.Text = Funcoes.String7chars(CmpRIN7.Text);
-            CmpRIN8.Text = Funcoes.String7chars(CmpRIN8.Text);
-            CmpRIN9.Text = Funcoes.String7chars(CmpRIN9.Text);
-            CmpRIN10.Text = Funcoes.String7chars(CmpRIN10.Text);
-            CmpRIN11.Text = Funcoes.String7chars(CmpRIN11.Text);
-            CmpRIN12.Text = Funcoes.String7chars(CmpRIN12.Text);
-            CmpRIN13.Text = Funcoes.String7chars(CmpRIN13.Text);
-            CmpRIN14.Text = Funcoes.String7chars(CmpRIN14.Text);
-            CmpRIN15.Text = Funcoes.String7chars(CmpRIN15.Text);
-            CmpRIN16.Text = Funcoes.String7chars(CmpRIN16.Text);
-            CmpOut1.Text = Funcoes.String7chars(CmpOut1.Text);
-            CmpOut2.Text = Funcoes.String7chars(CmpOut2.Text);
-            CmpOut3.Text = Funcoes.String7chars(CmpOut3.Text);
-            CmpOut4.Text = Funcoes.String7chars(CmpOut4.Text);
-            CmpOut5.Text = Funcoes.String7chars(CmpOut5.Text);
-            CmpOut6.Text = Funcoes.String7chars(CmpOut6.Text);
-            CmpOut7.Text = Funcoes.String7chars(CmpOut7.Text);
-            CmpOut8.Text = Funcoes.String7chars(CmpOut8.Text);
-            CmpOut9.Text = Funcoes.String7chars(CmpOut9.Text);
-            CmpOut10.Text = Funcoes.String7chars(CmpOut10.Text);
-            CmpOut11.Text = Funcoes.String7chars(CmpOut11.Text);
-            CmpOut12.Text = Funcoes.String7chars(CmpOut12.Text);
-            CmpOut13.Text = Funcoes.String7chars(CmpOut13.Text);
-            CmpOut14.Text = Funcoes.String7chars(CmpOut14.Text);
-            CmpOut15.Text = Funcoes.String7chars(CmpOut15.Text);
-            CmpOut16.Text = Funcoes.String7chars(CmpOut16.Text);
+            CmpTIN01.Text = Function.String7chars(CmpTIN01.Text);
+            CmpTIN02.Text = Function.String7chars(CmpTIN02.Text);
+            CmpTIN03.Text = Function.String7chars(CmpTIN03.Text);
+            CmpTIN04.Text = Function.String7chars(CmpTIN04.Text);
+            CmpTIN05.Text = Function.String7chars(CmpTIN05.Text);
+            CmpTIN06.Text = Function.String7chars(CmpTIN06.Text);
+            CmpTIN07.Text = Function.String7chars(CmpTIN07.Text);
+            CmpTIN08.Text = Function.String7chars(CmpTIN08.Text);
+            CmpTIN09.Text = Function.String7chars(CmpTIN09.Text);
+            CmpTIN010.Text = Function.String7chars(CmpTIN010.Text);
+            CmpTIN011.Text = Function.String7chars(CmpTIN011.Text);
+            CmpTIN012.Text = Function.String7chars(CmpTIN012.Text);
+            CmpTIN013.Text = Function.String7chars(CmpTIN013.Text);
+            CmpTIN014.Text = Function.String7chars(CmpTIN014.Text);
+            CmpTIN015.Text = Function.String7chars(CmpTIN015.Text);
+            CmpTIN016.Text = Function.String7chars(CmpTIN016.Text);
+            CmpRIN1.Text = Function.String7chars(CmpRIN1.Text);
+            CmpRIN2.Text = Function.String7chars(CmpRIN2.Text);
+            CmpRIN3.Text = Function.String7chars(CmpRIN3.Text);
+            CmpRIN4.Text = Function.String7chars(CmpRIN4.Text);
+            CmpRIN5.Text = Function.String7chars(CmpRIN5.Text);
+            CmpRIN6.Text = Function.String7chars(CmpRIN6.Text);
+            CmpRIN7.Text = Function.String7chars(CmpRIN7.Text);
+            CmpRIN8.Text = Function.String7chars(CmpRIN8.Text);
+            CmpRIN9.Text = Function.String7chars(CmpRIN9.Text);
+            CmpRIN10.Text = Function.String7chars(CmpRIN10.Text);
+            CmpRIN11.Text = Function.String7chars(CmpRIN11.Text);
+            CmpRIN12.Text = Function.String7chars(CmpRIN12.Text);
+            CmpRIN13.Text = Function.String7chars(CmpRIN13.Text);
+            CmpRIN14.Text = Function.String7chars(CmpRIN14.Text);
+            CmpRIN15.Text = Function.String7chars(CmpRIN15.Text);
+            CmpRIN16.Text = Function.String7chars(CmpRIN16.Text);
+            CmpOut1.Text = Function.String7chars(CmpOut1.Text);
+            CmpOut2.Text = Function.String7chars(CmpOut2.Text);
+            CmpOut3.Text = Function.String7chars(CmpOut3.Text);
+            CmpOut4.Text = Function.String7chars(CmpOut4.Text);
+            CmpOut5.Text = Function.String7chars(CmpOut5.Text);
+            CmpOut6.Text = Function.String7chars(CmpOut6.Text);
+            CmpOut7.Text = Function.String7chars(CmpOut7.Text);
+            CmpOut8.Text = Function.String7chars(CmpOut8.Text);
+            CmpOut9.Text = Function.String7chars(CmpOut9.Text);
+            CmpOut10.Text = Function.String7chars(CmpOut10.Text);
+            CmpOut11.Text = Function.String7chars(CmpOut11.Text);
+            CmpOut12.Text = Function.String7chars(CmpOut12.Text);
+            CmpOut13.Text = Function.String7chars(CmpOut13.Text);
+            CmpOut14.Text = Function.String7chars(CmpOut14.Text);
+            CmpOut15.Text = Function.String7chars(CmpOut15.Text);
+            CmpOut16.Text = Function.String7chars(CmpOut16.Text);
         }
 
         /// <summary>
@@ -431,7 +431,7 @@ namespace CHOV
         private void BtAplicar_Click(object sender, EventArgs e)
         {
             PassaNomesParaArray();
-            if (Funcoes.NullOrempty(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput))
+            if (Function.NullOrempty(frmC.ArrayInputPrimary, frmC.ArrayInputSecondary, frmC.ArrayOutput))
             {
                 using (Form MsgBox23 = new MmsgBox("Unable to save with null name (s)!", "OK", 3, 0))
                 {
@@ -464,7 +464,7 @@ namespace CHOV
                                 }
                                 else
                                 {
-                                    string str = Funcoes.IdentificaTrueFalse(Somente1Chg0Vetor(frmC.ArrayInputPrimary), Somente1Chg0Vetor(frmC.ArrayInputSecondary), Somente1Chg0Vetor(frmC.ArrayOutput));
+                                    string str = Function.IdentificaTrueFalse(Somente1Chg0Vetor(frmC.ArrayInputPrimary), Somente1Chg0Vetor(frmC.ArrayInputSecondary), Somente1Chg0Vetor(frmC.ArrayOutput));
                                     MensagemAdequadaChangeOver(str);
                                 }
                                 return;
@@ -774,19 +774,19 @@ namespace CHOV
                 CbSelecaoInputCh0.Text = entrada[5];
                 CbSelecaoCh0.Text = entrada[6];
 
-                Ch_EnableLog.Checked = Funcoes.TrueFalse(entrada[9]);
+                Ch_EnableLog.Checked = Function.TrueFalse(entrada[9]);
                 Tbpathselect.Text = entrada[10];
                 Cb_MaxSizeLog.Text = entrada[11];
-                ch_Showcombinacoes.Checked = Funcoes.TrueFalse(entrada[12]);
+                ch_Showcombinacoes.Checked = Function.TrueFalse(entrada[12]);
 
-                Ch_Username.Checked = Funcoes.TrueFalse(entrada[13]);
-                Ch_Level.Checked = Funcoes.TrueFalse(entrada[14]);
-                Ch_Method.Checked = Funcoes.TrueFalse(entrada[15]);
-                Ch_Message.Checked = Funcoes.TrueFalse(entrada[16]);
-                Ch_Thread.Checked = Funcoes.TrueFalse(entrada[17]);
-                Ch_Line.Checked = Funcoes.TrueFalse(entrada[18]);
-                Ch_identity.Checked = Funcoes.TrueFalse(entrada[19]);
-                Ch_Location.Checked = Funcoes.TrueFalse(entrada[20]);
+                Ch_Username.Checked = Function.TrueFalse(entrada[13]);
+                Ch_Level.Checked = Function.TrueFalse(entrada[14]);
+                Ch_Method.Checked = Function.TrueFalse(entrada[15]);
+                Ch_Message.Checked = Function.TrueFalse(entrada[16]);
+                Ch_Thread.Checked = Function.TrueFalse(entrada[17]);
+                Ch_Line.Checked = Function.TrueFalse(entrada[18]);
+                Ch_identity.Checked = Function.TrueFalse(entrada[19]);
+                Ch_Location.Checked = Function.TrueFalse(entrada[20]);
                 string[] oit = { entrada[13], entrada[14], entrada[15], entrada[16], entrada[17], entrada[18], entrada[19], entrada[20] };
                 Properties.Settings.Default.DatawrittenLog.Clear();
                 Properties.Settings.Default.DatawrittenLog.AddRange(oit);
@@ -1119,7 +1119,7 @@ namespace CHOV
             {
                 string combi = Properties.Settings.Default.Combinations[i];
                 if (Properties.Settings.Default.Combinations[i] != null && combi.Length == 100)
-                { dGv.Rows.Add(Funcoes.Dvet(combi)); }
+                { dGv.Rows.Add(Function.Dvet(combi)); }
             }
         }
 
@@ -1183,7 +1183,7 @@ namespace CHOV
                 string p2;
                 if (k[5].Length > 5) { p2 = k[5]; }
                 else { p2 = "    " + k[5]; }
-                sasuke[i] = Funcoes.Cvet(k[0], p1, k[2], k[3], k[4], p2, k[6], k[7], k[8]);
+                sasuke[i] = Function.Cvet(k[0], p1, k[2], k[3], k[4], p2, k[6], k[7], k[8]);
             }
             return sasuke;
         }
@@ -1399,8 +1399,8 @@ namespace CHOV
         {
             if (cmBdeviceposicao1.Text == "Primary  ")
             {
-                LblPosicao1.Text = Funcoes.PosicaoIndexNEW(Properties.Settings.Default.NamesInputPrimary, cmBposicao1.Text);
-                frmC.indxCmbP1 = Funcoes.QualIN(cmBposicao1.SelectedIndex.ToString());
+                LblPosicao1.Text = Function.PosicaoIndexNEW(Properties.Settings.Default.NamesInputPrimary, cmBposicao1.Text);
+                frmC.indxCmbP1 = Function.QualIN(cmBposicao1.SelectedIndex.ToString());
                 if (cmbOperamtx.Text != "")
                 {
                     cmbSaida.Text = "";
@@ -1410,8 +1410,8 @@ namespace CHOV
             }
             if (cmBdeviceposicao1.Text == "Secondary")
             {
-                LblPosicao1.Text = Funcoes.PosicaoIndexNEW(Properties.Settings.Default.NamesInputSecondary, cmBposicao1.Text);
-                frmC.indxCmbP1 = Funcoes.QualIN(cmBposicao1.SelectedIndex.ToString());
+                LblPosicao1.Text = Function.PosicaoIndexNEW(Properties.Settings.Default.NamesInputSecondary, cmBposicao1.Text);
+                frmC.indxCmbP1 = Function.QualIN(cmBposicao1.SelectedIndex.ToString());
                 if (cmbOperamtx.Text != "")
                 {
                     cmbSaida.Text = "";
@@ -1436,8 +1436,8 @@ namespace CHOV
         {
             if (cmBdeviceposicao2.Text == "Primary  ")
             {
-                LblPosicao2.Text = Funcoes.PosicaoIndexNEW(Properties.Settings.Default.NamesInputPrimary, cmBposicao2.Text);
-                frmC.indxCmbP2 = Funcoes.QualIN(cmBposicao2.SelectedIndex.ToString());
+                LblPosicao2.Text = Function.PosicaoIndexNEW(Properties.Settings.Default.NamesInputPrimary, cmBposicao2.Text);
+                frmC.indxCmbP2 = Function.QualIN(cmBposicao2.SelectedIndex.ToString());
                 if (cmbOperamtx.Text != "")
                 {
                     cmbSaida.Text = "";
@@ -1448,8 +1448,8 @@ namespace CHOV
             }
             if (cmBdeviceposicao2.Text == "Secondary")
             {
-                LblPosicao2.Text = Funcoes.PosicaoIndexNEW(Properties.Settings.Default.NamesInputSecondary, cmBposicao2.Text);
-                frmC.indxCmbP2 = Funcoes.QualIN(cmBposicao2.SelectedIndex.ToString());
+                LblPosicao2.Text = Function.PosicaoIndexNEW(Properties.Settings.Default.NamesInputSecondary, cmBposicao2.Text);
+                frmC.indxCmbP2 = Function.QualIN(cmBposicao2.SelectedIndex.ToString());
                 if (cmbOperamtx.Text != "")
                 {
                     cmbSaida.Text = "";
@@ -1474,8 +1474,8 @@ namespace CHOV
         private void CmbSaida_SelectedIndexChanged(object sender, EventArgs e)
         {
             VisibleBotoes(true, false, false, false, false);
-            if (cmbSaida.Text != "") { LblOutput.Text = Funcoes.PosicaoIndexOut(Properties.Settings.Default.NamesOutput, cmbSaida.Text); }
-            frmC.indxCmbOut = Funcoes.QualOUT(cmbSaida.SelectedIndex.ToString());
+            if (cmbSaida.Text != "") { LblOutput.Text = Function.PosicaoIndexOut(Properties.Settings.Default.NamesOutput, cmbSaida.Text); }
+            frmC.indxCmbOut = Function.QualOUT(cmbSaida.SelectedIndex.ToString());
             if (cmbSaida.Text != "" && cmbOperamtx.Text != "") { VisibleBotoes(true, false, false, true, false); }
         }
 
@@ -1525,7 +1525,7 @@ namespace CHOV
                 else { k1 = "    " + k1; }
                 if (k2.Length > 5) { }
                 else { k2 = "    " + k2; }
-                V = Funcoes.Dvet(Funcoes.Cvet(dGv.Rows[k].Cells[0].Value.ToString(), k1, dGv.Rows[k].Cells[2].Value.ToString(), dGv.Rows[k].Cells[3].Value.ToString(), dGv.Rows[k].Cells[4].Value.ToString(), k2, dGv.Rows[k].Cells[6].Value.ToString(), dGv.Rows[k].Cells[7].Value.ToString(), dGv.Rows[k].Cells[8].Value.ToString()));
+                V = Function.Dvet(Function.Cvet(dGv.Rows[k].Cells[0].Value.ToString(), k1, dGv.Rows[k].Cells[2].Value.ToString(), dGv.Rows[k].Cells[3].Value.ToString(), dGv.Rows[k].Cells[4].Value.ToString(), k2, dGv.Rows[k].Cells[6].Value.ToString(), dGv.Rows[k].Cells[7].Value.ToString(), dGv.Rows[k].Cells[8].Value.ToString()));
                 if (V[1].Length > 5) { V[1] = V[1]; }
                 else { V[1] = "    " + V[1]; }
                 if (V[5].Length > 5) { V[5] = V[5]; }
@@ -1558,7 +1558,7 @@ namespace CHOV
                         string p2;
                         if (k2.Length > 5) { p2 = k2; }
                         else { p2 = "    " + k2; }
-                        string[] V = Funcoes.Dvet(Funcoes.Cvet(dGv.Rows[k].Cells[0].Value.ToString(), p1, dGv.Rows[k].Cells[2].Value.ToString(), dGv.Rows[k].Cells[3].Value.ToString(), dGv.Rows[k].Cells[4].Value.ToString(), p2, dGv.Rows[k].Cells[6].Value.ToString(), dGv.Rows[k].Cells[7].Value.ToString(), dGv.Rows[k].Cells[8].Value.ToString()));
+                        string[] V = Function.Dvet(Function.Cvet(dGv.Rows[k].Cells[0].Value.ToString(), p1, dGv.Rows[k].Cells[2].Value.ToString(), dGv.Rows[k].Cells[3].Value.ToString(), dGv.Rows[k].Cells[4].Value.ToString(), p2, dGv.Rows[k].Cells[6].Value.ToString(), dGv.Rows[k].Cells[7].Value.ToString(), dGv.Rows[k].Cells[8].Value.ToString()));
                         if (V[1].Length > 5) { V[1] = V[1]; }
                         else { V[1] = "    " + V[1]; }
                         if (V[5].Length > 5) { V[5] = V[5]; }
@@ -1624,18 +1624,18 @@ namespace CHOV
             {
                 if ((Combinados[i] != null) && (Combinados[i] != ""))
                 {
-                    string[] k = Funcoes.Dvet(Combinados[i]);
+                    string[] k = Function.Dvet(Combinados[i]);
                     dev1 = k[0];
                     pos1 = k[1];
-                    ind1 = Math.Abs(Funcoes.ZeroNegativo(Funcoes.TToNintINnot(k[1])));
+                    ind1 = Math.Abs(Function.ZeroNegativo(Function.TToNintINnot(k[1])));
                     _ = k[2];
                     dev2 = k[4];
                     pos2 = k[5];
-                    ind2 = Math.Abs(Funcoes.ZeroNegativo(Funcoes.TToNintINnot(k[5])));
+                    ind2 = Math.Abs(Function.ZeroNegativo(Function.TToNintINnot(k[5])));
                     _ = k[6];
                     operacao = k[3];
                     saida = k[7];
-                    namesaida = NamesOutput[Funcoes.ToNintOUT(k[7])];
+                    namesaida = NamesOutput[Function.ToNintOUT(k[7])];
                     switch (dev1)
                     {
                         case "Primary  ": name1 = NamesPrimary[ind1]; break;
@@ -1658,7 +1658,7 @@ namespace CHOV
                     string Po2;
                     if (pos2.Length > 5) { Po2 = pos2; }
                     else { Po2 = "    " + pos2; }
-                    Combinados[i] = Funcoes.Cvet(dev1, Po1, name1, operacao, dev2, Po2, name2, saida, namesaida);
+                    Combinados[i] = Function.Cvet(dev1, Po1, name1, operacao, dev2, Po2, name2, saida, namesaida);
                 }
                 else { Combinados[i] = ""; }
             }
@@ -1736,10 +1736,10 @@ namespace CHOV
         /// </summary>
         public void AlimentaDgv()
         {
-            string dados = Funcoes.Cvet(cmBdeviceposicao1.Text, cmBposicao1.Text, LblPosicao1.Text, cmbOperamtx.Text, cmBdeviceposicao2.Text, cmBposicao2.Text, LblPosicao2.Text, cmbSaida.Text, LblOutput.Text);
+            string dados = Function.Cvet(cmBdeviceposicao1.Text, cmBposicao1.Text, LblPosicao1.Text, cmbOperamtx.Text, cmBdeviceposicao2.Text, cmBposicao2.Text, LblPosicao2.Text, cmbSaida.Text, LblOutput.Text);
             if (dados.Length == 100)
             {
-                string[] ds = Funcoes.Dvet(dados);
+                string[] ds = Function.Dvet(dados);
                 dGv.Rows.Add(ds);
             }
             else
@@ -1992,7 +1992,7 @@ namespace CHOV
                 {
                     pathselect = folderDlg.SelectedPath.Replace(@"\", @"/");
                     _ = folderDlg.RootFolder;
-                    ID = pathselect + @"/" + Funcoes.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
+                    ID = pathselect + @"/" + Function.GetDateSystem().Replace(@", ", @" ").Replace(@"\", @"_").Replace(@"/", @"_") + "_" + DateTime.Now.ToLongTimeString().Replace(@":", @"_") + "_confg.chg0";
                     //textBox1.Text = ID;
                     File.WriteAllLines(ID, lines);
                     log.Debug("Escolhido novo path para salvar as configurações");
@@ -2726,25 +2726,25 @@ namespace CHOV
             switch (str)
             {
                 case "VFF":
-                    using (Form MsgBox = new MmsgBox("Secondary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
+                    using (Form MsgBox = new MmsgBox("Secondary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
                     { _ = MsgBox.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "FVF":
-                    using (Form MsgBox1 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
+                    using (Form MsgBox1 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
                     { _ = MsgBox1.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "VVF":
-                    using (Form MsgBox2 = new MmsgBox("Output: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
+                    using (Form MsgBox2 = new MmsgBox("Output: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
                     { _ = MsgBox2.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "FFF":
-                    using (Form MsgBox3 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Secondary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
+                    using (Form MsgBox3 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Secondary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))) + Environment.NewLine + "Output: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayOutput))), "OK", 3, 0))
                     { _ = MsgBox3.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "FFV":
-                    using (Form MsgBox4 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Secondary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))), "OK", 3, 0))
+                    using (Form MsgBox4 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))) + Environment.NewLine + "Secondary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))), "OK", 3, 0))
                     { _ = MsgBox4.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "FVV":
-                    using (Form MsgBox5 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))), "OK", 3, 0))
+                    using (Form MsgBox5 = new MmsgBox("Primary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputPrimary))), "OK", 3, 0))
                     { _ = MsgBox5.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 case "VFV":
-                    using (Form MsgBox6 = new MmsgBox("Secondary: " + MensagemErroSomemte1Chg0(Funcoes.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))), "OK", 3, 0))
+                    using (Form MsgBox6 = new MmsgBox("Secondary: " + MensagemErroSomemte1Chg0(Function.DiscretagemInt(Somente1Chg0Vetor2ret(frmC.ArrayInputSecondary))), "OK", 3, 0))
                     { _ = MsgBox6.ShowDialog(); AtualizaSettingsnoSistem(); return; }
                 default: break;
             }
@@ -2903,7 +2903,7 @@ namespace CHOV
             if (e.Shift && e.KeyCode == Keys.S) { TbcConfiguration.SelectTab(1); log.Debug("Atalho para system"); }
             if (e.Shift && e.KeyCode == Keys.I) { TbcConfiguration.SelectTab(2); log.Debug("Atalho para inout"); }
             if (e.Shift && e.KeyCode == Keys.M) { TbcConfiguration.SelectTab(3); log.Debug("Atalho para matrix"); }
-            if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para painel"); Funcoes.ReturnPanel(); }
+            if (e.Shift && e.KeyCode == Keys.P) { log.Debug("Atalho para painel"); Function.ReturnPanel(); }
             //atalho para preencher names 'WWWWWWW' usada somente com sistema em 'Mtx'
             if (e.Control && e.KeyCode == Keys.W) { RetornaDebug(); }
             //atalho para preencher names com valores simulando valores de um sistema real, usada somente com sistema em 'Mtx'
