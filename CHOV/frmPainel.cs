@@ -88,7 +88,7 @@ namespace CHOV
             //Parametros iniciais
             PainelStart();
             //Insere o Ch0v initial
-            Function.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
+            SystemSoftware.InitialInsertChg0(Properties.Settings.Default.System, Properties.Settings.Default.NamesInputPrimary, Properties.Settings.Default.NamesInputSecondary, Properties.Settings.Default.NamesOutput, Properties.Settings.Default.InputDeviceChg0);
             Properties.Settings.Default.Save();
             //Lendo vetores de nomes
             RecebeNomeSettings();
@@ -400,7 +400,7 @@ namespace CHOV
         {
             log.Debug("Botão Write Mtx acionado");
             //frmC.Saida1a16(Funcoes.Slotnot(frmC.ArraySlotsP, frmC.ArraySlotsOp, frmC.ArraySlotsS, frmC.ArraySlotsO, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
-            Saida1a16(Function.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
+            Saida1a16(SystemSoftware.ExeCombinacoes(Properties.Settings.Default.Combinations, cBp1a8.Text, cBp9a16.Text, cBs1a8.Text, cBs9a16.Text));
         }
 
         /// <summary>
@@ -1028,7 +1028,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void SobreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Function.CheckFormAberto() == 0)
+            if (Functions.CheckFormAberto() == 0)
             {
                 log.Debug("Load Sobre");
                Form Sobre = new FrmSobre(); Sobre.Show(); 
@@ -1042,10 +1042,10 @@ namespace CHOV
         /// <param name="e"></param>
         private void ConfiguraçõesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Function.CheckFormAberto() == 0)
+            if (Functions.CheckFormAberto() == 0)
             {
                 log.Debug("Load Configurações");
-                Form Config = new FrmConfiguracoes(this);  Config.Show(); 
+                Form Config = new FrmConfiguracoes(this);  Config.Show();
             }
         }
 
@@ -1056,7 +1056,7 @@ namespace CHOV
         /// <param name="e"></param>
         private void LogsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (Function.CheckFormAberto() == 0)
+            if (Functions.CheckFormAberto() == 0)
             {
                 this.Location = new Point(100, 0);
                 Expand(true);
@@ -1076,7 +1076,7 @@ namespace CHOV
         {
             log.Debug("Retorno painel");
             //Fecha os demais forms e da topMost no Panel principal.
-            Function.ReturnPanel();
+            Functions.ReturnPanel();
         }
 
         /// <summary>
@@ -1294,7 +1294,7 @@ namespace CHOV
             int p = PositionPulse(CtT, CtR, CHOV.Properties.Settings.Default.DeviceChg0);
             //Relógio & Data
             LblRelogio.Text = Relogio_pgm = DateTime.Now.ToLongTimeString();
-            LblData.Text = Data_pgm = Function.GetDateSystem();
+            LblData.Text = Data_pgm = Functions.GetDateSystem();
             LblRelogio.Visible = true;
             LblData.Visible = true;
             ZeraAllInOut();
@@ -1352,7 +1352,7 @@ namespace CHOV
                     }
                     return;
                 case "Matrix of Signals":
-                    bool[] Exeslots = Function.ExeCombinacoes(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
+                    bool[] Exeslots = SystemSoftware.ExeCombinacoes(Properties.Settings.Default.Combinations, primary1a8, primary9a16, secondary1a8, secondary9a16);
                     Saida1a16(Exeslots);
                     if (Records.TemTrue(Exeslots) == true)
                     {

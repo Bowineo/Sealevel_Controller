@@ -12,89 +12,8 @@ using System.Windows.Forms;
 
 namespace CHOV
 {
-    public class Function
+    public class SystemSoftware : Functions
     {
-        #region System
-
-        /// <summary>
-        /// Identifica se a operação lógica é AND 
-        /// </summary>
-        /// <param name="Operacao"Recebe string entrada que representa a opração a se identificada></param>
-        /// <returns> Retorna bool caso a sring de entrada seja 'AND'</returns>
-        public static bool IsAnd(string Operacao)
-        {
-            if (Operacao.ToUpper() == "AND") { return true; }
-            else { return false; }
-        }
-
-        /// <summary>
-        /// Identifica se a operação lógica é  OR 
-        /// </summary>
-        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
-        /// <returns> Retorna bool caso a sring de entrada seja ' OR'</returns>
-        public static bool IsOr(string Operacao)
-        {
-            if (Operacao.ToUpper() == " OR") { return true; }
-            else { return false; }
-        }
-
-        /// <summary>
-        /// Identifica se a operação lógica é NOT 
-        /// </summary>
-        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
-        /// <returns> Retorna bool caso a sring de entrada seja 'NOT'</returns>
-        public static bool IsNot(string Operacao)
-        {
-            if (Operacao.ToUpper() == "NOT")
-            { return true; }
-            else { return false; }
-        }
-
-        /// <summary>
-        /// Realiza a operação lógica AND 
-        /// </summary>
-        /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação AND</param>
-        /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação AND</param>
-        /// <returns> Retorna Bool com o resultado da operação AND entre 'n1 e 'n2'</returns>
-        public static bool OpAND(bool n1, bool n2)
-        {
-            bool resp = false;
-            if (n1 == false && n2 == false) { resp = false; }
-            if (n1 == false && n2 == true) { resp = false; }
-            if (n1 == true && n2 == false) { resp = false; }
-            if (n1 == true && n2 == true) { resp = true; }
-            return resp;
-        }
-
-        /// <summary>
-        /// Realiza a operação lógica OR 
-        /// </summary>
-        /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação OR</param>
-        /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação OR</param>
-        /// <returns> Retorna Bool com o resultado da operação OR entre 'n1 e 'n2'</returns>
-        public static bool OpOR(bool n1, bool n2)
-        {
-            bool resp = true;
-            if (n1 == false && n2 == false) { resp = false; }
-            if (n1 == false && n2 == true) { resp = true; }
-            if (n1 == true && n2 == false) { resp = true; }
-            if (n1 == true && n2 == true) { resp = true; }
-            return resp;
-        }
-
-        /// <summary>
-        /// Realiza a operação lógica NOT 
-        /// </summary>
-        /// <param name="n"> Bool para realiazr a operação NOT</param>
-        /// <returns> Retorna Bool com o resultado da operação NOT com a entrada 'n1'</returns>
-        public static bool OpNOT(bool n)
-        {
-            bool resp;
-            if (n == false) { resp = true; }
-            else { resp = false; }
-            return resp;
-        }
-
         /// <summary>
         /// Função para receber e converter 2 strings em um vetor bool 16 posições [auxiliar para 'Slot']
         /// </summary>
@@ -109,100 +28,6 @@ namespace CHOV
             VreadPrimary1.CopyTo(VreadPrimary, 0);
             VreadPrimary2.CopyTo(VreadPrimary, 8);
             return VreadPrimary;
-        }
-
-        /// <summary>
-        /// Função para indentificar de acordo com a posição o 'name' Input
-        /// </summary>
-        /// <param name="n1"> StringCollection[] de entrada onde será procurado determinado 'name'</param>
-        /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
-        /// <returns> Retorna string com a posição do name de entrada </returns>
-        public static string PosicaoIndex(System.Collections.Specialized.StringCollection n1, string name)
-        {
-            if (name.Length > 5) { return _ = n1[Convert.ToInt32(name.Substring(9, 2)) - 1]; }
-            else
-            {
-                if ((Convert.ToInt32(name.Substring(3, 2)) - 1) >= 0)
-                { return _ = n1[Convert.ToInt32(name.Substring(3, 2)) - 1]; }
-                else { return "- null -"; }
-            }
-        }
-
-        /// <summary>
-        /// Função para indentificar de acordo com a posição o 'name' Input
-        /// </summary>
-        /// <param name="n1"> StringCollection[] de input onde será procurado determinado 'name'</param>
-        /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
-        /// <returns> Retorna string com a posição do name de input</returns>
-        public static string PosicaoIndexNEW(System.Collections.Specialized.StringCollection n1, string name)
-        {
-            if (name.Length > 5) { return _ = n1[Convert.ToInt32(name.Substring(7, 2)) - 1]; }
-            else
-            {
-                if ((Convert.ToInt32(name.Substring(3, 2)) - 1) >= 0) { return _ = n1[Convert.ToInt32(name.Substring(3, 2)) - 1]; }
-                else { return "- null -"; }
-            }
-        }
-
-        /// <summary>
-        /// Função para indentificar de acordo com a posição o 'name' Output
-        /// </summary>
-        /// <param name="n1"> StringCollection[] de output onde será procurado determinado 'name'</param>
-        /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
-        /// <returns> Retorna string com a posição do name de saida</returns>
-        public static string PosicaoIndexOut(System.Collections.Specialized.StringCollection n1, string name)
-        {
-            if ((Convert.ToInt32(name.Substring(4, 2)) - 1) >= 0) { return _ = n1[Convert.ToInt32(name.Substring(4, 2)) - 1]; }
-            else { return "- null -"; }
-        }
-
-        /// <summary>
-        /// Função que insere o CHG0 na inicialização do sistema.
-        /// </summary>
-        /// <param name="systemType">string systemtype</param>
-        /// <param name="vtPrimary">string name primário</param>
-        /// <param name="vtSecondary">string name secundário</param>
-        /// <param name="vtOutput">string name output</param>
-        /// <param name="CHG0">string CHG0</param>
-        public static void InitialInsertChg0(string systemType, System.Collections.Specialized.StringCollection vtPrimary, System.Collections.Specialized.StringCollection vtSecondary, System.Collections.Specialized.StringCollection vtOutput, string CHG0)
-        {
-            string chgo = "  CHG0    ";
-            switch (systemType)
-            {
-                case "Change Over":
-                    if (CHG0 == "IN 01  ") { vtPrimary[0] = vtSecondary[0] = vtOutput[0] = chgo; }
-                    if (CHG0 == "IN 02  ") { vtPrimary[1] = vtSecondary[1] = vtOutput[1] = chgo; }
-                    if (CHG0 == "IN 03  ") { vtPrimary[2] = vtSecondary[2] = vtOutput[2] = chgo; }
-                    if (CHG0 == "IN 04  ") { vtPrimary[3] = vtSecondary[3] = vtOutput[3] = chgo; }
-                    if (CHG0 == "IN 05  ") { vtPrimary[4] = vtSecondary[4] = vtOutput[4] = chgo; }
-                    if (CHG0 == "IN 06  ") { vtPrimary[5] = vtSecondary[5] = vtOutput[5] = chgo; }
-                    if (CHG0 == "IN 07  ") { vtPrimary[6] = vtSecondary[6] = vtOutput[6] = chgo; }
-                    if (CHG0 == "IN 08  ") { vtPrimary[7] = vtSecondary[7] = vtOutput[7] = chgo; }
-                    if (CHG0 == "IN 09  ") { vtPrimary[8] = vtSecondary[8] = vtOutput[8] = chgo; }
-                    if (CHG0 == "IN 10  ") { vtPrimary[9] = vtSecondary[9] = vtOutput[9] = chgo; }
-                    if (CHG0 == "IN 11  ") { vtPrimary[10] = vtSecondary[10] = vtOutput[10] = chgo; }
-                    if (CHG0 == "IN 12  ") { vtPrimary[11] = vtSecondary[11] = vtOutput[11] = chgo; }
-                    if (CHG0 == "IN 13  ") { vtPrimary[12] = vtSecondary[12] = vtOutput[12] = chgo; }
-                    if (CHG0 == "IN 14  ") { vtPrimary[13] = vtSecondary[13] = vtOutput[13] = chgo; }
-                    if (CHG0 == "IN 15  ") { vtPrimary[14] = vtSecondary[14] = vtOutput[14] = chgo; }
-                    if (CHG0 == "IN 16  ") { vtPrimary[15] = vtSecondary[15] = vtOutput[15] = chgo; }
-                    break;
-                case "Matrix of Signals":
-                    { }
-                    break;
-            }
-        }
-        //modelo do Indentifica: "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 16 ] 'IN 16  ' ->[ OUT 13 ] 'OUT 13 '"
-
-        /// <summary>
-        /// fimção para corrigir problema do zero negativo
-        /// </summary>
-        /// <param name="entrada">entrada string representa a posição do input</param>
-        /// <returns>int com numero da posição</returns>
-        public static int ZeroNegativo(int entrada)
-        {
-            if (entrada == -100) { return 0; }
-            else { return entrada; }
         }
 
         /// <summary>
@@ -341,8 +166,76 @@ namespace CHOV
             return VwriteOutput;
         }
 
-        #endregion
+        /// <summary>
+        /// Função para indentificar de acordo com a posição o 'name' Input
+        /// </summary>
+        /// <param name="n1"> StringCollection[] de input onde será procurado determinado 'name'</param>
+        /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
+        /// <returns> Retorna string com a posição do name de input</returns>
+        public static string PosicaoIndexNEW(System.Collections.Specialized.StringCollection n1, string name)
+        {
+            if (name.Length > 5) { return _ = n1[Convert.ToInt32(name.Substring(7, 2)) - 1]; }
+            else
+            {
+                if ((Convert.ToInt32(name.Substring(3, 2)) - 1) >= 0) { return _ = n1[Convert.ToInt32(name.Substring(3, 2)) - 1]; }
+                else { return "- null -"; }
+            }
+        }
 
+        /// <summary>
+        /// Função para indentificar de acordo com a posição o 'name' Output
+        /// </summary>
+        /// <param name="n1"> StringCollection[] de output onde será procurado determinado 'name'</param>
+        /// <param name="name"> String 'name' a ser procurado no StringCollection[]</param>
+        /// <returns> Retorna string com a posição do name de saida</returns>
+        public static string PosicaoIndexOut(System.Collections.Specialized.StringCollection n1, string name)
+        {
+            if ((Convert.ToInt32(name.Substring(4, 2)) - 1) >= 0) { return _ = n1[Convert.ToInt32(name.Substring(4, 2)) - 1]; }
+            else { return "- null -"; }
+        }
+
+        /// <summary>
+        /// Função que insere o CHG0 na inicialização do sistema.
+        /// </summary>
+        /// <param name="systemType">string systemtype</param>
+        /// <param name="vtPrimary">string name primário</param>
+        /// <param name="vtSecondary">string name secundário</param>
+        /// <param name="vtOutput">string name output</param>
+        /// <param name="CHG0">string CHG0</param>
+        public static void InitialInsertChg0(string systemType, System.Collections.Specialized.StringCollection vtPrimary, System.Collections.Specialized.StringCollection vtSecondary, System.Collections.Specialized.StringCollection vtOutput, string CHG0)
+        {
+            string chgo = "  CHG0    ";
+            switch (systemType)
+            {
+                case "Change Over":
+                    if (CHG0 == "IN 01  ") { vtPrimary[0] = vtSecondary[0] = vtOutput[0] = chgo; }
+                    if (CHG0 == "IN 02  ") { vtPrimary[1] = vtSecondary[1] = vtOutput[1] = chgo; }
+                    if (CHG0 == "IN 03  ") { vtPrimary[2] = vtSecondary[2] = vtOutput[2] = chgo; }
+                    if (CHG0 == "IN 04  ") { vtPrimary[3] = vtSecondary[3] = vtOutput[3] = chgo; }
+                    if (CHG0 == "IN 05  ") { vtPrimary[4] = vtSecondary[4] = vtOutput[4] = chgo; }
+                    if (CHG0 == "IN 06  ") { vtPrimary[5] = vtSecondary[5] = vtOutput[5] = chgo; }
+                    if (CHG0 == "IN 07  ") { vtPrimary[6] = vtSecondary[6] = vtOutput[6] = chgo; }
+                    if (CHG0 == "IN 08  ") { vtPrimary[7] = vtSecondary[7] = vtOutput[7] = chgo; }
+                    if (CHG0 == "IN 09  ") { vtPrimary[8] = vtSecondary[8] = vtOutput[8] = chgo; }
+                    if (CHG0 == "IN 10  ") { vtPrimary[9] = vtSecondary[9] = vtOutput[9] = chgo; }
+                    if (CHG0 == "IN 11  ") { vtPrimary[10] = vtSecondary[10] = vtOutput[10] = chgo; }
+                    if (CHG0 == "IN 12  ") { vtPrimary[11] = vtSecondary[11] = vtOutput[11] = chgo; }
+                    if (CHG0 == "IN 13  ") { vtPrimary[12] = vtSecondary[12] = vtOutput[12] = chgo; }
+                    if (CHG0 == "IN 14  ") { vtPrimary[13] = vtSecondary[13] = vtOutput[13] = chgo; }
+                    if (CHG0 == "IN 15  ") { vtPrimary[14] = vtSecondary[14] = vtOutput[14] = chgo; }
+                    if (CHG0 == "IN 16  ") { vtPrimary[15] = vtSecondary[15] = vtOutput[15] = chgo; }
+                    break;
+                case "Matrix of Signals":
+                    { }
+                    break;
+            }
+        }
+        //modelo do Indentifica: "[ Primary  :     IN 01 ] 'IN 01  ' [ AND ] [ Secondary:     IN 16 ] 'IN 16  ' ->[ OUT 13 ] 'OUT 13 '"
+
+    }
+
+    public class Functions
+    {
         #region formatting
         /// <summary>
         /// Função para checar se durante a chamada de um Form, se algum  outro form está aberto.
@@ -808,6 +701,96 @@ namespace CHOV
 
         #region Conversions
         /// <summary>
+        /// fimção para corrigir problema do zero negativo
+        /// </summary>
+        /// <param name="entrada">entrada string representa a posição do input</param>
+        /// <returns>int com numero da posição</returns>
+        public static int ZeroNegativo(int entrada)
+        {
+            if (entrada == -100) { return 0; }
+            else { return entrada; }
+        }
+
+        /// <summary>
+        /// Identifica se a operação lógica é AND 
+        /// </summary>
+        /// <param name="Operacao"Recebe string entrada que representa a opração a se identificada></param>
+        /// <returns> Retorna bool caso a sring de entrada seja 'AND'</returns>
+        public static bool IsAnd(string Operacao)
+        {
+            if (Operacao.ToUpper() == "AND") { return true; }
+            else { return false; }
+        }
+
+        /// <summary>
+        /// Identifica se a operação lógica é  OR 
+        /// </summary>
+        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
+        /// <returns> Retorna bool caso a sring de entrada seja ' OR'</returns>
+        public static bool IsOr(string Operacao)
+        {
+            if (Operacao.ToUpper() == " OR") { return true; }
+            else { return false; }
+        }
+
+        /// <summary>
+        /// Identifica se a operação lógica é NOT 
+        /// </summary>
+        /// <param name="Operacao"> Recebe string entrada que representa a opração a se identificada</param>
+        /// <returns> Retorna bool caso a sring de entrada seja 'NOT'</returns>
+        public static bool IsNot(string Operacao)
+        {
+            if (Operacao.ToUpper() == "NOT")
+            { return true; }
+            else { return false; }
+        }
+
+        /// <summary>
+        /// Realiza a operação lógica AND 
+        /// </summary>
+        /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação AND</param>
+        /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação AND</param>
+        /// <returns> Retorna Bool com o resultado da operação AND entre 'n1 e 'n2'</returns>
+        public static bool OpAND(bool n1, bool n2)
+        {
+            bool resp = false;
+            if (n1 == false && n2 == false) { resp = false; }
+            if (n1 == false && n2 == true) { resp = false; }
+            if (n1 == true && n2 == false) { resp = false; }
+            if (n1 == true && n2 == true) { resp = true; }
+            return resp;
+        }
+
+        /// <summary>
+        /// Realiza a operação lógica OR 
+        /// </summary>
+        /// <param name="n1"> Bool que representa o primeiro numero para realiazr a operação OR</param>
+        /// <param name="n2"> Bool que representa o segundo numero para realiazr a operação OR</param>
+        /// <returns> Retorna Bool com o resultado da operação OR entre 'n1 e 'n2'</returns>
+        public static bool OpOR(bool n1, bool n2)
+        {
+            bool resp = true;
+            if (n1 == false && n2 == false) { resp = false; }
+            if (n1 == false && n2 == true) { resp = true; }
+            if (n1 == true && n2 == false) { resp = true; }
+            if (n1 == true && n2 == true) { resp = true; }
+            return resp;
+        }
+
+        /// <summary>
+        /// Realiza a operação lógica NOT 
+        /// </summary>
+        /// <param name="n"> Bool para realiazr a operação NOT</param>
+        /// <returns> Retorna Bool com o resultado da operação NOT com a entrada 'n1'</returns>
+        public static bool OpNOT(bool n)
+        {
+            bool resp;
+            if (n == false) { resp = true; }
+            else { resp = false; }
+            return resp;
+        }
+
+        /// <summary>
         ///  Função para escolher o formato da Data dpo sistema
         /// </summary>
         /// <returns>Data de acordo com o formato que está configurado no computador</returns>
@@ -831,7 +814,7 @@ namespace CHOV
             byte[] Data = new byte[16];
             Data[0] = Convert.ToByte(textoIN);
             string bin = DecimalParaBinario(Data[0].ToString());
-            string bits = Function.Completa8(bin);
+            string bits = Functions.Completa8(bin);
             string bina = InverterString(bits);
             _ = BinarioParaDecimal(bits).ToString();
             return bina;
