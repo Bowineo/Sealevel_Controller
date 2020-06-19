@@ -671,3 +671,4 @@ C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Debug\CHOV.V
 C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Debug\CHOV.VIEW.csproj.CopyComplete
 C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Debug\CHOV.exe
 C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Debug\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Debug\SeaMAX Dot Net.dll

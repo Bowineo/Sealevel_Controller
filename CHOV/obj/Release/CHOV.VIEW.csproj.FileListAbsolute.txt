@@ -1,0 +1,24 @@
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\ftd2xx.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\SeaMAX.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\LedBulb.cs
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\CHOV.exe.config
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\CHOV.pdb
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\IPAddressControlLib.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\log4net.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\SeaMAX Dot Net.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\bin\Release\log4net.xml
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.VIEW.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.FrmConfiguracoes.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.FrmLogs.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.FrmSobre.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.FrmPainel.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.MmsgBox.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.Properties.Resources.resources
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.VIEW.csproj.GenerateResource.cache
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.VIEW.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.VIEW.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.exe
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOV\obj\Release\CHOV.pdb

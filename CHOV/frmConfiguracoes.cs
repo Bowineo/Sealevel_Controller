@@ -226,7 +226,10 @@ namespace CHOV
             {   //Mensagem de confirmação para o usuário
                 DialogResult resultado4 = MsgBox4.ShowDialog();
                 if (resultado4 == DialogResult.OK)
-                { log.Debug("Confirmação do 'Search' "); }
+                { log.Debug("Confirmação do 'Search' ");
+                    Informações.Items.Add(Sea_Lvl.Inicial()[0]);
+                    Informações.Items.Add(Sea_Lvl.Inicial()[1]);
+                }
                 if (resultado4 == DialogResult.Cancel)
                 { log.Debug("Cancelamento do 'Search' "); }
             }

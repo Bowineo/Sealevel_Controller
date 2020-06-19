@@ -1,0 +1,9 @@
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\bin\Release\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\bin\Release\CHOVR - MODEL.pdb
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\bin\Release\log4net.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\bin\Release\log4net.xml
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\obj\Release\CHOV.MODEL.csprojAssemblyReference.cache
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\obj\Release\CHOV.MODEL.csproj.CoreCompileInputs.cache
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\obj\Release\CHOV.MODEL.csproj.CopyComplete
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\obj\Release\CHOVR - MODEL.dll
+C:\Users\Pedro\Documents\Projects\Ch0v\Sealevel_Controller\CHOVR - MODEL\obj\Release\CHOVR - MODEL.pdb

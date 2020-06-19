@@ -43,9 +43,8 @@
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="SeaMAX Dot Net, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Arquivos de Programas\Sealevel\Dll\SeaMAX Dot Net.dll</HintPath>
+    <Reference Include="SeaMAX Dot Net">
+      <HintPath>..\..\..\SeaMAX Dot Net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -101,6 +100,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sea_Lvl.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="frmConfiguracoes.resx">
