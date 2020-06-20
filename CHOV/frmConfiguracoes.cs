@@ -50,6 +50,7 @@ namespace CHOV
             PMenu.MenuItems.Add("Configuration").Enabled = false;
             PMenu.MenuItems.Add("   Import", new System.EventHandler(this.Item1_clicked));
             PMenu.MenuItems.Add("   Export", new System.EventHandler(this.Item2_clicked));
+
         }
 
         public static byte[] GeraKey()

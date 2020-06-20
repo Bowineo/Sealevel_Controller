@@ -208,6 +208,9 @@ namespace CHOV
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LblData = new System.Windows.Forms.Label();
             this.LedHeart = new Bulb.LedBulb();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.PnlTitular_1a16.SuspendLayout();
             this.Pnl_out1a16.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -215,6 +218,7 @@ namespace CHOV
             this.PnlPulses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicChang0ver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlTitular_1a16
@@ -1139,21 +1143,21 @@ namespace CHOV
             // 
             this.painelToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.painelToolStripMenuItem.Name = "painelToolStripMenuItem";
-            this.painelToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.painelToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.painelToolStripMenuItem.Text = "Panel";
             this.painelToolStripMenuItem.Click += new System.EventHandler(this.PainelToolStripMenuItem_Click);
             // 
             // configuraçõesToolStripMenuItem
             // 
             this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(93, 20);
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.configuraçõesToolStripMenuItem.Text = "Configuration";
             this.configuraçõesToolStripMenuItem.Click += new System.EventHandler(this.ConfiguraçõesToolStripMenuItem_Click);
             // 
             // logsToolStripMenuItem
             // 
             this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
-            this.logsToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.logsToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.logsToolStripMenuItem.Text = "Logs";
             this.logsToolStripMenuItem.Click += new System.EventHandler(this.LogsToolStripMenuItem_Click);
             // 
@@ -1162,7 +1166,7 @@ namespace CHOV
             this.ajudaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
             this.ajudaToolStripMenuItem1.Name = "ajudaToolStripMenuItem1";
-            this.ajudaToolStripMenuItem1.Size = new System.Drawing.Size(44, 20);
+            this.ajudaToolStripMenuItem1.Size = new System.Drawing.Size(44, 22);
             this.ajudaToolStripMenuItem1.Text = "Help";
             // 
             // sobreToolStripMenuItem
@@ -3713,10 +3717,10 @@ namespace CHOV
             this.LblRodape.AutoEllipsis = true;
             this.LblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.LblRodape.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblRodape.Location = new System.Drawing.Point(34, 456);
+            this.LblRodape.Location = new System.Drawing.Point(957, 346);
             this.LblRodape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRodape.Name = "LblRodape";
-            this.LblRodape.Size = new System.Drawing.Size(1106, 22);
+            this.LblRodape.Size = new System.Drawing.Size(163, 22);
             this.LblRodape.TabIndex = 78;
             this.LblRodape.Text = "WWWWWW";
             this.LblRodape.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -3761,12 +3765,39 @@ namespace CHOV
             this.LedHeart.TabIndex = 93;
             this.LedHeart.Text = "ledBulb1";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 464);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
+            this.statusStrip1.Size = new System.Drawing.Size(1186, 22);
+            this.statusStrip1.TabIndex = 110;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
             // FrmPainel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1186, 371);
+            this.ClientSize = new System.Drawing.Size(1186, 486);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.LblData);
             this.Controls.Add(this.LedHeart);
             this.Controls.Add(this.LblRelogio);
@@ -3805,6 +3836,8 @@ namespace CHOV
             this.PnlPulses.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicChang0ver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3987,6 +4020,9 @@ namespace CHOV
         private System.Windows.Forms.Button BtnWriteTest;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 

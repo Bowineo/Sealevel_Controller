@@ -330,7 +330,7 @@ namespace CHOV
                             case "Secondary":
                                 //Registro Logs
                                 log.Info("Secondary:" + Records.InOnlyOnLog(Records.FormatVetorStatus(vt)));
-                                ArrayHistoric.Add("<"+ DateTime.Now.ToString() + " - Chg0!" + " - Primary is selected now!>");
+                                ArrayHistoric.Add("<" + DateTime.Now.ToString() + " - Chg0!" + " - Primary is selected now!>");
                                 Historico.Items.Insert(0, ArrayHistoric[ArrayHistoric.Count - 1]);
                                 PicChang0ver.Image = CHOV.Properties.Resources.Active_Primary; CurrentSelection_pgm = "Primary";
                                 TitularAtivado();
@@ -1031,7 +1031,7 @@ namespace CHOV
             if (Functions.CheckFormOpen() == 0)
             {
                 log.Debug("Load Sobre");
-               Form Sobre = new FrmSobre(); Sobre.Show(); 
+                Form Sobre = new FrmSobre(); Sobre.Show();
             }
         }
 
@@ -1045,7 +1045,7 @@ namespace CHOV
             if (Functions.CheckFormOpen() == 0)
             {
                 log.Debug("Load Configurações");
-                Form Config = new FrmConfiguracoes(this);  Config.Show();
+                Form Config = new FrmConfiguracoes(this); Config.Show();
             }
         }
 
@@ -1091,6 +1091,7 @@ namespace CHOV
             GetInfoSettings();
             //Inicializa o timer principal
             TimerPanel.Start();
+
         }
 
         /// <summary>
@@ -1292,9 +1293,14 @@ namespace CHOV
             secondary1a8 = ControleMtx1a8(CtR);
             secondary9a16 = ControleMtx9a16(CtR);
             int p = PositionPulse(CtT, CtR, CHOV.Properties.Settings.Default.DeviceChg0);
+
+
+
             //Relógio & Data
             LblRelogio.Text = Relogio_pgm = DateTime.Now.ToLongTimeString();
             LblData.Text = Data_pgm = Functions.GetDateSystem();
+            toolStripStatusLabel1.Text = Data_pgm + " " + Relogio_pgm;
+
             LblRelogio.Visible = true;
             LblData.Visible = true;
             ZeraAllInOut();
@@ -1381,7 +1387,6 @@ namespace CHOV
         }
 
         #endregion
-
     }
 }
 
