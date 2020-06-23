@@ -140,7 +140,6 @@ namespace CHOV
             this.LedR_in9 = new Bulb.LedBulb();
             this.LblR_in1 = new System.Windows.Forms.Label();
             this.LedR_in1 = new Bulb.LedBulb();
-            this.status = new System.Windows.Forms.TextBox();
             this.PnlPulses = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -204,13 +203,11 @@ namespace CHOV
             this.lblPrimary = new System.Windows.Forms.Label();
             this.lblSecondary = new System.Windows.Forms.Label();
             this.LblRelogio = new System.Windows.Forms.Label();
-            this.LblRodape = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LblData = new System.Windows.Forms.Label();
             this.LedHeart = new Bulb.LedBulb();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.PnlTitular_1a16.SuspendLayout();
             this.Pnl_out1a16.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -258,7 +255,7 @@ namespace CHOV
             this.PnlTitular_1a16.Controls.Add(this.LblT_in1);
             this.PnlTitular_1a16.Controls.Add(this.LedT_in1);
             this.PnlTitular_1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PnlTitular_1a16.Location = new System.Drawing.Point(10, 66);
+            this.PnlTitular_1a16.Location = new System.Drawing.Point(10, 57);
             this.PnlTitular_1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PnlTitular_1a16.Name = "PnlTitular_1a16";
             this.PnlTitular_1a16.Size = new System.Drawing.Size(578, 128);
@@ -702,7 +699,7 @@ namespace CHOV
             this.Pnl_out1a16.Controls.Add(this.Led_out9);
             this.Pnl_out1a16.Controls.Add(this.Led_out1);
             this.Pnl_out1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Pnl_out1a16.Location = new System.Drawing.Point(301, 228);
+            this.Pnl_out1a16.Location = new System.Drawing.Point(301, 220);
             this.Pnl_out1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Pnl_out1a16.Name = "Pnl_out1a16";
             this.Pnl_out1a16.Size = new System.Drawing.Size(578, 128);
@@ -1113,7 +1110,7 @@ namespace CHOV
             this.lblSaida.AutoSize = true;
             this.lblSaida.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaida.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblSaida.Location = new System.Drawing.Point(565, 207);
+            this.lblSaida.Location = new System.Drawing.Point(565, 198);
             this.lblSaida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSaida.Name = "lblSaida";
             this.lblSaida.Size = new System.Drawing.Size(50, 16);
@@ -1124,15 +1121,16 @@ namespace CHOV
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 0, 0, 0);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.painelToolStripMenuItem,
             this.configuraçõesToolStripMenuItem,
             this.logsToolStripMenuItem,
             this.ajudaToolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 3);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(0);
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStrip1.Size = new System.Drawing.Size(1186, 24);
             this.menuStrip1.TabIndex = 1;
@@ -1143,21 +1141,21 @@ namespace CHOV
             // 
             this.painelToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.painelToolStripMenuItem.Name = "painelToolStripMenuItem";
-            this.painelToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
+            this.painelToolStripMenuItem.Size = new System.Drawing.Size(48, 24);
             this.painelToolStripMenuItem.Text = "Panel";
             this.painelToolStripMenuItem.Click += new System.EventHandler(this.PainelToolStripMenuItem_Click);
             // 
             // configuraçõesToolStripMenuItem
             // 
             this.configuraçõesToolStripMenuItem.Name = "configuraçõesToolStripMenuItem";
-            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.configuraçõesToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.configuraçõesToolStripMenuItem.Text = "Configuration";
             this.configuraçõesToolStripMenuItem.Click += new System.EventHandler(this.ConfiguraçõesToolStripMenuItem_Click);
             // 
             // logsToolStripMenuItem
             // 
             this.logsToolStripMenuItem.Name = "logsToolStripMenuItem";
-            this.logsToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
+            this.logsToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
             this.logsToolStripMenuItem.Text = "Logs";
             this.logsToolStripMenuItem.Click += new System.EventHandler(this.LogsToolStripMenuItem_Click);
             // 
@@ -1166,7 +1164,7 @@ namespace CHOV
             this.ajudaToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
             this.ajudaToolStripMenuItem1.Name = "ajudaToolStripMenuItem1";
-            this.ajudaToolStripMenuItem1.Size = new System.Drawing.Size(44, 22);
+            this.ajudaToolStripMenuItem1.Size = new System.Drawing.Size(44, 24);
             this.ajudaToolStripMenuItem1.Text = "Help";
             // 
             // sobreToolStripMenuItem
@@ -1233,7 +1231,7 @@ namespace CHOV
             this.PnlReserva_1a16.Controls.Add(this.LblR_in1);
             this.PnlReserva_1a16.Controls.Add(this.LedR_in1);
             this.PnlReserva_1a16.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.PnlReserva_1a16.Location = new System.Drawing.Point(595, 66);
+            this.PnlReserva_1a16.Location = new System.Drawing.Point(595, 57);
             this.PnlReserva_1a16.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.PnlReserva_1a16.Name = "PnlReserva_1a16";
             this.PnlReserva_1a16.Size = new System.Drawing.Size(578, 128);
@@ -1639,21 +1637,6 @@ namespace CHOV
             this.LedR_in1.TabStop = false;
             this.LedR_in1.Text = "ledBulb1";
             // 
-            // status
-            // 
-            this.status.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
-            this.status.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.status.Location = new System.Drawing.Point(548, 39);
-            this.status.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Size = new System.Drawing.Size(84, 23);
-            this.status.TabIndex = 102;
-            this.status.TabStop = false;
-            this.status.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // PnlPulses
             // 
             this.PnlPulses.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -1718,7 +1701,7 @@ namespace CHOV
             this.PnlPulses.Controls.Add(this.checkBox4T);
             this.PnlPulses.Controls.Add(this.checkBox3T);
             this.PnlPulses.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.PnlPulses.Location = new System.Drawing.Point(182, 376);
+            this.PnlPulses.Location = new System.Drawing.Point(182, 369);
             this.PnlPulses.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.PnlPulses.Name = "PnlPulses";
             this.PnlPulses.Size = new System.Drawing.Size(816, 69);
@@ -3678,7 +3661,7 @@ namespace CHOV
             this.lblPrimary.AutoSize = true;
             this.lblPrimary.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrimary.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblPrimary.Location = new System.Drawing.Point(271, 42);
+            this.lblPrimary.Location = new System.Drawing.Point(271, 33);
             this.lblPrimary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPrimary.Name = "lblPrimary";
             this.lblPrimary.Size = new System.Drawing.Size(58, 16);
@@ -3691,7 +3674,7 @@ namespace CHOV
             this.lblSecondary.AutoSize = true;
             this.lblSecondary.Font = new System.Drawing.Font("Helvetica", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSecondary.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblSecondary.Location = new System.Drawing.Point(846, 42);
+            this.lblSecondary.Location = new System.Drawing.Point(846, 33);
             this.lblSecondary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSecondary.Name = "lblSecondary";
             this.lblSecondary.Size = new System.Drawing.Size(76, 16);
@@ -3703,7 +3686,7 @@ namespace CHOV
             // 
             this.LblRelogio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LblRelogio.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LblRelogio.Location = new System.Drawing.Point(1099, 9);
+            this.LblRelogio.Location = new System.Drawing.Point(1089, 7);
             this.LblRelogio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblRelogio.Name = "LblRelogio";
             this.LblRelogio.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -3712,25 +3695,12 @@ namespace CHOV
             this.LblRelogio.Text = "00:00:00";
             this.LblRelogio.Visible = false;
             // 
-            // LblRodape
-            // 
-            this.LblRodape.AutoEllipsis = true;
-            this.LblRodape.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.LblRodape.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.LblRodape.Location = new System.Drawing.Point(957, 346);
-            this.LblRodape.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LblRodape.Name = "LblRodape";
-            this.LblRodape.Size = new System.Drawing.Size(163, 22);
-            this.LblRodape.TabIndex = 78;
-            this.LblRodape.Text = "WWWWWW";
-            this.LblRodape.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = global::CHOV.Properties.Resources.icon_Down;
-            this.pictureBox2.Location = new System.Drawing.Point(10, 341);
+            this.pictureBox2.Location = new System.Drawing.Point(11, 357);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(16, 14);
@@ -3743,7 +3713,7 @@ namespace CHOV
             // 
             this.LblData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LblData.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LblData.Location = new System.Drawing.Point(857, 9);
+            this.LblData.Location = new System.Drawing.Point(847, 7);
             this.LblData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblData.Name = "LblData";
             this.LblData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -3757,7 +3727,7 @@ namespace CHOV
             this.LedHeart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(103)))), ((int)(((byte)(128)))), ((int)(((byte)(159)))));
             this.LedHeart.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(230)))), ((int)(((byte)(64)))));
             this.LedHeart.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.LedHeart.Location = new System.Drawing.Point(1165, 9);
+            this.LedHeart.Location = new System.Drawing.Point(1155, 5);
             this.LedHeart.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.LedHeart.Name = "LedHeart";
             this.LedHeart.On = true;
@@ -3767,43 +3737,41 @@ namespace CHOV
             // 
             // statusStrip1
             // 
+            this.statusStrip1.AutoSize = false;
             this.statusStrip1.BackColor = System.Drawing.SystemColors.WindowText;
             this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 464);
+            this.toolStripStatusLabel1});
+            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.statusStrip1.Location = new System.Drawing.Point(0, 354);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode;
             this.statusStrip1.Size = new System.Drawing.Size(1186, 22);
+            this.statusStrip1.SizingGrip = false;
+            this.statusStrip1.Stretch = false;
             this.statusStrip1.TabIndex = 110;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
+            this.toolStripStatusLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.toolStripStatusLabel1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.toolStripStatusLabel1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            this.toolStripStatusLabel1.Spring = true;
             // 
             // FrmPainel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowText;
-            this.ClientSize = new System.Drawing.Size(1186, 486);
+            this.ClientSize = new System.Drawing.Size(1186, 376);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.LblData);
             this.Controls.Add(this.LedHeart);
             this.Controls.Add(this.LblRelogio);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.PnlPulses);
-            this.Controls.Add(this.status);
             this.Controls.Add(this.Historico);
             this.Controls.Add(this.lblSecondary);
             this.Controls.Add(this.lblPrimary);
@@ -3812,7 +3780,6 @@ namespace CHOV
             this.Controls.Add(this.PnlReserva_1a16);
             this.Controls.Add(this.PnlTitular_1a16);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.LblRodape);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
@@ -3820,7 +3787,6 @@ namespace CHOV
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.MaximizeBox = false;
             this.Name = "FrmPainel";
-            this.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmPainel_FormClosed);
@@ -3950,7 +3916,6 @@ namespace CHOV
         private LedBulb Led_out10;
         public System.Windows.Forms.Label Lbl_out9;
         private LedBulb Led_out9;
-        private System.Windows.Forms.TextBox status;
         public LedBulb LedT_in1;
         private System.Windows.Forms.Panel PnlPulses;
         private System.Windows.Forms.PictureBox PicChang0ver;
@@ -4008,7 +3973,6 @@ namespace CHOV
         public System.Windows.Forms.Label lblPrimary;
         public System.Windows.Forms.Label lblSecondary;
         private LedBulb LedHeart;
-        public System.Windows.Forms.Label LblRodape;
         protected System.Windows.Forms.PictureBox pictureBox2;
         public LedBulb Led_out1;
         public System.Windows.Forms.Label LblRelogio;
@@ -4022,7 +3986,6 @@ namespace CHOV
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 

@@ -105,7 +105,7 @@ namespace CHOV
         /// Configurações iniciais do projeto.
         /// </summary>
         public void PainelStart()
-        { AtivaPnl(Properties.Settings.Default.System); status.Text = CurrentSelection_pgm; }
+        { AtivaPnl(Properties.Settings.Default.System); }
 
         /// <summary>
         /// Vetores pgm recebem os nomes dos vetores do settings.
@@ -183,9 +183,18 @@ namespace CHOV
         public void GetInfoSettings()
         {
             if (Properties.Settings.Default.System == "Change Over")
-            { LblRodape.Text = "System: " + Properties.Settings.Default.System + ";    " + " " + "Current Selection: " + Properties.Settings.Default.CurrentSelection + ";    " + " " + "Trigger device: " + Properties.Settings.Default.DeviceChg0 + ";    " + " Input trigger: " + Properties.Settings.Default.InputDeviceChg0 + ";    " + " " + "IP Primary: " + Properties.Settings.Default.IP_Primary + ";    " + " " + "IP Secondary: " + Properties.Settings.Default.IP_Secondary + ";    " + " " + "IP Output: " + Properties.Settings.Default.IP_Output; }
+            {
+                toolStripStatusLabel1.Text = "System: " + Properties.Settings.Default.System + ";    " + " " + "Current Selection: " + Properties.Settings.Default.CurrentSelection + ";    " + " " + "Trigger device: " + Properties.Settings.Default.DeviceChg0 + ";    " + " Input trigger: " + Properties.Settings.Default.InputDeviceChg0 + ";    " + " " + "IP Primary: " + Properties.Settings.Default.IP_Primary + ";    " + " " + "IP Secondary: " + Properties.Settings.Default.IP_Secondary + ";    " + " " + "IP Output: " + Properties.Settings.Default.IP_Output;
+                toolStripStatusLabel1.Padding = new System.Windows.Forms.Padding(210, 0, 0, 0);
+            }
             else
-            { LblRodape.Text = "System: " + Properties.Settings.Default.System + ";    " + "IP Primary: " + Properties.Settings.Default.IP_Primary + ";    " + " " + "IP Secondary: " + Properties.Settings.Default.IP_Secondary + ";    " + " " + "IP Output: " + Properties.Settings.Default.IP_Output; }
+            {
+                toolStripStatusLabel1.Text = "System: " + Properties.Settings.Default.System + ";    " + "IP Primary: " + Properties.Settings.Default.IP_Primary + ";    " + " " + "IP Secondary: " + Properties.Settings.Default.IP_Secondary + ";    " + " " + "IP Output: " + Properties.Settings.Default.IP_Output;
+                toolStripStatusLabel1.Padding = new System.Windows.Forms.Padding(610, 0, 0, 0);
+            }
+
+
+
         }
 
         /// <summary>
@@ -215,7 +224,7 @@ namespace CHOV
             PnlReserva_1a16.BackColor = cor1; Pnl_out1a16.BorderStyle = BorderStyle.Fixed3D;
             Pnl_out1a16.BackColor = cor1;
             ZeraAllInT(); ZeraAllInR(); ZeraAllInOut();
-            status.Visible = false; LblChangeover.Visible = false; PicChang0ver.Visible = false;
+            LblChangeover.Visible = false; PicChang0ver.Visible = false;
             CorChg0v(VetorColor((Posicao(Properties.Settings.Default.NamesInputPrimary))));
         }
 
@@ -228,7 +237,7 @@ namespace CHOV
             if (CurrentSelection_pgm == "Secondary") { ReservaAtivado(); };
             Pnl_out1a16.BorderStyle = BorderStyle.Fixed3D; Pnl_out1a16.BackColor = cor1;
             ZeraAllInT(); ZeraAllInR(); ZeraAllInOut();
-            status.Visible = true; LblChangeover.Visible = true; PicChang0ver.Visible = true;
+            LblChangeover.Visible = true; PicChang0ver.Visible = true;
             CorChg0v(VetorColor((Posicao(Properties.Settings.Default.NamesInputPrimary))));
         }
 
@@ -240,7 +249,7 @@ namespace CHOV
             PnlTitular_1a16.BorderStyle = BorderStyle.Fixed3D; PnlTitular_1a16.BackColor = cor1;
             PnlReserva_1a16.BackColor = cor2; PnlReserva_1a16.BorderStyle = BorderStyle.None;
             //Altera a variavel de seleção das entradas
-            CurrentSelection_pgm = "Primary"; status.Text = CurrentSelection_pgm;
+            CurrentSelection_pgm = "Primary";
             ZeraInR1a8(); ZeraInR9a16(); ZeraOut1a16();
         }
 
@@ -252,7 +261,7 @@ namespace CHOV
             PnlReserva_1a16.BorderStyle = BorderStyle.Fixed3D; PnlReserva_1a16.BackColor = cor1;
             PnlTitular_1a16.BorderStyle = BorderStyle.None; PnlTitular_1a16.BackColor = cor2;
             //Altera a variavel de seleção das entradas
-            CurrentSelection_pgm = "Secondary"; status.Text = CurrentSelection_pgm;
+            CurrentSelection_pgm = "Secondary";
             ZeraInT1a8(); ZeraInT9a16(); ZeraOut1a16();
         }
 
@@ -1062,7 +1071,7 @@ namespace CHOV
                 Expand(true);
                 log.Debug("Load Logs");
                 Form logs = new FrmLogs(this); logs.Show();
-                logs.Location = new Point(100, 517);
+                logs.Location = new Point(100, 502);
 
             }
         }
@@ -1109,18 +1118,16 @@ namespace CHOV
         {
             if (exp == 0)
             {
-                LblRodape.Location = new Point(34, 457);
-                PnlPulses.Location = new Point(182, 377);
+                PnlPulses.Location = new Point(182, 369);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
-                this.Height = 525;
+                this.Height = 510;
                 exp = 1;
             }
             else
             {
-                LblRodape.Location = new Point(34, 371);
                 PnlPulses.Location = new Point(182, 403);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
-                this.Height = 410;
+                this.Height = 415;
                 exp = 0;
             }
         }
@@ -1132,18 +1139,16 @@ namespace CHOV
         {
             if (n)
             {
-                LblRodape.Location = new Point(34, 457);
-                PnlPulses.Location = new Point(182, 377);
+                PnlPulses.Location = new Point(182, 369);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Up;
-                this.Height = 525;
+                this.Height = 510;
                 exp = 1;
             }
             else
             {
-                LblRodape.Location = new Point(34, 371);
                 PnlPulses.Location = new Point(182, 403);
                 pictureBox2.Image = CHOV.Properties.Resources.icon_Down;
-                this.Height = 410;
+                this.Height = 415;
 
                 this.Location = new Point((Screen.PrimaryScreen.WorkingArea.Width - this.Width) / 2,
                       (Screen.PrimaryScreen.WorkingArea.Height - this.Height) / 2);
@@ -1299,7 +1304,8 @@ namespace CHOV
             //Relógio & Data
             LblRelogio.Text = Relogio_pgm = DateTime.Now.ToLongTimeString();
             LblData.Text = Data_pgm = Functions.GetDateSystem();
-            toolStripStatusLabel1.Text = Data_pgm + " " + Relogio_pgm;
+
+
 
             LblRelogio.Visible = true;
             LblData.Visible = true;
