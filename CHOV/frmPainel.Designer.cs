@@ -206,7 +206,7 @@ namespace CHOV
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.LblData = new System.Windows.Forms.Label();
             this.LedHeart = new Bulb.LedBulb();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.statusStripPanel = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.PnlTitular_1a16.SuspendLayout();
             this.Pnl_out1a16.SuspendLayout();
@@ -215,7 +215,7 @@ namespace CHOV
             this.PnlPulses.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicChang0ver)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.statusStrip1.SuspendLayout();
+            this.statusStripPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlTitular_1a16
@@ -3735,21 +3735,21 @@ namespace CHOV
             this.LedHeart.TabIndex = 93;
             this.LedHeart.Text = "ledBulb1";
             // 
-            // statusStrip1
+            // statusStripPanel
             // 
-            this.statusStrip1.AutoSize = false;
-            this.statusStrip1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.statusStrip1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statusStripPanel.AutoSize = false;
+            this.statusStripPanel.BackColor = System.Drawing.SystemColors.WindowText;
+            this.statusStripPanel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusStripPanel.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.statusStrip1.Location = new System.Drawing.Point(0, 354);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1186, 22);
-            this.statusStrip1.SizingGrip = false;
-            this.statusStrip1.Stretch = false;
-            this.statusStrip1.TabIndex = 110;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStripPanel.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.statusStripPanel.Location = new System.Drawing.Point(0, 354);
+            this.statusStripPanel.Name = "statusStripPanel";
+            this.statusStripPanel.Size = new System.Drawing.Size(1186, 22);
+            this.statusStripPanel.SizingGrip = false;
+            this.statusStripPanel.Stretch = false;
+            this.statusStripPanel.TabIndex = 110;
+            this.statusStripPanel.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
@@ -3767,7 +3767,7 @@ namespace CHOV
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.ClientSize = new System.Drawing.Size(1186, 376);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.statusStripPanel);
             this.Controls.Add(this.LblData);
             this.Controls.Add(this.LedHeart);
             this.Controls.Add(this.LblRelogio);
@@ -3802,8 +3802,8 @@ namespace CHOV
             this.PnlPulses.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicChang0ver)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.statusStripPanel.ResumeLayout(false);
+            this.statusStripPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3984,7 +3984,7 @@ namespace CHOV
         private System.Windows.Forms.Button BtnWriteTest;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.StatusStrip statusStripPanel;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }

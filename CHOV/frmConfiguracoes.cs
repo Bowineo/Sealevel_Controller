@@ -1984,7 +1984,7 @@ namespace CHOV
         /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
         public void ExportConfig(string[] entrada)
         {
-            lblLoading.Visible = true;
+            statusStrip1.Visible = true;
             string[] lines = entrada;
             log.Debug("Botão export configuration acionado");
             string pathselect;
@@ -2009,7 +2009,7 @@ namespace CHOV
                     { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
             }
-            lblLoading.Visible = false;
+            statusStrip1.Visible = false;
         }
 
         /// <summary>
@@ -2054,7 +2054,10 @@ namespace CHOV
             bool chk = true;
             using (OpenFileDialog1 = new OpenFileDialog())
             {
-                lblLoading.Visible = true;
+
+                statusStrip1.Visible = true;
+
+
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
                 if (OpenFileDialog1.ShowDialog() == DialogResult.OK)
                 {
@@ -2098,7 +2101,8 @@ namespace CHOV
                 else
                 { configura = configurar; }
                 if (chk == false) { configura = configurar; }
-                lblLoading.Visible = false;
+                statusStrip1.Visible = false;
+                
                 return configura;
             }
         }
@@ -2983,6 +2987,7 @@ namespace CHOV
         }
 
         #endregion
+
 
     }
 }
