@@ -1984,7 +1984,7 @@ namespace CHOV
         /// <param name="entrada">string[] entrada com as configurações salvas no sistema</param>
         public void ExportConfig(string[] entrada)
         {
-            statusStrip1.Visible = true;
+            SavestatusStrip1.Visible = true;
             string[] lines = entrada;
             log.Debug("Botão export configuration acionado");
             string pathselect;
@@ -2009,7 +2009,7 @@ namespace CHOV
                     { DialogResult resultado = MsgBox.ShowDialog(); }
                 }
             }
-            statusStrip1.Visible = false;
+            SavestatusStrip1.Visible = false;
         }
 
         /// <summary>
@@ -2055,7 +2055,7 @@ namespace CHOV
             using (OpenFileDialog1 = new OpenFileDialog())
             {
 
-                statusStrip1.Visible = true;
+                SavestatusStrip1.Visible = true;
 
 
                 OpenFileDialog1.Filter = "Text files (*.chg0)|*.chg0";
@@ -2101,7 +2101,7 @@ namespace CHOV
                 else
                 { configura = configurar; }
                 if (chk == false) { configura = configurar; }
-                statusStrip1.Visible = false;
+                SavestatusStrip1.Visible = false;
                 
                 return configura;
             }
